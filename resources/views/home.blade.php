@@ -4,19 +4,19 @@
     <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Home main | TheDir</title>
+    <title>Home main | healthandcareservices</title>
 
 
     <!-- Vendors Stylesheets -->
     <link href="https://fonts.googleapis.com/css?family=Work+Sans:200,300,400,500,600,700,800,900&display=swap"
           rel="stylesheet">
-    <link rel="stylesheet" href="vendors/font-awesome/css/fontawesome.css">
-    <link rel="stylesheet" href="vendors/magnific-popup/magnific-popup.css">
-    <link rel="stylesheet" href="vendors/slick/slick.css">
-    <link rel="stylesheet" href="vendors/animate.css">
+    <link rel="stylesheet" href="{{asset('vendors/font-awesome/css/fontawesome.css')}}">
+    <link rel="stylesheet" href="{{asset('vendors/magnific-popup/magnific-popup.css')}}">
+    <link rel="stylesheet" href="{{asset('vendors/slick/slick.css')}}">
+    <link rel="stylesheet" href="{{asset('vendors/animate.css')}}">
 
     <!-- Site Stylesheets -->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="{{asset('style.css')}}">
 
 </head>
 <body>
@@ -33,8 +33,8 @@
                                  data-target="#navbar-main-menu">
                                 <span></span>
                             </div>
-                            <a class="navbar-brand navbar-brand-mobile" href="index.html">
-                                <img src="images/logo.png" alt="TheDir">
+                            <a class="navbar-brand navbar-brand-mobile" href="{{route('home')}}">
+                                <img src="{{asset('images/logo.png')}}')}}" alt="healthandcareservices">
                             </a>
                             <a class="mobile-button-search" href="#search-popup"
                                data-gtf-mfp="true"
@@ -42,8 +42,8 @@
                                     class="far fa-search"></i></a>
                         </div>
                         <div class="collapse navbar-collapse" id="navbar-main-menu">
-                            <a class="navbar-brand d-none d-xl-block mr-auto" href="index.html">
-                                <img src="images/logo.png" alt="TheDir">
+                            <a class="navbar-brand d-none d-xl-block mr-auto" href="{{route('home')}}">
+                                <img src="{{asset('images/logo.png')}}')}}" alt="healthandcareservices">
                             </a>
 
                             <ul class="navbar-nav">
@@ -51,7 +51,7 @@
                                     <a class="nav-link" href="#">Demos <span class="caret"><i
                                             class="fas fa-angle-down"></i></span></a>
                                     <ul class="sub-menu x-animated x-fadeInUp">
-                                        <li class="nav-item"><a class="nav-link" href="index.html">main</a>
+                                        <li class="nav-item"><a class="nav-link" href="{{route('home')}}">main</a>
                                         </li>
                                         <li class="nav-item"><a class="nav-link"
                                                                 href="demo/automotive-service/home-automotive-services.html">
@@ -384,7 +384,7 @@
                                         Log in</a>
                                 </div>
                                 <div class="header-customize-item button">
-                                    <a href="page-submit-listing.html" class="btn btn-primary btn-icon-right">Add
+                                    <a href="pagesubmitlisting" class="btn btn-primary btn-icon-right">Add
                                         Listing
                                         <i
                                                 class="far fa-angle-right"></i></a>
@@ -703,7 +703,7 @@
                                             </h5>
                                             <p class="font-size-md text-gray mb-0 text-muted">
                                                 Go and have a good time or even make a booking directly from the listing
-                                                page. All of those, thanks to TheDir!
+                                                page. All of those, thanks to healthandcareservices!
                                             </p>
                                         </div>
                                     </div>
@@ -729,7 +729,7 @@
                         <div class="box" data-animate="zoomIn">
                             <div class="card border-0">
                                 <a class="hover-scale" href="explore-sidebar-grid.html">
-                                    <img src="images/listing/feature-detination-1.jpg" alt="San Francisco"
+                                    <img src="{{asset('images/listing/feature-detination-1.jpg')}}')}}" alt="San Francisco"
                                          class="image">
                                 </a>
                                 <div class="card-body px-0 pt-4">
@@ -749,7 +749,7 @@
                         <div class="box" data-animate="zoomIn">
                             <div class="card border-0">
                                 <a class="hover-scale" href="explore-sidebar-grid.html">
-                                    <img src="images/listing/feature-detination-2.jpg" alt="London" class="image">
+                                    <img src="{{asset('images/listing/feature-detination-2.jpg')}}')}}" alt="London" class="image">
                                 </a>
                                 <div class="card-body px-0 pt-4">
                                     <h5 class="mb-0 card-title">
@@ -769,7 +769,7 @@
                         <div class="box" data-animate="zoomIn">
                             <div class="card border-0">
                                 <a class="hover-scale" href="explore-sidebar-grid.html">
-                                    <img src="images/listing/feature-detination-3.jpg" alt="Tokyo" class="image">
+                                    <img src="{{asset('images/listing/feature-detination-3.jpg')}}')}}" alt="Tokyo" class="image">
                                 </a>
                                 <div class="card-body px-0 pt-4">
                                     <h5 class="mb-0 card-title">
@@ -787,7 +787,7 @@
                         <div class="box" data-animate="zoomIn">
                             <div class="card border-0">
                                 <a class="hover-scale" href="explore-sidebar-grid.html">
-                                    <img src="images/listing/feature-detination-4.jpg" alt="Miami" class="image">
+                                    <img src="{{asset('images/listing/feature-detination-4.jpg')}}')}}" alt="Miami" class="image">
                                 </a>
                                 <div class="card-body px-0 pt-4">
                                     <h5 class="mb-0 card-title">
@@ -806,7 +806,7 @@
                         <div class="box" data-animate="zoomIn">
                             <div class="card border-0">
                                 <a class="hover-scale" href="explore-sidebar-grid.html">
-                                    <img src="images/listing/feature-detination-1.jpg" alt="San Francisco"
+                                    <img src="{{asset('images/listing/feature-detination-1.jpg')}}')}}" alt="San Francisco"
                                          class="image">
                                 </a>
                                 <div class="card-body px-0 pt-4">
@@ -826,7 +826,7 @@
                         <div class="box" data-animate="zoomIn">
                             <div class="card border-0">
                                 <a class="hover-scale" href="explore-sidebar-grid.html">
-                                    <img src="images/listing/feature-detination-2.jpg" alt="London" class="image">
+                                    <img src="{{asset('images/listing/feature-detination-2.jpg')}}')}}" alt="London" class="image">
                                 </a>
                                 <div class="card-body px-0 pt-4">
                                     <h5 class="mb-0 card-title">
@@ -846,7 +846,7 @@
                         <div class="box" data-animate="zoomIn">
                             <div class="card border-0">
                                 <a class="hover-scale" href="explore-sidebar-grid.html">
-                                    <img src="images/listing/feature-detination-3.jpg" alt="Tokyo" class="image">
+                                    <img src="{{asset('images/listing/feature-detination-3.jpg')}}')}}" alt="Tokyo" class="image">
                                 </a>
                                 <div class="card-body px-0 pt-4">
                                     <h5 class="mb-0 card-title">
@@ -864,7 +864,7 @@
                         <div class="box" data-animate="zoomIn">
                             <div class="card border-0">
                                 <a class="hover-scale" href="explore-sidebar-grid.html">
-                                    <img src="images/listing/feature-detination-4.jpg" alt="Miami" class="image">
+                                    <img src="{{asset('images/listing/feature-detination-4.jpg')}}')}}" alt="Miami" class="image">
                                 </a>
                                 <div class="card-body px-0 pt-4">
                                     <h5 class="mb-0 card-title">
@@ -937,7 +937,7 @@
                                     <div class="store card border-0 rounded-0">
                                         <div class="position-relative store-image">
                                             <a href="listing-details-full-gallery.html">
-                                                <img src="images/shop/shop-1.jpg" alt="store 1"
+                                                <img src="{{asset('images/shop/shop-1.jpg')}}')}}" alt="store 1"
                                                      class="card-img-top rounded-0">
                                             </a>
                                             <div class="image-content position-absolute d-flex align-items-center">
@@ -945,7 +945,7 @@
                                                     <div class="badge badge-primary">Featured</div>
                                                 </div>
                                                 <div class="content-right ml-auto d-flex w-lg show-link">
-                                                    <a href="images/shop/full-shop-1.jpg" class="item viewing"
+                                                    <a href="{{asset('images/shop/full-shop-1.jpg')}}')}}" class="item viewing"
                                                        data-toggle="tooltip"
                                                        data-placement="top"
                                                        title="Quickview" data-gtf-mfp="true">
@@ -990,7 +990,7 @@
                                             </ul>
                                             <div class="media">
                                                 <a href="#" class="d-inline-block mr-3"><img
-                                                        src="images/listing/testimonial-1.png"
+                                                        src="{{asset('images/listing/testimonial-1.png')}}')}}"
                                                         alt="testimonial" class="rounded-circle">
                                                 </a>
                                                 <div class="media-body lh-14 font-size-sm">Overlooking Bloomsbury's
@@ -1021,7 +1021,7 @@
                                     <div class="store card border-0 rounded-0">
                                         <div class="position-relative store-image">
                                             <a href="listing-details-full-gallery.html">
-                                                <img src="images/shop/shop-2.jpg" alt="store 2"
+                                                <img src="{{asset('/shop/shop-2.jpg')}}" alt="store 2"
                                                      class="card-img-top rounded-0">
                                             </a>
                                             <div class="image-content position-absolute d-flex align-items-center">
@@ -1029,7 +1029,7 @@
                                                     <div class="badge badge-primary">Best Rate</div>
                                                 </div>
                                                 <div class="content-right ml-auto d-flex show-link">
-                                                    <a href="images/shop/full-shop-2.jpg" data-gtf-mfp="true"
+                                                    <a href="{{asset('/shop/full-shop-2.jpg')}}" data-gtf-mfp="true"
                                                        class="item viewing" data-toggle="tooltip"
                                                        data-placement="top"
                                                        title="Quick view">
@@ -1071,7 +1071,7 @@
 
                                             <div class="media">
                                                 <a href="#" class="d-inline-block mr-3"><img
-                                                        src="images/listing/testimonial-2.png"
+                                                        src="{{asset('/listing/testimonial-2.png')}}')}}"
                                                         alt="testimonial" class="rounded-circle">
                                                 </a>
                                                 <div class="media-body lh-14 font-size-sm">They specialize in makgeolli
@@ -1101,7 +1101,7 @@
                                     <div class="store card border-0 rounded-0">
                                         <div class="position-relative store-image">
                                             <a href="listing-details-full-gallery.html">
-                                                <img src="images/shop/shop-3.jpg" alt="store 1"
+                                                <img src="{{asset('/shop/shop-3.jpg')}}" alt="store 1"
                                                      class="card-img-top rounded-0">
                                             </a>
                                             <div class="image-content position-absolute d-flex align-items-center">
@@ -1109,7 +1109,7 @@
                                                     <div class="badge badge-primary">Most view</div>
                                                 </div>
                                                 <div class="content-right ml-auto d-flex show-link">
-                                                    <a href="images/shop/full-shop-3.jpg" class="item viewing"
+                                                    <a href="{{asset('/shop/full-shop-3.jpg')}}" class="item viewing"
                                                        data-toggle="tooltip"
                                                        data-placement="top"
                                                        title="Quick view" data-gtf-mfp="true">
@@ -1147,7 +1147,7 @@
                                             </ul>
                                             <div class="media">
                                                 <a href="#" class="d-inline-block mr-3"><img
-                                                        src="images/listing/testimonial-5.png"
+                                                        src="{{asset('/listing/testimonial-5.png')}}')}}"
                                                         alt="testimonial" class="rounded-circle">
                                                 </a>
                                                 <div class="media-body lh-14 font-size-sm">After a yoga class changed
@@ -1179,7 +1179,7 @@
                                     <div class="store card border-0 rounded-0">
                                         <div class="position-relative store-image">
                                             <a href="listing-details-full-gallery.html">
-                                                <img src="images/shop/shop-4.jpg" alt="store 1"
+                                                <img src="{{asset('/shop/shop-4.jpg')}}" alt="store 1"
                                                      class="card-img-top rounded-0">
                                             </a>
                                             <div class="image-content position-absolute d-flex align-items-center">
@@ -1187,7 +1187,7 @@
                                                     <div class="badge badge-primary">Featured</div>
                                                 </div>
                                                 <div class="content-right ml-auto d-flex show-link">
-                                                    <a href="images/shop/full-shop-4.jpg" class="item viewing"
+                                                    <a href="{{asset('/shop/full-shop-4.jpg')}}" class="item viewing"
                                                        data-toggle="tooltip" data-gtf-mfp="true"
                                                        data-placement="top"
                                                        title="Quick view">
@@ -1224,7 +1224,7 @@
                                             </ul>
                                             <div class="media">
                                                 <a href="#" class="d-inline-block mr-3"><img
-                                                        src="images/listing/testimonial-3.png"
+                                                        src="{{asset('/listing/testimonial-3.png')}}"
                                                         alt="testimonial" class="rounded-circle">
                                                 </a>
                                                 <div class="media-body lh-14 font-size-sm">Established in 1895, these
@@ -1256,7 +1256,7 @@
                                     <div class="store card border-0 rounded-0">
                                         <div class="position-relative store-image">
                                             <a href="listing-details-full-gallery.html">
-                                                <img src="images/shop/shop-5.jpg" alt="store 1"
+                                                <img src="{{asset('/shop/shop-5.jpg')}}" alt="store 1"
                                                      class="card-img-top rounded-0">
                                             </a>
                                             <div class="image-content position-absolute d-flex align-items-center">
@@ -1264,7 +1264,7 @@
                                                     <div class="badge badge-primary">AD</div>
                                                 </div>
                                                 <div class="content-right ml-auto d-flex show-link">
-                                                    <a href="images/shop/full-shop-5.jpg" class="item viewing"
+                                                    <a href="{{asset('/shop/full-shop-5.jpg')}}" class="item viewing"
                                                        data-toggle="tooltip"
                                                        data-placement="top" data-gtf-mfp="true"
                                                        title="Quick view">
@@ -1306,7 +1306,7 @@
                                             </ul>
                                             <div class="media">
                                                 <a href="#" class="d-inline-block mr-3"><img
-                                                        src="images/listing/testimonial-2.png"
+                                                        src="{{asset('/listing/testimonial-2.png')}}"
                                                         alt="testimonial" class="rounded-circle">
                                                 </a>
                                                 <div class="media-body lh-14 font-size-sm">Most items can be packed
@@ -1338,7 +1338,7 @@
                                     <div class="store card border-0 rounded-0">
                                         <div class="position-relative store-image">
                                             <a href="listing-details-full-gallery.html">
-                                                <img src="images/shop/shop-1.jpg" alt="store 1"
+                                                <img src="{{asset('/shop/shop-1.jpg')}}" alt="store 1"
                                                      class="card-img-top rounded-0">
                                             </a>
                                             <div class="image-content position-absolute d-flex align-items-center">
@@ -1346,7 +1346,7 @@
                                                     <div class="badge badge-primary">Featured</div>
                                                 </div>
                                                 <div class="content-right ml-auto d-flex show-link">
-                                                    <a href="images/shop/full-shop-1.jpg" class="item viewing"
+                                                    <a href="{{asset('/shop/full-shop-1.jpg')}}" class="item viewing"
                                                        data-toggle="tooltip"
                                                        data-placement="top"
                                                        title="Quickview" data-gtf-mfp="true">
@@ -1385,7 +1385,7 @@
 
                                             <div class="media">
                                                 <a href="#" class="d-inline-block mr-3"><img
-                                                        src="images/listing/testimonial-1.png"
+                                                        src="{{asset('/listing/testimonial-1.png')}}"
                                                         alt="testimonial" class="rounded-circle">
                                                 </a>
                                                 <div class="media-body lh-14 font-size-sm">They specialize in makgeolli
@@ -1422,7 +1422,7 @@
                                     <div class="store card border-0 rounded-0">
                                         <div class="position-relative store-image">
                                             <a href="listing-details-full-gallery.html">
-                                                <img src="images/shop/shop-1.jpg" alt="store 1"
+                                                <img src="{{asset('/shop/shop-1.jpg')}}" alt="store 1"
                                                      class="card-img-top rounded-0">
                                             </a>
                                             <div class="image-content position-absolute d-flex align-items-center">
@@ -1430,7 +1430,7 @@
                                                     <div class="badge badge-primary">Featured</div>
                                                 </div>
                                                 <div class="content-right ml-auto d-flex w-lg show-link">
-                                                    <a href="images/shop/full-shop-1.jpg" class="item viewing"
+                                                    <a href="{{asset('/shop/full-shop-1.jpg')}}" class="item viewing"
                                                        data-toggle="tooltip"
                                                        data-placement="top"
                                                        title="Quickview" data-gtf-mfp="true">
@@ -1475,7 +1475,7 @@
                                             </ul>
                                             <div class="media">
                                                 <a href="#" class="d-inline-block mr-3"><img
-                                                        src="images/listing/testimonial-1.png"
+                                                        src="{{asset('/listing/testimonial-1.png')}}"
                                                         alt="testimonial" class="rounded-circle">
                                                 </a>
                                                 <div class="media-body lh-14 font-size-sm">Overlooking Bloomsbury's
@@ -1506,7 +1506,7 @@
                                     <div class="store card border-0 rounded-0">
                                         <div class="position-relative store-image">
                                             <a href="listing-details-full-gallery.html">
-                                                <img src="images/shop/shop-2.jpg" alt="store 2"
+                                                <img src="{{asset('/shop/shop-2.jpg')}}" alt="store 2"
                                                      class="card-img-top rounded-0">
                                             </a>
                                             <div class="image-content position-absolute d-flex align-items-center">
@@ -1514,7 +1514,7 @@
                                                     <div class="badge badge-primary">Best Rate</div>
                                                 </div>
                                                 <div class="content-right ml-auto d-flex show-link">
-                                                    <a href="images/shop/full-shop-2.jpg" data-gtf-mfp="true"
+                                                    <a href="{{asset('/shop/full-shop-2.jpg')}}" data-gtf-mfp="true"
                                                        class="item viewing" data-toggle="tooltip"
                                                        data-placement="top"
                                                        title="Quick view">
@@ -1556,7 +1556,7 @@
 
                                             <div class="media">
                                                 <a href="#" class="d-inline-block mr-3"><img
-                                                        src="images/listing/testimonial-2.png"
+                                                        src="{{asset('/listing/testimonial-2.png')}}"
                                                         alt="testimonial" class="rounded-circle">
                                                 </a>
                                                 <div class="media-body lh-14 font-size-sm">They specialize in makgeolli
@@ -1586,7 +1586,7 @@
                                     <div class="store card border-0 rounded-0">
                                         <div class="position-relative store-image">
                                             <a href="listing-details-full-gallery.html">
-                                                <img src="images/shop/shop-3.jpg" alt="store 1"
+                                                <img src="{{asset('/shop/shop-3.jpg')}}" alt="store 1"
                                                      class="card-img-top rounded-0">
                                             </a>
                                             <div class="image-content position-absolute d-flex align-items-center">
@@ -1594,7 +1594,7 @@
                                                     <div class="badge badge-primary">Most view</div>
                                                 </div>
                                                 <div class="content-right ml-auto d-flex show-link">
-                                                    <a href="images/shop/full-shop-3.jpg" class="item viewing"
+                                                    <a href="{{asset('/shop/full-shop-3.jpg')}}" class="item viewing"
                                                        data-toggle="tooltip"
                                                        data-placement="top"
                                                        title="Quick view" data-gtf-mfp="true">
@@ -1632,7 +1632,7 @@
                                             </ul>
                                             <div class="media">
                                                 <a href="#" class="d-inline-block mr-3"><img
-                                                        src="images/listing/testimonial-5.png"
+                                                        src="{{asset('/listing/testimonial-5.png')}}"
                                                         alt="testimonial" class="rounded-circle">
                                                 </a>
                                                 <div class="media-body lh-14 font-size-sm">After a yoga class changed
@@ -1664,7 +1664,7 @@
                                     <div class="store card border-0 rounded-0">
                                         <div class="position-relative store-image">
                                             <a href="listing-details-full-gallery.html">
-                                                <img src="images/shop/shop-4.jpg" alt="store 1"
+                                                <img src="{{asset('/shop/shop-4.jpg')}}" alt="store 1"
                                                      class="card-img-top rounded-0">
                                             </a>
                                             <div class="image-content position-absolute d-flex align-items-center">
@@ -1672,7 +1672,7 @@
                                                     <div class="badge badge-primary">Featured</div>
                                                 </div>
                                                 <div class="content-right ml-auto d-flex show-link">
-                                                    <a href="images/shop/full-shop-4.jpg" class="item viewing"
+                                                    <a href="{{asset('/shop/full-shop-4.jpg')}}" class="item viewing"
                                                        data-toggle="tooltip" data-gtf-mfp="true"
                                                        data-placement="top"
                                                        title="Quick view">
@@ -1709,7 +1709,7 @@
                                             </ul>
                                             <div class="media">
                                                 <a href="#" class="d-inline-block mr-3"><img
-                                                        src="images/listing/testimonial-3.png"
+                                                        src="{{asset('/listing/testimonial-3.png')}}"
                                                         alt="testimonial" class="rounded-circle">
                                                 </a>
                                                 <div class="media-body lh-14 font-size-sm">Established in 1895, these
@@ -1741,7 +1741,7 @@
                                     <div class="store card border-0 rounded-0">
                                         <div class="position-relative store-image">
                                             <a href="listing-details-full-gallery.html">
-                                                <img src="images/shop/shop-5.jpg" alt="store 1"
+                                                <img src="{{asset('/shop/shop-5.jpg')}}" alt="store 1"
                                                      class="card-img-top rounded-0">
                                             </a>
                                             <div class="image-content position-absolute d-flex align-items-center">
@@ -1749,7 +1749,7 @@
                                                     <div class="badge badge-primary">AD</div>
                                                 </div>
                                                 <div class="content-right ml-auto d-flex show-link">
-                                                    <a href="images/shop/full-shop-5.jpg" class="item viewing"
+                                                    <a href="{{asset('/shop/full-shop-5.jpg')}}" class="item viewing"
                                                        data-toggle="tooltip"
                                                        data-placement="top" data-gtf-mfp="true"
                                                        title="Quick view">
@@ -1791,7 +1791,7 @@
                                             </ul>
                                             <div class="media">
                                                 <a href="#" class="d-inline-block mr-3"><img
-                                                        src="images/listing/testimonial-2.png"
+                                                        src="{{asset('/listing/testimonial-2.png')}}"
                                                         alt="testimonial" class="rounded-circle">
                                                 </a>
                                                 <div class="media-body lh-14 font-size-sm">Most items can be packed
@@ -1823,7 +1823,7 @@
                                     <div class="store card border-0 rounded-0">
                                         <div class="position-relative store-image">
                                             <a href="listing-details-full-gallery.html">
-                                                <img src="images/shop/shop-1.jpg" alt="store 1"
+                                                <img src="{{asset('/shop/shop-1.jpg')}}" alt="store 1"
                                                      class="card-img-top rounded-0">
                                             </a>
                                             <div class="image-content position-absolute d-flex align-items-center">
@@ -1831,7 +1831,7 @@
                                                     <div class="badge badge-primary">Featured</div>
                                                 </div>
                                                 <div class="content-right ml-auto d-flex show-link">
-                                                    <a href="images/shop/full-shop-1.jpg" class="item viewing"
+                                                    <a href="{{asset('/shop/full-shop-1.jpg')}}" class="item viewing"
                                                        data-toggle="tooltip"
                                                        data-placement="top"
                                                        title="Quickview" data-gtf-mfp="true">
@@ -1870,7 +1870,7 @@
 
                                             <div class="media">
                                                 <a href="#" class="d-inline-block mr-3"><img
-                                                        src="images/listing/testimonial-1.png"
+                                                        src="{{asset('/listing/testimonial-1.png')}}"
                                                         alt="testimonial" class="rounded-circle">
                                                 </a>
                                                 <div class="media-body lh-14 font-size-sm">They specialize in makgeolli
@@ -1907,7 +1907,7 @@
                                     <div class="store card border-0 rounded-0">
                                         <div class="position-relative store-image">
                                             <a href="listing-details-full-gallery.html">
-                                                <img src="images/shop/shop-1.jpg" alt="store 1"
+                                                <img src="{{asset('/shop/shop-1.jpg')}}" alt="store 1"
                                                      class="card-img-top rounded-0">
                                             </a>
                                             <div class="image-content position-absolute d-flex align-items-center">
@@ -1915,7 +1915,7 @@
                                                     <div class="badge badge-primary">Featured</div>
                                                 </div>
                                                 <div class="content-right ml-auto d-flex w-lg show-link">
-                                                    <a href="images/shop/full-shop-1.jpg" class="item viewing"
+                                                    <a href="{{asset('/shop/full-shop-1.jpg')}}" class="item viewing"
                                                        data-toggle="tooltip"
                                                        data-placement="top"
                                                        title="Quickview" data-gtf-mfp="true">
@@ -1960,7 +1960,7 @@
                                             </ul>
                                             <div class="media">
                                                 <a href="#" class="d-inline-block mr-3"><img
-                                                        src="images/listing/testimonial-1.png"
+                                                        src="{{asset('/listing/testimonial-1.png')}}"
                                                         alt="testimonial" class="rounded-circle">
                                                 </a>
                                                 <div class="media-body lh-14 font-size-sm">Overlooking Bloomsbury's
@@ -1991,7 +1991,7 @@
                                     <div class="store card border-0 rounded-0">
                                         <div class="position-relative store-image">
                                             <a href="listing-details-full-gallery.html">
-                                                <img src="images/shop/shop-2.jpg" alt="store 2"
+                                                <img src="{{asset('/shop/shop-2.jpg')}}" alt="store 2"
                                                      class="card-img-top rounded-0">
                                             </a>
                                             <div class="image-content position-absolute d-flex align-items-center">
@@ -1999,7 +1999,7 @@
                                                     <div class="badge badge-primary">Best Rate</div>
                                                 </div>
                                                 <div class="content-right ml-auto d-flex show-link">
-                                                    <a href="images/shop/full-shop-2.jpg" data-gtf-mfp="true"
+                                                    <a href="{{asset('/shop/full-shop-2.jpg')}}" data-gtf-mfp="true"
                                                        class="item viewing" data-toggle="tooltip"
                                                        data-placement="top"
                                                        title="Quick view">
@@ -2041,7 +2041,7 @@
 
                                             <div class="media">
                                                 <a href="#" class="d-inline-block mr-3"><img
-                                                        src="images/listing/testimonial-2.png"
+                                                        src="{{asset('/listing/testimonial-2.png')}}"
                                                         alt="testimonial" class="rounded-circle">
                                                 </a>
                                                 <div class="media-body lh-14 font-size-sm">They specialize in makgeolli
@@ -2071,7 +2071,7 @@
                                     <div class="store card border-0 rounded-0">
                                         <div class="position-relative store-image">
                                             <a href="listing-details-full-gallery.html">
-                                                <img src="images/shop/shop-3.jpg" alt="store 1"
+                                                <img src="{{asset('/shop/shop-3.jpg')}}" alt="store 1"
                                                      class="card-img-top rounded-0">
                                             </a>
                                             <div class="image-content position-absolute d-flex align-items-center">
@@ -2079,7 +2079,7 @@
                                                     <div class="badge badge-primary">Most view</div>
                                                 </div>
                                                 <div class="content-right ml-auto d-flex show-link">
-                                                    <a href="images/shop/full-shop-3.jpg" class="item viewing"
+                                                    <a href="{{asset('/shop/full-shop-3.jpg')}}" class="item viewing"
                                                        data-toggle="tooltip"
                                                        data-placement="top"
                                                        title="Quick view" data-gtf-mfp="true">
@@ -2117,7 +2117,7 @@
                                             </ul>
                                             <div class="media">
                                                 <a href="#" class="d-inline-block mr-3"><img
-                                                        src="images/listing/testimonial-5.png"
+                                                        src="{{asset('/listing/testimonial-5.png')}}"
                                                         alt="testimonial" class="rounded-circle">
                                                 </a>
                                                 <div class="media-body lh-14 font-size-sm">After a yoga class changed
@@ -2149,7 +2149,7 @@
                                     <div class="store card border-0 rounded-0">
                                         <div class="position-relative store-image">
                                             <a href="listing-details-full-gallery.html">
-                                                <img src="images/shop/shop-4.jpg" alt="store 1"
+                                                <img src="{{asset('/shop/shop-4.jpg')}}" alt="store 1"
                                                      class="card-img-top rounded-0">
                                             </a>
                                             <div class="image-content position-absolute d-flex align-items-center">
@@ -2157,7 +2157,7 @@
                                                     <div class="badge badge-primary">Featured</div>
                                                 </div>
                                                 <div class="content-right ml-auto d-flex show-link">
-                                                    <a href="images/shop/full-shop-4.jpg" class="item viewing"
+                                                    <a href="{{asset('/shop/full-shop-4.jpg')}}" class="item viewing"
                                                        data-toggle="tooltip" data-gtf-mfp="true"
                                                        data-placement="top"
                                                        title="Quick view">
@@ -2194,7 +2194,7 @@
                                             </ul>
                                             <div class="media">
                                                 <a href="#" class="d-inline-block mr-3"><img
-                                                        src="images/listing/testimonial-3.png"
+                                                        src="{{asset('/listing/testimonial-3.png')}}"
                                                         alt="testimonial" class="rounded-circle">
                                                 </a>
                                                 <div class="media-body lh-14 font-size-sm">Established in 1895, these
@@ -2226,7 +2226,7 @@
                                     <div class="store card border-0 rounded-0">
                                         <div class="position-relative store-image">
                                             <a href="listing-details-full-gallery.html">
-                                                <img src="images/shop/shop-5.jpg" alt="store 1"
+                                                <img src="{{asset('/shop/shop-5.jpg')}}" alt="store 1"
                                                      class="card-img-top rounded-0">
                                             </a>
                                             <div class="image-content position-absolute d-flex align-items-center">
@@ -2234,7 +2234,7 @@
                                                     <div class="badge badge-primary">AD</div>
                                                 </div>
                                                 <div class="content-right ml-auto d-flex show-link">
-                                                    <a href="images/shop/full-shop-5.jpg" class="item viewing"
+                                                    <a href="{{asset('/shop/full-shop-5.jpg')}}" class="item viewing"
                                                        data-toggle="tooltip"
                                                        data-placement="top" data-gtf-mfp="true"
                                                        title="Quick view">
@@ -2276,7 +2276,7 @@
                                             </ul>
                                             <div class="media">
                                                 <a href="#" class="d-inline-block mr-3"><img
-                                                        src="images/listing/testimonial-2.png"
+                                                        src="{{asset('/listing/testimonial-2.png')}}"
                                                         alt="testimonial" class="rounded-circle">
                                                 </a>
                                                 <div class="media-body lh-14 font-size-sm">Most items can be packed
@@ -2308,7 +2308,7 @@
                                     <div class="store card border-0 rounded-0">
                                         <div class="position-relative store-image">
                                             <a href="listing-details-full-gallery.html">
-                                                <img src="images/shop/shop-1.jpg" alt="store 1"
+                                                <img src="{{asset('/shop/shop-1.jpg')}}" alt="store 1"
                                                      class="card-img-top rounded-0">
                                             </a>
                                             <div class="image-content position-absolute d-flex align-items-center">
@@ -2316,7 +2316,7 @@
                                                     <div class="badge badge-primary">Featured</div>
                                                 </div>
                                                 <div class="content-right ml-auto d-flex show-link">
-                                                    <a href="images/shop/full-shop-1.jpg" class="item viewing"
+                                                    <a href="{{asset('/shop/full-shop-1.jpg')}}" class="item viewing"
                                                        data-toggle="tooltip"
                                                        data-placement="top"
                                                        title="Quickview" data-gtf-mfp="true">
@@ -2355,7 +2355,7 @@
 
                                             <div class="media">
                                                 <a href="#" class="d-inline-block mr-3"><img
-                                                        src="images/listing/testimonial-1.png"
+                                                        src="{{asset('/listing/testimonial-1.png')}}"
                                                         alt="testimonial" class="rounded-circle">
                                                 </a>
                                                 <div class="media-body lh-14 font-size-sm">They specialize in makgeolli
@@ -2392,7 +2392,7 @@
                                     <div class="store card border-0 rounded-0">
                                         <div class="position-relative store-image">
                                             <a href="listing-details-full-gallery.html">
-                                                <img src="images/shop/shop-1.jpg" alt="store 1"
+                                                <img src="{{asset('/shop/shop-1.jpg')}}" alt="store 1"
                                                      class="card-img-top rounded-0">
                                             </a>
                                             <div class="image-content position-absolute d-flex align-items-center">
@@ -2400,7 +2400,7 @@
                                                     <div class="badge badge-primary">Featured</div>
                                                 </div>
                                                 <div class="content-right ml-auto d-flex w-lg show-link">
-                                                    <a href="images/shop/full-shop-1.jpg" class="item viewing"
+                                                    <a href="{{asset('/shop/full-shop-1.jpg')}}" class="item viewing"
                                                        data-toggle="tooltip"
                                                        data-placement="top"
                                                        title="Quickview" data-gtf-mfp="true">
@@ -2445,7 +2445,7 @@
                                             </ul>
                                             <div class="media">
                                                 <a href="#" class="d-inline-block mr-3"><img
-                                                        src="images/listing/testimonial-1.png"
+                                                        src="{{asset('/listing/testimonial-1.png')}}"
                                                         alt="testimonial" class="rounded-circle">
                                                 </a>
                                                 <div class="media-body lh-14 font-size-sm">Overlooking Bloomsbury's
@@ -2476,7 +2476,7 @@
                                     <div class="store card border-0 rounded-0">
                                         <div class="position-relative store-image">
                                             <a href="listing-details-full-gallery.html">
-                                                <img src="images/shop/shop-2.jpg" alt="store 2"
+                                                <img src="{{asset('/shop/shop-2.jpg')}}" alt="store 2"
                                                      class="card-img-top rounded-0">
                                             </a>
                                             <div class="image-content position-absolute d-flex align-items-center">
@@ -2484,7 +2484,7 @@
                                                     <div class="badge badge-primary">Best Rate</div>
                                                 </div>
                                                 <div class="content-right ml-auto d-flex show-link">
-                                                    <a href="images/shop/full-shop-2.jpg" data-gtf-mfp="true"
+                                                    <a href="{{asset('/shop/full-shop-2.jpg')}}" data-gtf-mfp="true"
                                                        class="item viewing" data-toggle="tooltip"
                                                        data-placement="top"
                                                        title="Quick view">
@@ -2526,7 +2526,7 @@
 
                                             <div class="media">
                                                 <a href="#" class="d-inline-block mr-3"><img
-                                                        src="images/listing/testimonial-2.png"
+                                                        src="{{asset('/listing/testimonial-2.png')}}"
                                                         alt="testimonial" class="rounded-circle">
                                                 </a>
                                                 <div class="media-body lh-14 font-size-sm">They specialize in makgeolli
@@ -2556,7 +2556,7 @@
                                     <div class="store card border-0 rounded-0">
                                         <div class="position-relative store-image">
                                             <a href="listing-details-full-gallery.html">
-                                                <img src="images/shop/shop-3.jpg" alt="store 1"
+                                                <img src="{{asset('/shop/shop-3.jpg')}}" alt="store 1"
                                                      class="card-img-top rounded-0">
                                             </a>
                                             <div class="image-content position-absolute d-flex align-items-center">
@@ -2564,7 +2564,7 @@
                                                     <div class="badge badge-primary">Most view</div>
                                                 </div>
                                                 <div class="content-right ml-auto d-flex show-link">
-                                                    <a href="images/shop/full-shop-3.jpg" class="item viewing"
+                                                    <a href="{{asset('/shop/full-shop-3.jpg')}}" class="item viewing"
                                                        data-toggle="tooltip"
                                                        data-placement="top"
                                                        title="Quick view" data-gtf-mfp="true">
@@ -2602,7 +2602,7 @@
                                             </ul>
                                             <div class="media">
                                                 <a href="#" class="d-inline-block mr-3"><img
-                                                        src="images/listing/testimonial-5.png"
+                                                        src="{{asset('/listing/testimonial-5.png')}}"
                                                         alt="testimonial" class="rounded-circle">
                                                 </a>
                                                 <div class="media-body lh-14 font-size-sm">After a yoga class changed
@@ -2634,7 +2634,7 @@
                                     <div class="store card border-0 rounded-0">
                                         <div class="position-relative store-image">
                                             <a href="listing-details-full-gallery.html">
-                                                <img src="images/shop/shop-4.jpg" alt="store 1"
+                                                <img src="{{asset('/shop/shop-4.jpg')}}" alt="store 1"
                                                      class="card-img-top rounded-0">
                                             </a>
                                             <div class="image-content position-absolute d-flex align-items-center">
@@ -2642,7 +2642,7 @@
                                                     <div class="badge badge-primary">Featured</div>
                                                 </div>
                                                 <div class="content-right ml-auto d-flex show-link">
-                                                    <a href="images/shop/full-shop-4.jpg" class="item viewing"
+                                                    <a href="{{asset('/shop/full-shop-4.jpg')}}" class="item viewing"
                                                        data-toggle="tooltip" data-gtf-mfp="true"
                                                        data-placement="top"
                                                        title="Quick view">
@@ -2679,7 +2679,7 @@
                                             </ul>
                                             <div class="media">
                                                 <a href="#" class="d-inline-block mr-3"><img
-                                                        src="images/listing/testimonial-3.png"
+                                                        src="{{asset('/listing/testimonial-3.png')}}"
                                                         alt="testimonial" class="rounded-circle">
                                                 </a>
                                                 <div class="media-body lh-14 font-size-sm">Established in 1895, these
@@ -2711,7 +2711,7 @@
                                     <div class="store card border-0 rounded-0">
                                         <div class="position-relative store-image">
                                             <a href="listing-details-full-gallery.html">
-                                                <img src="images/shop/shop-5.jpg" alt="store 1"
+                                                <img src="{{asset('/shop/shop-5.jpg')}}" alt="store 1"
                                                      class="card-img-top rounded-0">
                                             </a>
                                             <div class="image-content position-absolute d-flex align-items-center">
@@ -2719,7 +2719,7 @@
                                                     <div class="badge badge-primary">AD</div>
                                                 </div>
                                                 <div class="content-right ml-auto d-flex show-link">
-                                                    <a href="images/shop/full-shop-5.jpg" class="item viewing"
+                                                    <a href="{{asset('/shop/full-shop-5.jpg')}}" class="item viewing"
                                                        data-toggle="tooltip"
                                                        data-placement="top" data-gtf-mfp="true"
                                                        title="Quick view">
@@ -2761,7 +2761,7 @@
                                             </ul>
                                             <div class="media">
                                                 <a href="#" class="d-inline-block mr-3"><img
-                                                        src="images/listing/testimonial-2.png"
+                                                        src="{{asset('/listing/testimonial-2.png')}}"
                                                         alt="testimonial" class="rounded-circle">
                                                 </a>
                                                 <div class="media-body lh-14 font-size-sm">Most items can be packed
@@ -2793,7 +2793,7 @@
                                     <div class="store card border-0 rounded-0">
                                         <div class="position-relative store-image">
                                             <a href="listing-details-full-gallery.html">
-                                                <img src="images/shop/shop-1.jpg" alt="store 1"
+                                                <img src="{{asset('/shop/shop-1.jpg')}}" alt="store 1"
                                                      class="card-img-top rounded-0">
                                             </a>
                                             <div class="image-content position-absolute d-flex align-items-center">
@@ -2801,7 +2801,7 @@
                                                     <div class="badge badge-primary">Featured</div>
                                                 </div>
                                                 <div class="content-right ml-auto d-flex show-link">
-                                                    <a href="images/shop/full-shop-1.jpg" class="item viewing"
+                                                    <a href="{{asset('/shop/full-shop-1.jpg')}}" class="item viewing"
                                                        data-toggle="tooltip"
                                                        data-placement="top"
                                                        title="Quickview" data-gtf-mfp="true">
@@ -2840,7 +2840,7 @@
 
                                             <div class="media">
                                                 <a href="#" class="d-inline-block mr-3"><img
-                                                        src="images/listing/testimonial-1.png"
+                                                        src="{{asset('/listing/testimonial-1.png')}}"
                                                         alt="testimonial" class="rounded-circle">
                                                 </a>
                                                 <div class="media-body lh-14 font-size-sm">They specialize in makgeolli
@@ -2877,7 +2877,7 @@
                                     <div class="store card border-0 rounded-0">
                                         <div class="position-relative store-image">
                                             <a href="listing-details-full-gallery.html">
-                                                <img src="images/shop/shop-1.jpg" alt="store 1"
+                                                <img src="{{asset('/shop/shop-1.jpg')}}" alt="store 1"
                                                      class="card-img-top rounded-0">
                                             </a>
                                             <div class="image-content position-absolute d-flex align-items-center">
@@ -2885,7 +2885,7 @@
                                                     <div class="badge badge-primary">Featured</div>
                                                 </div>
                                                 <div class="content-right ml-auto d-flex w-lg show-link">
-                                                    <a href="images/shop/full-shop-1.jpg" class="item viewing"
+                                                    <a href="{{asset('/shop/full-shop-1.jpg')}}" class="item viewing"
                                                        data-toggle="tooltip"
                                                        data-placement="top"
                                                        title="Quickview" data-gtf-mfp="true">
@@ -2930,7 +2930,7 @@
                                             </ul>
                                             <div class="media">
                                                 <a href="#" class="d-inline-block mr-3"><img
-                                                        src="images/listing/testimonial-1.png"
+                                                        src="{{asset('/listing/testimonial-1.png')}}"
                                                         alt="testimonial" class="rounded-circle">
                                                 </a>
                                                 <div class="media-body lh-14 font-size-sm">Overlooking Bloomsbury's
@@ -2961,7 +2961,7 @@
                                     <div class="store card border-0 rounded-0">
                                         <div class="position-relative store-image">
                                             <a href="listing-details-full-gallery.html">
-                                                <img src="images/shop/shop-2.jpg" alt="store 2"
+                                                <img src="{{asset('/shop/shop-2.jpg')}}" alt="store 2"
                                                      class="card-img-top rounded-0">
                                             </a>
                                             <div class="image-content position-absolute d-flex align-items-center">
@@ -2969,7 +2969,7 @@
                                                     <div class="badge badge-primary">Best Rate</div>
                                                 </div>
                                                 <div class="content-right ml-auto d-flex show-link">
-                                                    <a href="images/shop/full-shop-2.jpg" data-gtf-mfp="true"
+                                                    <a href="{{asset('/shop/full-shop-2.jpg')}}" data-gtf-mfp="true"
                                                        class="item viewing" data-toggle="tooltip"
                                                        data-placement="top"
                                                        title="Quick view">
@@ -3011,7 +3011,7 @@
 
                                             <div class="media">
                                                 <a href="#" class="d-inline-block mr-3"><img
-                                                        src="images/listing/testimonial-2.png"
+                                                        src="{{asset('/listing/testimonial-2.png')}}"
                                                         alt="testimonial" class="rounded-circle">
                                                 </a>
                                                 <div class="media-body lh-14 font-size-sm">They specialize in makgeolli
@@ -3041,7 +3041,7 @@
                                     <div class="store card border-0 rounded-0">
                                         <div class="position-relative store-image">
                                             <a href="listing-details-full-gallery.html">
-                                                <img src="images/shop/shop-3.jpg" alt="store 1"
+                                                <img src="{{asset('/shop/shop-3.jpg')}}" alt="store 1"
                                                      class="card-img-top rounded-0">
                                             </a>
                                             <div class="image-content position-absolute d-flex align-items-center">
@@ -3049,7 +3049,7 @@
                                                     <div class="badge badge-primary">Most view</div>
                                                 </div>
                                                 <div class="content-right ml-auto d-flex show-link">
-                                                    <a href="images/shop/full-shop-3.jpg" class="item viewing"
+                                                    <a href="{{asset('/shop/full-shop-3.jpg')}}" class="item viewing"
                                                        data-toggle="tooltip"
                                                        data-placement="top"
                                                        title="Quick view" data-gtf-mfp="true">
@@ -3087,7 +3087,7 @@
                                             </ul>
                                             <div class="media">
                                                 <a href="#" class="d-inline-block mr-3"><img
-                                                        src="images/listing/testimonial-5.png"
+                                                        src="{{asset('/listing/testimonial-5.png')}}"
                                                         alt="testimonial" class="rounded-circle">
                                                 </a>
                                                 <div class="media-body lh-14 font-size-sm">After a yoga class changed
@@ -3119,7 +3119,7 @@
                                     <div class="store card border-0 rounded-0">
                                         <div class="position-relative store-image">
                                             <a href="listing-details-full-gallery.html">
-                                                <img src="images/shop/shop-4.jpg" alt="store 1"
+                                                <img src="{{asset('/shop/shop-4.jpg')}}" alt="store 1"
                                                      class="card-img-top rounded-0">
                                             </a>
                                             <div class="image-content position-absolute d-flex align-items-center">
@@ -3127,7 +3127,7 @@
                                                     <div class="badge badge-primary">Featured</div>
                                                 </div>
                                                 <div class="content-right ml-auto d-flex show-link">
-                                                    <a href="images/shop/full-shop-4.jpg" class="item viewing"
+                                                    <a href="{{asset('/shop/full-shop-4.jpg')}}" class="item viewing"
                                                        data-toggle="tooltip" data-gtf-mfp="true"
                                                        data-placement="top"
                                                        title="Quick view">
@@ -3164,7 +3164,7 @@
                                             </ul>
                                             <div class="media">
                                                 <a href="#" class="d-inline-block mr-3"><img
-                                                        src="images/listing/testimonial-3.png"
+                                                        src="{{asset('/listing/testimonial-3.png')}}"
                                                         alt="testimonial" class="rounded-circle">
                                                 </a>
                                                 <div class="media-body lh-14 font-size-sm">Established in 1895, these
@@ -3196,7 +3196,7 @@
                                     <div class="store card border-0 rounded-0">
                                         <div class="position-relative store-image">
                                             <a href="listing-details-full-gallery.html">
-                                                <img src="images/shop/shop-5.jpg" alt="store 1"
+                                                <img src="{{asset('/shop/shop-5.jpg')}}" alt="store 1"
                                                      class="card-img-top rounded-0">
                                             </a>
                                             <div class="image-content position-absolute d-flex align-items-center">
@@ -3204,7 +3204,7 @@
                                                     <div class="badge badge-primary">AD</div>
                                                 </div>
                                                 <div class="content-right ml-auto d-flex show-link">
-                                                    <a href="images/shop/full-shop-5.jpg" class="item viewing"
+                                                    <a href="{{asset('/shop/full-shop-5.jpg')}}" class="item viewing"
                                                        data-toggle="tooltip"
                                                        data-placement="top" data-gtf-mfp="true"
                                                        title="Quick view">
@@ -3246,7 +3246,7 @@
                                             </ul>
                                             <div class="media">
                                                 <a href="#" class="d-inline-block mr-3"><img
-                                                        src="images/listing/testimonial-2.png"
+                                                        src="{{asset('/listing/testimonial-2.png')}}"
                                                         alt="testimonial" class="rounded-circle">
                                                 </a>
                                                 <div class="media-body lh-14 font-size-sm">Most items can be packed
@@ -3278,7 +3278,7 @@
                                     <div class="store card border-0 rounded-0">
                                         <div class="position-relative store-image">
                                             <a href="listing-details-full-gallery.html">
-                                                <img src="images/shop/shop-1.jpg" alt="store 1"
+                                                <img src="{{asset('/shop/shop-1.jpg')}}" alt="store 1"
                                                      class="card-img-top rounded-0">
                                             </a>
                                             <div class="image-content position-absolute d-flex align-items-center">
@@ -3286,7 +3286,7 @@
                                                     <div class="badge badge-primary">Featured</div>
                                                 </div>
                                                 <div class="content-right ml-auto d-flex show-link">
-                                                    <a href="images/shop/full-shop-1.jpg" class="item viewing"
+                                                    <a href="{{asset('/shop/full-shop-1.jpg')}}" class="item viewing"
                                                        data-toggle="tooltip"
                                                        data-placement="top"
                                                        title="Quickview" data-gtf-mfp="true">
@@ -3325,7 +3325,7 @@
 
                                             <div class="media">
                                                 <a href="#" class="d-inline-block mr-3"><img
-                                                        src="images/listing/testimonial-1.png"
+                                                        src="{{asset('/listing/testimonial-1.png')}}"
                                                         alt="testimonial" class="rounded-circle">
                                                 </a>
                                                 <div class="media-body lh-14 font-size-sm">They specialize in makgeolli
@@ -3363,7 +3363,7 @@
                                     <div class="store card border-0 rounded-0">
                                         <div class="position-relative store-image">
                                             <a href="listing-details-full-gallery.html">
-                                                <img src="images/shop/shop-1.jpg" alt="store 1"
+                                                <img src="{{asset('/shop/shop-1.jpg')}}" alt="store 1"
                                                      class="card-img-top rounded-0">
                                             </a>
                                             <div class="image-content position-absolute d-flex align-items-center">
@@ -3371,7 +3371,7 @@
                                                     <div class="badge badge-primary">Featured</div>
                                                 </div>
                                                 <div class="content-right ml-auto d-flex w-lg show-link">
-                                                    <a href="images/shop/full-shop-1.jpg" class="item viewing"
+                                                    <a href="{{asset('/shop/full-shop-1.jpg')}}" class="item viewing"
                                                        data-toggle="tooltip"
                                                        data-placement="top"
                                                        title="Quickview" data-gtf-mfp="true">
@@ -3416,7 +3416,7 @@
                                             </ul>
                                             <div class="media">
                                                 <a href="#" class="d-inline-block mr-3"><img
-                                                        src="images/listing/testimonial-1.png"
+                                                        src="{{asset('/listing/testimonial-1.png')}}"
                                                         alt="testimonial" class="rounded-circle">
                                                 </a>
                                                 <div class="media-body lh-14 font-size-sm">Overlooking Bloomsbury's
@@ -3447,7 +3447,7 @@
                                     <div class="store card border-0 rounded-0">
                                         <div class="position-relative store-image">
                                             <a href="listing-details-full-gallery.html">
-                                                <img src="images/shop/shop-2.jpg" alt="store 2"
+                                                <img src="{{asset('/shop/shop-2.jpg')}}" alt="store 2"
                                                      class="card-img-top rounded-0">
                                             </a>
                                             <div class="image-content position-absolute d-flex align-items-center">
@@ -3455,7 +3455,7 @@
                                                     <div class="badge badge-primary">Best Rate</div>
                                                 </div>
                                                 <div class="content-right ml-auto d-flex show-link">
-                                                    <a href="images/shop/full-shop-2.jpg" data-gtf-mfp="true"
+                                                    <a href="{{asset('/shop/full-shop-2.jpg')}}" data-gtf-mfp="true"
                                                        class="item viewing" data-toggle="tooltip"
                                                        data-placement="top"
                                                        title="Quick view">
@@ -3497,7 +3497,7 @@
 
                                             <div class="media">
                                                 <a href="#" class="d-inline-block mr-3"><img
-                                                        src="images/listing/testimonial-2.png"
+                                                        src="{{asset('/listing/testimonial-2.png')}}"
                                                         alt="testimonial" class="rounded-circle">
                                                 </a>
                                                 <div class="media-body lh-14 font-size-sm">They specialize in makgeolli
@@ -3527,7 +3527,7 @@
                                     <div class="store card border-0 rounded-0">
                                         <div class="position-relative store-image">
                                             <a href="listing-details-full-gallery.html">
-                                                <img src="images/shop/shop-3.jpg" alt="store 1"
+                                                <img src="{{asset('/shop/shop-3.jpg')}}" alt="store 1"
                                                      class="card-img-top rounded-0">
                                             </a>
                                             <div class="image-content position-absolute d-flex align-items-center">
@@ -3535,7 +3535,7 @@
                                                     <div class="badge badge-primary">Most view</div>
                                                 </div>
                                                 <div class="content-right ml-auto d-flex show-link">
-                                                    <a href="images/shop/full-shop-3.jpg" class="item viewing"
+                                                    <a href="{{asset('/shop/full-shop-3.jpg')}}" class="item viewing"
                                                        data-toggle="tooltip"
                                                        data-placement="top"
                                                        title="Quick view" data-gtf-mfp="true">
@@ -3573,7 +3573,7 @@
                                             </ul>
                                             <div class="media">
                                                 <a href="#" class="d-inline-block mr-3"><img
-                                                        src="images/listing/testimonial-5.png"
+                                                        src="{{asset('/listing/testimonial-5.png')}}"
                                                         alt="testimonial" class="rounded-circle">
                                                 </a>
                                                 <div class="media-body lh-14 font-size-sm">After a yoga class changed
@@ -3605,7 +3605,7 @@
                                     <div class="store card border-0 rounded-0">
                                         <div class="position-relative store-image">
                                             <a href="listing-details-full-gallery.html">
-                                                <img src="images/shop/shop-4.jpg" alt="store 1"
+                                                <img src="{{asset('/shop/shop-4.jpg')}}" alt="store 1"
                                                      class="card-img-top rounded-0">
                                             </a>
                                             <div class="image-content position-absolute d-flex align-items-center">
@@ -3613,7 +3613,7 @@
                                                     <div class="badge badge-primary">Featured</div>
                                                 </div>
                                                 <div class="content-right ml-auto d-flex show-link">
-                                                    <a href="images/shop/full-shop-4.jpg" class="item viewing"
+                                                    <a href="{{asset('/shop/full-shop-4.jpg')}}" class="item viewing"
                                                        data-toggle="tooltip" data-gtf-mfp="true"
                                                        data-placement="top"
                                                        title="Quick view">
@@ -3650,7 +3650,7 @@
                                             </ul>
                                             <div class="media">
                                                 <a href="#" class="d-inline-block mr-3"><img
-                                                        src="images/listing/testimonial-3.png"
+                                                        src="{{asset('/listing/testimonial-3.png')}}"
                                                         alt="testimonial" class="rounded-circle">
                                                 </a>
                                                 <div class="media-body lh-14 font-size-sm">Established in 1895, these
@@ -3682,7 +3682,7 @@
                                     <div class="store card border-0 rounded-0">
                                         <div class="position-relative store-image">
                                             <a href="listing-details-full-gallery.html">
-                                                <img src="images/shop/shop-5.jpg" alt="store 1"
+                                                <img src="{{asset('/shop/shop-5.jpg')}}" alt="store 1"
                                                      class="card-img-top rounded-0">
                                             </a>
                                             <div class="image-content position-absolute d-flex align-items-center">
@@ -3690,7 +3690,7 @@
                                                     <div class="badge badge-primary">AD</div>
                                                 </div>
                                                 <div class="content-right ml-auto d-flex show-link">
-                                                    <a href="images/shop/full-shop-5.jpg" class="item viewing"
+                                                    <a href="{{asset('/shop/full-shop-5.jpg')}}" class="item viewing"
                                                        data-toggle="tooltip"
                                                        data-placement="top" data-gtf-mfp="true"
                                                        title="Quick view">
@@ -3732,7 +3732,7 @@
                                             </ul>
                                             <div class="media">
                                                 <a href="#" class="d-inline-block mr-3"><img
-                                                        src="images/listing/testimonial-2.png"
+                                                        src="{{asset('/listing/testimonial-2.png')}}"
                                                         alt="testimonial" class="rounded-circle">
                                                 </a>
                                                 <div class="media-body lh-14 font-size-sm">Most items can be packed
@@ -3764,7 +3764,7 @@
                                     <div class="store card border-0 rounded-0">
                                         <div class="position-relative store-image">
                                             <a href="listing-details-full-gallery.html">
-                                                <img src="images/shop/shop-1.jpg" alt="store 1"
+                                                <img src="{{asset('/shop/shop-1.jpg')}}" alt="store 1"
                                                      class="card-img-top rounded-0">
                                             </a>
                                             <div class="image-content position-absolute d-flex align-items-center">
@@ -3772,7 +3772,7 @@
                                                     <div class="badge badge-primary">Featured</div>
                                                 </div>
                                                 <div class="content-right ml-auto d-flex show-link">
-                                                    <a href="images/shop/full-shop-1.jpg" class="item viewing"
+                                                    <a href="{{asset('/shop/full-shop-1.jpg')}}" class="item viewing"
                                                        data-toggle="tooltip"
                                                        data-placement="top"
                                                        title="Quickview" data-gtf-mfp="true">
@@ -3811,7 +3811,7 @@
 
                                             <div class="media">
                                                 <a href="#" class="d-inline-block mr-3"><img
-                                                        src="images/listing/testimonial-1.png"
+                                                        src="{{asset('/listing/testimonial-1.png')}}"
                                                         alt="testimonial" class="rounded-circle">
                                                 </a>
                                                 <div class="media-body lh-14 font-size-sm">They specialize in makgeolli
@@ -3860,7 +3860,7 @@
                                     <div class="box">
                                         <div class="card testimonial h-100 border-0 bg-transparent">
                                             <a href="#" class="author-image">
-                                                <img src="images/listing/client-1.png" alt="Testimonial"
+                                                <img src="{{asset('/listing/client-1.png')}}" alt="Testimonial"
                                                      class="rounded-circle">
                                             </a>
                                             <div class="card-body bg-white">
@@ -3898,7 +3898,7 @@
                                     <div class="box">
                                         <div class="card testimonial h-100 border-0 bg-transparent">
                                             <a href="#" class="author-image">
-                                                <img src="images/listing/client-2.png" alt="Testimonial"
+                                                <img src="{{asset('/listing/client-2.png')}}" alt="Testimonial"
                                                      class="rounded-circle">
                                             </a>
                                             <div class="card-body bg-white">
@@ -3937,7 +3937,7 @@
                                     <div class="box">
                                         <div class="card testimonial h-100 border-0 bg-transparent">
                                             <a href="#" class="author-image">
-                                                <img src="images/listing/client-1.png" alt="Testimonial"
+                                                <img src="{{asset('/listing/client-1.png')}}" alt="Testimonial"
                                                      class="rounded-circle">
                                             </a>
                                             <div class="card-body bg-white">
@@ -3975,7 +3975,7 @@
                                     <div class="box">
                                         <div class="card testimonial h-100 border-0 bg-transparent">
                                             <a href="#" class="author-image">
-                                                <img src="images/listing/client-2.png" alt="Testimonial"
+                                                <img src="{{asset('/listing/client-2.png')}}" alt="Testimonial"
                                                      class="rounded-circle">
                                             </a>
                                             <div class="card-body bg-white">
@@ -4036,7 +4036,7 @@
                         <div class="col-md-4 mb-4" data-animate="zoomIn">
                             <div class="card border-0">
                                 <a href="blog-single-gallery.html" class="hover-scale">
-                                    <img src="images/blog/main-blog-2.jpg" alt="product 1" class="card-img-top image">
+                                    <img src="{{asset('/blog/main-blog-2.jpg')}}" alt="product 1" class="card-img-top image">
                                 </a>
                                 <div class="card-body px-0">
                                     <div class="mb-2"><a href="#" class="link-hover-dark-primary">Tips</a>, <a
@@ -4062,7 +4062,7 @@
                         <div class="col-md-4 mb-4" data-animate="zoomIn">
                             <div class="card border-0">
                                 <a href="blog-single-gallery.html" class="hover-scale">
-                                    <img src="images/blog/main-blog-3.jpg" alt="product 1" class="card-img-top image">
+                                    <img src="{{asset('/blog/main-blog-3.jpg')}}" alt="product 1" class="card-img-top image">
                                 </a>
                                 <div class="card-body px-0">
                                     <div class="mb-2"><a href="#" class="link-hover-dark-primary">Culture</a></div>
@@ -4084,7 +4084,7 @@
                         <div class="col-md-4 mb-4" data-animate="zoomIn">
                             <div class="card border-0">
                                 <a href="blog-single-gallery.html" class="hover-scale">
-                                    <img src="images/blog/main-blog-1.jpg" alt="product 1" class="card-img-top image">
+                                    <img src="{{asset('/blog/main-blog-1.jpg')}}" alt="product 1" class="card-img-top image">
                                 </a>
                                 <div class="card-body px-0">
                                     <div class="mb-2"><a href="#" class="link-hover-dark-primary">Location</a></div>
@@ -4119,7 +4119,7 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-sm-6 col-lg-4 mb-6 mb-lg-0">
-                            <div class="mb-8"><img src="images/logo.png" alt="Thedir"></div>
+                            <div class="mb-8"><img src="{{asset('/logo.png')}}" alt="healthandcareservices"></div>
                             <div class="mb-7">
                                 <div class="font-size-md font-weight-semibold text-dark mb-4">Global Headquaters</div>
                                 <p class="mb-0">
@@ -4638,17 +4638,17 @@
     </div>
     <!-- External JavaScripts -->
 
-    <script src="vendors/jquery.min.js"></script>
-    <script src="vendors/popper/popper.js"></script>
-    <script src="vendors/bootstrap/js/bootstrap.js"></script>
-    <script src="vendors/hc-sticky/hc-sticky.js"></script>
-    <script src="vendors/isotope/isotope.pkgd.js"></script>
-    <script src="vendors/magnific-popup/jquery.magnific-popup.js"></script>
-    <script src="vendors/slick/slick.js"></script>
-    <script src="vendors/waypoints/jquery.waypoints.js"></script>
+    <script src="{{asset('/vendors/jquery.min.js')}}"></script>
+    <script src="{{asset('/vendors/popper/popper.js')}}"></script>
+    <script src="{{asset('/vendors/bootstrap/js/bootstrap.js')}}"></script>
+    <script src="{{asset('/vendors/hc-sticky/hc-sticky.js')}}"></script>
+    <script src="{{asset('/vendors/isotope/isotope.pkgd.js')}}"></script>
+    <script src="{{asset('/vendors/magnific-popup/jquery.magnific-popup.js')}}"></script>
+    <script src="{{asset('/vendors/slick/slick.js')}}"></script>
+    <script src="{{asset('/vendors/waypoints/jquery.waypoints.js')}}"></script>
 
     <!-- Site Javascript -->
-    <script src="js/app.js"></script>
+    <script src="{{asset('js/app.js')}}"></script>
     <svg aria-hidden="true" style="position: absolute; width: 0; height: 0; overflow: hidden;" version="1.1"
          xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
         <defs>
