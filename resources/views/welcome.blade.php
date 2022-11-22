@@ -376,7 +376,7 @@
                             </ul>
                             <div class="header-customize justify-content-end align-items-center d-none d-xl-flex">
                                 <div class="header-customize-item">
-                                    <a href="#login-popup" class="link" data-gtf-mfp="true"
+                                    <a href="{{route('login')}}" class="link" data-gtf-mfp="true"
                                        data-mfp-options='{"type":"inline"}'>
                                         <svg class="icon icon-user-circle-o">
                                             <use xlink:href="#icon-user-circle-o"></use>
