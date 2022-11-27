@@ -34,7 +34,7 @@
                                 <span></span>
                             </div>
                             <a class="navbar-brand navbar-brand-mobile" href="{{route('home')}}">
-                                <img src="{{asset('images/logo.png')}}" alt="healthandcareservices">
+                                <img src="{{asset('images/logo.png')}}" width="50%" height="50%" alt="healthandcareservices">
                             </a>
                             <a class="mobile-button-search" href="#search-popup"
                                data-gtf-mfp="true"
@@ -43,7 +43,7 @@
                         </div>
                         <div class="collapse navbar-collapse" id="navbar-main-menu">
                             <a class="navbar-brand d-none d-xl-block mr-auto" href="{{route('home')}}">
-                                <img src="{{asset('images/logo.png')}}" alt="healthandcareservices">
+                                <img src="{{asset('images/logo.png')}}" width="50%" height="50%" alt="healthandcareservices">
                             </a>
 
                             <ul class="navbar-nav">
@@ -4119,7 +4119,7 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-sm-6 col-lg-4 mb-6 mb-lg-0">
-                            <div class="mb-8"><img src="{{asset('/images/logo.png')}}" alt="healthandcareservices"></div>
+                            <div class="mb-8"><img src="{{asset('/images/logo.png')}}" width="50%" height="50%" alt="healthandcareservices"></div>
                             <div class="mb-7">
                                 <div class="font-size-md font-weight-semibold text-dark mb-4">Global Headquaters</div>
                                 <p class="mb-0">

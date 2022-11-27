@@ -1,9 +1,10 @@
 <?php
 
 namespace App\Http\Controllers;
+use Illuminate\Support\Facades\Auth;
+
 
 use Illuminate\Http\Request;
-
 class HomeController extends Controller
 {
     /**
@@ -23,6 +24,12 @@ class HomeController extends Controller
      */
     public function index()
     {
-        return view('home');
+        // return ("hi"); 
+        $user = Auth::user();
+        if($user->hasRole("Admin"))
+        {
+            $title = "Admin Dashboard"; 
+            return view("dashboards/admin", compact("user", "title")); 
+        }
     }
 }

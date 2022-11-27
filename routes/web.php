@@ -3,9 +3,16 @@
 use Illuminate\Support\Facades\Route;
 
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\Auth\LoginController;
 use App\Http\Controllers\RoleController;
 use App\Http\Controllers\UserController;
 use App\Http\Controllers\ProductController;
+
+use App\Http\Controllers\VendorController;
+use App\Http\Controllers\PartnerController;
+use App\Http\Controllers\ServiceController;
+use App\Http\Controllers\CategoryController;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -17,19 +24,20 @@ use App\Http\Controllers\ProductController;
 |
 */
 Route::get('/', function () {
-    return view('welcome');
+    return redirect('home');
 });
-
-Route::get("pagesubmitlisting", function () {
-    return view("page-submit-listing"); 
-}); 
 
 Auth::routes();
   
-Route::get('/home', [HomeController::class, 'index'])->name('home');
-  
+ 
 Route::group(['middleware' => ['auth']], function() {
+    Route::get('/home', [HomeController::class, 'index'])->name('home');
+
     Route::resource('roles', RoleController::class);
     Route::resource('users', UserController::class);
     Route::resource('products', ProductController::class);
+
+    Route::resource('partners', PartnerController::class);
+    Route::resource('category', CategoryController::class);
+    Route::resource('partners', PartnerController::class);
 });
