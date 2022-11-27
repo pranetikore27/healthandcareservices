@@ -24,20 +24,27 @@ use App\Http\Controllers\CategoryController;
 |
 */
 Route::get('/', function () {
-    return redirect('home');
+    return view('welcome');
 });
 
 Auth::routes();
   
  
 Route::group(['middleware' => ['auth']], function() {
+
     Route::get('/home', [HomeController::class, 'index'])->name('home');
+    Route::get('/category', [CategoryController::class, 'index'])->name('category');
+    Route::get('/services', [ServiceController::class, 'index'])->name('services');
+    Route::get('/partners', [PartnerController::class, 'index'])->name('partners');
+    Route::get('/hivendors', [VendorController::class, 'index'])->name('hivendors');
+    Route::get('/logout', [LoginController::class, 'logout'])->name('logout');
+    
+    // Route::resource('roles', RoleController::class);
+    // Route::resource('users', UserController::class);
+    // Route::resource('products', ProductController::class);
+    // Route::resource('hello', ProductController::class);
 
-    Route::resource('roles', RoleController::class);
-    Route::resource('users', UserController::class);
-    Route::resource('products', ProductController::class);
-
-    Route::resource('partners', PartnerController::class);
-    Route::resource('category', CategoryController::class);
-    Route::resource('partners', PartnerController::class);
+    // Route::resource('partners', PartnerController::class);
+    // Route::resource('category', CategoryController::class);
+    // Route::resource('partners', PartnerController::class);
 });

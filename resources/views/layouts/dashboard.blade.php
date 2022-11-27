@@ -55,7 +55,7 @@
                                             class="fas fa-angle-down"></i></span></a>
                                     <ul class="sub-menu x-animated x-fadeInUp">
                                         <li class="nav-item">
-                                            <a class="nav-link" href="#">Vendors</a>
+                                            <a class="nav-link" href="{{route('hivendors')}}">Vendors</a>
                                         </li>
                                         <li class="nav-item">
                                             <a class="nav-link" href="{{route('category')}}">Category

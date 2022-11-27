@@ -4,6 +4,8 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use DB; 
+use Illuminate\Support\Facades\Auth;
+
 class VendorController extends Controller
 {
     /**
@@ -14,9 +16,10 @@ class VendorController extends Controller
     public function index()
     {
         $vendors = DB::table('users')->get();
+        $user = Auth::user(); 
         $title = "Vendor Listing"; 
         // return $user; 
-        return view("vendors/index", compact("vendors", "title")); 
+        return view("vendors/index", compact("vendors", "title", "user")); 
     }
 
     /**
