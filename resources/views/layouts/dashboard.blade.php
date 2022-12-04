@@ -36,7 +36,7 @@
                                  data-target="#navbar-main-menu">
                                 <span></span>
                             </div>
-                            <a class="navbar-brand navbar-brand-mobile" href="index.html">
+                            <a class="navbar-brand navbar-brand-mobile" href="{{route('home')}}">
                                 <img src="{{asset('images/logo.png')}}" alt="TheDir" width="50%" height="50%">
                             </a>
                             <a class="mobile-button-search" href="#search-popup"
@@ -45,8 +45,8 @@
                                     class="far fa-search"></i></a>
                         </div>
                         <div class="collapse navbar-collapse" id="navbar-main-menu">
-                            <a class="navbar-brand d-none d-xl-block mr-auto" href="index.html">
-                                <img src="{{asset('images/logo.png')}}" alt="TheDir">
+                            <a class="navbar-brand d-none d-xl-block mr-auto" href="{{route('home')}}">
+                                <img src="{{asset('images/logo.png')}}" alt="TheDir" height="75%" width="75%">
                             </a>
 
                             <ul class="navbar-nav">
@@ -78,7 +78,7 @@
                                 <div class="header-customize-item">
                                     <a href="#" class="link" data-gtf-mfp="true"
                                        data-mfp-options='{"type":"inline"}'>
-                                        {{$user->name}}</a>
+                                       Logged in as {{$user->name}}</a>
                                 </div>
                                 
                             </div>
@@ -234,7 +234,7 @@
                             </div>
                             <div class="col-lg-5 mb-3 mb-lg-0">
                                 <div>
-                                    &copy; 2020 <a href="index.html"
+                                    &copy; 2020 <a href="{{route('home')}}"
                                                    class="link-hover-dark-primary font-weight-semibold">The Dir.</a> All
                                     Rights Resevered. Design
                                     by <a href="http://g5plus.net/"

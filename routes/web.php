@@ -12,6 +12,7 @@ use App\Http\Controllers\VendorController;
 use App\Http\Controllers\PartnerController;
 use App\Http\Controllers\ServiceController;
 use App\Http\Controllers\CategoryController;
+use App\Http\Controllers\GuestController;
 
 /*
 |--------------------------------------------------------------------------
@@ -23,9 +24,10 @@ use App\Http\Controllers\CategoryController;
 | contains the "web" middleware group. Now create something great!
 |
 */
-Route::get('/', function () {
-    return view('welcome');
-});
+// Route::get('/', function () {
+//     return view('welcome');
+// });
+Route::get('/', [GuestController::class, 'index'])->name('/');
 
 Auth::routes();
   

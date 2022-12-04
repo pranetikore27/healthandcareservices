@@ -29,7 +29,8 @@ class HomeController extends Controller
         if($user->hasRole("Admin"))
         {
             $title = "Admin Dashboard"; 
-            return view("dashboards/admin", compact("user", "title")); 
+            $pagename = "You are viewing Admin Dashboard"; 
+            return view("dashboards/admin", compact("user", "title", "pagename")); 
         }
     }
 }

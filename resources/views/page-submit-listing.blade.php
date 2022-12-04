@@ -38,8 +38,8 @@
 							     data-target="#navbar-main-menu">
 								<span></span>
 							</div>
-							<a class="navbar-brand navbar-brand-mobile" href="index.html">
-								<img src="images/logo.png" alt="TheDir">
+							<a class="navbar-brand navbar-brand-mobile" href="{{route('home')}}">
+						Health and Care Services		<!-- <img src="images/logo.png" alt="TheDir"> -->
 							</a>
 							<a class="mobile-button-search" href="#search-popup"
 							   data-gtf-mfp="true"
@@ -47,7 +47,7 @@
 									class="far fa-search"></i></a>
 						</div>
 						<div class="collapse navbar-collapse" id="navbar-main-menu">
-							<a class="navbar-brand d-none d-xl-block mr-auto" href="index.html">
+							<a class="navbar-brand d-none d-xl-block mr-auto" href="{{route('home')}}">
 								<img src="images/logo.png" alt="TheDir">
 							</a>
 							<ul class="navbar-nav">
@@ -55,7 +55,7 @@
 									<a class="nav-link" href="#">Demos <span class="caret"><i
 											class="fas fa-angle-down"></i></span></a>
 									<ul class="sub-menu x-animated x-fadeInUp">
-										<li class="nav-item"><a class="nav-link" href="index.html">main</a>
+										<li class="nav-item"><a class="nav-link" href="{{route('home')}}">main</a>
 										</li>
 										<li class="nav-item"><a class="nav-link" href="demo/automotive-service/home-automotive-services.html">
 											automotive service</a></li>
@@ -869,7 +869,7 @@
 							</div>
 							<div class="col-lg-5 mb-3 mb-lg-0">
 								<div >
-									&copy; 2020 <a href="index.html" class="link-hover-dark-primary font-weight-semibold">The Dir.</a> All Rights Resevered. Design
+									&copy; 2020 <a href="{{route('home')}}" class="link-hover-dark-primary font-weight-semibold">The Dir.</a> All Rights Resevered. Design
 									by <a href="http://g5plus.net/" class="link-hover-dark-primary font-weight-semibold">G5Theme</a>
 								</div>
 							</div>

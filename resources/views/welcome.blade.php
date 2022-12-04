@@ -4,12 +4,13 @@
     <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Home main | Health and Care Services</title>
+    <title>Health and Care Services</title>
 
 
     <!-- Vendors Stylesheets -->
     <link href="https://fonts.googleapis.com/css?family=Work+Sans:200,300,400,500,600,700,800,900&display=swap"
           rel="stylesheet">
+          
     <link rel="stylesheet" href="{{asset('vendors/font-awesome/css/fontawesome.css')}}">
     <link rel="stylesheet" href="{{asset('vendors/magnific-popup/magnific-popup.css')}}">
     <link rel="stylesheet" href="{{asset('vendors/slick/slick.css')}}">
@@ -34,7 +35,7 @@
                                 <span></span>
                             </div>
                             <a class="navbar-brand navbar-brand-mobile" href="{{route('home')}}">
-                                <img src="{{asset('images/logo.png')}}" alt="healthandcareservices">
+                            <img src="{{asset('images/logo.png')}}" alt="Health and Care Services">
                             </a>
                             <a class="mobile-button-search" href="#search-popup"
                                data-gtf-mfp="true"
@@ -43,325 +44,12 @@
                         </div>
                         <div class="collapse navbar-collapse" id="navbar-main-menu">
                             <a class="navbar-brand d-none d-xl-block mr-auto" href="{{route('home')}}">
-                                <img src="{{asset('images/logo.png')}}" alt="healthandcareservices">
+                             <img src="{{asset('images/logo.png')}}" alt="healthandcareservices"> 
                             </a>
 
                             <ul class="navbar-nav">
                                 <li class="nav-item">
-                                    <a class="nav-link" href="#">Demos <span class="caret"><i
-                                            class="fas fa-angle-down"></i></span></a>
-                                    <ul class="sub-menu x-animated x-fadeInUp">
-                                        <li class="nav-item"><a class="nav-link" href="{{route('home')}}">main</a>
-                                        </li>
-                                        <li class="nav-item"><a class="nav-link"
-                                                                href="demo/automotive-service/home-automotive-services.html">
-                                            automotive service</a></li>
-                                        <li class="nav-item"><a class="nav-link"
-                                                                href="demo/food-and-restaurant/home-food-and-restaurant.html">
-                                            food and restaurant</a></li>
-                                        <li class="nav-item"><a class="nav-link"
-                                                                href="demo/health-and-medical/home-health-and-medical.html">
-                                            health and medical</a></li>
-                                        <li class="nav-item"><a class="nav-link" href="demo/hotel/home-hotels.html">hotel</a>
-                                        </li>
-                                        <li class="nav-item"><a class="nav-link" href="demo/job/home-jobs.html">jobs</a>
-                                        </li>
-                                        <li class="nav-item"><a class="nav-link"
-                                                                href="demo/service-finder/home-services-finder.html">
-                                            service finder</a></li>
-                                        <li class="nav-item"><a class="nav-link"
-                                                                href="demo/shopping/home-shopping.html">
-                                            shopping</a></li>
-                                    </ul>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#">Element<span class="caret"><i
-                                            class="fas fa-angle-down"></i></span></a>
-                                    <div class="sub-menu x-menu-mega x-animated x-fadeInUp width-800">
-                                        <div class="container">
-                                            <div class="row w-100">
-                                                <div class="col-lg-4">
-                                                    <h5>Group 01</h5>
-                                                    <ul class="mega-menu-col">
-                                                        <li class="nav-item"><a class="nav-link"
-                                                                                href="elements/button.html">Buttons</a>
-                                                        </li>
-                                                        <li class="nav-item"><a class="nav-link"
-                                                                                href="elements/social-icons.html">Socical
-                                                            icon</a></li>
-                                                        <li class="nav-item"><a class="nav-link"
-                                                                                href="elements/client-logo.html">Client
-                                                            logo</a></li>
-                                                        <li class="nav-item"><a class="nav-link"
-                                                                                href="elements/counter.html">Counter</a>
-                                                        </li>
-                                                        <li class="nav-item"><a class="nav-link"
-                                                                                href="elements/cta.html">CTA</a>
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                                <div class="col-lg-4">
-                                                    <h5>Group 02</h5>
-                                                    <ul class="mega-menu-col">
-                                                        <li class="nav-item"><a class="nav-link"
-                                                                                href="elements/heading.html">Heading</a>
-                                                        </li>
-                                                        <li class="nav-item"><a class="nav-link"
-                                                                                href="elements/icon-box.html">Icon
-                                                            box</a></li>
-                                                        <li class="nav-item"><a class="nav-link"
-                                                                                href="elements/image-box.html">Image
-                                                            box</a></li>
-                                                        <li class="nav-item"><a class="nav-link"
-                                                                                href="elements/listing.html">Listing</a>
-                                                        </li>
-                                                        <li class="nav-item"><a class="nav-link"
-                                                                                href="elements/post.html">Post</a>
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                                <div class="col-lg-4">
-                                                    <h5>Group 03</h5>
-                                                    <ul class="mega-menu-col">
-                                                        <li class="nav-item"><a class="nav-link"
-                                                                                href="elements/store.html">Store</a>
-                                                        </li>
-                                                        <li class="nav-item"><a class="nav-link"
-                                                                                href="elements/tab.html">Tab</a>
-                                                        </li>
-                                                        <li class="nav-item"><a class="nav-link"
-                                                                                href="elements/table-listing.html">Table
-                                                            listing</a></li>
-                                                        <li class="nav-item"><a class="nav-link"
-                                                                                href="elements/testimonial.html">Testimonial</a>
-                                                        </li>
-                                                        <li class="nav-item"><a class="nav-link"
-                                                                                href="elements/widget.html">Widget</a>
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#">Pages
-                                        <span class="caret"><i
-                                                class="fas fa-angle-down"></i></span>
-                                    </a>
-                                    <ul class="sub-menu x-animated x-fadeInUp">
-                                        <li class="nav-item">
-                                            <a class="nav-link" href="#">Shop <span class="caret"><i
-                                                    class="fas fa-angle-down"></i></span></a>
-                                            <ul class="sub-menu x-animated x-fadeInUp">
-                                                <li class="nav-item"><a class="nav-link" href="shop-listing.html">Shop
-                                                    listing</a></li>
-                                                <li class="nav-item"><a class="nav-link" href="shop-checkout.html">Shop
-                                                    checkout</a></li>
-                                                <li class="nav-item"><a class="nav-link" href="shop-my-account.html">Shop
-                                                    my account</a></li>
-                                                <li class="nav-item"><a class="nav-link" href="shop-shopping-cart.html">Shop
-                                                    shopping cart</a></li>
-                                                <li class="nav-item"><a class="nav-link"
-                                                                        href="shop-single-product.html">Shop single
-                                                    product</a></li>
-                                            </ul>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a class="nav-link" href="#">Panel <span class="caret"><i
-                                                    class="fas fa-angle-down"></i></span></a>
-                                            <ul class="sub-menu x-animated x-fadeInUp">
-                                                <li class="nav-item"><a class="nav-link"
-                                                                        href="panel-dashboard.html">
-                                                    dashboard</a></li>
-                                                <li class="nav-item"><a class="nav-link"
-                                                                        href="panel-ad-campaigns-active.html">
-                                                    ad campaigns active</a></li>
-                                                <li class="nav-item"><a class="nav-link"
-                                                                        href="panel-ad-campaigns-start-new.html">
-                                                    ad campaign start new</a></li>
-                                                <li class="nav-item"><a class="nav-link"
-                                                                        href="panel-invoice-details.html">
-                                                    invoice details</a></li>
-                                                <li class="nav-item"><a class="nav-link"
-                                                                        href="panel-invoice-listing.html">
-                                                    invoice listing</a></li>
-                                                <li class="nav-item"><a class="nav-link"
-                                                                        href="panel-my-favourite.html"> my
-                                                    favourite</a></li>
-                                                <li class="nav-item"><a class="nav-link"
-                                                                        href="panel-my-listing.html"> my
-                                                    listing</a></li>
-                                                <li class="nav-item"><a class="nav-link"
-                                                                        href="panel-my-profile.html"> my
-                                                    profile</a></li>
-                                                <li class="nav-item"><a class="nav-link"
-                                                                        href="panel-package.html">
-                                                    package</a></li>
-                                                <li class="nav-item"><a class="nav-link"
-                                                                        href="panel-review-received.html">
-                                                    review received</a></li>
-                                                <li class="nav-item"><a class="nav-link"
-                                                                        href="panel-review-submitted.html">
-                                                    review submitted</a></li>
-                                            </ul>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a class="nav-link" href="#">Other pages <span class="caret"><i
-                                                    class="fas fa-angle-down"></i></span></a>
-                                            <div class="sub-menu x-menu-mega x-animated x-fadeInUp">
-                                                <div class="container">
-                                                    <div class="row w-100">
-                                                        <div class="col-lg-6">
-                                                            <ul class="mega-menu-col">
-                                                                <li class="nav-item"><a class="nav-link"
-                                                                                        href="page-404.html">
-                                                                    404</a></li>
-                                                                <li class="nav-item"><a class="nav-link"
-                                                                                        href="page-about.html">
-                                                                    about</a></li>
-                                                                <li class="nav-item"><a class="nav-link"
-                                                                                        href="page-coming-soon.html">
-                                                                    comming soon</a></li>
-                                                                <li class="nav-item"><a class="nav-link"
-                                                                                        href="page-contact.html">
-                                                                    contact</a></li>
-                                                                <li class="nav-item"><a class="nav-link"
-                                                                                        href="page-faqs.html">
-                                                                    faqs</a></li>
-                                                                <li class="nav-item"><a class="nav-link"
-                                                                                        href="page-how-it-work.html">
-                                                                    how it work</a></li>
-                                                                <li class="nav-item"><a class="nav-link"
-                                                                                        href="page-pricing-plan.html">
-                                                                    pricing plan</a></li>
-                                                            </ul>
-                                                        </div>
-                                                        <div class="col-lg-6">
-                                                            <ul class="mega-menu-col">
-                                                                <li class="nav-item"><a class="nav-link"
-                                                                                        href="page-privacy-policy.html">
-                                                                    privacy
-                                                                    policy</a></li>
-                                                                <li class="nav-item"><a class="nav-link"
-                                                                                        href="page-submit-listing.html">submit
-                                                                    listing</a></li>
-                                                                <li class="nav-item"><a class="nav-link"
-                                                                                        href="page-terms-and-condition.html">Term
-                                                                    and condition</a></li>
-                                                                <li class="nav-item"><a class="nav-link"
-                                                                                        href="page-typography.html">
-                                                                    typography</a></li>
-                                                                <li class="nav-item"><a class="nav-link"
-                                                                                        href="page-common-elements.html">
-                                                                    Common elements</a></li>
-                                                                <li class="nav-item"><a class="nav-link"
-                                                                                        href="page-under-construction.html">
-                                                                    under
-                                                                    construction</a></li>
-                                                            </ul>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </li>
-
-                                    </ul>
-                                </li>
-                                <li class="nav-item">
                                     <a class="nav-link" href="#">Explore<span class="caret"><i
-                                            class="fas fa-angle-down"></i></span></a>
-                                    <ul class="sub-menu x-animated x-fadeInUp">
-                                        <li class="nav-item">
-                                            <a class="nav-link" href="#"> layout
-                                                <span class="caret"><i class="fas fa-angle-down"></i></span>
-                                            </a>
-                                            <ul class="sub-menu x-animated x-fadeInUp">
-                                                <li class="nav-item"><a class="nav-link"
-                                                                        href="explore-full-map-grid.html"> full
-                                                    map grid</a></li>
-                                                <li class="nav-item"><a class="nav-link"
-                                                                        href="explore-full-map-list.html"> full
-                                                    map list</a></li>
-                                                <li class="nav-item"><a class="nav-link"
-                                                                        href="explore-half-map-grid.html"> half
-                                                    map grid</a></li>
-                                                <li class="nav-item"><a class="nav-link"
-                                                                        href="explore-half-map-list.html"> half
-                                                    map list</a></li>
-                                                <li class="nav-item"><a class="nav-link"
-                                                                        href="explore-sidebar-grid.html"> sidebar
-                                                    grid</a></li>
-                                                <li class="nav-item"><a class="nav-link"
-                                                                        href="explore-sidebar-list.html"> sidebar
-                                                    list</a></li>
-                                            </ul>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a class="nav-link" href="#">Listing details
-                                                <span class="caret"><i class="fas fa-angle-down"></i></span>
-                                            </a>
-                                            <ul class="sub-menu x-animated x-fadeInUp">
-                                                <li class="nav-item"><a class="nav-link"
-                                                                        href="listing-details-full-gallery.html">
-                                                    full gallery</a></li>
-                                                <li class="nav-item"><a class="nav-link"
-                                                                        href="listing-details-full-image.html">
-                                                    full image</a></li>
-                                                <li class="nav-item"><a class="nav-link"
-                                                                        href="listing-details-full-map.html">
-                                                    full map</a></li>
-                                                <li class="nav-item"><a class="nav-link"
-                                                                        href="listing-details-gallery.html">gallery</a>
-                                                </li>
-                                                <li class="nav-item"><a class="nav-link"
-                                                                        href="listing-details-image.html"> image</a>
-                                                </li>
-                                                <li class="nav-item"><a class="nav-link"
-                                                                        href="listing-details-no-image.html"> no
-                                                    image</a></li>
-                                            </ul>
-                                        </li>
-                                    </ul>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#">Blog <span class="caret"><i
-                                            class="fas fa-angle-down"></i></span></a>
-                                    <ul class="sub-menu x-animated x-fadeInUp">
-                                        <li class="nav-item">
-                                            <a class="nav-link" href="#">Blog layout<span class="caret"><i
-                                                    class="fas fa-angle-down"></i></span></a>
-                                            <ul class="sub-menu x-animated x-fadeInUp">
-                                                <li class="nav-item"><a class="nav-link" href="blog-listing-grid.html">
-                                                    grid</a></li>
-                                                <li class="nav-item"><a class="nav-link"
-                                                                        href="blog-listing-large-image.html">
-                                                    large image</a></li>
-                                                <li class="nav-item"><a class="nav-link"
-                                                                        href="blog-listing-with-sidebar.html">
-                                                    with sidebar</a></li>
-                                            </ul>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a class="nav-link" href="#">Post
-                                                <span class="caret"><i class="fas fa-angle-down"></i></span>
-                                            </a>
-                                            <ul class="sub-menu x-animated x-fadeInUp">
-                                                <li class="nav-item"><a class="nav-link" href="blog-single-audio.html">
-                                                    audio</a></li>
-                                                <li class="nav-item"><a class="nav-link"
-                                                                        href="blog-single-gallery.html">
-                                                    gallery</a></li>
-                                                <li class="nav-item"><a class="nav-link" href="blog-single-image.html">
-                                                    image</a></li>
-                                                <li class="nav-item"><a class="nav-link" href="blog-single-video.html">video</a>
-                                                </li>
-                                            </ul>
-                                        </li>
-                                    </ul>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#">Docs <span class="caret"><i
                                             class="fas fa-angle-down"></i></span></a>
                                     <ul class="sub-menu x-animated x-fadeInUp">
                                         <li class="nav-item">
@@ -4256,7 +3944,7 @@
                             </div>
                             <div class="col-lg-5 mb-3 mb-lg-0">
                                 <div>
-                                    &copy; 2020 <a href="index.html"
+                                    &copy; 2020 <a href="{{route('home')}}"
                                                    class="link-hover-dark-primary font-weight-semibold">The Dir.</a> All
                                     Rights Resevered. Design
                                     by <a href="http://g5plus.net/"
@@ -4636,19 +4324,24 @@
             </a>
         </div>
     </div>
+    @section('scripts')
     <!-- External JavaScripts -->
+    <script src="{{asset('vendors/jquery.min.js')}}"></script>
+    <script src="{{asset('vendors/popper/popper.js')}}"></script>
+    <script src="{{asset('vendors/hc-sticky/hc-sticky.js')}}"></script>
+    <script src="{{asset('vendors/isotope/isotope.pkgd.js')}}"></script>
 
-    <script src="{{asset('/vendors/jquery.min.js')}}"></script>
-    <script src="{{asset('/vendors/popper/popper.js')}}"></script>
-    <script src="{{asset('/vendors/bootstrap/js/bootstrap.js')}}"></script>
-    <script src="{{asset('/vendors/hc-sticky/hc-sticky.js')}}"></script>
-    <script src="{{asset('/vendors/isotope/isotope.pkgd.js')}}"></script>
-    <script src="{{asset('/vendors/magnific-popup/jquery.magnific-popup.js')}}"></script>
-    <script src="{{asset('/vendors/slick/slick.js')}}"></script>
-    <script src="{{asset('/vendors/waypoints/jquery.waypoints.js')}}"></script>
+    <script type="text/javascript" src="{{ URL::asset('/vendors/magnific-popup/jquery.magnific-popup.js') }}">
+    <script type="text/javascript" src="{{ URL::asset('/vendors/slick/slick.js') }}">
+    <script type="text/javascript" src="{{ URL::asset('/vendors/waypoints/jquery.waypoints.js') }}">
+     
+    <script type="text/javascript" src="{{ URL::asset('/vendors/js/app.js') }}">
+    <script type="text/javascript" src="{{ URL::asset('/js/bootstrap.js') }}">
+    <script type="text/javascript" src="{{ URL::asset('/js/bootstrap.min.js') }}">
+    @endsection
+
 
     <!-- Site Javascript -->
-    <script src="{{asset('js/app.js')}}"></script>
     <svg aria-hidden="true" style="position: absolute; width: 0; height: 0; overflow: hidden;" version="1.1"
          xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
         <defs>

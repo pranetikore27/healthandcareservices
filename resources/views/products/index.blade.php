@@ -58,5 +58,5 @@
     {!! $products->links() !!}
 
 
-<p class="text-center text-primary"><small>Tutorial by ItSolutionStuff.com</small></p>
+<p class="text-center text-primary"><small>Health and Care Services</small></p>
 @endsection
