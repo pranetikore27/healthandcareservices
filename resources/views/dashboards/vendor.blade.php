@@ -3,22 +3,18 @@
                     <div class="container-fluid">
                         <div class="page-content-wrapper d-flex flex-column justify-content-center">
                             <div class="features card-deck">
-                                    <div class="card rounded-0 border-0 bg-transparent mb-6">
-                                        <div class="card-body d-flex align-items-center py-6 px-8 bg-white">
-                                            
-                                            <span class="font-size-h1 font-weight-semibold d-inline-block mr-2 text-primary lh-1">{{$VendorsCount}}</span>
-                                            <a href="{{route('hivendors')}}">
-
-                                            <span class="font-size-md font-weight-semibold text-uppercase text-dark lh-13">Vendors <br> 
-</a>
-                                            <!-- Listings -->
-                                        </span>
-                                        </div>
-                                    </div>
                                 <div class="card rounded-0 border-0 bg-transparent mb-6">
                                     <div class="card-body d-flex align-items-center py-6 px-8 bg-white">
-                                        <span class="font-size-h1 font-weight-semibold d-inline-block mr-2 text-darker-light lh-1">{{$Verifications}}</span>
-                                        <span class="font-size-md font-weight-semibold text-uppercase text-dark lh-13">Pending Vendor<br> Verifications</span>
+                                        <span class="font-size-h1 font-weight-semibold d-inline-block mr-2 text-primary lh-1">{{$ServicesCount}}</span>
+                                        <span class="font-size-md font-weight-semibold text-uppercase text-dark lh-13">Services I provide <br> 
+                                        <!-- Listings -->
+                                    </span>
+                                    </div>
+                                </div>
+                                <div class="card rounded-0 border-0 bg-transparent mb-6">
+                                    <div class="card-body d-flex align-items-center py-6 px-8 bg-white">
+                                        <span class="font-size-h1 font-weight-semibold d-inline-block mr-2 text-darker-light lh-1">{{$pendingservicerequest}}</span>
+                                        <span class="font-size-md font-weight-semibold text-uppercase text-dark lh-13">Pending Service<br> Requests</span>
                                     </div>
                                 </div>
                                 <div class="card rounded-0 border-0 bg-transparent mb-6">

@@ -5,7 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use DB; 
 use Illuminate\Support\Facades\Auth;
-
+use App\Models\Vendors; 
 class VendorController extends Controller
 {
     /**
@@ -15,10 +15,20 @@ class VendorController extends Controller
      */
     public function index()
     {
-        $vendors = DB::table('users')->get();
-        $user = Auth::user(); 
+        // $vendors = DB::table('vendors')->get();
+        // $user = Auth::user(); 
+
+        $vendors = DB::table("users")
+                    ->join("vendors", "users.id", "vendors.Vendor_userid")
+                    ->join("payments", "users.id", "payments.Payment_userid")
+                    ->get(); 
+        return $vendors; 
+
         $title = "Vendor Listing"; 
-        // return $user; 
+        // return $vendors; 
+
+        $user = Auth::user(); 
+        
         return view("vendors/index", compact("vendors", "title", "user")); 
     }
 
@@ -29,7 +39,8 @@ class VendorController extends Controller
      */
     public function create()
     {
-        //
+        $user = Auth::user(); 
+        return view("vendors/create", compact("user")); 
     }
 
     /**
@@ -40,7 +51,25 @@ class VendorController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $validated = $request->validate([
+            'Vendor_businessname' => 'required',
+            'Vendor_businessaddress' => 'required',
+        ]);
+
+        $user = Auth::user(); 
+        
+        $inputs = $request->all();
+        $inputs["Vendor_userid"] = $user->id; 
+        // $inputs["Vendor_isverified"] = 0; 
+        // $inputs["Vendor_isactive"] = 0; 
+        
+        // $inputs = (object)$inputs;
+
+        // return $inputs; 
+        $vendors = Vendors::create($inputs); 
+        $user->assignRole("Vendor"); 
+        return redirect("home");  
+
     }
 
     /**
@@ -51,7 +80,7 @@ class VendorController extends Controller
      */
     public function show($id)
     {
-        //
+        return "vendor show"; 
     }
 
     /**

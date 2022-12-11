@@ -10,6 +10,23 @@
                 <div class="card-body">
                     <form method="POST" action="{{ route('register') }}">
                         @csrf
+                        <!-- <div class="form-group row">
+                            <label for="name" class="col-md-4 col-form-label text-md-right">{{ __('Name') }}</label>
+                                <div class="col-md-6">
+                                    <div class="form-row align-items-center form-time">
+                                        <div class="col item form-group day">
+                                            <select class="form-control">
+                                                <option>Monday</option>
+                                                <option>Tuesday</option>
+                                                <option>Wednesday</option>
+                                                <option>Thursday</option>
+                                                <option>Friday</option>
+                                                <option>Saturday</option>
+                                                <option>Sunday</option>
+                                            </select>
+                                        </div>
+                                    </div>
+</div></div> -->
 
                         <div class="form-group row">
                             <label for="name" class="col-md-4 col-form-label text-md-right">{{ __('Name') }}</label>

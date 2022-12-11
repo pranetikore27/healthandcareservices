@@ -4,11 +4,13 @@
     <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>{{$title}}</title>
+    <title>Dashboard | TheDir</title>
 
 
     <!-- Vendors Stylesheets -->
     <link href="https://fonts.googleapis.com/css?family=Work+Sans:200,300,400,500,600,700,800,900&display=swap"
+          rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i&display=swap"
           rel="stylesheet">
 
     <link rel="stylesheet" href="vendors/font-awesome/css/fontawesome.css">
@@ -24,20 +26,20 @@
 </head>
 <body>
     <!-- #site-wrapper start -->
-    <div id="site-wrapper" class="site-wrapper explore-sidebar explore-sidebar-grid">
+    <div id="site-wrapper" class="site-wrapper panel dashboards">
         <!-- #header start -->
         <header id="header"
-                class="main-header header-sticky header-sticky-smart header-style-01 header-float bg-white text-uppercase">
-            <div class="header-wrapper sticky-area">
-                <div class="container container-1720">
+                class="main-header header-sticky header-sticky-smart header-style-10 text-uppercase bg-white">
+            <div class="header-wrapper sticky-area border-bottom">
+                <div class="container-fluid">
                     <nav class="navbar navbar-expand-xl">
                         <div class="header-mobile d-flex d-xl-none flex-fill justify-content-between align-items-center">
                             <div class="navbar-toggler toggle-icon" data-toggle="collapse"
                                  data-target="#navbar-main-menu">
                                 <span></span>
                             </div>
-                            <a class="navbar-brand navbar-brand-mobile" href="{{route('home')}}">
-                                <img src="{{asset('images/logo.png')}}" alt="TheDir" width="50%" height="50%">
+                            <a class="navbar-brand navbar-brand-mobile" href="index.html">
+                                <img src="images/logo.png" alt="TheDir">
                             </a>
                             <a class="mobile-button-search" href="#search-popup"
                                data-gtf-mfp="true"
@@ -45,42 +47,263 @@
                                     class="far fa-search"></i></a>
                         </div>
                         <div class="collapse navbar-collapse" id="navbar-main-menu">
-                            <a class="navbar-brand d-none d-xl-block mr-auto" href="{{route('home')}}">
-                                <img src="{{asset('images/logo.png')}}" alt="TheDir" height="75%" width="75%">
+                            <a class="navbar-brand d-none d-xl-block" href="index.html">
+                                <img src="images/logo.png" alt="TheDir">
                             </a>
+                            <div class="form-search form-search-style-04 d-flex mr-auto">
+                                <form>
+                                    <div class="d-flex align-items-center">
+                                        <div class="form-search-items d-flex">
+                                            <div class="form-search-item d-flex align-items-center what border-right">
+                                                <label for="key-word">What</label>
+                                                <div class="input-group dropdown show bg-transparent">
+                                                    <input type="text" autocomplete="off" id="key-word" name="key-word"
+                                                           class="form-control bg-transparent border-0"
+                                                           placeholder="Ex: food, service, barber, hotel"
+                                                           data-toggle="dropdown"
+                                                           aria-haspopup="true">
+                                                    <a href="#" class="input-group-append text-decoration-none" data-toggle="dropdown">
+                                                        <i class="fal fa-chevron-down"></i>
+                                                    </a>
+                                                    <ul class="dropdown-menu form-search-ajax"
+                                                        aria-labelledby="key-word">
+                                                        <li class="dropdown-item item">
+                                                            <a href="#" class="link-hover-dark-white">
+                                                                <svg class="icon icon-pizza">
+                                                                    <use xlink:href="#icon-pizza"></use>
+                                                                </svg>
+                                                                <span class="font-size-md">Foods & Restaurants</span>
+                                                            </a>
+                                                        </li>
+                                                        <li class="dropdown-item item">
+                                                            <a href="#" class="link-hover-dark-white">
+                                                                <svg class="icon icon-bed">
+                                                                    <use xlink:href="#icon-bed"></use>
+                                                                </svg>
+                                                                <span class="font-size-md">Hotels & Resorts</span>
+                                                            </a>
+                                                        </li>
+                                                        <li class="dropdown-item item">
+                                                            <a href="#" class="link-hover-dark-white">
+                                                                <svg class="icon icon-pharmaceutical">
+                                                                    <use xlink:href="#icon-pharmaceutical"></use>
+                                                                </svg>
+                                                                <span class="font-size-md">Healths & Medicals</span>
+                                                            </a>
+                                                        </li>
+                                                        <li class="dropdown-item item">
+                                                            <a href="#" class="link-hover-dark-white">
+                                                                <svg class="icon icon-cog">
+                                                                    <use xlink:href="#icon-cog"></use>
+                                                                </svg>
+                                                                <span class="font-size-md">Services</span>
+                                                            </a>
+                                                        </li>
+                                                        <li class="dropdown-item item">
+                                                            <a href="#" class="link-hover-dark-white">
+                                                                <svg class="icon icon-car">
+                                                                    <use xlink:href="#icon-car"></use>
+                                                                </svg>
+                                                                <span class="font-size-md">Automotive</span>
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="form-search-item d-flex align-items-center where">
+                                                <label for="region">Where</label>
+                                                <div class="input-group dropdown show bg-transparent">
+                                                    <input type="text" autocomplete="off" id="region" name="region"
+                                                           class="form-control bg-transparent border-0"
+                                                           placeholder="San Francisco" data-toggle="dropdown"
+                                                           aria-haspopup="true">
+                                                    <a href="#" class="input-group-append text-decoration-none" data-toggle="dropdown">
+                                                        <i class="fal fa-chevron-down"></i>
+                                                    </a>
+                                                    <ul class="dropdown-menu form-search-ajax" aria-labelledby="region">
+                                                        <li class="dropdown-item item">
+                                                            <a href="#" class="link-hover-dark-white">
+                                                                Austin
+                                                            </a>
+                                                        </li>
+                                                        <li class="dropdown-item item">
+                                                            <a href="#" class="link-hover-dark-white">
+                                                                Boston
+                                                            </a>
+                                                        </li>
+                                                        <li class="dropdown-item item">
+                                                            <a href="#" class="link-hover-dark-white">
+                                                                Chicago
+                                                            </a>
+                                                        </li>
+                                                        <li class="dropdown-item item">
+                                                            <a href="#" class="link-hover-dark-white">
+                                                                Denver
+                                                            </a>
+                                                        </li>
+                                                        <li class="dropdown-item item">
+                                                            <a href="#" class="link-hover-dark-white">
+                                                                Los Angeles
+                                                            </a>
+                                                        </li>
+                                                        <li class="dropdown-item item">
+                                                            <a href="#" class="link-hover-dark-white">
+                                                                New York
+                                                            </a>
+                                                        </li>
+                                                        <li class="dropdown-item item">
+                                                            <a href="#" class="link-hover-dark-white">
+                                                                San Francisco
+                                                            </a>
+                                                        </li>
+                                                        <li class="dropdown-item item">
+                                                            <a href="#" class="link-hover-dark-white">
+                                                                Seattle
+                                                            </a>
+                                                        </li>
+                                                        <li class="dropdown-item item">
+                                                            <a href="#" class="link-hover-dark-white">
+                                                                Washington
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <button type="submit" class="btn btn-primary"><i
+                                                class="fal fa-search"></i>
+                                        </button>
+                                    </div>
 
+                                </form>
+                            </div>
                             <ul class="navbar-nav">
                                 <li class="nav-item">
-                                    <a class="nav-link" href="#">Manage <span class="caret"><i
+                                    <a class="nav-link" href="#">Options<span class="caret"><i
                                             class="fas fa-angle-down"></i></span></a>
                                     <ul class="sub-menu x-animated x-fadeInUp">
                                         <li class="nav-item">
-                                            <a class="nav-link" href="{{route('hivendors')}}">Vendors</a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a class="nav-link" href="{{route('category')}}">Category
+                                            <a class="nav-link" href="#"> layout
+                                                <span class="caret"><i class="fas fa-angle-down"></i></span>
                                             </a>
+                                            <ul class="sub-menu x-animated x-fadeInUp">
+                                                <li class="nav-item"><a class="nav-link"
+                                                                        href="explore-full-map-grid.html"> full
+                                                    map grid</a></li>
+                                                <li class="nav-item"><a class="nav-link"
+                                                                        href="explore-full-map-list.html"> full
+                                                    map list</a></li>
+                                                <li class="nav-item"><a class="nav-link"
+                                                                        href="explore-half-map-grid.html"> half
+                                                    map grid</a></li>
+                                                <li class="nav-item"><a class="nav-link"
+                                                                        href="explore-half-map-list.html"> half
+                                                    map list</a></li>
+                                                <li class="nav-item"><a class="nav-link"
+                                                                        href="explore-sidebar-grid.html"> sidebar
+                                                    grid</a></li>
+                                                <li class="nav-item"><a class="nav-link"
+                                                                        href="explore-sidebar-list.html"> sidebar
+                                                    list</a></li>
+                                            </ul>
                                         </li>
-
                                         <li class="nav-item">
-                                            <a class="nav-link" href="{{route('services')}}">Services
+                                            <a class="nav-link" href="#">Listing details
+                                                <span class="caret"><i class="fas fa-angle-down"></i></span>
                                             </a>
+                                            <ul class="sub-menu x-animated x-fadeInUp">
+                                                <li class="nav-item"><a class="nav-link"
+                                                                        href="listing-details-full-gallery.html">
+                                                    full gallery</a></li>
+                                                <li class="nav-item"><a class="nav-link"
+                                                                        href="listing-details-full-image.html">
+                                                    full image</a></li>
+                                                <li class="nav-item"><a class="nav-link"
+                                                                        href="listing-details-full-map.html">
+                                                    full map</a></li>
+                                                <li class="nav-item"><a class="nav-link"
+                                                                        href="listing-details-gallery.html">gallery</a>
+                                                </li>
+                                                <li class="nav-item"><a class="nav-link"
+                                                                        href="listing-details-image.html"> image</a>
+                                                </li>
+                                                <li class="nav-item"><a class="nav-link"
+                                                                        href="listing-details-no-image.html"> no
+                                                    image</a></li>
+                                            </ul>
                                         </li>
-
+                                    </ul>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Blog <span class="caret"><i
+                                            class="fas fa-angle-down"></i></span></a>
+                                    <ul class="sub-menu x-animated x-fadeInUp">
                                         <li class="nav-item">
-                                            <a class="nav-link" href="{{route('partners')}}">Partners
+                                            <a class="nav-link" href="#">Blog layout<span class="caret"><i
+                                                    class="fas fa-angle-down"></i></span></a>
+                                            <ul class="sub-menu x-animated x-fadeInUp">
+                                                <li class="nav-item"><a class="nav-link" href="blog-listing-grid.html">
+                                                    grid</a></li>
+                                                <li class="nav-item"><a class="nav-link"
+                                                                        href="blog-listing-large-image.html">
+                                                    large image</a></li>
+                                                <li class="nav-item"><a class="nav-link"
+                                                                        href="blog-listing-with-sidebar.html">
+                                                    with sidebar</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#">Post
+                                                <span class="caret"><i class="fas fa-angle-down"></i></span>
+                                            </a>
+                                            <ul class="sub-menu x-animated x-fadeInUp">
+                                                <li class="nav-item"><a class="nav-link" href="blog-single-audio.html">
+                                                    audio</a></li>
+                                                <li class="nav-item"><a class="nav-link"
+                                                                        href="blog-single-gallery.html">
+                                                    gallery</a></li>
+                                                <li class="nav-item"><a class="nav-link" href="blog-single-image.html">
+                                                    image</a></li>
+                                                <li class="nav-item"><a class="nav-link" href="blog-single-video.html">video</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Docs <span class="caret"><i
+                                            class="fas fa-angle-down"></i></span></a>
+                                    <ul class="sub-menu x-animated x-fadeInUp">
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="document/introduction.html">Documentation</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="starter/introduction.html">Get started
                                             </a>
                                         </li>
                                     </ul>
                                 </li>
                             </ul>
+
                             <div class="header-customize justify-content-end align-items-center d-none d-xl-flex">
-                                <div class="header-customize-item">
-                                    <a href="#" class="link" data-gtf-mfp="true"
-                                       data-mfp-options='{"type":"inline"}'>
-                                       Logged in as {{$user->name}}</a>
+                                <div class="header-customize-item button-search">
+                                    <!-- <a class="mobile-button-search" href="#search-popup"
+                                       data-gtf-mfp="true"
+                                       data-mfp-options='{"type":"inline","mainClass":"mfp-move-from-top mfp-align-top search-popup-bg","closeOnBgClick":false,"showCloseBtn":false}'><i
+                                            class="far fa-search"></i></a> -->
                                 </div>
-                                
+                                <!-- <div class="header-customize-item">
+                                    <a href="#login-popup" class="link" data-gtf-mfp="true"
+                                       data-mfp-options='{"type":"inline"}'>
+                                        <svg class="icon icon-user-circle-o">
+                                            <use xlink:href="#icon-user-circle-o"></use>
+                                        </svg>
+                                        Log in</a>
+                                </div> -->
+                                <!-- <div class="header-customize-item">
+                                    <a href="{{route('home')}}" class="btn btn-primary btn-icon-right">Edit profile<i
+                                                class="far fa-angle-right"></i></a>
+                                </div> -->
                             </div>
                         </div>
                     </nav>
@@ -88,301 +311,158 @@
             </div>
         </header>
         <!-- #header end -->
-        @yield('content')
-        <!-- #wrapper-content end -->
+        <!-- #wrapper-content start -->
+        <div id="wrapper-content" class="wrapper-content pt-0 pb-0">
+            <div class="page-wrapper d-flex flex-wrap flex-xl-nowrap">
+                <div class="sidebar">
+                    <div class="container-fluid">
+                        <div class="user-profile media align-items-center mb-6">
+                            <div class="image mr-3"><img src="images/other/account-campaign.png" alt="User image"
+                                                         class="rounded-circle"></div>
+                            <div class="media-body lh-14">
+                                <span class="text-dark d-block font-size-md">Howdy,</span>
+                                <span class="mb-0 h5">{{$user->name}}!</span>
+                            </div>
+                        </div>
+                        <ul class="list-group list-group-flush list-group-borderless">
+                            <li class="list-group-item p-0 mb-2 lh-15">
+                                <a href="{{route('home')}}"
+                                   class="d-flex align-items-center link-hover-dark-primary font-size-md">
+                                    <span class="d-inline-block mr-3"><i class="fal fa-cog"></i></span>
+                                    <span>Dashboard</span>
+                                </a>
+                            </li>
+                            <li class="list-group-item p-0 mb-2 lh-15">
+                                <a href="#listing"
+                                   class="d-flex align-items-center link-hover-dark-primary font-size-md"
+                                   data-toggle="collapse"
+                                   aria-expanded="false">
+									<span class="d-inline-block mr-3"><svg class="icon icon-layers"><use
+                                            xlink:href="#icon-layers"></use></svg></span>
+                                    <span>Manage</span>
+                                    <span class=" ml-auto"><i class="fal fa-chevron-down"></i></span>
+                                </a>
+                                <ul class="submenu collapse list-group list-group-flush list-group-borderless pt-2 mb-0 sidebar-menu"
+                                    id="listing">
+                                    <li class="list-group-item p-0 mb-2 lh-15">
+                                        <a href="{{route('hivendors')}}" class="link-hover-dark-primary font-size-md">
+                                            Vendors
+                                        </a>
+                                    </li>
 
-        <!-- #footer start -->
-        <footer class="main-footer main-footer-style-01 bg-pattern-01 pt-12 pb-8">
-            <div class="footer-second">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-sm-6 col-lg-4 mb-6 mb-lg-0">
-                            <div class="mb-8"><img src="images/logo.png" alt="Thedir"></div>
-                            <div class="mb-7">
-                                <div class="font-size-md font-weight-semibold text-dark mb-4">Global Headquaters</div>
-                                <p class="mb-0">
-                                    90 Fifth Avenue, 3rd Floor<br>
-                                    New York NY 10011<br>
-                                    212.913.9058</p>
-                            </div>
-                            <div class="region pt-1">
-                                <div class="font-size-md font-weight-semibold text-dark mb-2">Recent Region</div>
-                                <form>
-                                   <div class="select-custom bg-white">
-                                        <select class="form-control bg-transparent">
-                                            <option value="1">San Fracisco, CA</option>
-                                            <option value="1">New York</option>
-                                            <option value="1">LA</option>
-                                        </select>
-                                    </div>
-                                </form>
-                            </div>
-                        </div>
-                        <div class="col-md-6 col-lg mb-6 mb-lg-0">
-                            <div class="font-size-md font-weight-semibold text-dark mb-4">
-                                Company
-                            </div>
-                            <ul class="list-group list-group-flush list-group-borderless">
-                                <li class="list-group-item px-0 lh-1625 bg-transparent py-1">
-                                    <a href="page-about.html" class="link-hover-secondary-primary">About Us</a>
-                                </li>
-                                <li class="list-group-item px-0 lh-1625 bg-transparent py-1">
-                                    <a href="#" class="link-hover-secondary-primary">Team</a>
-                                </li>
-                                <li class="list-group-item px-0 lh-1625 bg-transparent py-1">
-                                    <a href="#" class="link-hover-secondary-primary">Careers</a>
-                                </li>
-                                <li class="list-group-item px-0 lh-1625 bg-transparent py-1">
-                                    <a href="#" class="link-hover-secondary-primary">Investors</a>
-                                </li>
-                                <li class="list-group-item px-0 lh-1625 bg-transparent py-1">
-                                    <a href="page-contact.html" class="link-hover-secondary-primary">Contact Us</a>
-                                </li>
-                                <li class="list-group-item px-0 lh-1625 bg-transparent py-1">
-                                    <a href="#" class="link-hover-secondary-primary">Offices</a>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="col-md-6 col-lg mb-6 mb-lg-0">
-                            <div class="font-size-md font-weight-semibold text-dark mb-4">
-                                Quick Links
-                            </div>
-                            <ul class="list-group list-group-flush list-group-borderless">
-                                <li class="list-group-item px-0 lh-1625 bg-transparent py-1">
-                                    <a href="page-faqs.html" class="link-hover-secondary-primary">FAQS</a>
-                                </li>
-                                <li class="list-group-item px-0 lh-1625 bg-transparent py-1">
-                                    <a href="#" class="link-hover-secondary-primary">Support</a>
-                                </li>
-                                <li class="list-group-item px-0 lh-1625 bg-transparent py-1">
-                                    <a href="#" class="link-hover-secondary-primary">Sitemap</a>
-                                </li>
-                                <li class="list-group-item px-0 lh-1625 bg-transparent py-1">
-                                    <a href="#" class="link-hover-secondary-primary">Community</a>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="col-sm-6 col-lg-4 mb-6 mb-lg-0">
-                            <div class="pl-0 pl-lg-9">
-                                <div class="font-size-md font-weight-semibold text-dark mb-4">Our Newsletter</div>
-                                <div class="mb-4">Subscribe to our newsletter and<br>
-                                    we will inform you about newset directory and promotions
-                                </div>
-                                <div class="form-newsletter">
-                                    <form>
-                                        <div class="input-group bg-white">
-                                            <input type="text"
-                                                   class="form-control border-0"
-                                                   placeholder="Email Address... ">
-                                            <button type="button"
-                                                    class="input-group-append btn btn-white bg-transparent text-dark border-0">
-                                                <i class="fas fa-arrow-right"></i>
-                                            </button>
-                                        </div>
-                                    </form>
-                                </div>
-                            </div>
-                        </div>
+                                    <li class="list-group-item p-0 mb-2 lh-15">
+                                        <a href="{{route('partners')}}" class="link-hover-dark-primary font-size-md">
+                                            Partners
+                                        </a>
+                                    </li>
+
+                                    <li class="list-group-item p-0 mb-2 lh-15">
+                                        <a href="{{route('services')}}" class="link-hover-dark-primary font-size-md">
+                                            Services
+                                        </a>
+                                    </li>
+
+                                    <li class="list-group-item p-0 mb-2 lh-15">
+                                        <a href="{{route('category')}}" class="link-hover-dark-primary font-size-md">
+                                            Category
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="list-group-item p-0 mb-2 lh-15">
+                                <a href="panel-my-favourite.html"
+                                   class="d-flex align-items-center link-hover-dark-primary font-size-md">
+                                    <span class="d-inline-block mr-3"><i class="fal fa-bookmark"></i></span>
+                                    <span>Complaints</span>
+                                </a>
+                            </li>
+                            <li class="list-group-item p-0 mb-2 lh-15">
+                                <a href="#invoice"
+                                   class="d-flex align-items-center link-hover-dark-primary font-size-md"
+                                   data-toggle="collapse"
+                                   aria-expanded="false">
+									<span class="d-inline-block mr-3"><svg class="icon icon-receipt"><use
+                                            xlink:href="#icon-receipt"></use></svg></span>
+                                    <span>Revenue</span>
+                                    <span class=" ml-auto"><i class="fal fa-chevron-down"></i></span>
+                                </a>
+                                <ul class="submenu collapse list-group list-group-flush list-group-borderless pt-2 mb-0 sidebar-menu"
+                                    id="invoice">
+                                    <li class="list-group-item p-0 mb-2 lh-15"><a href="panel-invoice-listing.html"
+                                                                                  class="link-hover-dark-primary font-size-md">Payments</a></li>
+                                    <li class="list-group-item p-0 mb-2 lh-15"><a href="panel-invoice-details.html"
+                                                                                  class="link-hover-dark-primary font-size-md">Invoice
+                                        Details</a></li>
+                                </ul>
+                            </li>
+                            <li class="list-group-item p-0 mb-2 lh-15">
+                                <a href="panel-package.html"
+                                   class="d-flex align-items-center link-hover-dark-primary font-size-md">
+                                    <span class="d-inline-block mr-3"><i class="fal fa-gift"></i></span>
+                                    <span>Services</span>
+                                </a>
+                            </li>
+                            <li class="list-group-item p-0 mb-2 lh-15">
+                                <a href="#adcampaign"
+                                   class="d-flex align-items-center link-hover-dark-primary font-size-md"
+                                   data-toggle="collapse"
+                                   aria-expanded="false">
+                                    <span class="d-inline-block mr-3"><i class="far fa-bullhorn"></i></span>
+                                    <span>Notification</span>
+                                    <span class=" ml-auto"><i class="fal fa-chevron-down"></i></span>
+                                </a>
+                                <ul class="submenu collapse list-group list-group-flush list-group-borderless pt-2 mb-0 sidebar-menu"
+                                    id="adcampaign">
+                                    <li class="list-group-item p-0 mb-2 lh-15"><a
+                                            href="panel-ad-campaigns-active.html"
+                                            class="link-hover-dark-primary font-size-md">Send Public Notification</a></li>
+                                    <li class="list-group-item p-0 mb-2 lh-15"><a
+                                            href="panel-ad-campaigns-start-new.html"
+                                            class="link-hover-dark-primary font-size-md">Send Notification only to verified people</a></li>
+                                </ul>
+                            </li>
+                            <li class="list-group-item p-0 mb-2 lh-15">
+                                <a href="#review" class="d-flex align-items-center link-hover-dark-primary font-size-md"
+                                   data-toggle="collapse"
+                                   aria-expanded="false">
+                                    <span class="d-inline-block mr-3"><i class="fal fa-star"></i></span>
+                                    <span>Reviews</span>
+                                    <span class=" ml-auto"> <i class="fal fa-chevron-down"></i></span>
+                                </a>
+                                <ul class="submenu collapse list-group list-group-flush list-group-borderless pt-2 mb-0 sidebar-menu"
+                                    id="review">
+                                    <li class="list-group-item p-0 mb-2 lh-15"><a href="panel-review-received.html"
+                                                                                  class="link-hover-dark-primary font-size-md">Review
+                                        received</a></li>
+                                    <li class="list-group-item p-0 mb-2 lh-15"><a href="panel-review-submitted.html"
+                                                                                  class="link-hover-dark-primary font-size-md">Review
+                                        submitted</a></li>
+                                </ul>
+                            </li>
+                            <li class="list-group-item p-0 mb-2 lh-15">
+                                <a href="panel-my-profile.html"
+                                   class="d-flex align-items-center link-hover-dark-primary font-size-md">
+									<span class="d-inline-block mr-3"><svg class="icon icon-user"><use
+                                            xlink:href="#icon-user"></use></svg></span>
+                                    <span>My Profile</span>
+                                </a>
+                            </li>
+                            <li class="list-group-item p-0 mb-2 lh-15">
+                                <a href="#" class="d-flex align-items-center link-hover-dark-primary font-size-md">
+									<span class="d-inline-block mr-3"><svg class="icon icon-exit"><use
+                                            xlink:href="#icon-exit"></use></svg></span>
+                                    <span>Logout</span>
+                                </a>
+                            </li>
+                        </ul>
                     </div>
                 </div>
-            </div>
-            <div class="footer-last mt-8 mt-md-11">
-                <div class="container">
-                    <div class="footer-last-container position-relative">
-                        <div class="row align-items-center">
-                            <div class="col-lg-4 mb-3 mb-lg-0">
-                                <div class="social-icon text-dark">
-                                    <ul class="list-inline">
-                                        <li class="list-inline-item mr-5">
-                                            <a target="_blank" title="Twitter" href="#">
-                                                <i class="fab fa-twitter">
-                                                </i>
-                                                <span>Twitter</span>
-                                            </a>
-                                        </li>
-                                        <li class="list-inline-item mr-5">
-                                            <a target="_blank" title="Facebook" href="#">
-                                                <i class="fab fa-facebook-f">
-                                                </i>
-                                                <span>Facebook</span>
-                                            </a>
-                                        </li>
-                                        <li class="list-inline-item mr-5">
-                                            <a target="_blank" title="Google plus" href="#">
-                                                <svg class="icon icon-google-plus-symbol">
-                                                    <use xlink:href="#icon-google-plus-symbol"></use>
-                                                </svg>
-                                                <span>Google plus</span>
-                                            </a>
-                                        </li>
-                                        <li class="list-inline-item mr-5">
-                                            <a target="_blank" title="Instagram" href="#">
-                                                <svg class="icon icon-instagram">
-                                                    <use xlink:href="#icon-instagram"></use>
-                                                </svg>
-                                                <span>Instagram</span>
-                                            </a>
-                                        </li>
-                                        <li class="list-inline-item mr-5">
-                                            <a target="_blank" title="Rss" href="#">
-                                                <i class="fas fa-rss"></i>
-                                                <span>Rss</span>
-                                            </a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="col-lg-5 mb-3 mb-lg-0">
-                                <div>
-                                    &copy; 2020 <a href="{{route('home')}}"
-                                                   class="link-hover-dark-primary font-weight-semibold">The Dir.</a> All
-                                    Rights Resevered. Design
-                                    by <a href="http://g5plus.net/"
-                                          class="link-hover-dark-primary font-weight-semibold">G5Theme</a>
-                                </div>
-                            </div>
-                            <div class="back-top text-left text-lg-right">
-                                <a href="#" class="gtf-back-to-top link-hover-secondary-primary"><i
-                                        class="fal fa-arrow-up"></i><span>Back To Top</span></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </footer>
-        <!-- #footer end -->
+				<div class="page-container">
+
+               @yield("content")
+        <!-- #wrapper-content end -->
     </div>
     <!-- #site-wrapper end-->
-
-    <!-- Other templates -->
-    <div id="login-popup" class="mfp-hide">
-        <div class="form-login-register">
-            <div class="tabs mb-8">
-                <ul class="nav nav-pills tab-style-01 text-capitalize justify-content-center"
-                    role="tablist">
-                    <li class="nav-item">
-                        <a class="nav-link active" id="login-tab" data-toggle="tab"
-                           href="{{route('logout')}}"
-                           role="tab"
-                           aria-controls="login" aria-selected="true"><h3>Log Out</h3></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" id="register-tab" data-toggle="tab" href="#register"
-                           role="tab"
-                           aria-controls="register" aria-selected="false"><h3>Register</h3></a>
-                    </li>
-                </ul>
-            </div>
-            <div class="tab-content">
-                <div class="tab-pane fade show active" id="login" role="tabpanel"
-                     aria-labelledby="login-tab">
-                    <div class="form-login">
-                        <form>
-                            <div class="font-size-md text-dark mb-5">Log In Your Account</div>
-                            <div class="form-group mb-2">
-                                <label for="username" class="sr-only">Username</label>
-                                <input id="username" type="text" class="form-control" placeholder="Username">
-                            </div>
-                            <div class="form-group mb-3">
-                                <div class="input-group flex-nowrap align-items-center">
-                                    <label for="password" class="sr-only">Password</label>
-                                    <input id="password" type="text" class="form-control" placeholder="Password">
-                                    <a href="#" class="input-group-append text-decoration-none">Forgot?</a>
-                                </div>
-                            </div>
-                            <div class="form-group mb-6">
-                                <div class="custom-control custom-checkbox">
-                                    <input type="checkbox" class="custom-control-input" id="check">
-                                    <label class="custom-control-label text-dark" for="check">Remember</label>
-                                </div>
-                            </div>
-                            <button type="submit"
-                                    class="btn btn-primary btn-block font-weight-bold text-uppercase font-size-lg rounded-sm mb-8">
-                                Log In
-                            </button>
-                        </form>
-                        <div class="font-size-md text-dark mb-5">Or Log In With</div>
-                        <div class="social-icon origin-color si-square">
-                            <ul class="row no-gutters list-inline text-center">
-                                <li class="list-inline-item si-facebook col-3">
-                                    <a target="_blank" title="Facebook" href="#">
-                                        <i class="fab fa-facebook-f">
-                                        </i>
-                                        <span>Facebook</span>
-                                    </a>
-                                </li>
-                                <li class="list-inline-item si-twitter col-3">
-                                    <a target="_blank" title="Twitter" href="#">
-                                        <i class="fab fa-twitter">
-                                        </i>
-                                        <span>Twitter</span>
-                                    </a>
-                                </li>
-                                <li class="list-inline-item si-google col-3">
-                                    <a target="_blank" title="Google plus" href="#">
-                                        <svg class="icon icon-google-plus-symbol">
-                                            <use xlink:href="#icon-google-plus-symbol"></use>
-                                        </svg>
-                                        <span>Google plus</span>
-                                    </a>
-                                </li>
-                                <li class="list-inline-item si-rss col-3">
-                                    <a target="_blank" title="RSS" href="#">
-                                        <i class="fas fa-rss"></i>
-                                        <span>RSS</span>
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-
-
-                </div>
-                <div class="tab-pane fade " id="register" role="tabpanel"
-                     aria-labelledby="register-tab">
-                    <div class="form-register">
-                        <form>
-                            <div class="font-size-md text-dark mb-5">Create Your Account</div>
-                            <div class="form-group mb-2">
-                                <label for="username-rt" class="sr-only">Username</label>
-                                <input id="username-rt" type="text" class="form-control" placeholder="Username">
-                            </div>
-                            <div class="form-group mb-2">
-                                <label for="email" class="sr-only">Email</label>
-                                <input id="email" type="text" class="form-control" placeholder="Email Address">
-                            </div>
-                            <div class="form-group mb-2">
-                                <label for="password-rt" class="sr-only">Username</label>
-                                <input id="password-rt" type="password" class="form-control" placeholder="Password">
-                            </div>
-                            <div class="form-group mb-3">
-                                <label for="r-password" class="sr-only">Username</label>
-                                <input id="r-password" type="password" class="form-control"
-                                       placeholder="Retype password">
-                            </div>
-
-                            <div class="form-group mb-8">
-                                <div class="custom-control custom-checkbox">
-                                    <input type="checkbox" class="custom-control-input" id="check-term">
-                                    <label class="custom-control-label text-dark" for="check-term">You agree with our
-                                        Terms Privacy Policy and</label>
-                                </div>
-                            </div>
-                            <button type="submit"
-                                    class="btn btn-primary btn-block font-weight-bold text-uppercase font-size-lg rounded-sm">
-                                Create an
-                                account
-                            </button>
-                        </form>
-                    </div>
-
-                </div>
-            </div>
-            <form>
-
-            </form>
-        </div>
-    </div>
     <div id="search-popup" class="mfp-hide">
         <div class="search-popup text-center">
             <h2 class="mb-8">Search</h2>
@@ -616,290 +696,6 @@
             </a>
         </div>
     </div>
-    <script>
-		var map;
-
-		function initMap() {
-			var latlng = new google.maps.LatLng(40.762529, -73.957334);
-
-			var mapProp = {
-				center: latlng,
-				zoom: 12,
-				mapTypeId: 'roadmap',
-				disableDefaultUI: true,
-				styles: [
-					{
-						"featureType": "administrative.country",
-						"elementType": "geometry.fill",
-						"stylers": [
-							{
-								"color": "#ffffff"
-							}
-						]
-					},
-					{
-						"featureType": "administrative.province",
-						"elementType": "geometry.fill",
-						"stylers": [
-							{
-								"color": "#ffffff"
-							}
-						]
-					},
-					{
-						"featureType": "administrative.province",
-						"elementType": "labels.text.fill",
-						"stylers": [
-							{
-								"color": "#c3b6a2"
-							}
-						]
-					},
-					{
-						"featureType": "landscape.man_made",
-						"elementType": "geometry.fill",
-						"stylers": [
-							{
-								"color": "#ffffff"
-							}
-						]
-					},
-					{
-						"featureType": "landscape.man_made",
-						"elementType": "labels.text",
-						"stylers": [
-							{
-								"color": "#c3b6a2"
-							}
-						]
-					},
-					{
-						"featureType": "landscape.man_made",
-						"elementType": "labels.text.fill",
-						"stylers": [
-							{
-								"color": "#c3b6a2"
-							}
-						]
-					},
-					{
-						"featureType": "landscape.natural",
-						"elementType": "geometry.fill",
-						"stylers": [
-							{
-								"color": "#ffffff"
-							}
-						]
-					},
-					{
-						"featureType": "landscape.natural.landcover",
-						"elementType": "geometry.fill",
-						"stylers": [
-							{
-								"color": "#ffffff"
-							}
-						]
-					},
-					{
-						"featureType": "landscape.natural.terrain",
-						"elementType": "geometry.fill",
-						"stylers": [
-							{
-								"color": "#ffffff"
-							}
-						]
-					},
-					{
-						"featureType": "poi.business",
-						"elementType": "geometry.fill",
-						"stylers": [
-							{
-								"color": "#ffffff"
-							}
-						]
-					},
-					{
-						"featureType": "poi.park",
-						"elementType": "geometry.fill",
-						"stylers": [
-							{
-								"color": "#ffffff"
-							}
-						]
-					},
-					{
-						"featureType": "poi.park",
-						"elementType": "labels.icon",
-						"stylers": [
-							{
-								"color": "#808080"
-							}
-						]
-					},
-					{
-						"featureType": "poi.park",
-						"elementType": "labels.text.fill",
-						"stylers": [
-							{
-								"color": "#808080"
-							}
-						]
-					},
-					{
-						"featureType": "poi.school",
-						"elementType": "geometry.fill",
-						"stylers": [
-							{
-								"color": "#ffffff"
-							}
-						]
-					},
-					{
-						"featureType": "road.arterial",
-						"elementType": "geometry.fill",
-						"stylers": [
-							{
-								"color": "#f0f0f0"
-							}
-						]
-					},
-					{
-						"featureType": "road.arterial",
-						"elementType": "geometry.stroke",
-						"stylers": [
-							{
-								"color": "#c0c0c0"
-							},
-							{
-								"saturation": -75
-							},
-							{
-								"lightness": -80
-							}
-						]
-					},
-					{
-						"featureType": "road.arterial",
-						"elementType": "labels",
-						"stylers": [
-							{
-								"visibility": "off"
-							}
-						]
-					},
-					{
-						"featureType": "road.highway",
-						"elementType": "geometry.fill",
-						"stylers": [
-							{
-								"color": "#ededed"
-							}
-						]
-					},
-					{
-						"featureType": "road.highway",
-						"elementType": "geometry.stroke",
-						"stylers": [
-							{
-								"color": "#ededed"
-							}
-						]
-					},
-					{
-						"featureType": "road.highway",
-						"elementType": "labels",
-						"stylers": [
-							{
-								"visibility": "off"
-							}
-						]
-					},
-					{
-						"featureType": "road.highway",
-						"elementType": "labels.text",
-						"stylers": [
-							{
-								"color": "#ededed"
-							}
-						]
-					},
-					{
-						"featureType": "road.highway",
-						"elementType": "labels.text.fill",
-						"stylers": [
-							{
-								"color": "#91bbd5"
-							}
-						]
-					},
-					{
-						"featureType": "road.highway.controlled_access",
-						"stylers": [
-							{
-								"color": "#ededed"
-							}
-						]
-					},
-					{
-						"featureType": "road.local",
-						"stylers": [
-							{
-								"visibility": "off"
-							}
-						]
-					},
-					{
-						"featureType": "road.local",
-						"elementType": "geometry.fill",
-						"stylers": [
-							{
-								"color": "#ededed"
-							}
-						]
-					},
-					{
-						"featureType": "transit.line",
-						"elementType": "geometry.fill",
-						"stylers": [
-							{
-								"color": "#f0f0f0"
-							}
-						]
-					},
-					{
-						"featureType": "transit.station.airport",
-						"elementType": "labels.text.fill",
-						"stylers": [
-							{
-								"color": "#c3b6a2"
-							}
-						]
-					},
-					{
-						"featureType": "water",
-						"elementType": "geometry.fill",
-						"stylers": [
-							{
-								"color": "#c7d7d4"
-							}
-						]
-					},
-					{
-						"featureType": "water",
-						"elementType": "labels.text.fill",
-						"stylers": [
-							{
-								"color": "#91bbd5"
-							}
-						]
-					}
-				]
-			};
-			map = new google.maps.Map(document.getElementById("googleMap"), mapProp);
-
-
-		}
-    </script>
 
     <!-- External JavaScripts -->
     <script src="vendors/jquery.min.js"></script>
@@ -913,8 +709,6 @@
     <script src="vendors/waypoints/jquery.waypoints.js"></script>
     <script src="vendors/air-datepicker/js/datepicker.min.js"></script>
     <script src="vendors/air-datepicker/js/i18n/datepicker.en.js"></script>
-    <script async defer
-            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDiMIj9qJw-InawUWnu7kUK4GjDQ7dktMQ&callback=initMap"></script>
 
     <!-- Site Javascript -->
     <script src="js/app.js"></script>
@@ -977,6 +771,46 @@
             <symbol id="icon-instagram" viewBox="0 0 20 20">
                 <title>instagram</title>
                 <path d="M17 1h-14c-1.1 0-2 0.9-2 2v14c0 1.101 0.9 2 2 2h14c1.1 0 2-0.899 2-2v-14c0-1.1-0.9-2-2-2zM9.984 15.523c3.059 0 5.538-2.481 5.538-5.539 0-0.338-0.043-0.664-0.103-0.984h1.581v7.216c0 0.382-0.31 0.69-0.693 0.69h-12.614c-0.383 0-0.693-0.308-0.693-0.69v-7.216h1.549c-0.061 0.32-0.104 0.646-0.104 0.984 0 3.059 2.481 5.539 5.539 5.539zM6.523 9.984c0-1.912 1.55-3.461 3.462-3.461s3.462 1.549 3.462 3.461-1.551 3.462-3.462 3.462c-1.913 0-3.462-1.55-3.462-3.462zM16.307 6h-1.615c-0.382 0-0.692-0.312-0.692-0.692v-1.617c0-0.382 0.31-0.691 0.691-0.691h1.615c0.384 0 0.694 0.309 0.694 0.691v1.616c0 0.381-0.31 0.693-0.693 0.693z"></path>
+            </symbol>
+            <symbol id="icon-bag-1" viewBox="0 0 32 32">
+                <title>bag-1</title>
+                <path d="M26.832 7.898h-5.174v-1.684c0-3.426-2.787-6.214-6.214-6.214s-6.213 2.787-6.213 6.214v1.684h-4.458c-0.376 0-0.681 0.305-0.681 0.681l-3.827 22.74c0 0.376 0.305 0.681 0.681 0.681h30.107c0.376 0 0.681-0.305 0.681-0.681l-4.221-22.74c0-0.376-0.305-0.681-0.681-0.681zM10.593 6.214c0-2.675 2.177-4.852 4.852-4.852s4.852 2.177 4.852 4.852v1.684h-9.704v-1.684zM30.373 30.638h-28.746l3.826-21.379h3.777v2.998c-0.329 0.22-0.544 0.594-0.544 1.019 0 0.677 0.548 1.226 1.225 1.226s1.226-0.548 1.226-1.226c0-0.425-0.217-0.799-0.545-1.019v-2.998h9.705v2.998c-0.328 0.22-0.545 0.594-0.545 1.019 0 0.677 0.548 1.226 1.226 1.226s1.226-0.548 1.226-1.226c0-0.425-0.217-0.799-0.545-1.019v-2.998h4.494l4.222 21.379z"></path>
+            </symbol>
+            <symbol id="icon-check-circle" viewBox="0 0 24 24">
+                <title>check-circle</title>
+                <path d="M21 11.080v0.92c-0.001 2.485-1.009 4.733-2.64 6.362s-3.88 2.634-6.365 2.632-4.734-1.009-6.362-2.64-2.634-3.879-2.633-6.365 1.009-4.733 2.64-6.362 3.88-2.634 6.365-2.633c1.33 0.001 2.586 0.289 3.649 0.775 0.502 0.23 1.096 0.008 1.325-0.494s0.008-1.096-0.494-1.325c-1.327-0.606-2.866-0.955-4.479-0.956-3.037-0.002-5.789 1.229-7.78 3.217s-3.224 4.74-3.226 7.777 1.229 5.789 3.217 7.78 4.739 3.225 7.776 3.226 5.789-1.229 7.78-3.217 3.225-4.739 3.227-7.777v-0.92c0-0.552-0.448-1-1-1s-1 0.448-1 1zM21.293 3.293l-9.293 9.302-2.293-2.292c-0.391-0.391-1.024-0.391-1.414 0s-0.391 1.024 0 1.414l3 3c0.391 0.391 1.024 0.39 1.415 0l10-10.010c0.39-0.391 0.39-1.024-0.001-1.414s-1.024-0.39-1.414 0.001z"></path>
+            </symbol>
+            <symbol id="icon-layers" viewBox="0 0 32 32">
+                <title>layers</title>
+                <path d="M16 19.2c-0.106 0-0.211-0.021-0.31-0.062l-15.2-6.4c-0.296-0.125-0.49-0.416-0.49-0.738s0.194-0.613 0.49-0.738l15.2-6.4c0.198-0.083 0.422-0.083 0.621 0l15.2 6.4c0.296 0.125 0.49 0.416 0.49 0.738s-0.194 0.613-0.49 0.738l-15.2 6.4c-0.099 0.042-0.205 0.062-0.31 0.062zM2.861 12l13.139 5.531 13.139-5.531-13.139-5.531-13.139 5.531zM16 24c-0.106 0-0.211-0.021-0.31-0.062l-15.2-6.4c-0.406-0.171-0.598-0.64-0.427-1.048s0.64-0.598 1.048-0.427l14.89 6.269 14.89-6.269c0.406-0.171 0.877 0.019 1.048 0.427s-0.019 0.877-0.427 1.048l-15.2 6.4c-0.099 0.042-0.205 0.062-0.31 0.062zM16 28.8c-0.106 0-0.211-0.021-0.31-0.062l-15.2-6.4c-0.406-0.171-0.598-0.64-0.427-1.048s0.64-0.598 1.048-0.427l14.89 6.269 14.89-6.269c0.406-0.171 0.877 0.019 1.048 0.427s-0.019 0.877-0.427 1.048l-15.2 6.4c-0.099 0.042-0.205 0.062-0.31 0.062z"></path>
+            </symbol>
+            <symbol id="icon-receipt" viewBox="0 0 32 32">
+                <title>receipt</title>
+                <path d="M28 32c-0.122 0-0.245-0.027-0.358-0.085l-2.842-1.421-2.842 1.421c-0.226 0.112-0.49 0.112-0.715 0l-2.842-1.421-2.842 1.421c-0.226 0.112-0.49 0.112-0.715 0l-2.842-1.421-2.842 1.421c-0.226 0.112-0.49 0.112-0.715 0l-2.842-1.421-2.842 1.421c-0.248 0.123-0.542 0.11-0.778-0.035s-0.379-0.403-0.379-0.68v-28.8c0-0.302 0.171-0.581 0.442-0.715l3.2-1.6c0.226-0.112 0.49-0.112 0.715 0l2.842 1.421 2.842-1.421c0.226-0.112 0.49-0.112 0.715 0l2.842 1.421 2.842-1.421c0.226-0.112 0.49-0.112 0.715 0l2.842 1.421 2.842-1.421c0.226-0.112 0.49-0.112 0.715 0l3.2 1.6c0.27 0.136 0.442 0.413 0.442 0.715v28.8c0 0.277-0.144 0.534-0.379 0.68-0.128 0.080-0.274 0.12-0.421 0.12zM18.4 28.8c0.123 0 0.245 0.029 0.358 0.085l2.842 1.421 2.842-1.421c0.226-0.112 0.49-0.112 0.715 0l2.042 1.021v-27.011l-2.4-1.2-2.842 1.421c-0.226 0.112-0.49 0.112-0.715 0l-2.842-1.421-2.842 1.421c-0.226 0.112-0.49 0.112-0.715 0l-2.842-1.421-2.842 1.421c-0.226 0.112-0.49 0.112-0.715 0l-2.842-1.421-2.4 1.2v27.011l2.042-1.021c0.226-0.112 0.49-0.112 0.715 0l2.842 1.421 2.842-1.421c0.226-0.112 0.49-0.112 0.715 0l2.842 1.421 2.842-1.421c0.112-0.056 0.235-0.085 0.358-0.085zM18.4 20.8h-5.6v-1.6h5.6c0.442 0 0.8-0.358 0.8-0.8s-0.358-0.8-0.8-0.8h-2.4v-0.8c0-0.442-0.358-0.8-0.8-0.8s-0.8 0.358-0.8 0.8v0.8h-2.4c-0.442 0-0.8 0.358-0.8 0.8v3.2c0 0.442 0.358 0.8 0.8 0.8h5.6v1.6h-5.6c-0.442 0-0.8 0.358-0.8 0.8s0.358 0.8 0.8 0.8h2.4v0.8c0 0.442 0.358 0.8 0.8 0.8s0.8-0.358 0.8-0.8v-0.8h2.4c0.442 0 0.8-0.358 0.8-0.8v-3.2c0-0.442-0.358-0.8-0.8-0.8zM20 8h-9.6c-0.442 0-0.8-0.358-0.8-0.8s0.358-0.8 0.8-0.8h9.6c0.442 0 0.8 0.358 0.8 0.8s-0.358 0.8-0.8 0.8zM23.2 11.2h-16c-0.442 0-0.8-0.358-0.8-0.8s0.358-0.8 0.8-0.8h16c0.442 0 0.8 0.358 0.8 0.8s-0.358 0.8-0.8 0.8zM23.2 14.4h-16c-0.442 0-0.8-0.358-0.8-0.8s0.358-0.8 0.8-0.8h16c0.442 0 0.8 0.358 0.8 0.8s-0.358 0.8-0.8 0.8z"></path>
+            </symbol>
+            <symbol id="icon-calendar-empty" viewBox="0 0 32 32">
+                <title>calendar-empty</title>
+                <path d="M29.6 3.2h-4v-0.8c0-0.442-0.358-0.8-0.8-0.8s-0.8 0.358-0.8 0.8v0.8h-16v-0.8c0-0.442-0.358-0.8-0.8-0.8s-0.8 0.358-0.8 0.8v0.8h-4c-1.323 0-2.4 1.077-2.4 2.4v22.4c0 1.323 1.077 2.4 2.4 2.4h27.2c1.323 0 2.4-1.077 2.4-2.4v-22.4c0-1.323-1.077-2.4-2.4-2.4zM2.4 4.8h4v2.4c0 0.442 0.358 0.8 0.8 0.8s0.8-0.358 0.8-0.8v-2.4h16v2.4c0 0.442 0.358 0.8 0.8 0.8s0.8-0.358 0.8-0.8v-2.4h4c0.442 0 0.8 0.358 0.8 0.8v4h-28.8v-4c0-0.442 0.358-0.8 0.8-0.8zM29.6 28.8h-27.2c-0.442 0-0.8-0.358-0.8-0.8v-16.8h28.8v16.8c0 0.442-0.358 0.8-0.8 0.8z"></path>
+            </symbol>
+            <symbol id="icon-document" viewBox="0 0 32 32">
+                <title>document</title>
+                <path d="M26.4 32h-20.8c-1.323 0-2.4-1.077-2.4-2.4v-25.6c0-1.323 1.077-2.4 2.4-2.4h20.8c1.323 0 2.4 1.077 2.4 2.4v25.6c0 1.323-1.077 2.4-2.4 2.4zM5.6 3.2c-0.442 0-0.8 0.358-0.8 0.8v25.6c0 0.442 0.358 0.8 0.8 0.8h20.8c0.442 0 0.8-0.358 0.8-0.8v-25.6c0-0.442-0.358-0.8-0.8-0.8h-20.8zM20 8h-11.2c-0.442 0-0.8-0.358-0.8-0.8s0.358-0.8 0.8-0.8h11.2c0.442 0 0.8 0.358 0.8 0.8s-0.358 0.8-0.8 0.8zM23.2 11.2h-14.4c-0.442 0-0.8-0.358-0.8-0.8s0.358-0.8 0.8-0.8h14.4c0.442 0 0.8 0.358 0.8 0.8s-0.358 0.8-0.8 0.8zM23.2 14.4h-14.4c-0.442 0-0.8-0.358-0.8-0.8s0.358-0.8 0.8-0.8h14.4c0.442 0 0.8 0.358 0.8 0.8s-0.358 0.8-0.8 0.8zM16.8 17.6h-8c-0.442 0-0.8-0.358-0.8-0.8s0.358-0.8 0.8-0.8h8c0.442 0 0.8 0.358 0.8 0.8s-0.358 0.8-0.8 0.8zM23.2 24h-14.4c-0.442 0-0.8-0.358-0.8-0.8s0.358-0.8 0.8-0.8h14.4c0.442 0 0.8 0.358 0.8 0.8s-0.358 0.8-0.8 0.8zM20 27.2h-11.2c-0.442 0-0.8-0.358-0.8-0.8s0.358-0.8 0.8-0.8h11.2c0.442 0 0.8 0.358 0.8 0.8s-0.358 0.8-0.8 0.8z"></path>
+            </symbol>
+            <symbol id="icon-user" viewBox="0 0 32 32">
+                <title>user</title>
+                <path d="M15.2 17.6c-4.853 0-8.8-3.947-8.8-8.8s3.947-8.8 8.8-8.8 8.8 3.947 8.8 8.8-3.947 8.8-8.8 8.8zM15.2 1.6c-3.97 0-7.2 3.23-7.2 7.2s3.23 7.2 7.2 7.2c3.97 0 7.2-3.23 7.2-7.2s-3.23-7.2-7.2-7.2zM28 32h-25.6c-1.323 0-2.4-1.077-2.4-2.4 0-0.109 0.022-2.696 1.96-5.28 1.128-1.504 2.672-2.699 4.59-3.55 2.342-1.042 5.253-1.57 8.65-1.57s6.307 0.528 8.65 1.57c1.918 0.853 3.462 2.046 4.59 3.55 1.938 2.584 1.96 5.171 1.96 5.28 0 1.323-1.077 2.4-2.4 2.4zM15.2 20.8c-5.579 0-9.696 1.525-11.906 4.41-1.656 2.162-1.693 4.371-1.694 4.394 0 0.438 0.358 0.797 0.8 0.797h25.6c0.442 0 0.8-0.358 0.8-0.8 0-0.019-0.037-2.229-1.694-4.39-2.211-2.885-6.328-4.41-11.906-4.41z"></path>
+            </symbol>
+            <symbol id="icon-exit" viewBox="0 0 32 32">
+                <title>exit</title>
+                <path d="M18.4 12.8c0.442 0 0.8-0.358 0.8-0.8v-6.4c0-1.323-1.077-2.4-2.4-2.4h-14.4c-1.323 0-2.4 1.077-2.4 2.4v19.2c0 1.194 0.859 2.496 1.955 2.965l8.259 3.539c0.285 0.122 0.574 0.182 0.851 0.182 0.341 0 0.666-0.093 0.942-0.275 0.502-0.331 0.792-0.92 0.792-1.613v-2.4h4c1.323 0 2.4-1.077 2.4-2.4v-6.4c0-0.442-0.358-0.8-0.8-0.8s-0.8 0.358-0.8 0.8v6.4c0 0.442-0.358 0.8-0.8 0.8h-4v-15.2c0-1.194-0.859-2.496-1.955-2.965l-6.147-2.635h12.102c0.442 0 0.8 0.358 0.8 0.8v6.4c0 0.442 0.358 0.8 0.8 0.8zM10.214 8.906c0.515 0.221 0.986 0.934 0.986 1.494v19.2c0 0.166-0.045 0.259-0.072 0.277s-0.13 0.022-0.283-0.043l-8.259-3.539c-0.515-0.221-0.986-0.933-0.986-1.494v-19.2c0-0.126 0.029-0.245 0.082-0.352l8.533 3.658zM29.366 14.634l-4.8-4.8c-0.312-0.312-0.819-0.312-1.131 0s-0.312 0.819 0 1.131l3.434 3.434h-10.069c-0.442 0-0.8 0.358-0.8 0.8s0.358 0.8 0.8 0.8h10.069l-3.434 3.434c-0.312 0.312-0.312 0.819 0 1.131 0.157 0.157 0.362 0.234 0.566 0.234s0.41-0.078 0.566-0.234l4.8-4.8c0.312-0.312 0.312-0.819 0-1.131z"></path>
+            </symbol>
+            <symbol id="icon-eye" viewBox="0 0 32 32">
+                <title>eye</title>
+                <path d="M31.795 16.266c-0.075-0.085-1.891-2.088-4.73-4.115-1.675-1.197-3.36-2.15-5.008-2.837-2.088-0.87-4.126-1.312-6.058-1.312s-3.97 0.442-6.058 1.312c-1.648 0.686-3.333 1.642-5.008 2.837-2.838 2.027-4.654 4.032-4.73 4.115-0.274 0.304-0.274 0.766 0 1.070 0.075 0.085 1.891 2.088 4.73 4.115 1.675 1.197 3.36 2.15 5.008 2.837 2.088 0.87 4.126 1.312 6.058 1.312s3.97-0.442 6.058-1.312c1.648-0.686 3.333-1.642 5.008-2.837 2.838-2.027 4.654-4.032 4.73-4.115 0.274-0.304 0.274-0.766 0-1.070zM20.118 10.301c1.451 1.221 2.282 2.997 2.282 4.899 0 3.53-2.87 6.4-6.4 6.4s-6.4-2.87-6.4-6.4c0-1.901 0.83-3.678 2.282-4.899 1.315-0.429 2.706-0.701 4.118-0.701s2.803 0.272 4.118 0.701zM26.107 20.17c-2.453 1.747-6.197 3.83-10.107 3.83s-7.654-2.083-10.107-3.83c-1.851-1.318-3.267-2.653-3.982-3.37 0.715-0.717 2.131-2.050 3.982-3.37 0.848-0.605 1.85-1.248 2.96-1.832-0.555 1.101-0.853 2.328-0.853 3.602 0 4.411 3.589 8 8 8s8-3.589 8-8c0-1.274-0.298-2.501-0.853-3.602 1.11 0.584 2.112 1.229 2.96 1.832 1.851 1.318 3.267 2.653 3.982 3.37-0.715 0.717-2.131 2.050-3.982 3.37z"></path>
+            </symbol>
+            <symbol id="icon-headset" viewBox="0 0 32 32">
+                <title>headset</title>
+                <path d="M29.6 20.845c-0.442 0-0.8-0.358-0.8-0.8v-5.645c0-8.134-4.666-12.8-12.8-12.8s-12.8 4.666-12.8 12.8v5.645c0 0.442-0.358 0.8-0.8 0.8s-0.8-0.358-0.8-0.8v-5.645c0-2.422 0.379-4.598 1.126-6.472 0.712-1.786 1.763-3.309 3.125-4.525 2.491-2.227 6-3.403 10.15-3.403s7.659 1.178 10.15 3.403c1.36 1.216 2.411 2.739 3.125 4.525 0.747 1.872 1.126 4.050 1.126 6.472v5.645c0 0.442-0.358 0.8-0.8 0.8zM10.4 12.8c-1.051 0-1.946 0.678-2.269 1.621-1.765 0.109-3.030 0.662-3.854 1.683-0.734 0.912-1.077 2.15-1.077 3.896s0.342 2.984 1.077 3.896c0.824 1.022 2.088 1.574 3.854 1.683 0.325 0.942 1.219 1.621 2.269 1.621 1.323 0 2.4-1.077 2.4-2.4v-9.6c0-1.323-1.077-2.4-2.4-2.4zM4.8 20c0-2.258 0.56-3.73 3.2-3.966v7.933c-2.64-0.237-3.2-1.709-3.2-3.966zM11.2 24.8c0 0.442-0.358 0.8-0.8 0.8s-0.8-0.358-0.8-0.8v-9.6c0-0.442 0.358-0.8 0.8-0.8s0.8 0.358 0.8 0.8v9.6zM27.723 16.104c-0.824-1.022-2.088-1.574-3.853-1.683-0.325-0.942-1.219-1.621-2.269-1.621-1.323 0-2.4 1.077-2.4 2.4v9.6c0 1.323 1.077 2.4 2.4 2.4 1.051 0 1.946-0.678 2.269-1.621 1.427-0.088 2.526-0.467 3.331-1.149v1.968c0 1.323-1.077 2.4-2.4 2.4h-5.738c-0.33-0.931-1.219-1.6-2.262-1.6-1.323 0-2.4 1.077-2.4 2.4s1.077 2.4 2.4 2.4c1.043 0 1.933-0.669 2.262-1.6h5.738c2.205 0 4-1.795 4-4v-6.4c0-1.746-0.342-2.984-1.077-3.896zM16.8 30.4c-0.442 0-0.8-0.358-0.8-0.8s0.358-0.8 0.8-0.8 0.8 0.358 0.8 0.8-0.358 0.8-0.8 0.8zM21.6 25.6c-0.442 0-0.8-0.358-0.8-0.8v-9.6c0-0.442 0.358-0.8 0.8-0.8s0.8 0.358 0.8 0.8v9.6c0 0.442-0.358 0.8-0.8 0.8zM24 23.966v-7.933c2.64 0.237 3.2 1.709 3.2 3.966s-0.56 3.73-3.2 3.966z"></path>
             </symbol>
         </defs>
     </svg>
