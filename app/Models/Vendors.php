@@ -28,7 +28,13 @@ class Vendors extends Model
         'Vendor_businessname', 
         'Vendor_businessaddress', 
         'Vendor_isverified', 
-        'Vendor_isactive'
+        'Vendor_isactive', 
+        'Vendor_referencenumber', 
+        'Vendor_Accountnumber', 
+        'Vendor_Validfrom', 
+        'Vendor_Validto', 
+        'Vendor_remarks', 
+        "Vendor_bio"
     ];
 
 }

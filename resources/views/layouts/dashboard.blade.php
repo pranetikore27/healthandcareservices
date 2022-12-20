@@ -13,15 +13,15 @@
     <link href="https://fonts.googleapis.com/css?family=Poppins:200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i&display=swap"
           rel="stylesheet">
 
-    <link rel="stylesheet" href="vendors/font-awesome/css/fontawesome.css">
-    <link rel="stylesheet" href="vendors/magnific-popup/magnific-popup.css">
-    <link rel="stylesheet" href="vendors/slick/slick.css">
-    <link rel="stylesheet" href="vendors/animate.css">
-    <link rel="stylesheet" href="vendors/air-datepicker/css/datepicker.min.css">
-    <link rel="stylesheet" href="vendors/jquery-ui/jquery-ui.min.css">
+    <link rel="stylesheet" href="{{asset('vendors/font-awesome/css/fontawesome.css')}}">
+    <link rel="stylesheet" href="{{asset('vendors/magnific-popup/magnific-popup.css')}}">
+    <link rel="stylesheet" href="{{asset('vendors/slick/slick.css')}}">
+    <link rel="stylesheet" href="{{asset('vendors/animate.css')}}">
+    <link rel="stylesheet" href="{{asset('vendors/air-datepicker/css/datepicker.min.css')}}">
+    <link rel="stylesheet" href="{{asset('vendors/jquery-ui/jquery-ui.min.css')}}">
 
     <!-- Site Stylesheets -->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="{{asset('style.css')}}">
 
 </head>
 <body>
@@ -48,7 +48,7 @@
                         </div>
                         <div class="collapse navbar-collapse" id="navbar-main-menu">
                             <a class="navbar-brand d-none d-xl-block" href="index.html">
-                                <img src="images/logo.png" alt="TheDir">
+                                <img src="{{asset('images/logo.png')}}" alt="TheDir">
                             </a>
                             <div class="form-search form-search-style-04 d-flex mr-auto">
                                 <form>
@@ -179,9 +179,11 @@
                             </div>
                             <ul class="navbar-nav">
                                 <li class="nav-item">
-                                    <a class="nav-link" href="#">Options<span class="caret"><i
-                                            class="fas fa-angle-down"></i></span></a>
-                                    <ul class="sub-menu x-animated x-fadeInUp">
+                                    <a class="nav-link" href="{{route('logout')}}">Logout
+                                        <!-- <span class="caret"><i
+                                            class="fas fa-angle-down"></i></span> -->
+                                        </a>
+                                    <!-- <ul class="sub-menu x-animated x-fadeInUp">
                                         <li class="nav-item">
                                             <a class="nav-link" href="#"> layout
                                                 <span class="caret"><i class="fas fa-angle-down"></i></span>
@@ -283,7 +285,7 @@
                                         </li>
                                     </ul>
                                 </li>
-                            </ul>
+                            </ul> -->
 
                             <div class="header-customize justify-content-end align-items-center d-none d-xl-flex">
                                 <div class="header-customize-item button-search">
@@ -357,7 +359,7 @@
                                     </li>
 
                                     <li class="list-group-item p-0 mb-2 lh-15">
-                                        <a href="{{route('services')}}" class="link-hover-dark-primary font-size-md">
+                                        <a href="{{route('home')}}" class="link-hover-dark-primary font-size-md">
                                             Services
                                         </a>
                                     </li>
@@ -369,15 +371,41 @@
                                     </li>
                                 </ul>
                             </li>
+
                             <li class="list-group-item p-0 mb-2 lh-15">
-                                <a href="panel-my-favourite.html"
+                                <a href="#listing"
+                                   class="d-flex align-items-center link-hover-dark-primary font-size-md"
+                                   data-toggle="collapse"
+                                   aria-expanded="false">
+									<span class="d-inline-block mr-3"><svg class="icon icon-layers"><use
+                                            xlink:href="#icon-layers"></use></svg></span>
+                                    <span>Import/Export</span>
+                                    <span class=" ml-auto"><i class="fal fa-chevron-down"></i></span>
+                                </a>
+                                <ul class="submenu collapse list-group list-group-flush list-group-borderless pt-2 mb-0 sidebar-menu"
+                                    id="listing">
+                                    <li class="list-group-item p-0 mb-2 lh-15">
+                                        <a href="{{route('import')}}" class="link-hover-dark-primary font-size-md">
+                                            Import
+                                        </a>
+                                    </li>
+
+                                    <li class="list-group-item p-0 mb-2 lh-15">
+                                        <a href="{{route('export')}}" class="link-hover-dark-primary font-size-md">
+                                            Export
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="list-group-item p-0 mb-2 lh-15">
+                                <a href="{{route('home')}}"
                                    class="d-flex align-items-center link-hover-dark-primary font-size-md">
                                     <span class="d-inline-block mr-3"><i class="fal fa-bookmark"></i></span>
                                     <span>Complaints</span>
                                 </a>
                             </li>
                             <li class="list-group-item p-0 mb-2 lh-15">
-                                <a href="#invoice"
+                                <a href="{{route('home')}}"
                                    class="d-flex align-items-center link-hover-dark-primary font-size-md"
                                    data-toggle="collapse"
                                    aria-expanded="false">
@@ -440,20 +468,37 @@
                                 </ul>
                             </li>
                             <li class="list-group-item p-0 mb-2 lh-15">
-                                <a href="panel-my-profile.html"
+                                <a href="{{route('home')}}"
                                    class="d-flex align-items-center link-hover-dark-primary font-size-md">
 									<span class="d-inline-block mr-3"><svg class="icon icon-user"><use
                                             xlink:href="#icon-user"></use></svg></span>
                                     <span>My Profile</span>
                                 </a>
                             </li>
+                            <br>
+
                             <li class="list-group-item p-0 mb-2 lh-15">
+                                <a href="{{route('home')}}"
+                                   class="d-flex align-items-center link-hover-dark-primary font-size-md">
+                                    <span>Logged in as {{$user->name}}</span>
+                                </a>
+                            </li>
+
+                            <li class="list-group-item p-0 mb-2 lh-15">
+                                <a href="{{route('payment')}}"
+                                   class="d-flex align-items-center link-hover-dark-primary font-size-md">
+                                    <span>Make Payment</span>
+                                </a>
+                            </li>
+
+                            
+                            <!-- <li class="list-group-item p-0 mb-2 lh-15">
                                 <a href="#" class="d-flex align-items-center link-hover-dark-primary font-size-md">
 									<span class="d-inline-block mr-3"><svg class="icon icon-exit"><use
                                             xlink:href="#icon-exit"></use></svg></span>
                                     <span>Logout</span>
                                 </a>
-                            </li>
+                            </li> -->
                         </ul>
                     </div>
                 </div>

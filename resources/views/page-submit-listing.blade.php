@@ -192,7 +192,7 @@
 												                        href="panel-my-listing.html"> my
 													listing</a></li>
 												<li class="nav-item"><a class="nav-link"
-												                        href="panel-my-profile.html"> my
+												                        href="{{route('/')}}"> my
 													profile</a></li>
 												<li class="nav-item"><a class="nav-link"
 												                        href="panel-package.html">

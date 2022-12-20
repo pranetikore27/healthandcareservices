@@ -20,9 +20,9 @@ class VendorController extends Controller
 
         $vendors = DB::table("users")
                     ->join("vendors", "users.id", "vendors.Vendor_userid")
-                    ->join("payments", "users.id", "payments.Payment_userid")
+                    // ->join("payments", "users.id", "payments.Payment_userid")
                     ->get(); 
-        return $vendors; 
+        // return $vendors; 
 
         $title = "Vendor Listing"; 
         // return $vendors; 
@@ -80,6 +80,13 @@ class VendorController extends Controller
      */
     public function show($id)
     {
+        $user = Auth::user(); 
+        $vendor = DB::table("vendors")
+                    ->join("users", "users.id", "vendors.Vendor_userid")
+                    ->where("users.id", "=", $id)
+                    ->get()->toArray(); 
+        // return $vendor; 
+        return view("Vendors/show", compact("vendor", "user")); 
         return "vendor show"; 
     }
 

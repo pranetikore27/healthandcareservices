@@ -22,7 +22,7 @@
                                             <tr>
                                                 <th style="width: 11%">Owner name</th>
                                                 <th style="width: 15%">Business name</th>
-                                                <!-- <th style="width: 13%">Address</th> -->
+                                                <th style="width: 13%">Address</th>
                                                 <th style="width: 10%">Plan</th>
                                                 <th style="width: 10%">Amount</th>
                                                 <th style="width: 20%">Verification Status</th>
@@ -40,29 +40,19 @@
                                                 <td>{{$v->Vendor_businessname}}</td>
                                                 <td>{{$v->Vendor_businessaddress}}</td>
                                                 <td>Basic</td>
-                                                <td>$264.00</td>
-                                                <td><span class="status paid">Paid</span></td>
-                                            </tr>
-                                            @endforeach
-                                            <tr>
-                                                <td><a href="panel-invoice-details.html" class="link-hover-dark-blue">INV-00002</a>
+                                                <td>Free</td>
+                                                
+                                                <td>
+                                                    @if($v->email_verified_at == NULL) 
+                                                    <span class="status paid">Unverified</span>
+                                                    @else
+                                                    <span class="status unpaid">Verified</span>
+                                                    @endif
                                                 </td>
-                                                <td>15/16/2016</td>
-                                                <td>Doris R.</td>
-                                                <td>Premium</td>
-                                                <td>$528.00</td>
-                                                <td><span class="status overdue">Overdue</span></td>
+
+                                                <td>Active</td>
                                             </tr>
-                                            <tr>
-                                                <td><a href="panel-invoice-details.html" class="link-hover-dark-blue">INV-00003</a>
-                                                </td>
-                                                <td>18/10/2017</td>
-                                                <td>Andrew D.</td>
-                                                <td>Ultimate</td>
-                                                <td>$1,528.00</td>
-                                                <td><span class="status pending">Pending</span></td>
-                                            </tr>
-                                            
+                                            @endforeach                                            
                                         </tbody>
                                     </table>
 

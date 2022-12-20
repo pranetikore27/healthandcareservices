@@ -8,6 +8,11 @@ return new class extends Migration
 {
     /**
      * Run the migrations.
+     * Service_isactive
+     * 0 - active
+     * 1 - pending approval
+     * 2- inactive
+     * 3 - expired
      *
      * @return void
      */

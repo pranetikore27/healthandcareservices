@@ -2,7 +2,10 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Service;
 use Illuminate\Http\Request;
+use Auth; 
+use DB; 
 
 class ServiceController extends Controller
 {
@@ -13,7 +16,19 @@ class ServiceController extends Controller
      */
     public function index()
     {
-        //
+        $user = Auth::user();
+        // return $user;  
+        $services = DB::table("services")
+                        ->where("Service_providerid", '=', $user->id)
+                        // ->join("reviews", "reviews.Review_serviceid", "services.Service_id")
+                        ->get(); 
+        // return $services; 
+        if($user->hasRole("Admin"))
+        {
+            $services = DB::table("services")->get(); 
+        }
+        return view("services/index", compact("services", "user")); 
+
     }
 
     /**
@@ -40,21 +55,23 @@ class ServiceController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  int  $id
+     * @param  \App\Models\Service  $service
      * @return \Illuminate\Http\Response
      */
-    public function show($id)
+    public function show(Service $service)
     {
-        //
+        // return $service; 
+        $user = Auth::user(); 
+        return view("services/show", compact("service", "user")); 
     }
 
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  int  $id
+     * @param  \App\Models\Service  $service
      * @return \Illuminate\Http\Response
      */
-    public function edit($id)
+    public function edit(Service $service)
     {
         //
     }
@@ -63,10 +80,10 @@ class ServiceController extends Controller
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  int  $id
+     * @param  \App\Models\Service  $service
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, $id)
+    public function update(Request $request, Service $service)
     {
         //
     }
@@ -74,10 +91,10 @@ class ServiceController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  int  $id
+     * @param  \App\Models\Service  $service
      * @return \Illuminate\Http\Response
      */
-    public function destroy($id)
+    public function destroy(Service $service)
     {
         //
     }

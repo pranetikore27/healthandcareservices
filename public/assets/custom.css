@@ -1,0 +1,4 @@
+.icon-box-style-01:hover .invert-image{
+    -webkit-filter: invert(1);
+    filter: invert(1);
+}
