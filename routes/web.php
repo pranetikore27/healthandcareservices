@@ -26,12 +26,14 @@ use App\Http\Controllers\ComplaintController;
 | contains the "web" middleware group. Now create something great!
 |
 */
-// Route::get('/', function () {
-//     return view('welcome');
-// });
-Route::get('/', [GuestController::class, 'index'])->name('/');
+Route::get('/', function () {
+    return view('guest/home');
+});
+// Route::get('guest', [GuestController::class, 'index'])->name('/');
+Route::get('/service-listings', [ServiceController::class, 'listings'])->name('service-listings');
+// Route::get('/guest', [LoginController::class, 'login'])->name('login');
 
-Auth::routes();
+// Auth::routes();
   
 Auth::routes(['register' => false]);
 

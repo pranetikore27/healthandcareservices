@@ -187,7 +187,7 @@
                             </h1>
                         </div>
                         <div class="form-search" data-animate="fadeInRight">
-                            <form>
+                            <form >
                                 <div class="row align-items-end">
                                     <div class="col-xl-6 mb-4 mb-xl-0">
                                         <label for="key-word" class="text-white font-weight-bold text-uppercase">What

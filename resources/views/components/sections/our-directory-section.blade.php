@@ -1,3 +1,5 @@
+@extends('components.layouts.header')
+@section('content') 
 <section id="section-03" class="pb-8 our-directory">
     <div class="container">
         <div class="mb-7">
@@ -2957,3 +2959,4 @@
         </div>
     </div>
 </section>
+@endsection

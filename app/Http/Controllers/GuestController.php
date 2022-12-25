@@ -14,7 +14,7 @@ class GuestController extends Controller
     public function index()
     {
         // return "guest/welcome"; 
-        return view("welcome"); 
+        return view("guest/home"); 
     }
 
     /**

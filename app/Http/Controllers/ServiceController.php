@@ -7,6 +7,9 @@ use Illuminate\Http\Request;
 use Auth; 
 use DB; 
 
+use Stevebauman\Location\Facades\Location;
+
+
 class ServiceController extends Controller
 {
     /**
@@ -16,19 +19,28 @@ class ServiceController extends Controller
      */
     public function index()
     {
+        $clientIP = request()->ip();
+
+        $clientIP = '162.159.24.227'; /* Static IP address */
+        $currentUserInfo = Location::get($clientIP);
+        //   return $currentUserInfo; 
+        // return view('user', compact('currentUserInfo'));
         $user = Auth::user();
         // return $user;  
-        $services = DB::table("services")
-                        ->where("Service_providerid", '=', $user->id)
-                        // ->join("reviews", "reviews.Review_serviceid", "services.Service_id")
-                        ->get(); 
-        // return $services; 
-        if($user->hasRole("Admin"))
-        {
-            $services = DB::table("services")->get(); 
-        }
-        return view("services/index", compact("services", "user")); 
-
+            $services = DB::table("services")
+                            ->where("Service_providerid", '=', $user->id)
+                            // ->join("reviews", "reviews.Review_serviceid", "services.Service_id")
+                            ->get(); 
+            // return $services; 
+            if($user->hasRole("Admin"))
+            {
+                $services = DB::table("services")
+                                ->join("users", "users.id", "services.Service_providerid")
+                                ->get(); 
+            }
+            return view("services/index", compact("services", "user")); 
+        
+        // return view()
     }
 
     /**
@@ -36,6 +48,12 @@ class ServiceController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
+    public function listings()
+    {
+        $services = DB::table("services")->get();
+        $user = Auth::user(); 
+        return view("services/listings", compact('services', 'user'));  
+    }
     public function create()
     {
         //

@@ -4,26 +4,30 @@
                         <div class="page-content-wrapper d-flex flex-column justify-content-center">
                             <div class="features card-deck">
                                 <div class="card rounded-0 border-0 bg-transparent mb-6">
+                                    <a href="{{route('home')}}">
                                     <div class="card-body d-flex align-items-center py-6 px-8 bg-white">
                                         <span class="font-size-h1 font-weight-semibold d-inline-block mr-2 text-primary lh-1">{{$ServicesCount}}</span>
-                                        <span class="font-size-md font-weight-semibold text-uppercase text-dark lh-13">Services I provide <br> 
-                                        <!-- Listings -->
-                                    </span>
+                                        <span class="font-size-md font-weight-semibold text-uppercase text-dark lh-13">Services I provide </span>
                                     </div>
+                                    </a>
                                 </div>
                                 <div class="card rounded-0 border-0 bg-transparent mb-6">
-                                    <div class="card-body d-flex align-items-center py-6 px-8 bg-white">
-                                        <span class="font-size-h1 font-weight-semibold d-inline-block mr-2 text-darker-light lh-1">{{$pendingservicerequest}}</span>
-                                        <span class="font-size-md font-weight-semibold text-uppercase text-dark lh-13">Pending Service<br> Requests</span>
-                                    </div>
+                                    <a href="{{route('home')}}">
+                                        <div class="card-body d-flex align-items-center py-6 px-8 bg-white">
+                                            <span class="font-size-h1 font-weight-semibold d-inline-block mr-2 text-darker-light lh-1">{{$pendingservicerequest}}</span>
+                                            <span class="font-size-md font-weight-semibold text-uppercase text-dark lh-13">Pending Service<br> Requests</span>
+                                        </div>
+                                    </a>
                                 </div>
                                 <div class="card rounded-0 border-0 bg-transparent mb-6">
+                                <a href="{{route('home')}}">
                                     <div class="card-body d-flex align-items-center py-6 px-8 bg-white">
                                         <span class="font-size-h1 font-weight-semibold d-inline-block mr-2 lh-1 published">{{$ComplaintsCount}}</span>
                                         <span class="font-size-md font-weight-semibold text-uppercase text-dark lh-13">Complaints<br> 
                                         <!-- Listings -->
                                     </span>
                                     </div>
+                                </a>
                                 </div>
                                 <div class="card rounded-0 border-0 bg-transparent mb-6">
                                     <div class="card-body d-flex align-items-center py-6 px-8 bg-white">

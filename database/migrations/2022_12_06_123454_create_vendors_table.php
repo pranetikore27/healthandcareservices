@@ -22,8 +22,8 @@ return new class extends Migration
 
             $table->string("Vendor_isverified")->default("0");
             $table->string("Vendor_isactive")->default("0");
-            $table->string("Vendor_referencenumber"); 
-            $table->string("Vendor_Accountnumber"); 
+            $table->string("Vendor_referencenumber")->nullable(); 
+            $table->string("Vendor_Accountnumber")->nullable();
             $table->timestamp("Vendor_Validfrom")->nullable(); 
             $table->timestamp("Vendor_Validto")->nullable();
             $table->string("Vendor_remarks")->nullable();
