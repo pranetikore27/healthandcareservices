@@ -25,7 +25,7 @@ class HomeController extends Controller
     public function index()
     {
         // return ("hi"); 
-        $user = Auth::user();
+        $user = Auth::user(); 
         if($user->hasRole("Vendor"))
         {
             $ServicesCount = DB::table("services")
@@ -78,4 +78,7 @@ class HomeController extends Controller
             )); 
         }
     }
+    // public function search(Request $request){
+    //     return $request; 
+    // }
 }

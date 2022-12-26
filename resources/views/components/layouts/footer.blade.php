@@ -140,7 +140,7 @@
                     </div>
                     <div class="col-lg-5 mb-3 mb-lg-0">
                         <div>
-                            &copy; 2020 <a href="index.html"
+                            &copy; 2020 <a href="{{route('home')}}"
                                            class="link-hover-dark-primary font-weight-semibold">The Dir.</a> All
                             Rights Resevered. Design
                             by <a href="http://g5plus.net/"

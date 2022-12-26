@@ -3,12 +3,12 @@
 
 @section('content')
 <div class="row">
-    <div class="col-lg-12 margin-tb">
+    <div class="col-lg-5 margin-tb">
         <div class="pull-left">
-            <h2>Create New User</h2>
+            <h2>Add new Service</h2>
         </div>
         <div class="pull-right">
-            <a class="btn btn-primary" href="{{ route('services') }}"> Back</a>
+            <a class="btn btn-primary" href="{{ url('services') }}"> Back</a>
         </div>
     </div>
 </div>
@@ -25,46 +25,50 @@
   </div>
 @endif
 
-
-
 {!! Form::open(array('route' => 'services.store','method'=>'POST')) !!}
-<div class="row">
-    <div class="col-xs-12 col-sm-12 col-md-12">
+<div class="row pull-center">
+    <div class="col-xs-5 col-sm-5 col-md-5">
         <div class="form-group">
-            <strong>Name:</strong>
-            {!! Form::text('name', null, array('placeholder' => 'Name','class' => 'form-control')) !!}
+            <h5> Name of the service</h5>
+            {!! Form::text('Service_name', null, array('placeholder' => 'Service Name','class' => 'form-control')) !!}
         </div>
     </div>
-    <div class="col-xs-12 col-sm-12 col-md-12">
+    <div class="col-xs-5 col-sm-5 col-md-5">
         <div class="form-group">
-            <strong>Email:</strong>
-            {!! Form::text('email', null, array('placeholder' => 'Email','class' => 'form-control')) !!}
+            <h5> Describe your services in detail</h5>
+            {!! Form::text('Service_description', null, array('placeholder' => 'Description','class' => 'form-control')) !!}
         </div>
     </div>
-    <div class="col-xs-12 col-sm-12 col-md-12">
+
+    <div class="col-xs-5 col-sm-5 col-md-5">
         <div class="form-group">
-            <strong>Password:</strong>
-            {!! Form::password('password', array('placeholder' => 'Password','class' => 'form-control')) !!}
+            <h5>Cost</h5>
+            {!! Form::text('Service_charge', null, array('placeholder' => 'Charge of service','class' => 'form-control')) !!}
         </div>
     </div>
-    <div class="col-xs-12 col-sm-12 col-md-12">
+
+    
+
+
+    <div class="col-xs-5 col-sm-5 col-md-5">
         <div class="form-group">
-            <strong>Confirm Password:</strong>
-            {!! Form::password('confirm-password', array('placeholder' => 'Confirm Password','class' => 'form-control')) !!}
+            <h5>Service available upto</h5>
+            {!! Form::date('Service_validity', null, array('placeholder' => 'Valid for','class' => 'form-control')) !!}
         </div>
     </div>
-    <div class="col-xs-12 col-sm-12 col-md-12">
+
+    <div class="col-xs-5 col-sm-5 col-md-5">
         <div class="form-group">
-            <strong>Role:</strong>
-            {!! Form::select('roles[]', $roles,[], array('class' => 'form-control','multiple')) !!}
+            <h5> Availability Status </h5>
+        {!! Form::select('Service_isactive',  ["Active", "Inactive", "Private"], null, ['class' => 'form-control']) !!}
         </div>
     </div>
+    
+    
     <div class="col-xs-12 col-sm-12 col-md-12 text-center">
         <button type="submit" class="btn btn-primary">Submit</button>
     </div>
 </div>
 {!! Form::close() !!}
 
-
-<p class="text-center text-primary"><small>Health and Care Services</small></p>
 @endsection

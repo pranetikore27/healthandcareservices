@@ -12,13 +12,14 @@
                 </p>
             </div>
             <div class="form-search form-search-style-02 pb-9" data-animate="fadeInDown">
-                <form>
+                <form action="{{ route('search') }}" method="POST">
+                    @csrf 
                     <div class="row align-items-end no-gutters">
                         <div class="col-xl-6 mb-4 mb-xl-0 py-3 px-4 bg-white border-right position-relative rounded-left form-search-item">
                             <label for="key-word"
                                    class="font-size-md font-weight-semibold text-dark mb-0 lh-1">What</label>
                             <div class="input-group dropdown show">
-                                <input type="text" autocomplete="off" id="key-word" name="key-word"
+                                <input type="text" autocomplete="on" id="key-word" name="key-word"
                                        class="form-control form-control-mini border-0 px-0 bg-transparent"
                                        placeholder="Ex: hospital, ambulance, medical, bloodbank" data-toggle="dropdown"
                                        aria-haspopup="true">

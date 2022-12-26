@@ -4,7 +4,7 @@
                         <div class="page-content-wrapper d-flex flex-column justify-content-center">
                             <div class="features card-deck">
                                 <div class="card rounded-0 border-0 bg-transparent mb-6">
-                                    <a href="{{route('home')}}">
+                                    <a href="{{url('services')}}">
                                     <div class="card-body d-flex align-items-center py-6 px-8 bg-white">
                                         <span class="font-size-h1 font-weight-semibold d-inline-block mr-2 text-primary lh-1">{{$ServicesCount}}</span>
                                         <span class="font-size-md font-weight-semibold text-uppercase text-dark lh-13">Services I provide </span>

@@ -51,7 +51,7 @@
                                     <a class="nav-link" href="#">Demos <span class="caret"><i
                                             class="fas fa-angle-down"></i></span></a>
                                     <ul class="sub-menu x-animated x-fadeInUp">
-                                        <li class="nav-item"><a class="nav-link" href="../../index.html">main</a>
+                                        <li class="nav-item"><a class="nav-link" href="../../{{route('home')}}">main</a>
                                         </li>
                                         <li class="nav-item"><a class="nav-link"
                                                                 href="../../demo/automotive-service/home-automotive-services.html">
@@ -2083,7 +2083,7 @@
                     <ul id="itemOne"
                         class="sub-menu py-3 x-animated x-fadeInUp collapse show list-group list-group-flush list-group-borderless"
                         data-parent="#menu">
-                        <li class="list-group-item p-0"><a href="../../index.html"
+                        <li class="list-group-item p-0"><a href="../../{{route('home')}}"
                                                            class="font-size-md link-hover-gray-dark text-capitalize lh-19">main</a>
                         </li>
                         <li class="list-group-item p-0"><a href="home-automotive-services.html"

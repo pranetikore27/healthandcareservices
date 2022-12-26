@@ -15,9 +15,26 @@ return new class extends Migration
     {
         Schema::create('locations', function (Blueprint $table) {
             $table->bigIncrements("Location_id");
+
             $table->string("Location_owneruserid");
-            $table->string("Location_longitude");
-            $table->string("Location_latitude");
+            $table->string("Location_ip")->unique();
+
+            $table->string("Location_countryName");
+            $table->string("Location_countryCode");
+            $table->string("Location_regionCode");
+            $table->string("Location_regionName");
+
+            $table->string("Location_cityName");
+            $table->string("Location_zipCode");
+            $table->string("Location_isoCode")->nullable();
+            $table->string("Location_postalCode")->nullable();
+
+            $table->string("Location_latitude")->nullable();
+            $table->string("Location_longitude")->nullable();
+            $table->string("Location_metroCode")->nullable();
+            $table->string("Location_areaCode")->nullable();
+            $table->string("Location_timezone")->nullable();
+
             $table->timestamps();
         });
     }

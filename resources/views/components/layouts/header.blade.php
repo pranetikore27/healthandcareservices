@@ -8,7 +8,7 @@
                                  data-target="#navbar-main-menu">
                                 <span></span>
                             </div>
-                            <a class="navbar-brand navbar-brand-mobile" href="index.html">
+                            <a class="navbar-brand navbar-brand-mobile" href="{{route('home')}}">
                                 <img src="./assets/images/brand-logo/spo2-logo.png" alt="TheDir">
                             </a>
                             <a class="mobile-button-search" href="#search-popup"
@@ -17,7 +17,7 @@
                                     class="far fa-search"></i></a>
                         </div>
                         <div class="collapse navbar-collapse" id="navbar-main-menu">
-                            <a class="navbar-brand d-none d-xl-block mr-auto" href="index.html">
+                            <a class="navbar-brand d-none d-xl-block mr-auto" href="{{route('home')}}">
                                 <img src="./assets/images/brand-logo/spo2-logo.png" alt="TheDir">
                             </a>
 
@@ -27,16 +27,16 @@
                                             class="fas fa-angle-down"></i></span></a>
                                     <ul class="sub-menu x-animated x-fadeInUp">
                                         <li class="nav-item">
-                                            <a class="nav-link" href="index.html">
+                                            <a class="nav-link" href="{{route('home')}}">
                                                 Hospitals
                                             </a>
-                                            <a class="nav-link" href="index.html">
+                                            <a class="nav-link" href="{{route('home')}}">
                                                 Medicals
                                             </a>
-                                            <a class="nav-link" href="index.html">
+                                            <a class="nav-link" href="{{route('home')}}">
                                                 Blood Bank
                                             </a>
-                                            <a class="nav-link" href="index.html">
+                                            <a class="nav-link" href="{{route('home')}}">
                                                 Ambulance
                                             </a>
                                         </li>
@@ -126,8 +126,10 @@
                             </ul>
                             <div class="header-customize justify-content-end align-items-center d-none d-xl-flex">
                                 <div class="header-customize-item">
-                                    <a href="#login-popup" class="link" data-gtf-mfp="true"
-                                       data-mfp-options='{"type":"inline"}'>
+                                    <!-- <a href="#login-popup" class="link" data-gtf-mfp="true"
+                                       data-mfp-options='{"type":"inline"}'> -->
+                                       <a href="{{url('login')}}" class="link" data-gtf-mfp="true"
+                                       data-mfp-options='{"type":"inline"}'> 
                                         <svg class="icon icon-user-circle-o">
                                             <use xlink:href="#icon-user-circle-o"></use>
                                         </svg>

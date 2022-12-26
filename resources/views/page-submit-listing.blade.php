@@ -298,7 +298,7 @@
 										</li>
 										<li class="nav-item">
 											<a class="nav-link" href="#">Listing details
-												<span class="caret"><i class="fas fa-angle-down"></i></span>
+												<span class="car  et"><i class="fas fa-angle-down"></i></span>
 											</a>
 											<ul class="sub-menu x-animated x-fadeInUp">
 												<li class="nav-item"><a class="nav-link"

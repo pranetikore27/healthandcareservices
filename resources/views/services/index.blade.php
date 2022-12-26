@@ -5,7 +5,9 @@
 <div class="page-container">
                     <div class="container-fluid">
                         <div class="page-content-wrapper d-flex flex-column">
-                            <h1 class="font-size-h4 mb-4 font-weight-normal">Services I provide</h1>
+                            <a href="{{url('services/create')}}">
+                            <h1 class="font-size-h4 mb-4 font-weight-normal">Add new service</h1>
+                            </a>
                             <div class="page-content">
                                 <div class="tabs">
                                     <ul class="nav nav-pills tab-style-01 font-size-lg" role="tablist">

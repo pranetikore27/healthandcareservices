@@ -38,7 +38,7 @@
                                  data-target="#navbar-main-menu">
                                 <span></span>
                             </div>
-                            <a class="navbar-brand navbar-brand-mobile" href="index.html">
+                            <a class="navbar-brand navbar-brand-mobile" href="{{route('home')}}">
                                 <img src="images/logo.png" alt="TheDir">
                             </a>
                             <a class="mobile-button-search" href="#search-popup"
@@ -47,7 +47,7 @@
                                     class="far fa-search"></i></a>
                         </div>
                         <div class="collapse navbar-collapse" id="navbar-main-menu">
-                            <a class="navbar-brand d-none d-xl-block" href="index.html">
+                            <a class="navbar-brand d-none d-xl-block" href="{{route('home')}}">
                                 <img src="{{asset('images/logo.png')}}" alt="TheDir">
                             </a>
                             <div class="form-search form-search-style-04 d-flex mr-auto">
@@ -385,13 +385,13 @@
                                 <ul class="submenu collapse list-group list-group-flush list-group-borderless pt-2 mb-0 sidebar-menu"
                                     id="listing">
                                     <li class="list-group-item p-0 mb-2 lh-15">
-                                        <a href="{{route('import')}}" class="link-hover-dark-primary font-size-md">
+                                        <a href="{{route('home')}}" class="link-hover-dark-primary font-size-md">
                                             Import
                                         </a>
                                     </li>
 
                                     <li class="list-group-item p-0 mb-2 lh-15">
-                                        <a href="{{route('export')}}" class="link-hover-dark-primary font-size-md">
+                                        <a href="{{route('home')}}" class="link-hover-dark-primary font-size-md">
                                             Export
                                         </a>
                                     </li>
@@ -739,7 +739,10 @@
                 <span class="d-block"><i class="fal fa-times"></i></span>
                 <span class="d-block">Close</span>
             </a>
-        </div>
+            </div>
+    </div>
+    </div>
+    </div>
     </div>
 
     <!-- External JavaScripts -->

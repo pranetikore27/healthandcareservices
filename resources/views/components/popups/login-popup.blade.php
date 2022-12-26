@@ -24,8 +24,8 @@
                     @csrf
                         <div class="font-size-md text-dark mb-5">Log In Your Account</div>
                         <div class="form-group mb-2">
-                            <label for="username" class="sr-only">Username</label>
-                            <input id="username" name="email" type="text" class="form-control" placeholder="Username">
+                            <label for="email" class="sr-only">Username</label>
+                            <input id="email" name="email" type="text" class="form-control" placeholder="Username">
                         </div>
                         <div class="form-group mb-3">
                             <div class="input-group flex-nowrap align-items-center">

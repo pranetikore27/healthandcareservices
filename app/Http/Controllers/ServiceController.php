@@ -56,7 +56,8 @@ class ServiceController extends Controller
     }
     public function create()
     {
-        //
+        $user = Auth::user(); 
+        return view("services/create", compact('user')); 
     }
 
     /**
@@ -67,7 +68,24 @@ class ServiceController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        // return $request; 
+        $this->validate($request, [
+            'Service_name' => 'required',
+            'Service_description' => 'required',
+            'Service_charge' => 'required',
+            'Service_validity' => 'required',
+            'Service_isactive' => 'required',
+        ]);
+        
+        $inputs = $request->all();
+
+        $user = Auth::user(); 
+        if($user->hasRole("Vendor"))
+        {
+            $inputs["Service_providerid"]    = $user->id; 
+            Service::create($inputs); 
+            return redirect("services"); 
+        }
     }
 
     /**
