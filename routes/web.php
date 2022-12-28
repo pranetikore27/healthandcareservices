@@ -93,4 +93,4 @@ Route::get('/page-submit-listing', function () {
 
 Route::get('/service-listings', [ServiceController::class, 'listings'])->name('service-listings');
 
-Route::get('/search1', [HomeController::class, 'store'])->name('search1');
+Route::post('/search', [GuestController::class, 'store'])->name('search');

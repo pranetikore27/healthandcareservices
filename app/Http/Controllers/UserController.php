@@ -43,6 +43,7 @@ class UserController extends Controller
      */
     public function store(Request $request)
     {
+        return "hi"; 
         $this->validate($request, [
             'name' => 'required',
             'email' => 'required|email|unique:users,email',

@@ -90,6 +90,8 @@ class LocationController extends Controller
             'password' => 'required|same:confirm-password',
             'roles' => 'required'
         ]);
+
+        return "hi"; 
     }
 
     /**
