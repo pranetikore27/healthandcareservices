@@ -16,65 +16,35 @@
                     @csrf 
                     <div class="row align-items-end no-gutters">
                         <div class="col-xl-6 mb-4 mb-xl-0 py-3 px-4 bg-white border-right position-relative rounded-left form-search-item">
-                            <label for="key-word"
+                            <label for="Category"
                                    class="font-size-md font-weight-semibold text-dark mb-0 lh-1">What</label>
                             <div class="input-group dropdown show">
-                                <input type="text" autocomplete="on" id="key-word" name="key-word"
+                                <input type="text" autocomplete="on" id="Category_name" name="Category_name"
                                        class="form-control form-control-mini border-0 px-0 bg-transparent"
                                        placeholder="Ex: hospital, ambulance, medical, bloodbank" data-toggle="dropdown"
                                        aria-haspopup="true">
-                                <a href="#" class="input-group-append text-decoration-none"
-                                   data-toggle="dropdown">
-                                    <i class="fal fa-chevron-down"></i>
-                                </a>
-                                <ul class="dropdown-menu form-search-ajax" aria-labelledby="key-word">
-                                    <li class="dropdown-item item">
-                                        <a href="#" class="link-hover-dark-white">
-                                           <img src="{{asset('./assets/icons/hospital.png')}}" alt="">
-                                            <span class="font-size-md">Foods & Restaurants</span>
-                                        </a>
-                                    </li>
+                                
+                                <ul class="dropdown-menu form-search-ajax" aria-labelledby="Category_name">
+                                    @foreach($category as $c)
                                     <li class="dropdown-item item">
                                         <a href="#" class="link-hover-dark-white">
                                             <svg class="icon icon-bed">
                                                 <use xlink:href="#icon-bed"></use>
                                             </svg>
-                                            <span class="font-size-md">Hotels & Resorts</span>
+                                            <span class="font-size-md">{{$c->Category_name}}</span>
                                         </a>
                                     </li>
-                                    <li class="dropdown-item item">
-                                        <a href="#" class="link-hover-dark-white">
-                                            <svg class="icon icon-pharmaceutical">
-                                                <use xlink:href="#icon-pharmaceutical"></use>
-                                            </svg>
-                                            <span class="font-size-md">Healths & Medicals</span>
-                                        </a>
-                                    </li>
-                                    <li class="dropdown-item item">
-                                        <a href="#" class="link-hover-dark-white">
-                                            <svg class="icon icon-cog">
-                                                <use xlink:href="#icon-cog"></use>
-                                            </svg>
-                                            <span class="font-size-md">Services</span>
-                                        </a>
-                                    </li>
-                                    <li class="dropdown-item item">
-                                        <a href="#" class="link-hover-dark-white">
-                                            <svg class="icon icon-car">
-                                                <use xlink:href="#icon-car"></use>
-                                            </svg>
-                                            <span class="font-size-md">Automotive</span>
-                                        </a>
-                                    </li>
+                                    @endforeach
+                                    
                                 </ul>
                             </div>
 
                         </div>
                         <div class="col-xl-4 mb-4 mb-xl-0 py-3 px-4 bg-white position-relative rounded-right form-search-item">
-                            <label for="key-word"
+                            <label for="Location_cityName"
                                    class="font-size-md font-weight-semibold text-dark mb-0 lh-1">Where</label>
                             <div class="input-group dropdown show">
-                                <input type="text" autocomplete="off" id="region" name="region"
+                                <input type="text" autocomplete="on" id="Location_cityName" name="Location_cityName"
                                        class="form-control form-control-mini border-0 px-0 bg-transparent"
                                        placeholder="Pune" data-toggle="dropdown"
                                        aria-haspopup="true">
@@ -83,51 +53,13 @@
                                     <i class="fal fa-chevron-down"></i>
                                 </a>
                                 <ul class="dropdown-menu form-search-ajax" aria-labelledby="region">
+                                    @foreach($locations as $l)
                                     <li class="dropdown-item item">
                                         <a href="#" class="link-hover-dark-white">
-                                            Pune
+                                            {{$l->Location_cityName}}
                                         </a>
                                     </li>
-                                    <li class="dropdown-item item">
-                                        <a href="#" class="link-hover-dark-white">
-                                            Mumbai
-                                        </a>
-                                    </li>
-                                    <li class="dropdown-item item">
-                                        <a href="#" class="link-hover-dark-white">
-                                            Solapur
-                                        </a>
-                                    </li>
-                                    <li class="dropdown-item item">
-                                        <a href="#" class="link-hover-dark-white">
-                                            Satara
-                                        </a>
-                                    </li>
-                                    <li class="dropdown-item item">
-                                        <a href="#" class="link-hover-dark-white">
-                                            Sangli
-                                        </a>
-                                    </li>
-                                    <li class="dropdown-item item">
-                                        <a href="#" class="link-hover-dark-white">
-                                            Nagpur
-                                        </a>
-                                    </li>
-                                    <li class="dropdown-item item">
-                                        <a href="#" class="link-hover-dark-white">
-                                            San Francisco
-                                        </a>
-                                    </li>
-                                    <li class="dropdown-item item">
-                                        <a href="#" class="link-hover-dark-white">
-                                            Seattle
-                                        </a>
-                                    </li>
-                                    <li class="dropdown-item item">
-                                        <a href="#" class="link-hover-dark-white">
-                                            Washington
-                                        </a>
-                                    </li>
+                                    @endforeach
                                 </ul>
                             </div>
                         </div>
@@ -144,17 +76,19 @@
                 Or browse the highlights
             </div>
             <div class="list-inline pb-8 flex-wrap my-n2 flex">
+                @foreach($category as $c)
                 <div class="list-inline-item py-2">
-                    <a href="explore-sidebar-grid.html"
+                    <a href="{{route('trial.show', $c->Category_id)}}"
                        class="card border-0 icon-box-style-01 link-hover-dark-white">
                         <div class="card-body p-0">
                             <img class="w-14 m-auto invert-image" src="{{asset('./assets/icons/hospital.png')}}" alt="Hospitals">
                             <span class="card-text font-size-md font-weight-semibold mt-2 d-block">
-                                Hospital
+                                {{$c->Category_name}}
                             </span>
                         </div>
                     </a>
                 </div>
+                @endforeach
                 <div class="list-inline-item py-2">
                     <a href="explore-sidebar-grid.html"
                        class="card border-0 icon-box-style-01 link-hover-dark-white">

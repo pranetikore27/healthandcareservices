@@ -27,6 +27,14 @@
 
 {!! Form::open(array('route' => 'services.store','method'=>'POST')) !!}
 <div class="row pull-center">
+
+<div class="col-xs-12 col-sm-12 col-md-12">
+        <div class="form-group">
+            <h5> Category </h5>
+            {!! Form::select('Service_categoryid',  $ca, null, ['class' => 'form-control']) !!}
+        </div>
+    </div>
+
     <div class="col-xs-5 col-sm-5 col-md-5">
         <div class="form-group">
             <h5> Name of the service</h5>
@@ -47,7 +55,12 @@
         </div>
     </div>
 
-    
+    <div class="col-xs-5 col-sm-5 col-md-5">
+        <div class="form-group">
+            <h5>Cost</h5>
+            {!! Form::text('Service_charge', null, array('placeholder' => 'Charge of service','class' => 'form-control')) !!}
+        </div>
+    </div>
 
 
     <div class="col-xs-5 col-sm-5 col-md-5">
@@ -63,7 +76,6 @@
         {!! Form::select('Service_isactive',  ["Active", "Inactive", "Private"], null, ['class' => 'form-control']) !!}
         </div>
     </div>
-    
     
     <div class="col-xs-12 col-sm-12 col-md-12 text-center">
         <button type="submit" class="btn btn-primary">Submit</button>

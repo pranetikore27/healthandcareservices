@@ -21,6 +21,7 @@ return new class extends Migration
         Schema::create('services', function (Blueprint $table) {
             $table->bigIncrements("Service_id");
             $table->string("Service_providerid"); 
+            $table->string("Service_categoryid"); 
             $table->string("Service_name");
             $table->string("Service_description");
             $table->string("Service_charge");

@@ -6,6 +6,8 @@ use Illuminate\Http\Request;
 use DB; 
 use Illuminate\Support\Facades\Auth;
 use App\Models\Vendors; 
+use App\Models\User;
+use Hash;  
 class VendorController extends Controller
 {
     /**
@@ -52,22 +54,30 @@ class VendorController extends Controller
     public function store(Request $request)
     {
         $validated = $request->validate([
+            'name' => 'required', 
+            'email' => 'required', 
             'Vendor_businessname' => 'required',
             'Vendor_businessaddress' => 'required',
+            'Vendor_referencenumber' => 'required', 
+            'Vendor_Accountnumber' => 'required', 
+            'Vendor_bio' => 'required'
         ]);
 
         $user = Auth::user(); 
-        
-        $inputs = $request->all();
-        $inputs["Vendor_userid"] = $user->id; 
-        // $inputs["Vendor_isverified"] = 0; 
-        // $inputs["Vendor_isactive"] = 0; 
-        
-        // $inputs = (object)$inputs;
+        // $input
+        $VendorUser = []; 
+        $VendorUser["name"] = $request->name; 
+        $VendorUser["email"] = $request->email;
+        $VendorUser["password"] = Hash::make("123456"); 
 
-        // return $inputs; 
+        $inputs = $request->all();
+        $VendorUser = User::create($VendorUser); 
+
+        $inputs["Vendor_userid"] = $VendorUser->id; 
+        
+        $VendorUser->assignRole("Vendor"); 
         $vendors = Vendors::create($inputs); 
-        $user->assignRole("Vendor"); 
+
         return redirect("home");  
 
     }

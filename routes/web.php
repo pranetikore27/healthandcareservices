@@ -7,6 +7,7 @@ use App\Http\Controllers\Auth\LoginController;
 use App\Http\Controllers\RoleController;
 use App\Http\Controllers\UserController;
 use App\Http\Controllers\ProductController;
+use App\Http\Controllers\TrialController;
 
 use App\Http\Controllers\VendorController;
 use App\Http\Controllers\PartnerController;
@@ -28,8 +29,6 @@ use App\Http\Controllers\LocationController;
 | contains the "web" middleware group. Now create something great!
 |
 */
-
-
 Auth::routes();
   
 // Auth::routes(['register' => false]);
@@ -49,9 +48,11 @@ Route::group(['middleware' => ['auth']], function() {
     Route::resource('profile', ProfileController::class);
     Route::resource('services', ServiceController::class);
     Route::resource('location', LocationController::class);
+    // Route::resource('category', CategoryController::class);
+    // Route::resource('categories', CategoriesController::class);
     // Route::resource('payment', PaymentController::class);
     
-    Route::get('/', [HomeController::class, 'index']);
+    // Route::get('/', [HomeController::class, 'index']);
     Route::get('prof', [ProfController::class, 'index']);
     
 
@@ -64,7 +65,7 @@ Route::group(['middleware' => ['auth']], function() {
     Route::get('/users', [UserController::class, 'index'])->name('users');
     Route::get('/partners', [PartnerController::class, 'index'])->name('partners');
     Route::get('/hivendors', [VendorController::class, 'index'])->name('hivendors');
-    // Route::get('/logout', [LoginController::class, 'logout'])->name('logout');
+    Route::get('/logout', [LoginController::class, 'logout'])->name('logout');
     
     // Route::resource('roles', RoleController::class);
     // Route::resource('users', UserController::class);
@@ -82,15 +83,25 @@ Route::group(['middleware' => ['auth']], function() {
 
 });
 
-Route::get('/', function () {
-    return view('guest/home');
-});
+// Route::get('/', function () {
+    // return view('guest/home');
+// });
+
+// Route::resource('/guest', GuestController::class);
 
 Route::get('/page-submit-listing', function () {
     return view('page-submit-listing');
 });
 
+// Route::resource('/', GuestController::class);
+// Route::post('category-listings', [GuestController::class, 'show'])->name('category-listings');
+// Route::get('/', "GuestController@index");
+// Route::get('/', [GuestController::class, 'index'])->name('/');
+
+Route::resource('/', GuestController::class);
 
 Route::get('/service-listings', [ServiceController::class, 'listings'])->name('service-listings');
 
 Route::post('/search', [GuestController::class, 'store'])->name('search');
+
+Route::resource("trial", TrialController::class); 

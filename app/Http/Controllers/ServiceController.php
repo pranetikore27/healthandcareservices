@@ -27,18 +27,21 @@ class ServiceController extends Controller
         // return view('user', compact('currentUserInfo'));
         $user = Auth::user();
         // return $user;  
+        $services = DB::table("services")
+                        ->where("Service_providerid", '=', $user->id)
+                        // ->join("categories", "categories.Category_id", "services.Service_categoryid")
+                        // ->join("reviews", "reviews.Review_serviceid", "services.Service_id")
+                        ->get(); 
+        // return $services; 
+        if($user->hasRole("Admin"))
+        {
             $services = DB::table("services")
-                            ->where("Service_providerid", '=', $user->id)
-                            // ->join("reviews", "reviews.Review_serviceid", "services.Service_id")
+                            ->join("users", "users.id", "services.Service_providerid")
+                            ->join("categories", "categories.Category_id", "services.Service_categoryid")
                             ->get(); 
-            // return $services; 
-            if($user->hasRole("Admin"))
-            {
-                $services = DB::table("services")
-                                ->join("users", "users.id", "services.Service_providerid")
-                                ->get(); 
-            }
-            return view("services/index", compact("services", "user")); 
+        }
+        // return $services; 
+        return view("services/index", compact("services", "user")); 
         
         // return view()
     }
@@ -56,8 +59,29 @@ class ServiceController extends Controller
     }
     public function create()
     {
+        $i =0; 
         $user = Auth::user(); 
-        return view("services/create", compact('user')); 
+        $category = DB::table("categories")
+                        ->get()
+                        ->toArray(); 
+        $categoryCount = DB::table("categories")
+                        ->count(); 
+        $c = []; 
+        $ca = []; 
+        for($i=0; $i<$categoryCount; $i++)
+        {
+            array_push($c, $category[$i]->Category_id); 
+            array_push($ca, $category[$i]->Category_name); 
+        }
+        // return $categoryID; 
+        // foreach($category as $c)
+        // {
+        //     print_r($c->Category_name); 
+        //     echo "------------"; 
+        // }
+        // return 0; 
+        // return $category[0]->Category_name; 
+        return view("services/create", compact('user', 'c', 'ca')); 
     }
 
     /**
@@ -75,17 +99,16 @@ class ServiceController extends Controller
             'Service_charge' => 'required',
             'Service_validity' => 'required',
             'Service_isactive' => 'required',
+            'Service_categoryid' => 'required'
         ]);
         
         $inputs = $request->all();
 
         $user = Auth::user(); 
-        if($user->hasRole("Vendor"))
-        {
-            $inputs["Service_providerid"]    = $user->id; 
-            Service::create($inputs); 
-            return redirect("services"); 
-        }
+        $inputs["Service_providerid"] = $user->id; 
+        $service = Service::create($inputs); 
+
+        return redirect("services"); 
     }
 
     /**
