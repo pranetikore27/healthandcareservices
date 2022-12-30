@@ -65,7 +65,7 @@ Route::group(['middleware' => ['auth']], function() {
     Route::get('/users', [UserController::class, 'index'])->name('users');
     Route::get('/partners', [PartnerController::class, 'index'])->name('partners');
     Route::get('/hivendors', [VendorController::class, 'index'])->name('hivendors');
-    Route::get('/logout', [LoginController::class, 'logout'])->name('logout');
+    // Route::get('/logout', [LoginController::class, 'logout'])->name('logout');
     
     // Route::resource('roles', RoleController::class);
     // Route::resource('users', UserController::class);
@@ -80,6 +80,11 @@ Route::group(['middleware' => ['auth']], function() {
 // Route::get('importExportView', [MyController::class, 'importExportView']);
 // Route::get('export', [MyController::class, 'export'])->name('export');
 // Route::post('import', [MyController::class, 'import'])->name('import');
+
+
+Route::get('/profile/vendor', function () {
+    return view('profile/vendor');
+});
 
 });
 

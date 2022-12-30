@@ -35,16 +35,22 @@ class LocationController extends Controller
     {
         $user = Auth::user(); 
 
-        $clientIP = request()->ip();
+        $clientIP = "152.57.240.45";         //request()->ip();
 
         $currentUserInfo = DB::table("locations")
                                 ->where("Location_owneruserid", '=', $user->id)
                                 ->get(); 
-        if($currentUserInfo == NULL)
 
+                                    // return $currentUserInfo; 
+        // return $clientIP; 
+        if($currentUserInfo)
         {
+            return view("location/show", compact("user", "currentUserInfo"));
+        }
+        // echo "hi"; 
             $clientIP = '162.159.24.227'; /* Static IP address */
             $currentUserInfo = Loc::get($clientIP);
+            // return $currentUserInfo; 
             // return $currentUserInfo; 
             // $currentUserInfo->toArray(); 
             // $currentUserInfo->setAttribute('Location_owneruserid', $user->id);
@@ -67,13 +73,10 @@ class LocationController extends Controller
             $location["Location_areaCode"] = $currentUserInfo->areaCode; 
             $location["Location_timezone"] = $currentUserInfo->timezone; 
 
-
-        // return $location; 
-        // $currentUserInfo->Location_owneruserid = $user->id; 
-        
             $location = Location::create($location); 
-        }
-        return view("location/show", compact("user", "currentUserInfo")); 
+            
+        return $location; 
+ 
     }
 
     /**

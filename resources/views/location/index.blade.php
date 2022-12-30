@@ -5,13 +5,13 @@
     <div class="row">
         <div class="col-lg-12 margin-tb">
             <div class="pull-left">
-                <h2>locations</h2>
+                <h2>location</h2>
             </div>
             <div class="pull-right">
             <a class="btn btn-success" href="{{ route('location.create') }}"> Create New location</a>
                
                 @can('location-create')
-                <a class="btn btn-success" href="{{ route('locations.create') }}"> Create New location</a>
+                <a class="btn btn-success" href="{{ route('location.create') }}"> Create New location</a>
                 @endcan
             </div>
         </div>
@@ -38,10 +38,10 @@
 	        <td>{{ $location->name }}</td>
 	        <td>{{ $location->detail }}</td>
 	        <td>
-                <form action="{{ route('locations.destroy',$location->id) }}" method="POST">
-                    <a class="btn btn-info" href="{{ route('locations.show',$location->id) }}">Show</a>
+                <form action="{{ route('location.destroy',$location->id) }}" method="POST">
+                    <a class="btn btn-info" href="{{ route('location.show',$location->id) }}">Show</a>
                     @can('location-edit')
-                    <a class="btn btn-primary" href="{{ route('locations.edit',$location->id) }}">Edit</a>
+                    <a class="btn btn-primary" href="{{ route('location.edit',$location->id) }}">Edit</a>
                     @endcan
 
 
@@ -57,7 +57,7 @@
     </table>
 
 
-    {!! $locations->links() !!}
+    {!! $location->links() !!}
 
 
 <p class="text-center text-primary"><small>Health and Care Services</small></p>

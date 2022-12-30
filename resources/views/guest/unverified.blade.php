@@ -23,7 +23,7 @@
 </h1>
 <div class="row">
     <div class="card col-md-6">
-    <a href= "{{url('hivendors/create')}}">
+    <a href= "{{url('profile/vendor')}}">
 
             <div class="row">
                 <div class="col-md-4">

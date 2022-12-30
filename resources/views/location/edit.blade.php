@@ -8,7 +8,7 @@
                 <h2>Edit location</h2>
             </div>
             <div class="pull-right">
-                <a class="btn btn-primary" href="{{ route('locations.index') }}"> Back</a>
+                <a class="btn btn-primary" href="{{ route('location') }}"> Back</a>
             </div>
         </div>
     </div>

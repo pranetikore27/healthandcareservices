@@ -25,8 +25,11 @@ class HomeController extends Controller
      */
     public function index()
     {
-        // return ("hi"); 
-        $user = Auth::user(); 
+        // // return ("hi"); 
+        $user = Auth::user();
+        // $roles = await _userManager.GetRolesAsync(user);
+        // var hasAnyRole = roles.Count > 0;
+
         if($user->hasRole("Vendor"))
         {
             $ServicesCount = DB::table("services")
@@ -78,6 +81,7 @@ class HomeController extends Controller
                 "TotalAmount"
             )); 
         }
+        return view("guest/unverified"); 
         // return "none"; 
     }
     public function store(Request $request)
