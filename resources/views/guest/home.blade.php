@@ -34,7 +34,7 @@
             @include('components.sections.hero-section')
             <!-- /#section-01 end -->
             <!-- #section 02start -->
-            @include('components.sections.featured-section')
+            <!-- @include('components.sections.featured-section') -->
             <!-- /#section-02 end -->
             <!-- #section 03 start -->
             @include('components.sections.our-directory-section')

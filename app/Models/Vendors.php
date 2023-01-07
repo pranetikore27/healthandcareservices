@@ -26,7 +26,8 @@ class Vendors extends Model
         // 'Vendor_id', 
         'Vendor_userid', 
         'Vendor_businessname', 
-        'Vendor_businessaddress', 
+        'Vendor_businessaddress',
+        'Vendor_category', //fetching from category table
         'Vendor_isverified', 
         'Vendor_isactive', 
         'Vendor_referencenumber', 

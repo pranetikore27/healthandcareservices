@@ -35,10 +35,14 @@ class ServiceController extends Controller
         // return $services; 
         if($user->hasRole("Admin"))
         {
-            $services = DB::table("services")
+            $categorised = DB::table("services")
                             ->join("users", "users.id", "services.Service_providerid")
                             ->join("categories", "categories.Category_id", "services.Service_categoryid")
                             ->get(); 
+            $services = DB::table("services")
+                ->where("Service_providerid", '=', $user->id)->get(); 
+                
+        return view("services/index", compact("services", "user", "categorised")); 
         }
         // return $services; 
         return view("services/index", compact("services", "user")); 

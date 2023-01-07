@@ -11,7 +11,7 @@
                             New York NY 10011<br>
                             212.913.9058</p>
                     </div>
-                    <div class="region pt-1">
+                    <!-- <div class="region pt-1">
                         <div class="font-size-md font-weight-semibold text-dark mb-2">Recent Region</div>
                         <form>
                             <div class="select-custom bg-white">
@@ -22,7 +22,7 @@
                                 </select>
                             </div>
                         </form>
-                    </div>
+                    </div> -->
                 </div>
                 <div class="col-md-6 col-lg mb-6 mb-lg-0">
                     <div class="font-size-md font-weight-semibold text-dark mb-4">
@@ -32,7 +32,7 @@
                         <li class="list-group-item px-0 lh-1625 bg-transparent py-1">
                             <a href="page-about.html" class="link-hover-secondary-primary">About Us</a>
                         </li>
-                        <li class="list-group-item px-0 lh-1625 bg-transparent py-1">
+                        <!-- <li class="list-group-item px-0 lh-1625 bg-transparent py-1">
                             <a href="#" class="link-hover-secondary-primary">Team</a>
                         </li>
                         <li class="list-group-item px-0 lh-1625 bg-transparent py-1">
@@ -40,13 +40,13 @@
                         </li>
                         <li class="list-group-item px-0 lh-1625 bg-transparent py-1">
                             <a href="#" class="link-hover-secondary-primary">Investors</a>
-                        </li>
+                        </li> -->
                         <li class="list-group-item px-0 lh-1625 bg-transparent py-1">
                             <a href="page-contact.html" class="link-hover-secondary-primary">Contact Us</a>
                         </li>
-                        <li class="list-group-item px-0 lh-1625 bg-transparent py-1">
+                        <!-- <li class="list-group-item px-0 lh-1625 bg-transparent py-1">
                             <a href="#" class="link-hover-secondary-primary">Offices</a>
-                        </li>
+                        </li> -->
                     </ul>
                 </div>
                 <div class="col-md-6 col-lg mb-6 mb-lg-0">
@@ -138,7 +138,7 @@
                             </ul>
                         </div>
                     </div>
-                    <div class="col-lg-5 mb-3 mb-lg-0">
+                    <!-- <div class="col-lg-5 mb-3 mb-lg-0">
                         <div>
                             &copy; 2020 <a href="{{route('home')}}"
                                            class="link-hover-dark-primary font-weight-semibold">The Dir.</a> All
@@ -146,7 +146,7 @@
                             by <a href="http://g5plus.net/"
                                   class="link-hover-dark-primary font-weight-semibold">G5Theme</a>
                         </div>
-                    </div>
+                    </div> -->
                     <div class="back-top text-left text-lg-right gtf-back-to-top">
                         <a href="#" class="link-hover-secondary-primary"><i
                                 class="fal fa-arrow-up"></i><span>Back To Top</span></a>

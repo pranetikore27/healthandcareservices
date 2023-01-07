@@ -26,8 +26,17 @@
 <div class="col-lg-8 margin-tb">
 <div class="pull-left">
 
-
 <div class="col-xs-8 col-sm-8 col-md-8">
+        <div class="form-group">
+        <select id="Vendor_category" name="Vendor_category" class="form-control">
+            @foreach($categories as $c)
+            <option value="{{$c->Category_id}}"> {{$c->Category_name}} </option>
+            @endforeach
+        </select>
+        </div>
+    </div>
+
+    <div class="col-xs-8 col-sm-8 col-md-8">
         <div class="form-group">
             {!! Form::text('name', null, array('placeholder' => 'Name of the Vendor','class' => 'form-control')) !!}
         </div>
@@ -44,6 +53,11 @@
             {!! Form::text('Vendor_businessname', null, array('placeholder' => 'Your business name?','class' => 'form-control')) !!}
         </div>
     </div>
+
+    
+    
+
+
     <div class="col-xs-8 col-sm-8 col-md-8">
         <div class="form-group">
             {!! Form::text('Vendor_businessaddress', null, array('placeholder' => 'Company Address','class' => 'form-control')) !!}

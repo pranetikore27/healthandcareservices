@@ -154,11 +154,10 @@
                             </div>
                             <div class="media-body lh-14">
                                 <h5 class="mb-3 lh-1">
-                                    Choose What To Do
+                                    Do you need a care service?
                                 </h5>
                                 <p class="font-size-md text-gray mb-0 text-muted">
-                                    Looking for a cozy hotel to stay, a restaurant to eat, a museum to visit
-                                    or a mall to do some shopping?
+                                    Anything related to hospital, medicare or clinical?
                                 </p>
                             </div>
                         </div>
@@ -177,7 +176,7 @@
                                 </h5>
                                 <p class="font-size-md text-gray mb-0 text-muted">
                                     Search and filter hundreds of listings, read reviews, explore photos and
-                                    find the perfect spot.
+                                    find the perfect vendor
                                 </p>
                             </div>
                         </div>
@@ -192,11 +191,10 @@
                             </div>
                             <div class="media-body lh-14">
                                 <h5 class="mb-3 lh-1">
-                                    Explore Amazing Places
+                                    Pick it up from the Vendor or get it home delivered!
                                 </h5>
                                 <p class="font-size-md text-gray mb-0 text-muted">
-                                    Go and have a good time or even make a booking directly from the listing
-                                    page. All of those, thanks to TheDir!
+                                    Take care of your loved ones and have a speedy recovery with Health and Care Services
                                 </p>
                             </div>
                         </div>

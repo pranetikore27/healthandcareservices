@@ -42,7 +42,8 @@ class VendorController extends Controller
     public function create()
     {
         $user = Auth::user(); 
-        return view("vendors/create", compact("user")); 
+        $categories = DB::table("categories")->get(); 
+        return view("vendors/create", compact("user", "categories")); 
     }
 
     /**
@@ -57,6 +58,7 @@ class VendorController extends Controller
             'name' => 'required', 
             'email' => 'required', 
             'Vendor_businessname' => 'required',
+            'Vendor_category' => 'required', 
             'Vendor_businessaddress' => 'required',
             'Vendor_referencenumber' => 'required', 
             'Vendor_Accountnumber' => 'required', 

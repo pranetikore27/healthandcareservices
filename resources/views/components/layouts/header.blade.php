@@ -128,18 +128,21 @@
                                 <div class="header-customize-item">
                                     <!-- <a href="#login-popup" class="link" data-gtf-mfp="true"
                                        data-mfp-options='{"type":"inline"}'> -->
-                                       <a href="{{url('login')}}" class="link" data-gtf-mfp="true"
-                                       data-mfp-options='{"type":"inline"}'> 
+                                       <!-- <a href="{{url('login')}}" class="link" data-gtf-mfp="true" -->
+                                       <!-- data-mfp-options='{"type":"inline"}'>  -->
+                                       @guest
+                                       <a href="{{url('login')}}" class="link">
                                         <svg class="icon icon-user-circle-o">
                                             <use xlink:href="#icon-user-circle-o"></use>
                                         </svg>
                                         Log in</a>
+                                        @endguest
+
                                 </div>
                                 <div class="header-customize-item button">
-                                    <a href="page-submit-listing.html" class="btn btn-primary btn-icon-right">Add
+                                    <a href="{{url('add-new-listings')}}" class="btn btn-primary btn-icon-right">Add
                                         Listing
-                                        <i
-                                                class="far fa-angle-right"></i></a>
+                                        <i class="far fa-angle-right"></i></a>
                                 </div>
                             </div>
                         </div>

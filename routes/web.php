@@ -6,6 +6,7 @@ use App\Http\Controllers\HomeController;
 use App\Http\Controllers\Auth\LoginController;
 use App\Http\Controllers\RoleController;
 use App\Http\Controllers\UserController;
+use App\Http\Controllers\HospitalController;
 use App\Http\Controllers\ProductController;
 use App\Http\Controllers\TrialController;
 
@@ -30,7 +31,11 @@ use App\Http\Controllers\LocationController;
 |
 */
 Auth::routes();
-  
+
+Route::get('add-new-listings', function() {
+    return view('add-new-listings'); 
+}); 
+
 // Auth::routes(['register' => false]);
 
 Route::group(['middleware' => ['auth']], function() {
@@ -48,6 +53,7 @@ Route::group(['middleware' => ['auth']], function() {
     Route::resource('profile', ProfileController::class);
     Route::resource('services', ServiceController::class);
     Route::resource('location', LocationController::class);
+    Route::resource('hospitals', HospitalController::class);
     // Route::resource('category', CategoryController::class);
     // Route::resource('categories', CategoriesController::class);
     // Route::resource('payment', PaymentController::class);
@@ -93,6 +99,7 @@ Route::get('/profile/vendor', function () {
 // });
 
 // Route::resource('/guest', GuestController::class);
+
 
 Route::get('/page-submit-listing', function () {
     return view('page-submit-listing');

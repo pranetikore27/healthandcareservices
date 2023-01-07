@@ -17,10 +17,15 @@ class GuestController extends Controller
         // return "guest/welcome";
         $category = DB::table("categories")->get()->toArray(); 
         $locations = DB::table("locations")->get()->toArray();
+        $reviews = DB::table("reviews")
+                        ->join("users", "users.id", "reviews.Review_giveruserid")
+                        ->join("services", "services.Service_id", "reviews.Review_serviceid")
+                        ->get()->toArray(); 
+        // return $reviews;  
 
-        // return $category;  
+        // $websiteInfo = DB::table("admin")->get(); 
         
-        return view("guest/home", compact("category", "locations")); 
+        return view("guest/home", compact("category", "locations", "reviews")); 
     }
 
     /**
@@ -79,12 +84,32 @@ class GuestController extends Controller
                                 ->join("services", "services.Service_providerid", "users.id")
                                 ->join("locations", "locations.Location_owneruserid", "users.id")
                                 ->where("Location_cityName", '=', $inputs["Location_cityName"])
-                                // ->where("Category")
-                                ->get()->toArray(); 
-        return $vendorsinlocation; 
-        return view("guest/results", compact("vendorsinlocation")); 
+                                ->where("Vendor_category", '=', $categoryID[0]->Category_id)
+                                ->get()->toArray();
 
+                                
+        $vendorsinlocationcount = DB::table("users")
+                                ->join("vendors", "vendors.Vendor_userid", "users.id")
+                                ->join("services", "services.Service_providerid", "users.id")
+                                ->join("locations", "locations.Location_owneruserid", "users.id")
+                                ->where("Location_cityName", '=', $inputs["Location_cityName"])
+                                ->where("Vendor_category", '=', $categoryID[0]->Category_id)
+                                ->count();
+                                
+        // $ratings = DB::table("ratings")->get(); 
+        // return $ratings; 
+        $city = $inputs["Location_cityName"]; 
+        
+        $categories = DB::table("categories")->get(); 
+        
+        $locations = DB::table("locations")->get(); 
 
+        // $reviews = DB::table("reviews")->get(); 
+
+        // return $vendorsinlocation; 
+        
+        return view("guest/results", compact("vendorsinlocation", "vendorsinlocationcount",
+                            "city", "categories", "locations")); 
     }
 
     /**

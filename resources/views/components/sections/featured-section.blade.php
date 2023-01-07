@@ -3,7 +3,7 @@
         <div class="mb-8">
             <h2 class="mb-0">
                 <span>Featured </span>
-                <span class="font-weight-light">Destinations</span>
+                <span class="font-weight-light">Services</span>
             </h2>
         </div>
         <div class="slick-slider arrow-center"

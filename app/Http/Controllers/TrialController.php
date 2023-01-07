@@ -43,8 +43,29 @@ class TrialController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function show($id)
+    public function show($Category_id)
     {
+        $vendorsinlocation = DB::table("users")
+                                ->join("vendors", "vendors.Vendor_userid", "users.id")
+                                ->join("services", "services.Service_providerid", "users.id")
+                                ->join("locations", "locations.Location_owneruserid", "users.id")
+                                ->where("Vendor_category", '=', $Category_id)
+                                ->get()->toArray();
+
+        
+        $vendorsinlocationcount = DB::table("users")
+                                    ->join("vendors", "vendors.Vendor_userid", "users.id")
+                                    ->join("services", "services.Service_providerid", "users.id")
+                                    ->join("locations", "locations.Location_owneruserid", "users.id")
+                                    ->where("Vendor_category", '=', $Category_id)
+                                    ->count();
+
+        
+        $categories = DB::table("categories")->get(); 
+        
+        $locations = DB::table("locations")->get(); 
+        // return $vendorsinlocation; 
+        return view("categories/listings", compact("vendorsinlocation", "vendorsinlocationcount", "categories", "locations"));
         //check for categories in particular locations 
         // get all vendors, filter them by locations, services 
     }

@@ -11,8 +11,8 @@ class Category extends Model
     protected $fillable = [
         // 'Category_id', 
         'Category_name', 
-        'Category_isparent', 
-        'Category_parentid', 
+        // 'Category_isparent', 
+        // 'Category_parentid', 
         'Category_isactive'
     ]; 
 }

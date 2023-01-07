@@ -33,17 +33,7 @@
             <!-- #section 01 start -->
            @include('components.sections.search-results-feed')
         </div>
-        <!-- .content-wrapper end -->
-        <!-- #wrapper-content end -->
-
-        <!-- #footer start -->
-        @include('components.layouts.footer')
-        <!-- #footer end -->
-    </div>
-    <!-- #site-wrapper end-->
-    @include('components.popups.login-popup')
-    @include('components.popups.search-popup')
-    
+</div></div>
     <!-- External JavaScripts -->
 
     <script src="./assets/vendors/jquery.min.js"></script>

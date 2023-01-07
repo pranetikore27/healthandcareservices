@@ -1,4 +1,4 @@
-<section id="section-05" class="pt-11 pb-11">
+<!-- <section id="section-05" class="pt-11 pb-11">
     <div class="container">
         <div class="d-flex align-items-center mb-7 flex-wrap flex-sm-nowrap">
             <h2 class="mb-3 mb-sm-0">
@@ -86,4 +86,4 @@
             </div>
         </div>
     </div>
-</section>
+</section> -->

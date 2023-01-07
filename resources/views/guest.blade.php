@@ -106,7 +106,7 @@
                                                 <div class="col-lg-6">
                                                     <ul class="mega-menu-col">
                                                         <li class="nav-item"><a class="nav-link"
-                                                                                href="page-submit-listing.html">submit
+                                                                                href="{{url('/add-new-listings')}}">submit
                                                             listing</a></li>
                                                         <li class="nav-item"><a class="nav-link"
                                                                                 href="page-terms-and-condition.html">Term

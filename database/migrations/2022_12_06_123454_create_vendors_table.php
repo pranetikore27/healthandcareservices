@@ -19,7 +19,9 @@ return new class extends Migration
             $table->string("Vendor_userid");
             $table->string("Vendor_businessname");
             $table->string("Vendor_businessaddress");
-
+            
+            $table->string("Vendor_category");
+            
             $table->string("Vendor_isverified")->default("0");
             $table->string("Vendor_isactive")->default("0");
             $table->string("Vendor_referencenumber")->nullable(); 
