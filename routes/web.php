@@ -62,6 +62,7 @@ Route::group(['middleware' => ['auth']], function() {
     Route::resource('services', ServiceController::class);
     Route::resource('location', LocationController::class);
     Route::resource('hospitals', HospitalController::class);
+    Route::resource('complaints', ComplaintController::class);
     // Route::resource('category', CategoryController::class);
     // Route::resource('categories', CategoriesController::class);
     // Route::resource('payment', PaymentController::class);
@@ -72,6 +73,7 @@ Route::group(['middleware' => ['auth']], function() {
 
     Route::get('/home', [HomeController::class, 'index'])->name('home');
     Route::get('/payment', [PaymentController::class, 'index'])->name('payment');
+    Route::get('/profile', [ProfileController::class, 'profile'])->name('profile');
     
     // Route::get('/services', [ServiceController::class, 'index'])->name('services');
     // Route::get('services/create', [ServiceController::class, 'create'])->name('/services/create');

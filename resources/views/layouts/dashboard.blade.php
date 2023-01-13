@@ -401,7 +401,7 @@
                                 </ul>
                             </li>
                             <li class="list-group-item p-0 mb-2 lh-15">
-                                <a href="{{route('home')}}"
+                                <a href="{{url('complaints')}}"
                                    class="d-flex align-items-center link-hover-dark-primary font-size-md">
                                     <span class="d-inline-block mr-3"><i class="fal fa-bookmark"></i></span>
                                     <span>Complaints</span>
@@ -427,7 +427,7 @@
                                 </ul>
                             </li>
                             <li class="list-group-item p-0 mb-2 lh-15">
-                                <a href="panel-package.html"
+                                <a href="{{url('services')}}"
                                    class="d-flex align-items-center link-hover-dark-primary font-size-md">
                                     <span class="d-inline-block mr-3"><i class="fal fa-gift"></i></span>
                                     <span>Services</span>
@@ -470,14 +470,14 @@
                                         submitted</a></li>
                                 </ul>
                             </li>
-                            <li class="list-group-item p-0 mb-2 lh-15">
+                            <!-- <li class="list-group-item p-0 mb-2 lh-15">
                                 <a href="{{route('home')}}"
                                    class="d-flex align-items-center link-hover-dark-primary font-size-md">
 									<span class="d-inline-block mr-3"><svg class="icon icon-user"><use
                                             xlink:href="#icon-user"></use></svg></span>
                                     <span>My Profile</span>
                                 </a>
-                            </li>
+                            </li> -->
                             <br>
 
                             <li class="list-group-item p-0 mb-2 lh-15">

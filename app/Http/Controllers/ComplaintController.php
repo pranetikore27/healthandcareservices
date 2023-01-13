@@ -5,7 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\Complaint;
 use Illuminate\Http\Request;
 use DB; 
-
+use Auth; 
 class ComplaintController extends Controller
 {
     /**
@@ -15,8 +15,13 @@ class ComplaintController extends Controller
      */
     public function index()
     {
-        $complaint = DB::table("complaints")->get(); 
-        return $complaint; 
+        $varComplaint = DB::table("complaints")
+                        ->join("users", "users.id", "complaints.Complaint_userid")
+                        ->join("services", "services.Service_id", "complaints.Complaint_serviceid")
+                        ->get(); 
+        // return $varComplaint; 
+        $user = Auth::user(); 
+        return view("complaints/index", compact("varComplaint", "user")); 
     }
 
     /**
@@ -26,7 +31,8 @@ class ComplaintController extends Controller
      */
     public function create()
     {
-        //
+
+        return view("complaint/create", compact("user")); 
     }
 
     /**

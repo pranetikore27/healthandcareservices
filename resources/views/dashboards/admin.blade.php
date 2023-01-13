@@ -101,8 +101,8 @@
                                             <div class="card time-bookmark rounded-0 border-0 text-white">
                                                 <div class="card-body d-flex align-items-center p-0">
                                                     <div class="content mr-auto">
-                                                        <span class="font-size-h1 font-weight-semibold lh-1 d-block">{{$TotalAmount}}</span>
-                                                        <span class="font-size-lg">Amount Received</span>
+                                                            <span class="font-size-h1 font-weight-semibold lh-1 d-block">{{$TotalAmount}}</span>
+                                                            <span class="font-size-lg">Amount Received</span>
                                                     </div>
                                                     <div class="fact-icon">
                                                         <i class="fal fa-bookmark"></i>

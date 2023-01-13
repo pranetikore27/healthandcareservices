@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\User;
 use Illuminate\Http\Request;
+use Auth; 
 
 class ProfileController extends Controller
 {
@@ -14,7 +15,9 @@ class ProfileController extends Controller
      */
     public function index()
     {
-        return "hi"; 
+        $user = Auth::user(); 
+        // return $user; 
+        return view("profile/view", compact("user")); 
     }
 
     /**
@@ -24,7 +27,7 @@ class ProfileController extends Controller
      */
     public function create()
     {
-        //
+    
     }
 
     /**

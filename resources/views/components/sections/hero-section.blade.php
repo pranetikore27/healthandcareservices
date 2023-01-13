@@ -89,52 +89,7 @@
                     </a>
                 </div>
                 @endforeach
-                <div class="list-inline-item py-2">
-                    <a href="explore-sidebar-grid.html"
-                       class="card border-0 icon-box-style-01 link-hover-dark-white">
-                        <div class="card-body p-0">
-                                <img class="w-14 m-auto invert-image" src="{{asset('./assets/icons/medicine.png')}}" alt="Medicals">
-                            <span class="card-text font-size-md font-weight-semibold mt-2 d-block">
-                                Medicals
-                            </span>
-                        </div>
-
-                    </a>
-                </div>
-                <div class="list-inline-item py-2">
-                    <a href="explore-sidebar-grid.html"
-                       class="card border-0 icon-box-style-01 link-hover-dark-white">
-                        <div class="card-body p-0">
-                            <img class="w-14 m-auto invert-image" src="{{asset('./assets/icons/ambulance.png')}}" alt="Ambulance">
-                            <span class="card-text font-size-md font-weight-semibold mt-2 d-block">
-                                Ambulance
-                            </span>
-                        </div>
-                    </a>
-                </div>
-                <div class="list-inline-item py-2">
-                    <a href="explore-sidebar-grid.html"
-                       class="card border-0 link-hover-dark-white icon-box-style-01">
-                        <div class="card-body p-0">
-                            <img class="w-14 m-auto invert-image" src="{{asset('./assets/icons/blood-bag.png')}}" alt="Blood Bank">
-                            <span class="card-text font-size-md font-weight-semibold mt-2 d-block">
-                                Blood Bank
-                            </span>
-                        </div>
-                    </a>
-                </div>
-                <div class="list-inline-item py-2">
-                    <a href="explore-sidebar-grid.html"
-                       class="card border-0 link-hover-dark-white icon-box-style-01">
-                        <div class="card-body p-0">
-                            <img class="w-14 m-auto invert-image" src="{{asset('./assets/icons/insurance.png')}}" alt="Insurance">
-                            <span class="card-text font-size-md font-weight-semibold mt-2 d-block">
-                                Insurance
-                            </span>
-                        </div>
-
-                    </a>
-                </div>
+                
             </div>
         </div>
         <div class="home-main-how-it-work bg-white pt-11">

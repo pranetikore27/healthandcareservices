@@ -65,7 +65,7 @@
 															       value="{{$user->phone_number}}">
 														</div>
 													</div>
-													<div class="form-group mb-2">
+													<!-- <div class="form-group mb-2">
 														<label for="bio"
 														       class="font-size-md text-dark font-weight-semibold mb-1">Bio</label>
 														<textarea class="form-control" id="bio"
@@ -94,7 +94,7 @@
 															<input class="form-control" id="google" type="text"
 															       placeholder="Google Plus URL">
 														</div>
-													</div>
+													</div> -->
 													<button type="submit" class="btn btn-primary btn-block font-size-lg">Save Change
 													</button>
 												</form>
@@ -103,7 +103,7 @@
 										</div>
 									</div>
 								</div>
-								<div class="col-lg-6">
+								<!-- <div class="col-lg-6">
 									<div class="card rounded-0 border-0 bg-white px-4 pt-3 pb-6">
 										<div class="card-header p-0 bg-transparent"><h5
 												class="card-title text-capitalize">Change
@@ -144,10 +144,8 @@
 										</div>
 									</div>
 								</div>
-							</div>
-							<div class="mt-6">
-								&copy; 2020 Thedir. All Rights Reserved.
-							</div>
+							</div>-->
+							
 						</div>
 					</div>
 				</div>
