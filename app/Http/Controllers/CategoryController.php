@@ -3,6 +3,9 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use DB;
+use App\Models\Category;
+use \Crypt;
 
 class CategoryController extends Controller
 {
@@ -10,10 +13,24 @@ class CategoryController extends Controller
      * Display a listing of the resource.
      *
      * @return \Illuminate\Http\Response
-     */
+     
+    *function __construct()
+    *{
+    *    $this->middleware('auth');
+    *    $this->middleware(function ($request, $next) {
+    *        $this->user_role = json_decode(Auth::user()->user_role,true);
+    *          return $next($request);
+    *    });
+
+    *       $this->middleware('permission:category-list', ['only' => ['index']]);
+    *   $this->middleware('permission:category-all', ['only' => ['index','store','create','edit','update','destroy']]);
+    *}
+    */
     public function index()
     {
-        //
+        $varCategory  = DB::table('categories')
+            ->get()->toArray();
+        return view("category/index", compact("varCategory")); 
     }
 
     /**
@@ -23,7 +40,7 @@ class CategoryController extends Controller
      */
     public function create()
     {
-        //
+        return view ('category/create');
     }
 
     /**
@@ -34,7 +51,14 @@ class CategoryController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $this->validate($request, 
+        [
+         'Category_name' => 'required'
+        ]);
+
+        $input = $request->all();
+        $VarCategory = Category::create($input);
+        return redirect("category")->with('success','category created sucessfully!');
     }
 
     /**
@@ -56,7 +80,9 @@ class CategoryController extends Controller
      */
     public function edit($id)
     {
-        //
+        $id=Crypt::decrypt($id);
+        $varCategory = Category::find($id);
+        return view('category/edit', compact('varCategory'));
     }
 
     /**
@@ -68,7 +94,18 @@ class CategoryController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        $id=Crypt::decrypt($id);
+       
+        $this->validate($request, 
+        [
+                'Category_name' => 'required'
+        ]);
+        
+        $varCategory = Category::find($id);
+        $varCategory->Category_name = $request->get('Category_name');
+        $varCategory->save();
+        return redirect('category')->with('success', "category updated successfully");
+
     }
 
     /**
@@ -79,6 +116,20 @@ class CategoryController extends Controller
      */
     public function destroy($id)
     {
-        //
+        $id=Crypt::decrypt($id);
+        $varCategory = Category::find($id);
+        if($varCategory->Category_status == 0)
+        {
+            $varCategory->Category_status = 1;
+            $varCategory->save();
+            return redirect('category')->with('success', "category is Active now");
+        }
+        else if($varCategory->Category_status == 1)
+        {
+            $varCategory->Category_status = 0;
+            $varCategory->save();
+           
+            return redirect('category')->with('success', "category is inactive now");
+        }
     }
 }

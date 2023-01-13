@@ -39,6 +39,12 @@ Route::get('add-new-listings', function() {
 
 // Auth::routes(['register' => false]);
 
+
+
+
+Route::resource('category', CategoryController::class);
+
+
 Route::group(['middleware' => ['auth']], function() {
 
     Route::resource('roles', RoleController::class);
@@ -65,7 +71,7 @@ Route::group(['middleware' => ['auth']], function() {
 
     Route::get('/home', [HomeController::class, 'index'])->name('home');
     Route::get('/payment', [PaymentController::class, 'index'])->name('payment');
-    Route::get('/category', [CategoryController::class, 'index'])->name('category');
+    
     // Route::get('/services', [ServiceController::class, 'index'])->name('services');
     // Route::get('services/create', [ServiceController::class, 'create'])->name('/services/create');
     // Route::get('/services/{id}/show', [ServiceController::class, 'show'])->name('services');

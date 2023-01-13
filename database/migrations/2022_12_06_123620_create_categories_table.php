@@ -15,10 +15,8 @@ return new class extends Migration
     {
         Schema::create('categories', function (Blueprint $table) {
             $table->bigIncrements("Category_id");
-            $table->string("Category_name"); 
-            $table->string("Category_isparent"); 
-            $table->string("Category_parentid"); 
-            $table->string("Category_isactive"); 
+            $table->string("Category_name")->nullable(); 
+            $table->string("Category_status")->default(1); 
             $table->timestamps();
         });
     }
