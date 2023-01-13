@@ -25,13 +25,15 @@ class HomeController extends Controller
      */
     public function index()
     {
-        // // return ("hi"); 
+        // return ("hi"); 
         $user = Auth::user();
+        // dd($user->hasRole("User")) ; 
         // $roles = await _userManager.GetRolesAsync(user);
         // var hasAnyRole = roles.Count > 0;
 
         if($user->hasRole("Vendor"))
         {
+            return "vendor"; 
             $ServicesCount = DB::table("services")
                             ->where("Service_providerid", "=", $user->id)
                             ->count(); 
@@ -58,18 +60,20 @@ class HomeController extends Controller
         }
         if($user->hasRole("User"))
         {
-            // return "Hi, You are a new user here?"; 
+            return "Hi, You are a new user here?"; 
             $user = Auth::user(); 
             return view("guest/unverified", compact("user")); 
         }
         if($user->hasRole("Admin"))
         {
+            // return "admin"; 
             $VendorsCount = DB::table("vendors")->count(); 
             $title = "Admin Dashboard"; 
             
-            $Verifications = DB::table("vendors")->where("Vendor_isverified", "1")->count(); 
+            $Verifications = DB::table("vendors")->where("Vendor_isverified", "0")->count(); 
             $ComplaintsCount = DB::table("complaints")->where("Complaint_status", "0")->count(); 
-
+            $ComplaintsUnderReviewCount = DB::table("complaints")->where("Complaint_status", "1")->count(); 
+            
             $TotalAmount = DB::table("payments")->sum("Payment_amount"); 
             $ReviewCount = DB::table("reviews")->count(); 
 
@@ -78,9 +82,10 @@ class HomeController extends Controller
             return view("dashboards/admin", compact(
                 "user", "title", "pagename", "VendorsCount", 
                 "Verifications", "ComplaintsCount", "ReviewCount", 
-                "TotalAmount"
+                "TotalAmount", "ComplaintsUnderReviewCount"
             )); 
         }
+        return "no roles"; 
         return view("guest/unverified"); 
         // return "none"; 
     }

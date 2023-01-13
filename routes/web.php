@@ -42,18 +42,19 @@ Route::get('add-new-listings', function() {
 
 
 
-Route::resource('category', CategoryController::class);
 
 
 Route::group(['middleware' => ['auth']], function() {
 
+    Route::resource('/', HomeController::class);
     Route::resource('roles', RoleController::class);
     Route::resource('users', UserController::class);
     Route::resource('products', ProductController::class);
     // Route::resource('complaints', ComplaintController::class);
     // Route::resource('products', ProductController::class);
 
-    
+    Route::resource('category', CategoryController::class);
+
     Route::resource('hivendors', VendorController::class);
     Route::resource('partners', PartnerController::class);
     Route::resource('offer-services', ServiceController::class);

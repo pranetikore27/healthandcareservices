@@ -8,7 +8,10 @@ return new class extends Migration
 {
     /**
      * Run the migrations.
-     *
+     * 0 - received 
+     * 1- approved and private 
+     * 2 - approved and public  
+     * 
      * @return void
      */
     public function up()

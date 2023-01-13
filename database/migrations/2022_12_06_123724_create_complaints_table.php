@@ -9,6 +9,10 @@ return new class extends Migration
     /**
      * Run the migrations.
      *
+     * Complaint status 
+     * 0 - submitted 
+     * 1 - review 
+     * 2 -resolved
      * @return void
      */
     public function up()

@@ -1,7 +1,6 @@
-@extends('layouts.appwithoutnav')
-
-
+@extends('layouts.dashboard')
 @section('content') 
+
 <div class="page-container">
                     <div class="container-fluid">
                         <div class="page-content-wrapper d-flex flex-column">
@@ -20,7 +19,7 @@
                                 </div>
                                 <div class="table-responsive">
                                     
-    <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+    <table id="example" id="example">
 <thead>
                 <tr>
                   <th>Sr no</th>

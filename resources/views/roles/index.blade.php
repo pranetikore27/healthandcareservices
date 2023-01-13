@@ -23,7 +23,7 @@
 @endif
 
 
-<table class="table table-bordered">
+<table id="example" class="table table-bordered">
   <tr>
      <th>No</th>
      <th>Name</th>

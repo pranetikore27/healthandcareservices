@@ -1184,7 +1184,7 @@
                                                                     </div>
                                                                     <div class="text-dark mb-5">Time available</div>
                                                                     <div class="table-responsive">
-                                                                        <table class="table table-bordered">
+                                                                        <table id="example" class="table table-bordered">
                                                                             <tbody>
                                                                                 <tr>
                                                                                     <td>
@@ -1322,7 +1322,7 @@
                                     <div class="slick-slider arrow-top store-grid-style"
                                          data-slick-options='{"slidesToShow": 1, "autoplay":false,"dots":false,"responsive":[{"breakpoint": 770,"settings": {"slidesToShow": 1}}]}'>
                                         <div class="box table-responsive">
-                                            <table class="table table-hover listing-table">
+                                            <table id="example" class="table table-hover listing-table">
                                                 <tbody>
                                                     <tr>
                                                         <td>
@@ -1460,7 +1460,7 @@
                                             </table>
                                         </div>
                                         <div class="box table-responsive">
-                                            <table class="table listing-table table-hover">
+                                            <table id="example" class="table listing-table table-hover">
                                                 <tbody>
                                                     <tr>
                                                         <td>

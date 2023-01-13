@@ -17,7 +17,7 @@
                                     Vendors Listings
                                 </div>
                                 <div class="table-responsive-md">
-                                    <table class="table">
+                                    <table id="example" id="example">
                                         <thead>
                                             <tr>
                                                 <th style="width: 11%">Owner name</th>

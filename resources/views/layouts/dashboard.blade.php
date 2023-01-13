@@ -19,6 +19,9 @@
     <link rel="stylesheet" href="{{asset('vendors/animate.css')}}">
     <link rel="stylesheet" href="{{asset('vendors/air-datepicker/css/datepicker.min.css')}}">
     <link rel="stylesheet" href="{{asset('vendors/jquery-ui/jquery-ui.min.css')}}">
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.21/css/jquery.dataTables.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.13.1/css/jquery.dataTables.min.css">
+    <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.21/js/jquery.dataTables.js"></script>
 
     <!-- Site Stylesheets -->
     <link rel="stylesheet" href="{{asset('style.css')}}">
@@ -365,7 +368,7 @@
                                     </li>
 
                                     <li class="list-group-item p-0 mb-2 lh-15">
-                                        <a href="{{route('category')}}" class="link-hover-dark-primary font-size-md">
+                                        <a href="{{route('home')}}" class="link-hover-dark-primary font-size-md">
                                             Category
                                         </a>
                                     </li>
@@ -757,6 +760,8 @@
     <script src="vendors/waypoints/jquery.waypoints.js"></script>
     <script src="vendors/air-datepicker/js/datepicker.min.js"></script>
     <script src="vendors/air-datepicker/js/i18n/datepicker.en.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script src="https://cdn.datatables.net/1.13.1/js/jquery.dataTables.min.js"></script>
 
     <!-- Site Javascript -->
     <script src="js/app.js"></script>
@@ -863,4 +868,9 @@
         </defs>
     </svg>
 </body>
+<script>
+    $(document).ready(function () {
+    $('#example').DataTable();
+});
+</script>
 </html>

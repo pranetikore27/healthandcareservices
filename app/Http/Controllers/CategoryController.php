@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use DB;
 use App\Models\Category;
 use \Crypt;
+use Auth; 
 
 class CategoryController extends Controller
 {
@@ -27,10 +28,10 @@ class CategoryController extends Controller
     *}
     */
     public function index()
-    {
-        $varCategory  = DB::table('categories')
-            ->get()->toArray();
-        return view("category/index", compact("varCategory")); 
+    {    
+        $user = Auth::user(); 
+        $varCategory = DB::table("categories")->get(); 
+        return view("category/index", compact("user", "varCategory")); 
     }
 
     /**

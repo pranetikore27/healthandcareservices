@@ -5,6 +5,8 @@ namespace Database\Seeders;
 // use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 
+
+
 class DatabaseSeeder extends Seeder
 {
     /**
@@ -20,5 +22,9 @@ class DatabaseSeeder extends Seeder
         //     'name' => 'Test User',
         //     'email' => 'test@example.com',
         // ]);
+        $this->call(PermissionTableSeeder::class);
+        $this->call(RolesCreationSeeder::class);
+        $this->call(CreateAdminUserSeeder::class);
+        $this->call(CreateCategorySeeder::class);
     }
 }

@@ -17,30 +17,24 @@ class CreateCategorySeeder extends Seeder
     {
         $category = [
             ['Category_name' => 'Hospitals', 
-            'Category_isparent' => '0', 
-            'Category_parentid' => '0', 
-            'Category_isactive' => '1'],
+            'Category_status' => '0', 
+            ],
             
             
             ['Category_name' => 'Medical', 
-            'Category_isparent' => '0', 
-            'Category_parentid' => '0', 
-            'Category_isactive' => '1'], 
+            'Category_status' => '0', 
+           ], 
 
             ['Category_name' => 'Ambulance', 
-            'Category_isparent' => '0', 
-            'Category_parentid' => '0', 
-            'Category_isactive' => '1'],
+            'Category_status' => '0', 
+            ],
 
             ['Category_name' => 'Blood Bank', 
-            'Category_isparent' => '0', 
-            'Category_parentid' => '0', 
-            'Category_isactive' => '1'],
+            'Category_status' => '0', 
+            ],
 
             ['Category_name' => 'Insurance', 
-            'Category_isparent' => '0', 
-            'Category_parentid' => '0', 
-            'Category_isactive' => '1'],
+            'Category_status' => '0', ],
 
         ]; 
 

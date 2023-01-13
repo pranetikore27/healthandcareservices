@@ -13,11 +13,11 @@ class AdminDashboard extends Controller
      */
     public function index()
     {
-        return ("hi"); 
+        // return ("hi"); 
         $user = Auth::user();
         if($user->hasRole("Admin"))
         {
-            return $user; 
+            // return $user; 
             return view("dashboards/admin", compact("user")); 
         }
     }

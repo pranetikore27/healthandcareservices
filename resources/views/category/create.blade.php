@@ -1,7 +1,6 @@
-@extends('layouts.appwithoutnav')
-
-
+@extends('dashboards.admin')
 @section('content')
+
 <div class="row">
     <div class="col-lg-5 margin-tb">
         <div class="pull-left">

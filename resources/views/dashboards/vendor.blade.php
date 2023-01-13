@@ -108,7 +108,7 @@
                                                         Recent
                                                         Activities</h5>
                                                     <div class="table-responsive">
-                                                        <table class="table">
+                                                        <table id="example" class="table">
                                                             <tbody>
                                                                 <tr>
                                                                     <td>
@@ -240,7 +240,7 @@
                                                     <h5 class="card-title text-capitalize border-bottom pb-2 mb-2">
                                                         Invoices</h5>
                                                     <div class="table-responsive-sm">
-                                                        <table class="table">
+                                                        <table id="example" class="table">
                                                             <thead>
                                                                 <tr>
                                                                     <th>ID</th>
