@@ -22,10 +22,13 @@ class GuestController extends Controller
                         ->join("services", "services.Service_id", "reviews.Review_serviceid")
                         ->get()->toArray(); 
         // return $reviews;  
+        $blogs = DB::table("blogs")
+                        ->join("users", "users.id", "blogs.Blog_owner_id")
+                        ->get()->toArray(); 
 
         // $websiteInfo = DB::table("admin")->get(); 
         
-        return view("guest/home", compact("category", "locations", "reviews")); 
+        return view("guest/home", compact("category", "locations", "reviews", "blogs")); 
     }
 
     /**

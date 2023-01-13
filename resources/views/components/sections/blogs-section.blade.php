@@ -1,4 +1,4 @@
-<!-- <section id="section-05" class="pt-11 pb-11">
+<section id="section-05" class="pt-11 pb-11">
     <div class="container">
         <div class="d-flex align-items-center mb-7 flex-wrap flex-sm-nowrap">
             <h2 class="mb-3 mb-sm-0">
@@ -12,78 +12,36 @@
             </a>
         </div>
         <div class="row">
+            @foreach($blogs as $b)
             <div class="col-md-4 mb-4" data-animate="zoomIn">
                 <div class="card border-0">
-                    <a href="blog-single-gallery.html" class="hover-scale">
+                    <a href="{{url('./$b->Blog_slug')}}" class="hover-scale">
                         <img src="./assets/images/blog/main-blog-2.jpg" alt="product 1" class="card-img-top image">
                     </a>
                     <div class="card-body px-0">
-                        <div class="mb-2"><a href="#" class="link-hover-dark-primary">Tips</a>, <a
-                                href="#" class="link-hover-dark-primary">Travel</a></div>
+                        <div class="mb-2"><a href="{{url('./($b->Blog_slug)')}}" class="link-hover-dark-primary">
+                            {{$b->Blog_category}}</a>
+
                         <h5 class="card-title lh-13 letter-spacing-25">
-                            <a href="blog-single-image.html"
+                            <a href="{{$b->Blog_slug}}"
                                class="link-hover-dark-primary text-capitalize">
-                                10 best homestay in florencia that you don't miss
-                                out</a>
+                                {{$b->Blog_title}}</a>
                         </h5>
                         <ul class="list-inline">
                             <li class="list-inline-item mr-0">
-                                <span class="text-gray">Aug 28th, 2017 by</span>
+                                <span class="text-gray">{{$b->created_at}}</span>
                             </li>
                             <li class="list-inline-item">
-                                <a href="#" class="link-hover-dark-primary">Admin</a>
+                                <a href="" class="link-hover-dark-primary">{{$b->name}}</a>
                             </li>
 
                         </ul>
                     </div>
                 </div>
             </div>
-            <div class="col-md-4 mb-4" data-animate="zoomIn">
-                <div class="card border-0">
-                    <a href="blog-single-gallery.html" class="hover-scale">
-                        <img src="./assets/images/blog/main-blog-3.jpg" alt="product 1" class="card-img-top image">
-                    </a>
-                    <div class="card-body px-0">
-                        <div class="mb-2"><a href="#" class="link-hover-dark-primary">Culture</a></div>
-                        <h5 class="card-title lh-13 letter-spacing-25"><a href="blog-single-gallery.html"
-                                                                          class="link-hover-dark-primary text-capitalize">Coffee
-                            On Street & Look Super Car</a>
-                        </h5>
-                        <ul class="list-inline">
-                            <li class="list-inline-item mr-0">
-                                <span class="text-gray">Aug 25th, 2017 by</span>
-                            </li>
-                            <li class="list-inline-item">
-                                <a href="#" class="link-hover-dark-primary">David</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4 mb-4" data-animate="zoomIn">
-                <div class="card border-0">
-                    <a href="blog-single-gallery.html" class="hover-scale">
-                        <img src="./assets/images/blog/main-blog-1.jpg" alt="product 1" class="card-img-top image">
-                    </a>
-                    <div class="card-body px-0">
-                        <div class="mb-2"><a href="#" class="link-hover-dark-primary">Location</a></div>
-                        <h5 class="card-title lh-13 letter-spacing-25"><a href="blog-single-gallery.html"
-                                                                          class="link-hover-dark-primary">MadCap
-                            Coffee At
-                            Brooklyn Town For Who Love Black
-                            Coffee</a>
-                        </h5>
-                        <ul class="list-inline">
-                            <li class="list-inline-item mr-0">
-                                <span class="text-gray">Aug 19th, 2017 by</span>
-                            </li>
-                            <li class="list-inline-item">
-                                <a href="#" class="link-hover-dark-primary">LoganCee</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
+            @endforeach
+            
+            
         </div>
     </div>
-</section> -->
+</section>

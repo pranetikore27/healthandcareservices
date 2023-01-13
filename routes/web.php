@@ -9,6 +9,7 @@ use App\Http\Controllers\UserController;
 use App\Http\Controllers\HospitalController;
 use App\Http\Controllers\ProductController;
 use App\Http\Controllers\TrialController;
+use App\Http\Controllers\BlogController;
 
 use App\Http\Controllers\VendorController;
 use App\Http\Controllers\PartnerController;
@@ -117,3 +118,4 @@ Route::get('/service-listings', [ServiceController::class, 'listings'])->name('s
 Route::post('/search', [GuestController::class, 'store'])->name('search');
 
 Route::resource("trial", TrialController::class); 
+Route::resource("blog", BlogController::class); 
