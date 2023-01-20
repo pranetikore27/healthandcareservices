@@ -49,26 +49,98 @@
 											<div class="form-group mb-4">
 												<div class="text-dark font-weight-semibold font-size-md mb-2 lh-15">
                                                     Hospital Name
-													<!-- <a href="#" class="text-darker-light d-inline-block ml-2" data-toggle="tooltip"
-													   data-placement="top"
-													   title="Title for listing"><i
-														class="fas fa-question-circle"></i></a> -->
 												</div>
-												</div>
-												
 												<div class="text-dark font-weight-semibold font-size-md mb-2 lh-15">
 												<input type="text" class="form-control"
 												       placeholder="Name of your Hospital" name="Hospital_name">
-													   <div class="text-dark font-weight-semibold font-size-md mb-2 lh-15">
-                                                    Hospital Email for login
-													
-												
+
+												</div>	
 												</div>
+
+
+
+
+												<div class="text-dark font-weight-semibold font-size-md mb-2 lh-15">
+                                                    Email
+												</div>
+												<div class="text-dark font-weight-semibold font-size-md mb-2 lh-15">
 												<input type="email" class="form-control"
 												       placeholder="Email of your Hospital for login" name="Hospital_email_id_login">
+												
 												<input type="email" class="form-control"
 												       placeholder="Email of your Hospital for contact" name="Hospital_email_id">
-											</div>
+
+												</div>	
+
+				
+												<div class="text-dark font-weight-semibold font-size-md mb-2 lh-15">
+                                                    Address
+												</div>
+												<div class="text-dark font-weight-semibold font-size-md mb-2 lh-15">
+												<input type="text" class="form-control"
+												       placeholder="Hospital address" name="Hospital_address">
+												
+												<input type="text" class="form-control"
+												       placeholder="State" name="Hospital_state">
+												<input type="text" class="form-control"
+												       placeholder="District" name="Hospital_district">
+												
+												<input type="text" class="form-control"
+												       placeholder="City" name="Hospital_city">
+												<input type="text" class="form-control"
+												       placeholder="Pincode" name="Hospital_pin_Code">
+												
+												</div>
+												
+
+												
+
+												<div class="text-dark font-weight-semibold font-size-md mb-2 lh-15">
+                                                    Contact number
+												</div>
+												<div class="text-dark font-weight-semibold font-size-md mb-2 lh-15">
+												<input type="text" class="form-control"
+												       placeholder="Contact number" name="Hospital_OPD_contact_no">
+												</div>
+
+												<div class="text-dark font-weight-semibold font-size-md mb-2 lh-15">
+												Hospital logo
+												</div>
+												<div class="text-dark font-weight-semibold font-size-md mb-2 lh-15">
+												<input type="file" class="form-control"
+												       placeholder="Contact number" name="Hospital_logo">
+												</div>
+
+
+												<div class="text-dark font-weight-semibold font-size-md mb-2 lh-15">
+												Hospital ambulance avalibility
+												</div>
+												<div class="text-dark font-weight-semibold font-size-md mb-2 lh-15">
+												<label for="cars">Choose a car:</label>
+
+<select name="Hospital_ambulance_avalibility" id="Hospital_ambulance_avalibility">
+  <option value="1">Yes</option>
+  <option value="0">No</option>
+  
+</select>
+												</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+												
+												
+												
+											
 											<div class="form-group mb-4">
 												<div class="mb-2 d-flex align-items-center lh-15">
 													<label class="mb-0 text-dark font-weight-semibold font-size-md lh-15" for="city">City</label>
