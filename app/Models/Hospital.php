@@ -27,6 +27,7 @@ class Hospital extends Model
         "Hospital_category_available" ,  
         "Hospital_features" , 
         "Hospital_start_time",
-        "Hospital_end_time"
+        "Hospital_end_time",
+        "Hospital_website_URl"
     ]; 
 }

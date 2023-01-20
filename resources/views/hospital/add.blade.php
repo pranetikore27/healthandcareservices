@@ -54,8 +54,16 @@
 													   title="Title for listing"><i
 														class="fas fa-question-circle"></i></a> -->
 												</div>
+												</div>
+												
+												<div class="text-dark font-weight-semibold font-size-md mb-2 lh-15">
 												<input type="text" class="form-control"
 												       placeholder="Name of your Hospital" name="Hospital_name">
+													   <div class="text-dark font-weight-semibold font-size-md mb-2 lh-15">
+                                                    Hospital Email for login
+													
+												
+												</div>
 												<input type="email" class="form-control"
 												       placeholder="Email of your Hospital for login" name="Hospital_email_id_login">
 												<input type="email" class="form-control"
