@@ -45,18 +45,31 @@ class TrialController extends Controller
      */
     public function show($Category_id)
     {
+        // if($Category_id == 1)
+        // {
+        //     $vendorsinlocation = DB::table("hospitals")->get(); 
+            
+        //     $vendorsinlocationcount = DB::table("hospitals")->count(); 
+
+        //     $categories = DB::table("categories")->get(); 
+        
+        //     $locations = DB::table("locations")->get(); 
+
+        //     return view("categories/listings", compact("vendorsinlocation", "vendorsinlocationcount", "categories", "locations"));
+       
+        // }
         $vendorsinlocation = DB::table("users")
                                 ->join("vendors", "vendors.Vendor_userid", "users.id")
-                                ->join("services", "services.Service_providerid", "users.id")
-                                ->join("locations", "locations.Location_owneruserid", "users.id")
+                            //    ->join("services", "services.Service_providerid", "users.id")
+                              //  ->join("locations", "locations.Location_owneruserid", "users.id")
                                 ->where("Vendor_category", '=', $Category_id)
                                 ->get()->toArray();
-
+        
         
         $vendorsinlocationcount = DB::table("users")
                                     ->join("vendors", "vendors.Vendor_userid", "users.id")
-                                    ->join("services", "services.Service_providerid", "users.id")
-                                    ->join("locations", "locations.Location_owneruserid", "users.id")
+                                    // ->join("services", "services.Service_providerid", "users.id")
+                                    // ->join("locations", "locations.Location_owneruserid", "users.id")
                                     ->where("Vendor_category", '=', $Category_id)
                                     ->count();
 

@@ -65,7 +65,7 @@
     
     <div class="col-xs-8 col-sm-8 col-md-8">
         <div class="form-group">
-            {!! Form::text('Vendor_bio', null, array('placeholder' => 'Bio','class' => 'form-control')) !!}
+            {!! Form::text('Vendor_description', null, array('placeholder' => 'Bio','class' => 'form-control')) !!}
         </div>
     </div>
     

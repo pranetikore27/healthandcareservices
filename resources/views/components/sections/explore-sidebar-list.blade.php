@@ -186,12 +186,12 @@
                             <div class="mb-6">
                                 @foreach($vendorsinlocation as $vendor)
                                 <div class="store media align-items-stretch bg-white job-store">
-                                    <a href="listing-details-full-image.html" class="store-image"
+                                    <a href="{{route('hivendors.show', $vendor->id)}}" class="store-image"
                                        style="background-image: url('images/shop/jobs-shop-1.jpg')">
                                     </a>
                                     <div class="media-body px-0 px-md-4 pt-4 pt-lg-0">
                                         <div class="d-flex align-items-center lh-1">
-                                            @if($vendor->Vendor_isverified == 0)
+                                            @if($vendor->Vendor_online_verification_status == 0)
                                             <span class="text-gray">Verified</span>
                                             @else
                                             
@@ -202,7 +202,7 @@
                                                     class="fas fa-heart"></i></span>
                                         </div>
 
-                                        <a href="listing-details-full-image.html"
+                                        <a href="{{route('hivendors.show', $vendor->id)}}"
                                            class="h5  text-dark d-inline-block store-name"><span
                                                 class="letter-spacing-25">{{$vendor->Vendor_businessname}}</span> </a>
                                         <div class="row mb-3">
@@ -212,11 +212,11 @@
                                             </div>
                                             <div class="col-lg-6">
                                                 <i class="fal fa-briefcase"></i><span
-                                                    class="d-inline-block ml-2 text-link">{{$vendor->Location_countryName}}, {{$vendor->Location_cityName}}</span>
+                                                    class="d-inline-block ml-2 text-link">, </span>
                                             </div>
                                             <div class="col-lg-6"><i
                                                     class="fal fa-sack-dollar"></i><span
-                                                    class="d-inline-block ml-2 text-danger">{{$vendor->Service_charge}}</span>
+                                                    class="d-inline-block ml-2 text-danger"></span>
                                             </div>
                                             <!-- <div class="col-lg-6"><i class="fal fa-clock"></i><span
                                                     class="d-inline-block ml-2">Posted 11 hours

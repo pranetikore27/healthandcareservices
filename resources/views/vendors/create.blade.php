@@ -54,34 +54,30 @@
         </div>
     </div>
 
-    
-    
-
-
     <div class="col-xs-8 col-sm-8 col-md-8">
         <div class="form-group">
-            {!! Form::text('Vendor_businessaddress', null, array('placeholder' => 'Company Address','class' => 'form-control')) !!}
+            {!! Form::text('Vendor_businessaddress', null, array('placeholder' => 'Business Address','class' => 'form-control')) !!}
         </div>
     </div>
 
     <div class="col-xs-8 col-sm-8 col-md-8">
         <div class="form-group">
-            {!! Form::text('Vendor_referencenumber', null, array('placeholder' => 'Reference Number','class' => 'form-control')) !!}
+            {!! Form::text('Vendor_mobilenumber', null, array('placeholder' => 'Contact number','class' => 'form-control')) !!}
         </div>
     </div>
 
     <div class="col-xs-8 col-sm-8 col-md-8">
         <div class="form-group">
-            {!! Form::text('Vendor_Accountnumber', null, array('placeholder' => 'Account number','class' => 'form-control')) !!}
+            {!! Form::text('Vendor_description', null, array('placeholder' => 'Describe your business','class' => 'form-control')) !!}
         </div>
     </div>
 
-    
     <div class="col-xs-8 col-sm-8 col-md-8">
         <div class="form-group">
-            {!! Form::text('Vendor_bio', null, array('placeholder' => 'Bio','class' => 'form-control')) !!}
+            {!! Form::text('Vendor_website_URL', null, array('placeholder' => 'Link to your website?','class' => 'form-control')) !!}
         </div>
     </div>
+
     
     <div class="col-xs-8 col-sm-8 col-md-8 text-center">
         <button type="submit" class="btn btn-primary">Submit</button>

@@ -60,9 +60,7 @@ class VendorController extends Controller
             'Vendor_businessname' => 'required',
             'Vendor_category' => 'required', 
             'Vendor_businessaddress' => 'required',
-            'Vendor_referencenumber' => 'required', 
-            'Vendor_Accountnumber' => 'required', 
-            'Vendor_bio' => 'required'
+            'Vendor_mobilenumber' => 'required',
         ]);
 
         $user = Auth::user(); 
@@ -92,13 +90,17 @@ class VendorController extends Controller
      */
     public function show($id)
     {
-        $user = Auth::user(); 
+        $loggedinuser = Auth::user();   
         $vendor = DB::table("vendors")
-                    ->join("users", "users.id", "vendors.Vendor_userid")
-                    ->where("users.id", "=", $id)
+        ->join("users", "users.id", "vendors.Vendor_userid")
+        ->join("categories","categories.Category_id", "vendors.Vendor_category")
+        ->where("users.id", "=", $id)
                     ->get()->toArray(); 
-        // return $vendor; 
-        return view("Vendors/show", compact("vendor", "user")); 
+        // $ratingscount = DB::table("reviews")->where("", =, "")->count(); 
+        // return $vendor;  
+
+ 
+        return view("Vendors/show", compact("vendor", "loggedinuser")); 
         return "vendor show"; 
     }
 
@@ -110,7 +112,7 @@ class VendorController extends Controller
      */
     public function edit($id)
     {
-        //
+        
     }
 
     /**
@@ -133,6 +135,6 @@ class VendorController extends Controller
      */
     public function destroy($id)
     {
-        //
+        return "verify here"; 
     }
 }

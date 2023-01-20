@@ -17,40 +17,41 @@
                                     Vendors Listings
                                 </div>
                                 <div class="table-responsive-md">
-                                    <table id="example" id="example">
+                                    <table id="example">
                                         <thead>
                                             <tr>
-                                                <th style="width: 11%">Owner name</th>
-                                                <th style="width: 15%">Business name</th>
-                                                <th style="width: 13%">Address</th>
-                                                <th style="width: 10%">Plan</th>
-                                                <th style="width: 10%">Amount</th>
-                                                <th style="width: 20%">Verification Status</th>
-                                                <th>Account Status</th>
+                                                <th style="width: 11%">Firm Name</th>
+                                                <th style="width: 15%">Category</th>
+                                                <th style="width: 13%">Online Verification Status</th>
+                                                <th style="width: 10%">Offline Verification Status</th>
+                                                <!-- <th style="width:50%">Action</th> -->
                                             </tr>
                                         </thead>
                                         <tbody>
                                             @foreach($vendors as $v)
                                             <tr>
-                                                <td>
-                                                    <a href="{{route('hivendors.show', $v->id)}}" class="link-hover-dark-blue">
-                                                        {{$v->name}}
-                                                    </a>
+                                                <td>{{$v->Vendor_businessname}}
                                                 </td>
-                                                <td>{{$v->Vendor_businessname}}</td>
-                                                <td>{{$v->Vendor_businessaddress}}</td>
-                                                <td>Basic</td>
-                                                <td>Free</td>
-                                                
+                                                <?php $category_name = App\Models\Category::find($v->Vendor_category)?>
+                                                <td>{{$category_name->Category_name}}
+                                                </td>
                                                 <td>
-                                                    @if($v->email_verified_at == NULL) 
-                                                    <span class="status paid">Unverified</span>
-                                                    @else
-                                                    <span class="status unpaid">Verified</span>
+                                                    @if($v->Vendor_online_verification_status == 0)
+                                                 Unverified   <!-- <a class="btn btn-info" href="{{ route('hivendors.edit',$v->Vendor_id) }}">Click here to verify</a> -->
+                                                    @else 
+                                                    Verified
                                                     @endif
                                                 </td>
-
-                                                <td>Active</td>
+                                                <td>
+                                                @if($v->Vendor_offline_verification_status == 0)
+                                                Unverified
+                                                    <!-- <a class="btn btn-success" href="{{ route('hivendors.edit',$v->Vendor_id) }}">Click here to verify</a> -->
+                                                    @else 
+                                                    Verified
+                                                    @endif
+                                                </td>
+                                                <!-- <td>Action
+                                                </td> -->
                                             </tr>
                                             @endforeach                                            
                                         </tbody>

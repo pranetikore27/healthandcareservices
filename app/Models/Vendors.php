@@ -27,15 +27,19 @@ class Vendors extends Model
         'Vendor_userid', 
         'Vendor_businessname', 
         'Vendor_businessaddress',
+        'Vendor_mobilenumber',
+
+        'Vendor_description',
         'Vendor_category', //fetching from category table
-        'Vendor_isverified', 
-        'Vendor_isactive', 
-        'Vendor_referencenumber', 
-        'Vendor_Accountnumber', 
+        'Vendor_online_verification_status', 
+        'Vendor_offline_verification_status', 
+
+        'Vendor_website_URL', 
         'Vendor_Validfrom', 
         'Vendor_Validto', 
+
         'Vendor_remarks', 
-        "Vendor_bio"
+        'Vendor_isactive', 
     ];
 
 }

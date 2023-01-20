@@ -11,15 +11,15 @@
     <link href="https://fonts.googleapis.com/css?family=Work+Sans:200,300,400,500,600,700,800,900&display=swap"
           rel="stylesheet">
 
-    <link rel="stylesheet" href="vendors/font-awesome/css/fontawesome.css">
-    <link rel="stylesheet" href="vendors/magnific-popup/magnific-popup.css">
-    <link rel="stylesheet" href="vendors/slick/slick.css">
-    <link rel="stylesheet" href="vendors/animate.css">
-    <link rel="stylesheet" href="vendors/air-datepicker/css/datepicker.min.css">
-    <link rel="stylesheet" href="vendors/jquery-ui/jquery-ui.min.css">
+    <link rel="stylesheet" href="{{asset('vendors/font-awesome/css/fontawesome.css')}}">
+    <link rel="stylesheet" href="{{asset('vendors/magnific-popup/magnific-popup.css')}}">
+    <link rel="stylesheet" href="{{asset('vendors/slick/slick.css')}}">
+    <link rel="stylesheet" href="{{asset('vendors/animate.css')}}">
+    <link rel="stylesheet" href="{{asset('vendors/air-datepicker/css/datepicker.min.css')}}">
+    <link rel="stylesheet" href="{{asset('vendors/jquery-ui/jquery-ui.min.css')}}">
 
     <!-- Site Stylesheets -->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="{{asset('style.css')}}">
 
 </head>
 <body>
@@ -404,9 +404,9 @@
             <div class="page-title bg-gray-06">
                 <div class="container">
                     <ul class="breadcrumb breadcrumb-style-03 py-7">
-                        <li class="breadcrumb-item"><a href="#">Home</a></li>
-                        <li class="breadcrumb-item"><a href="#">Healths & Medicals</a></li>
-                        <li class="breadcrumb-item">Dr.Matthew Huff DDS</li>
+                        <li class="breadcrumb-item"><a href="{{route('home')}}">Home</a></li>
+                        <li class="breadcrumb-item"><a href="{{route('trial.show', $vendor[0]->Category_id)}}">{{$vendor[0]->Category_name}}</a></li>
+                        <li class="breadcrumb-item">{{$vendor[0]->Vendor_businessname}}</li>
                     </ul>
                 </div>
             </div>
@@ -428,7 +428,7 @@
                                     <ul class="list-group list-group-flush">
                                         <li class="list-group-item bg-transparent d-flex text-dark px-0">
                                             <span class="item-icon mr-3"><i class="fal fa-map-marker-alt"></i></span>
-                                            <span class="card-text">125 Mountain St, Brooklyn, NY</span>
+                                            <span class="card-text">{{$vendor[0]->Vendor_businessaddress}}</span>
                                         </li>
                                         <li class="list-group-item bg-transparent d-flex text-dark px-0">
                                             <span class="item-icon mr-3">
@@ -436,11 +436,11 @@
                                                     <use xlink:href="#icon-telephone"></use>
                                                 </svg>
                                             </span>
-                                            <span class="card-text">(301) 453-8688</span>
+                                            <span class="card-text">{{$vendor[0]->Vendor_mobilenumber}}</span>
                                         </li>
                                         <li class="list-group-item bg-transparent d-flex text-dark px-0">
                                             <span class="item-icon mr-3"><i class="fal fa-globe"></i></span>
-                                            <span class="card-text"><a href="#">www.thaistaste.com</a></span>
+                                            <span class="card-text"><a href="#">{{$vendor[0]->Vendor_website_URL}}</a></span>
                                         </li>
                                         <li class="list-group-item bg-transparent d-flex text-dark px-0 pt-4">
                                             <div class="social-icon origin-color si-square text-center">
@@ -531,73 +531,7 @@
                                 </ul>
                             </div>
                         </div>
-                        <div class="card p-4 widget border-0 price-status bg-gray-06 mb-6 rounded-0">
-                            <div class="card-title d-flex mb-0 font-size-md font-weight-semibold text-dark text-uppercase border-bottom pb-2 lh-1">
-                                <span class="text-secondary mr-3">
-                                        <svg class="icon icon-dollar-sign">
-                                            <use xlink:href="#icon-dollar-sign"></use>
-                                        </svg>
-                                    </span>
-                                <span>Price status</span>
-                            </div>
-                            <div class="card-body px-0 pb-0">
-                                <ul class="list-group list-group-flush">
-                                    <li class="list-group-item bg-transparent d-flex text-dark px-0">
-                                        <label class="font-weight-semibold text-dark mb-0">Status</label>
-                                        <span class="text-green ml-auto">Ultra High End</span>
-                                    </li>
-                                    <li class="list-group-item bg-transparent d-flex text-dark px-0">
-                                        <label class="font-weight-semibold text-dark mb-0">Price Range</label>
-                                        <span class="text-danger font-weight-semibold font-size-md ml-auto">$10.00 - $55.00</span>
-                                    </li>
-                                    <li class="list-group-item bg-transparent d-flex text-dark px-0">
-                                        <label class="font-italic mb-0">Own or work here?</label>
-                                        <a href="#claim-popup"
-                                           class="font-weight-semibold font-size-md ml-auto text-decoration-none"
-                                           data-gtf-mfp="true"
-                                           data-mfp-options='{"type":"inline"}'>Claim Now!</a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="card p-4 widget border-0 addition-detail bg-gray-06 mb-6 rounded-0">
-                            <div class="card-title d-flex mb-0 font-size-md font-weight-semibold text-dark text-uppercase border-bottom pb-2 lh-1">
-                                <span>additional details</span>
-                            </div>
-                            <div class="card-body px-0 pb-0">
-                                <ul class="list-group list-group-flush">
-                                    <li class="list-group-item bg-transparent d-flex text-dark px-0">
-                                        <label class="mb-0">Accept Card Pay</label>
-                                        <span class="font-weight-semibold text-danger ml-auto">No</span>
-                                    </li>
-                                    <li class="list-group-item bg-transparent d-flex text-dark px-0">
-                                        <label class="mb-0">Accept Bitcoin Pay</label>
-                                        <span class="font-weight-semibold text-green ml-auto">Yes</span>
-                                    </li>
-                                    <li class="list-group-item bg-transparent d-flex text-dark px-0">
-                                        <label class="mb-0">Car Parking</label>
-                                        <span class="font-weight-semibold text-green ml-auto">Yes</span>
-                                    </li>
-                                    <li class="list-group-item bg-transparent d-flex text-dark px-0">
-                                        <label class="mb-0">Good for Kids</label>
-                                        <span class="font-weight-semibold text-green ml-auto">Yes</span>
-                                    </li>
-                                    <li class="list-group-item bg-transparent d-flex text-dark px-0">
-                                        <label class="mb-0">Good for Groups</label>
-                                        <span class="font-weight-semibold text-green ml-auto">Yes</span>
-                                    </li>
-                                    <li class="list-group-item bg-transparent d-flex text-dark px-0">
-                                        <label class="mb-0">Smoking</label>
-                                        <span class="font-weight-semibold text-danger ml-auto">No</span>
-                                    </li>
-                                    <li class="list-group-item bg-transparent d-flex text-dark px-0 pt-3">
-                                        <a href="#">Show More <span class="d-inline-block ml-2"><i
-                                                class="fal fa-chevron-down"></i></span>
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
+                        
                     </div>
                     <div class="page-content col-lg-8 mb-lg-0 order-0 order-lg-1">
                         <div class="explore-details-top bg-white">
@@ -606,18 +540,20 @@
                                                                                 alt="Provider"></div>
                                 <div class="media-body lh-14">
                                     <div class="d-inline-flex flex-wrap">
-                                        <h2 class="mb-0">Dr.Matthew Huff DDS
+                                        <h2 class="mb-0">{{$vendor[0]->Vendor_businessname}}
                                         </h2>
+                                        @if($vendor[0]->Vendor_online_verification_status == 1)
                                         <span class="check d-inline-block ml-2 font-weight-semibold">
-										<svg class="icon icon-check-circle"><use xlink:href="#icon-check-circle"></use></svg>
-										Verified
-									</span>
+										    <svg class="icon icon-check-circle"><use xlink:href="#icon-check-circle"></use></svg>
+										    Verified
+									    </span>
+                                        @endif
                                     </div>
-                                    <div class="fw-500 font-size-lg border-bottom pb-2 mb-2">Family Physician</div>
+                                    <div class="fw-500 font-size-lg border-bottom pb-2 mb-2">{{$vendor[0]->Category_name}}</div>
                                     <ul class="list-inline store-meta d-flex flex-wrap align-items-center">
                                         <li class="list-inline-item"><span
                                                 class="badge badge-success d-inline-block mr-1">5.0</span><span
-                                                class="number">8 rating</span></li>
+                                                class="number">0 rating</span></li>
                                         <li class="list-inline-item separate"></li>
                                         <li class="list-inline-item">
                                             <a href="#"
@@ -627,14 +563,14 @@
 												<use xlink:href="#icon-pharmaceutical"></use>
 											</svg>
 											</span>
-                                                <span>Medical</span>
+                                                <span>{{$vendor[0]->Category_name}}</span>
 
                                             </a>
                                         </li>
                                         <li class="list-inline-item separate"></li>
                                         <li class="list-inline-item">
                                             <span class="d-inline-block mr-1"><i class="fal fa-clock"></i></span>
-                                            August 30, 2017
+                                            Profile created on {{$vendor[0]->created_at}}
                                         </li>
                                     </ul>
                                 </div>
@@ -722,165 +658,10 @@
                                                     <div class="card-body p-sm-0 border-sm-0">
                                                         <div class="mb-7">
                                                             <h6 class="d-block font-size-md mb-5">Introduce</h6>
-                                                            <p class="mb-6">Dr. Matthew received his D.M.D. degree from
-                                                                the Nova
-                                                                Southeastern
-                                                                University College of Dental Medicine in Fort Lauderdale
-                                                                Florida,
-                                                                and his M.D. degree from The Mount Sinai School of
-                                                                Medicine in New
-                                                                York. Dr. Matthew then went on to earn his certificate
-                                                                in Oral &
-                                                                Maxillofacial Surgery from the prestigious Mount Sinai
-                                                                Medical
-                                                                Center where he also completed his general surgery and
-                                                                anesthesia
-                                                                training as well.s</p>
-                                                            <p class="mb-6">
-                                                                Presently, Dr. Matthew limits his private practice to
-                                                                full-scope
-                                                                Oral and Maxillofacial Surgery with heavy emphasis on
-                                                                dental
-                                                                implants and the associated hard & soft tissue grafting
-                                                                in his new
-                                                                state of the art office in Brooklyn. He is a Diplomate
-                                                                of the
-                                                                American Board of Oral and Maxillofacial Surgery, and
-                                                                holds both
-                                                                dental and medical licenses in New York State. Dr.
-                                                                Matthew is also
-                                                                dedicated towards residency education and academic
-                                                                medicine as well
-                                                                and, holds several appointments at local hospitals in
-                                                                the area.
-                                                            </p>
-                                                            <p class="mb-0">Dr. Matthew lives in Brooklyn with his wife
-                                                                and recent
-                                                                addition to
-                                                                the family, Noah.</p>
+                                                            <p class="mb-6">{{$vendor[0]->Vendor_description}}</p>
+                                                            
                                                         </div>
-                                                        <div class="mb-6">
-                                                            <h6 class="d-block font-size-md mb-6">
-                                                                Accepted Insurance
-                                                            </h6>
-                                                            <div class="row">
-                                                                <div class="col-md-4 mb-4 mb-md-0">
-                                                                    <ul class="list-group list-group-flush list-group-borderless">
-                                                                        <li class="list-group-item bg-transparent px-0 py-1 lh-625">
-															<span class="text-green d-inline-block mr-2">
-																<i class="fas fa-check-circle"></i>
-															</span>
-                                                                            <span class="text-dark">Aetna</span>
-                                                                        </li>
-                                                                        <li class="list-group-item bg-transparent px-0 py-1 lh-625">
-															<span class="text-green d-inline-block mr-2">
-																<i
-                                                                        class="fas fa-check-circle"></i></span>
-                                                                            <span class="text-dark">Assurant Health</span>
-                                                                        </li>
-                                                                        <li class="list-group-item bg-transparent px-0 py-1 lh-625">
-												<span class="text-green d-inline-block mr-2"><i
-                                                        class="fas fa-check-circle"></i></span>
-                                                                            <span class="text-dark">Blue Cross Blue Shield</span>
-                                                                        </li>
-                                                                    </ul>
-                                                                </div>
-                                                                <div class="col-md-4 mb-4 mb-md-0">
-                                                                    <ul class="list-group list-group-flush list-group-borderless">
-                                                                        <li class="list-group-item bg-transparent px-0 py-1 lh-625">
-											<span class="text-green d-inline-block mr-2"><i
-                                                    class="fas fa-check-circle"></i></span>
-                                                                            <span class="text-dark">Delta Dental</span>
-                                                                        </li>
-                                                                        <li class="list-group-item bg-transparent px-0 py-1 lh-625">
-											<span class="text-green d-inline-block mr-2"><i
-                                                    class="fas fa-check-circle"></i></span>
-                                                                            <span class="text-dark">Dental Network of America</span>
-                                                                        </li>
-                                                                        <li class="list-group-item bg-transparent px-0 py-1 lh-625">
-											<span class="text-green d-inline-block mr-2"><i
-                                                    class="fas fa-check-circle"></i></span>
-                                                                            <span class="text-dark">Dominion Insurance</span>
-                                                                        </li>
-                                                                    </ul>
-                                                                </div>
-                                                                <div class="col-md-4">
-                                                                    <ul class="list-group list-group-flush list-group-borderless">
-                                                                        <li class="list-group-item bg-transparent px-0 py-1 lh-625">
-											<span class="text-green d-inline-block mr-2"><i
-                                                    class="fas fa-check-circle"></i></span>
-                                                                            <span class="text-dark">Guardian</span>
-                                                                        </li>
-                                                                        <li class="list-group-item bg-transparent px-0 py-1 lh-625">
-											<span class="text-green d-inline-block mr-2"><i
-                                                    class="fas fa-check-circle"></i></span>
-                                                                            <span class="text-dark">EmblemHealth</span>
-                                                                        </li>
-                                                                        <li class="list-group-item bg-transparent px-0 py-1 lh-625">
-											<span class="text-green d-inline-block mr-2"><i
-                                                    class="fas fa-check-circle"></i></span>
-                                                                            <span class="text-dark">Humana</span>
-                                                                        </li>
-                                                                    </ul>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="mb-6">
-                                                            <h6 class="font-size-md mb-6">
-                                                                Affiliated Hospital
-                                                            </h6>
-                                                            <ul class="list-group list-group-flush list-group-borderless">
-                                                                <li class="list-group-item p-0">1. <a href="#"
-                                                                                                      class="text-link">Genesis
-                                                                    Medical Center -
-                                                                    Silvis </a>--Silvis, IL
-                                                                </li>
-                                                                <li class="list-group-item p-0">2. <a href="#"
-                                                                                                      class="text-link">Trinity
-                                                                    Rock Island </a>--Rock
-                                                                    Island, IL
-                                                                </li>
-                                                            </ul>
-                                                        </div>
-                                                        <div class="mb-6">
-                                                            <h6 class="font-size-md mb-4">
-                                                                Education
-                                                            </h6>
-                                                            <ul class="list-group list-group-flush list-group-borderless">
-                                                                <li class="list-group-item p-0 mb-4">
-                                                                    <div class="letter-spacing-25 text-dark font-size-lg lh-12">
-                                                                        The Mount
-                                                                        Sinai School Of
-                                                                        Medicine
-                                                                    </div>
-                                                                    <div class="text-gray">
-                                                                        <span>Medical School | Graduated 2006</span>
-                                                                    </div>
-                                                                </li>
-                                                                <li class="list-group-item p-0">
-                                                                    <div class="letter-spacing-25 text-dark font-size-lg lh-12">
-                                                                        Credentials
-                                                                        Are: Saar Amrani Dmd
-                                                                        & MD
-                                                                    </div>
-                                                                    <div class="text-gray">
-                                                                        <span>Other Education | Completed</span>
-                                                                    </div>
-                                                                </li>
-                                                            </ul>
-                                                        </div>
-                                                        <div class="mb-7">
-                                                            <h6 class="font-size-md mb-5">
-                                                                NPPES
-                                                                Information
-                                                            </h6>
-                                                            <ul class="list-unstyled">
-                                                                <li>
-                                                                    <span class="font-weight-semibold text-dark">NPI:</span>
-                                                                    1780868604
-                                                                </li>
-                                                            </ul>
-                                                        </div>
+                                                        
                                                     </div>
                                                 </div>
                                             </div>
@@ -1605,164 +1386,7 @@
                     </div>
                 </div>
             </div>
-            <div class="recent-view bg-white pb-11 mt-5">
-                <div class="container">
-                    <div class="mb-6 border-top pt-8">
-                        <h5 class="mb-0">
-                            Recently Viewed
-                        </h5>
-                    </div>
-                    <div class="row">
-                        <div class="col-lg-4 mb-4 mb-lg-0">
-                            <div class="store media align-items-stretch bg-white">
-                                <div class="store-image position-relative">
-                                    <a href="listing-details-full-image.html">
-                                        <img src="images/shop/recent-view-1.jpg" alt="Recent view 1">
-                                    </a>
-                                    <div class="image-content position-absolute d-flex align-items-center">
-                                        <div class="content-right ml-auto d-flex">
-                                            <a href="images/shop/full-top-place-3.jpg"
-                                               class="item viewing"
-                                               data-toggle="tooltip"
-                                               data-placement="top"
-                                               title="Quickview" data-gtf-mfp="true">
-                                                <svg class="icon icon-expand">
-                                                    <use xlink:href="#icon-expand"></use>
-                                                </svg>
-                                            </a>
-                                            <a href="#" class="item marking" data-toggle="tooltip"
-                                               data-placement="top"
-                                               title="Bookmark"><i class="fal fa-bookmark"></i></a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="media-body pl-0 pl-sm-3 pt-4 pt-sm-0">
-                                    <a href="listing-details-full-image.html"
-                                       class="font-size-md font-weight-semibold text-dark d-inline-block mb-2 lh-11"><span
-                                            class="letter-spacing-25">Canabo View Street, Main St</span> </a>
-                                    <ul class="list-inline store-meta mb-2 lh-1 font-size-sm d-flex align-items-center flex-wrap">
-                                        <li class="list-inline-item"><span
-                                                class="badge badge-warning d-inline-block mr-1">4.3</span><span
-                                                class="number">6 rating</span>
-                                        </li>
-                                        <li class="list-inline-item separate"></li>
-                                        <li class="list-inline-item"><span class="mr-1">From</span><span
-                                                class="text-danger font-weight-semibold">$8.00</span></li>
-                                    </ul>
-                                    <div>
-											<span
-                                                    class="d-inline-block mr-1"><i
-                                                    class="fal fa-map-marker-alt">
-											</i>
-												</span>
-                                        <a href="#" class="text-secondary text-decoration-none address">77 Main St,
-                                            Queen,
-                                            NY</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 mb-4 mb-lg-0">
-                            <div class="store media align-items-stretch bg-white">
-                                <div class="store-image position-relative">
-                                    <a href="listing-details-full-image.html">
-                                        <img src="images/shop/recent-view-2.jpg" alt="Recent view 1">
-                                    </a>
-                                    <div class="image-content position-absolute d-flex align-items-center">
-                                        <div class="content-right ml-auto d-flex">
-                                            <a href="images/shop/full-top-place-4.jpg"
-                                               class="item viewing"
-                                               data-toggle="tooltip"
-                                               data-placement="top"
-                                               title="Quickview" data-gtf-mfp="true">
-                                                <svg class="icon icon-expand">
-                                                    <use xlink:href="#icon-expand"></use>
-                                                </svg>
-                                            </a>
-                                            <a href="#" class="item marking" data-toggle="tooltip"
-                                               data-placement="top"
-                                               title="Bookmark"><i class="fal fa-bookmark"></i></a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="media-body pl-0 pl-sm-3 pt-4 pt-sm-0">
-                                    <a href="listing-details-full-image.html"
-                                       class="font-size-md font-weight-semibold text-dark d-inline-block mb-2 lh-11"><span
-                                            class="letter-spacing-25">Japan's Sushi - 10th Ave St</span> </a>
-                                    <ul class="list-inline store-meta mb-2 lh-1 font-size-sm d-flex align-items-center flex-wrap">
-                                        <li class="list-inline-item"><span
-                                                class="badge badge-success d-inline-block mr-1">5.0</span><span
-                                                class="number">7 rating</span>
-                                        </li>
-                                        <li class="list-inline-item separate"></li>
-                                        <li class="list-inline-item"><span class="mr-1">From</span><span
-                                                class="text-danger font-weight-semibold">$12.00</span></li>
-                                    </ul>
-                                    <div>
-											<span
-                                                    class="d-inline-block mr-1"><i
-                                                    class="fal fa-map-marker-alt">
-											</i>
-												</span>
-                                        <a href="#" class="text-secondary text-decoration-none address">99 10th Ave
-                                            St,
-                                            Mahattan, NY</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 mb-4 mb-lg-0">
-                            <div class="store media align-items-stretch bg-white">
-                                <div class="store-image position-relative">
-                                    <a href="listing-details-full-image.html">
-                                        <img src="images/shop/recent-view-3.jpg" alt="Recent view 1">
-                                    </a>
-                                    <div class="image-content position-absolute d-flex align-items-center">
-                                        <div class="content-right ml-auto d-flex">
-                                            <a href="images/shop/full-top-place-5.jpg"
-                                               class="item viewing"
-                                               data-toggle="tooltip"
-                                               data-placement="top"
-                                               title="Quickview" data-gtf-mfp="true">
-                                                <svg class="icon icon-expand">
-                                                    <use xlink:href="#icon-expand"></use>
-                                                </svg>
-                                            </a>
-                                            <a href="#" class="item marking" data-toggle="tooltip"
-                                               data-placement="top"
-                                               title="Bookmark"><i class="fal fa-bookmark"></i></a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="media-body pl-0 pl-sm-3 pt-4 pt-sm-0">
-                                    <a href="listing-details-full-image.html"
-                                       class="font-size-md font-weight-semibold text-dark d-inline-block mb-2 lh-11"><span
-                                            class="letter-spacing-25">Korean Bingsu Shop</span></a>
-                                    <ul class="list-inline store-meta mb-2 lh-1 font-size-sm d-flex align-items-center flex-wrap">
-                                        <li class="list-inline-item"><span
-                                                class="badge badge-success d-inline-block mr-1">5.0</span><span
-                                                class="number">7 rating</span>
-                                        </li>
-                                        <li class="list-inline-item separate"></li>
-                                        <li class="list-inline-item"><span class="mr-1">From</span><span
-                                                class="text-danger font-weight-semibold">$12.00</span></li>
-                                    </ul>
-                                    <div>
-											<span
-                                                    class="d-inline-block mr-1"><i
-                                                    class="fal fa-map-marker-alt">
-											</i>
-												</span>
-                                        <a href="#" class="text-secondary text-decoration-none address">534 Salem
-                                            Rd St,
-                                            Newark, NY</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            
         </div>
         <!-- #wrapper-content end -->
 
@@ -2140,7 +1764,7 @@
                                             <svg class="icon icon-pharmaceutical">
                                                 <use xlink:href="#icon-pharmaceutical"></use>
                                             </svg>
-                                            <span class="font-size-md">Healths & Medicals</span>
+                                            <span class="font-size-md">///</span>
                                         </a>
                                     </li>
                                     <li class="dropdown-item item">
@@ -2620,17 +2244,17 @@
     </script>
 
     <!-- External JavaScripts -->
-    <script src="vendors/jquery.min.js"></script>
-    <script src="vendors/jquery-ui/jquery-ui.min.js"></script>
-    <script src="vendors/popper/popper.js"></script>
-    <script src="vendors/bootstrap/js/bootstrap.js"></script>
-    <script src="vendors/hc-sticky/hc-sticky.js"></script>
-    <script src="vendors/isotope/isotope.pkgd.js"></script>
-    <script src="vendors/magnific-popup/jquery.magnific-popup.js"></script>
-    <script src="vendors/slick/slick.js"></script>
-    <script src="vendors/waypoints/jquery.waypoints.js"></script>
-    <script src="vendors/air-datepicker/js/datepicker.min.js"></script>
-    <script src="vendors/air-datepicker/js/i18n/datepicker.en.js"></script>
+    <script src="{{asset('vendors/jquery.min.js')}}"></script>
+    <script src="{{asset('vendors/jquery-ui/jquery-ui.min.js')}}"></script>
+    <script src="{{asset('vendors/popper/popper.js')}}"></script>
+    <script src="{{asset('vendors/bootstrap/js/bootstrap.js')}}"></script>
+    <script src="{{asset('vendors/hc-sticky/hc-sticky.js')}}"></script>
+    <script src="{{asset('vendors/isotope/isotope.pkgd.js')}}"></script>
+    <script src="{{asset('vendors/magnific-popup/jquery.magnific-popup.js')}}"></script>
+    <script src="{{asset('vendors/slick/slick.js')}}"></script>
+    <script src="{{asset('vendors/waypoints/jquery.waypoints.js')}}"></script>
+    <script src="{{asset('vendors/air-datepicker/js/datepicker.min.js')}}"></script>
+    <script src="{{asset('vendors/air-datepicker/js/i18n/datepicker.en.js')}}"></script>
     <script async defer
             src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDiMIj9qJw-InawUWnu7kUK4GjDQ7dktMQ&callback=initMap"></script>
 

@@ -70,7 +70,7 @@ class HomeController extends Controller
             $VendorsCount = DB::table("vendors")->count(); 
             $title = "Admin Dashboard"; 
             
-            $Verifications = DB::table("vendors")->where("Vendor_isverified", "0")->count(); 
+            $Verifications = DB::table("vendors")->where("Vendor_online_verification_status", "0")->count(); 
             $ComplaintsCount = DB::table("complaints")->where("Complaint_status", "0")->count(); 
             $ComplaintsUnderReviewCount = DB::table("complaints")->where("Complaint_status", "1")->count(); 
             
