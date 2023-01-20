@@ -56,8 +56,10 @@
 												</div>
 												<input type="text" class="form-control"
 												       placeholder="Name of your Hospital" name="Hospital_name">
-												<input type="text" class="form-control"
-												       placeholder="Tagline Example: Best Express Mexican Grill">
+												<input type="email" class="form-control"
+												       placeholder="Email of your Hospital for login" name="Hospital_email_id_login">
+												<input type="email" class="form-control"
+												       placeholder="Email of your Hospital for contact" name="Hospital_email_id">
 											</div>
 											<div class="form-group mb-4">
 												<div class="mb-2 d-flex align-items-center lh-15">
