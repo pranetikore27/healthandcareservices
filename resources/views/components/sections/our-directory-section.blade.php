@@ -51,7 +51,7 @@
                     <div class="box" data-animate="fadeInUp">
                         <div class="store card border-0 rounded-0">
                             <div class="position-relative store-image">
-                                <a href="listing-details-full-gallery.html">
+                                <a href="listing-details-full-gallery#">
                                     <img src="./assets/images/shop/shop-1.jpg" alt="store 1"
                                          class="card-img-top rounded-0">
                                 </a>
@@ -82,7 +82,7 @@
                                 </div>
                             </div>
                             <div class="card-body px-0 pb-0 pt-3">
-                                <a href="listing-details-full-gallery.html"
+                                <a href="listing-details-full-gallery#"
                                    class="card-title h5 text-dark d-inline-block mb-2"><span
                                         class="letter-spacing-25">Roman
                                     Kraft Hotel</span></a>
@@ -135,7 +135,7 @@
                     <div class="box" data-animate="fadeInUp">
                         <div class="store card border-0 rounded-0">
                             <div class="position-relative store-image">
-                                <a href="listing-details-full-gallery.html">
+                                <a href="listing-details-full-gallery#">
                                     <img src="./assets/images/shop/shop-2.jpg" alt="store 2"
                                          class="card-img-top rounded-0">
                                 </a>
@@ -159,7 +159,7 @@
                                 </div>
                             </div>
                             <div class="card-body px-0 pb-0 pt-3">
-                                <a href="listing-details-full-image.html"
+                                <a href="listing-details-full-image#"
                                    class="card-title h5 text-dark d-inline-block mb-2"><span
                                         class="letter-spacing-25">Karly Gomez Cake</span>
                                     <span class="check">
@@ -215,7 +215,7 @@
                     <div class="box" data-animate="fadeInUp">
                         <div class="store card border-0 rounded-0">
                             <div class="position-relative store-image">
-                                <a href="listing-details-full-gallery.html">
+                                <a href="listing-details-full-gallery#">
                                     <img src="./assets/images/shop/shop-3.jpg" alt="store 1"
                                          class="card-img-top rounded-0">
                                 </a>
@@ -239,7 +239,7 @@
                                 </div>
                             </div>
                             <div class="card-body px-0 pb-0 pt-3">
-                                <a href="listing-details-full-gallery.html"
+                                <a href="listing-details-full-gallery#"
                                    class="card-title h5 text-dark d-inline-block mb-2"><span
                                         class="letter-spacing-25">Roman
                                     Kraft Hotel</span></a>
@@ -293,7 +293,7 @@
                     <div class="box" data-animate="fadeInUp">
                         <div class="store card border-0 rounded-0">
                             <div class="position-relative store-image">
-                                <a href="listing-details-full-gallery.html">
+                                <a href="listing-details-full-gallery#">
                                     <img src="./assets/images/shop/shop-4.jpg" alt="store 1"
                                          class="card-img-top rounded-0">
                                 </a>
@@ -317,7 +317,7 @@
                                 </div>
                             </div>
                             <div class="card-body px-0 pb-0 pt-3">
-                                <a href="listing-details-full-image.html"
+                                <a href="listing-details-full-image#"
                                    class="card-title h5 text-dark d-inline-block mb-2"><span
                                         class="letter-spacing-25">Red Wings Shoes Store</span></a>
                                 <ul class="list-inline store-meta mb-4 font-size-sm d-flex align-items-center flex-wrap">
@@ -370,7 +370,7 @@
                     <div class="box" data-animate="fadeInUp">
                         <div class="store card border-0 rounded-0">
                             <div class="position-relative store-image">
-                                <a href="listing-details-full-gallery.html">
+                                <a href="listing-details-full-gallery#">
                                     <img src="./assets/images/shop/shop-5.jpg" alt="store 1"
                                          class="card-img-top rounded-0">
                                 </a>
@@ -394,7 +394,7 @@
                                 </div>
                             </div>
                             <div class="card-body px-0 pb-0 pt-3">
-                                <a href="listing-details-full-image.html"
+                                <a href="listing-details-full-image#"
                                    class="card-title h5 text-dark d-inline-block mb-2"><span
                                         class="letter-spacing-25">Packing & Delivery Service</span>
                                     <span class="check">
@@ -452,7 +452,7 @@
                     <div class="box" data-animate="fadeInUp">
                         <div class="store card border-0 rounded-0">
                             <div class="position-relative store-image">
-                                <a href="listing-details-full-gallery.html">
+                                <a href="listing-details-full-gallery#">
                                     <img src="./assets/images/shop/shop-1.jpg" alt="store 1"
                                          class="card-img-top rounded-0">
                                 </a>
@@ -476,7 +476,7 @@
                                 </div>
                             </div>
                             <div class="card-body px-0 pb-0 pt-3">
-                                <a href="listing-details-full-gallery.html"
+                                <a href="listing-details-full-gallery#"
                                    class="card-title h5 text-dark d-inline-block mb-2"><span
                                         class="letter-spacing-25">Roman
                                     Kraft Hotel</span></a>
@@ -536,7 +536,7 @@
                     <div class="box" data-animate="fadeInUp">
                         <div class="store card border-0 rounded-0">
                             <div class="position-relative store-image">
-                                <a href="listing-details-full-gallery.html">
+                                <a href="listing-details-full-gallery#">
                                     <img src="./assets/images/shop/shop-1.jpg" alt="store 1"
                                          class="card-img-top rounded-0">
                                 </a>
@@ -567,7 +567,7 @@
                                 </div>
                             </div>
                             <div class="card-body px-0 pb-0 pt-3">
-                                <a href="listing-details-full-gallery.html"
+                                <a href="listing-details-full-gallery#"
                                    class="card-title h5 text-dark d-inline-block mb-2"><span
                                         class="letter-spacing-25">Roman
                                     Kraft Hotel</span></a>
@@ -620,7 +620,7 @@
                     <div class="box" data-animate="fadeInUp">
                         <div class="store card border-0 rounded-0">
                             <div class="position-relative store-image">
-                                <a href="listing-details-full-gallery.html">
+                                <a href="listing-details-full-gallery#">
                                     <img src="./assets/images/shop/shop-2.jpg" alt="store 2"
                                          class="card-img-top rounded-0">
                                 </a>
@@ -644,7 +644,7 @@
                                 </div>
                             </div>
                             <div class="card-body px-0 pb-0 pt-3">
-                                <a href="listing-details-full-image.html"
+                                <a href="listing-details-full-image#"
                                    class="card-title h5 text-dark d-inline-block mb-2"><span
                                         class="letter-spacing-25">Karly Gomez Cake</span>
                                     <span class="check">
@@ -700,7 +700,7 @@
                     <div class="box" data-animate="fadeInUp">
                         <div class="store card border-0 rounded-0">
                             <div class="position-relative store-image">
-                                <a href="listing-details-full-gallery.html">
+                                <a href="listing-details-full-gallery#">
                                     <img src="./assets/images/shop/shop-3.jpg" alt="store 1"
                                          class="card-img-top rounded-0">
                                 </a>
@@ -724,7 +724,7 @@
                                 </div>
                             </div>
                             <div class="card-body px-0 pb-0 pt-3">
-                                <a href="listing-details-full-gallery.html"
+                                <a href="listing-details-full-gallery#"
                                    class="card-title h5 text-dark d-inline-block mb-2"><span
                                         class="letter-spacing-25">Roman
                                     Kraft Hotel</span></a>
@@ -778,7 +778,7 @@
                     <div class="box" data-animate="fadeInUp">
                         <div class="store card border-0 rounded-0">
                             <div class="position-relative store-image">
-                                <a href="listing-details-full-gallery.html">
+                                <a href="listing-details-full-gallery#">
                                     <img src="./assets/images/shop/shop-4.jpg" alt="store 1"
                                          class="card-img-top rounded-0">
                                 </a>
@@ -802,7 +802,7 @@
                                 </div>
                             </div>
                             <div class="card-body px-0 pb-0 pt-3">
-                                <a href="listing-details-full-image.html"
+                                <a href="listing-details-full-image#"
                                    class="card-title h5 text-dark d-inline-block mb-2"><span
                                         class="letter-spacing-25">Red Wings Shoes Store</span></a>
                                 <ul class="list-inline store-meta mb-4 font-size-sm d-flex align-items-center flex-wrap">
@@ -855,7 +855,7 @@
                     <div class="box" data-animate="fadeInUp">
                         <div class="store card border-0 rounded-0">
                             <div class="position-relative store-image">
-                                <a href="listing-details-full-gallery.html">
+                                <a href="listing-details-full-gallery#">
                                     <img src="./assets/images/shop/shop-5.jpg" alt="store 1"
                                          class="card-img-top rounded-0">
                                 </a>
@@ -879,7 +879,7 @@
                                 </div>
                             </div>
                             <div class="card-body px-0 pb-0 pt-3">
-                                <a href="listing-details-full-image.html"
+                                <a href="listing-details-full-image#"
                                    class="card-title h5 text-dark d-inline-block mb-2"><span
                                         class="letter-spacing-25">Packing & Delivery Service</span>
                                     <span class="check">
@@ -937,7 +937,7 @@
                     <div class="box" data-animate="fadeInUp">
                         <div class="store card border-0 rounded-0">
                             <div class="position-relative store-image">
-                                <a href="listing-details-full-gallery.html">
+                                <a href="listing-details-full-gallery#">
                                     <img src="./assets/images/shop/shop-1.jpg" alt="store 1"
                                          class="card-img-top rounded-0">
                                 </a>
@@ -961,7 +961,7 @@
                                 </div>
                             </div>
                             <div class="card-body px-0 pb-0 pt-3">
-                                <a href="listing-details-full-gallery.html"
+                                <a href="listing-details-full-gallery#"
                                    class="card-title h5 text-dark d-inline-block mb-2"><span
                                         class="letter-spacing-25">Roman
                                     Kraft Hotel</span></a>
@@ -1021,7 +1021,7 @@
                     <div class="box" data-animate="fadeInUp">
                         <div class="store card border-0 rounded-0">
                             <div class="position-relative store-image">
-                                <a href="listing-details-full-gallery.html">
+                                <a href="listing-details-full-gallery#">
                                     <img src="./assets/images/shop/shop-1.jpg" alt="store 1"
                                          class="card-img-top rounded-0">
                                 </a>
@@ -1052,7 +1052,7 @@
                                 </div>
                             </div>
                             <div class="card-body px-0 pb-0 pt-3">
-                                <a href="listing-details-full-gallery.html"
+                                <a href="listing-details-full-gallery#"
                                    class="card-title h5 text-dark d-inline-block mb-2"><span
                                         class="letter-spacing-25">Roman
                                     Kraft Hotel</span></a>
@@ -1105,7 +1105,7 @@
                     <div class="box" data-animate="fadeInUp">
                         <div class="store card border-0 rounded-0">
                             <div class="position-relative store-image">
-                                <a href="listing-details-full-gallery.html">
+                                <a href="listing-details-full-gallery#">
                                     <img src="./assets/images/shop/shop-2.jpg" alt="store 2"
                                          class="card-img-top rounded-0">
                                 </a>
@@ -1129,7 +1129,7 @@
                                 </div>
                             </div>
                             <div class="card-body px-0 pb-0 pt-3">
-                                <a href="listing-details-full-image.html"
+                                <a href="listing-details-full-image#"
                                    class="card-title h5 text-dark d-inline-block mb-2"><span
                                         class="letter-spacing-25">Karly Gomez Cake</span>
                                     <span class="check">
@@ -1185,7 +1185,7 @@
                     <div class="box" data-animate="fadeInUp">
                         <div class="store card border-0 rounded-0">
                             <div class="position-relative store-image">
-                                <a href="listing-details-full-gallery.html">
+                                <a href="listing-details-full-gallery#">
                                     <img src="./assets/images/shop/shop-3.jpg" alt="store 1"
                                          class="card-img-top rounded-0">
                                 </a>
@@ -1209,7 +1209,7 @@
                                 </div>
                             </div>
                             <div class="card-body px-0 pb-0 pt-3">
-                                <a href="listing-details-full-gallery.html"
+                                <a href="listing-details-full-gallery#"
                                    class="card-title h5 text-dark d-inline-block mb-2"><span
                                         class="letter-spacing-25">Roman
                                     Kraft Hotel</span></a>
@@ -1263,7 +1263,7 @@
                     <div class="box" data-animate="fadeInUp">
                         <div class="store card border-0 rounded-0">
                             <div class="position-relative store-image">
-                                <a href="listing-details-full-gallery.html">
+                                <a href="listing-details-full-gallery#">
                                     <img src="./assets/images/shop/shop-4.jpg" alt="store 1"
                                          class="card-img-top rounded-0">
                                 </a>
@@ -1287,7 +1287,7 @@
                                 </div>
                             </div>
                             <div class="card-body px-0 pb-0 pt-3">
-                                <a href="listing-details-full-image.html"
+                                <a href="listing-details-full-image#"
                                    class="card-title h5 text-dark d-inline-block mb-2"><span
                                         class="letter-spacing-25">Red Wings Shoes Store</span></a>
                                 <ul class="list-inline store-meta mb-4 font-size-sm d-flex align-items-center flex-wrap">
@@ -1340,7 +1340,7 @@
                     <div class="box" data-animate="fadeInUp">
                         <div class="store card border-0 rounded-0">
                             <div class="position-relative store-image">
-                                <a href="listing-details-full-gallery.html">
+                                <a href="listing-details-full-gallery#">
                                     <img src="./assets/images/shop/shop-5.jpg" alt="store 1"
                                          class="card-img-top rounded-0">
                                 </a>
@@ -1364,7 +1364,7 @@
                                 </div>
                             </div>
                             <div class="card-body px-0 pb-0 pt-3">
-                                <a href="listing-details-full-image.html"
+                                <a href="listing-details-full-image#"
                                    class="card-title h5 text-dark d-inline-block mb-2"><span
                                         class="letter-spacing-25">Packing & Delivery Service</span>
                                     <span class="check">
@@ -1422,7 +1422,7 @@
                     <div class="box" data-animate="fadeInUp">
                         <div class="store card border-0 rounded-0">
                             <div class="position-relative store-image">
-                                <a href="listing-details-full-gallery.html">
+                                <a href="listing-details-full-gallery#">
                                     <img src="./assets/images/shop/shop-1.jpg" alt="store 1"
                                          class="card-img-top rounded-0">
                                 </a>
@@ -1446,7 +1446,7 @@
                                 </div>
                             </div>
                             <div class="card-body px-0 pb-0 pt-3">
-                                <a href="listing-details-full-gallery.html"
+                                <a href="listing-details-full-gallery#"
                                    class="card-title h5 text-dark d-inline-block mb-2"><span
                                         class="letter-spacing-25">Roman
                                     Kraft Hotel</span></a>
@@ -1506,7 +1506,7 @@
                     <div class="box" data-animate="fadeInUp">
                         <div class="store card border-0 rounded-0">
                             <div class="position-relative store-image">
-                                <a href="listing-details-full-gallery.html">
+                                <a href="listing-details-full-gallery#">
                                     <img src="./assets/images/shop/shop-1.jpg" alt="store 1"
                                          class="card-img-top rounded-0">
                                 </a>
@@ -1537,7 +1537,7 @@
                                 </div>
                             </div>
                             <div class="card-body px-0 pb-0 pt-3">
-                                <a href="listing-details-full-gallery.html"
+                                <a href="listing-details-full-gallery#"
                                    class="card-title h5 text-dark d-inline-block mb-2"><span
                                         class="letter-spacing-25">Roman
                                     Kraft Hotel</span></a>
@@ -1590,7 +1590,7 @@
                     <div class="box" data-animate="fadeInUp">
                         <div class="store card border-0 rounded-0">
                             <div class="position-relative store-image">
-                                <a href="listing-details-full-gallery.html">
+                                <a href="listing-details-full-gallery#">
                                     <img src="./assets/images/shop/shop-2.jpg" alt="store 2"
                                          class="card-img-top rounded-0">
                                 </a>
@@ -1614,7 +1614,7 @@
                                 </div>
                             </div>
                             <div class="card-body px-0 pb-0 pt-3">
-                                <a href="listing-details-full-image.html"
+                                <a href="listing-details-full-image#"
                                    class="card-title h5 text-dark d-inline-block mb-2"><span
                                         class="letter-spacing-25">Karly Gomez Cake</span>
                                     <span class="check">
@@ -1670,7 +1670,7 @@
                     <div class="box" data-animate="fadeInUp">
                         <div class="store card border-0 rounded-0">
                             <div class="position-relative store-image">
-                                <a href="listing-details-full-gallery.html">
+                                <a href="listing-details-full-gallery#">
                                     <img src="./assets/images/shop/shop-3.jpg" alt="store 1"
                                          class="card-img-top rounded-0">
                                 </a>
@@ -1694,7 +1694,7 @@
                                 </div>
                             </div>
                             <div class="card-body px-0 pb-0 pt-3">
-                                <a href="listing-details-full-gallery.html"
+                                <a href="listing-details-full-gallery#"
                                    class="card-title h5 text-dark d-inline-block mb-2"><span
                                         class="letter-spacing-25">Roman
                                     Kraft Hotel</span></a>
@@ -1748,7 +1748,7 @@
                     <div class="box" data-animate="fadeInUp">
                         <div class="store card border-0 rounded-0">
                             <div class="position-relative store-image">
-                                <a href="listing-details-full-gallery.html">
+                                <a href="listing-details-full-gallery#">
                                     <img src="./assets/images/shop/shop-4.jpg" alt="store 1"
                                          class="card-img-top rounded-0">
                                 </a>
@@ -1772,7 +1772,7 @@
                                 </div>
                             </div>
                             <div class="card-body px-0 pb-0 pt-3">
-                                <a href="listing-details-full-image.html"
+                                <a href="listing-details-full-image#"
                                    class="card-title h5 text-dark d-inline-block mb-2"><span
                                         class="letter-spacing-25">Red Wings Shoes Store</span></a>
                                 <ul class="list-inline store-meta mb-4 font-size-sm d-flex align-items-center flex-wrap">
@@ -1825,7 +1825,7 @@
                     <div class="box" data-animate="fadeInUp">
                         <div class="store card border-0 rounded-0">
                             <div class="position-relative store-image">
-                                <a href="listing-details-full-gallery.html">
+                                <a href="listing-details-full-gallery#">
                                     <img src="./assets/images/shop/shop-5.jpg" alt="store 1"
                                          class="card-img-top rounded-0">
                                 </a>
@@ -1849,7 +1849,7 @@
                                 </div>
                             </div>
                             <div class="card-body px-0 pb-0 pt-3">
-                                <a href="listing-details-full-image.html"
+                                <a href="listing-details-full-image#"
                                    class="card-title h5 text-dark d-inline-block mb-2"><span
                                         class="letter-spacing-25">Packing & Delivery Service</span>
                                     <span class="check">
@@ -1907,7 +1907,7 @@
                     <div class="box" data-animate="fadeInUp">
                         <div class="store card border-0 rounded-0">
                             <div class="position-relative store-image">
-                                <a href="listing-details-full-gallery.html">
+                                <a href="listing-details-full-gallery#">
                                     <img src="./assets/images/shop/shop-1.jpg" alt="store 1"
                                          class="card-img-top rounded-0">
                                 </a>
@@ -1931,7 +1931,7 @@
                                 </div>
                             </div>
                             <div class="card-body px-0 pb-0 pt-3">
-                                <a href="listing-details-full-gallery.html"
+                                <a href="listing-details-full-gallery#"
                                    class="card-title h5 text-dark d-inline-block mb-2"><span
                                         class="letter-spacing-25">Roman
                                     Kraft Hotel</span></a>
@@ -1991,7 +1991,7 @@
                     <div class="box" data-animate="fadeInUp">
                         <div class="store card border-0 rounded-0">
                             <div class="position-relative store-image">
-                                <a href="listing-details-full-gallery.html">
+                                <a href="listing-details-full-gallery#">
                                     <img src="./assets/images/shop/shop-1.jpg" alt="store 1"
                                          class="card-img-top rounded-0">
                                 </a>
@@ -2022,7 +2022,7 @@
                                 </div>
                             </div>
                             <div class="card-body px-0 pb-0 pt-3">
-                                <a href="listing-details-full-gallery.html"
+                                <a href="listing-details-full-gallery#"
                                    class="card-title h5 text-dark d-inline-block mb-2"><span
                                         class="letter-spacing-25">Roman
                                     Kraft Hotel</span></a>
@@ -2075,7 +2075,7 @@
                     <div class="box" data-animate="fadeInUp">
                         <div class="store card border-0 rounded-0">
                             <div class="position-relative store-image">
-                                <a href="listing-details-full-gallery.html">
+                                <a href="listing-details-full-gallery#">
                                     <img src="./assets/images/shop/shop-2.jpg" alt="store 2"
                                          class="card-img-top rounded-0">
                                 </a>
@@ -2099,7 +2099,7 @@
                                 </div>
                             </div>
                             <div class="card-body px-0 pb-0 pt-3">
-                                <a href="listing-details-full-image.html"
+                                <a href="listing-details-full-image#"
                                    class="card-title h5 text-dark d-inline-block mb-2"><span
                                         class="letter-spacing-25">Karly Gomez Cake</span>
                                     <span class="check">
@@ -2155,7 +2155,7 @@
                     <div class="box" data-animate="fadeInUp">
                         <div class="store card border-0 rounded-0">
                             <div class="position-relative store-image">
-                                <a href="listing-details-full-gallery.html">
+                                <a href="listing-details-full-gallery#">
                                     <img src="./assets/images/shop/shop-3.jpg" alt="store 1"
                                          class="card-img-top rounded-0">
                                 </a>
@@ -2179,7 +2179,7 @@
                                 </div>
                             </div>
                             <div class="card-body px-0 pb-0 pt-3">
-                                <a href="listing-details-full-gallery.html"
+                                <a href="listing-details-full-gallery#"
                                    class="card-title h5 text-dark d-inline-block mb-2"><span
                                         class="letter-spacing-25">Roman
                                     Kraft Hotel</span></a>
@@ -2233,7 +2233,7 @@
                     <div class="box" data-animate="fadeInUp">
                         <div class="store card border-0 rounded-0">
                             <div class="position-relative store-image">
-                                <a href="listing-details-full-gallery.html">
+                                <a href="listing-details-full-gallery#">
                                     <img src="./assets/images/shop/shop-4.jpg" alt="store 1"
                                          class="card-img-top rounded-0">
                                 </a>
@@ -2257,7 +2257,7 @@
                                 </div>
                             </div>
                             <div class="card-body px-0 pb-0 pt-3">
-                                <a href="listing-details-full-image.html"
+                                <a href="listing-details-full-image#"
                                    class="card-title h5 text-dark d-inline-block mb-2"><span
                                         class="letter-spacing-25">Red Wings Shoes Store</span></a>
                                 <ul class="list-inline store-meta mb-4 font-size-sm d-flex align-items-center flex-wrap">
@@ -2310,7 +2310,7 @@
                     <div class="box" data-animate="fadeInUp">
                         <div class="store card border-0 rounded-0">
                             <div class="position-relative store-image">
-                                <a href="listing-details-full-gallery.html">
+                                <a href="listing-details-full-gallery#">
                                     <img src="./assets/images/shop/shop-5.jpg" alt="store 1"
                                          class="card-img-top rounded-0">
                                 </a>
@@ -2334,7 +2334,7 @@
                                 </div>
                             </div>
                             <div class="card-body px-0 pb-0 pt-3">
-                                <a href="listing-details-full-image.html"
+                                <a href="listing-details-full-image#"
                                    class="card-title h5 text-dark d-inline-block mb-2"><span
                                         class="letter-spacing-25">Packing & Delivery Service</span>
                                     <span class="check">
@@ -2392,7 +2392,7 @@
                     <div class="box" data-animate="fadeInUp">
                         <div class="store card border-0 rounded-0">
                             <div class="position-relative store-image">
-                                <a href="listing-details-full-gallery.html">
+                                <a href="listing-details-full-gallery#">
                                     <img src="./assets/images/shop/shop-1.jpg" alt="store 1"
                                          class="card-img-top rounded-0">
                                 </a>
@@ -2416,7 +2416,7 @@
                                 </div>
                             </div>
                             <div class="card-body px-0 pb-0 pt-3">
-                                <a href="listing-details-full-gallery.html"
+                                <a href="listing-details-full-gallery#"
                                    class="card-title h5 text-dark d-inline-block mb-2"><span
                                         class="letter-spacing-25">Roman
                                     Kraft Hotel</span></a>
@@ -2477,7 +2477,7 @@
                     <div class="box" data-animate="fadeInUp">
                         <div class="store card border-0 rounded-0">
                             <div class="position-relative store-image">
-                                <a href="listing-details-full-gallery.html">
+                                <a href="listing-details-full-gallery#">
                                     <img src="./assets/images/shop/shop-1.jpg" alt="store 1"
                                          class="card-img-top rounded-0">
                                 </a>
@@ -2508,7 +2508,7 @@
                                 </div>
                             </div>
                             <div class="card-body px-0 pb-0 pt-3">
-                                <a href="listing-details-full-gallery.html"
+                                <a href="listing-details-full-gallery#"
                                    class="card-title h5 text-dark d-inline-block mb-2"><span
                                         class="letter-spacing-25">Roman
                                     Kraft Hotel</span></a>
@@ -2561,7 +2561,7 @@
                     <div class="box" data-animate="fadeInUp">
                         <div class="store card border-0 rounded-0">
                             <div class="position-relative store-image">
-                                <a href="listing-details-full-gallery.html">
+                                <a href="listing-details-full-gallery#">
                                     <img src="./assets/images/shop/shop-2.jpg" alt="store 2"
                                          class="card-img-top rounded-0">
                                 </a>
@@ -2585,7 +2585,7 @@
                                 </div>
                             </div>
                             <div class="card-body px-0 pb-0 pt-3">
-                                <a href="listing-details-full-image.html"
+                                <a href="listing-details-full-image#"
                                    class="card-title h5 text-dark d-inline-block mb-2"><span
                                         class="letter-spacing-25">Karly Gomez Cake</span>
                                     <span class="check">
@@ -2641,7 +2641,7 @@
                     <div class="box" data-animate="fadeInUp">
                         <div class="store card border-0 rounded-0">
                             <div class="position-relative store-image">
-                                <a href="listing-details-full-gallery.html">
+                                <a href="listing-details-full-gallery#">
                                     <img src="./assets/images/shop/shop-3.jpg" alt="store 1"
                                          class="card-img-top rounded-0">
                                 </a>
@@ -2665,7 +2665,7 @@
                                 </div>
                             </div>
                             <div class="card-body px-0 pb-0 pt-3">
-                                <a href="listing-details-full-gallery.html"
+                                <a href="listing-details-full-gallery#"
                                    class="card-title h5 text-dark d-inline-block mb-2"><span
                                         class="letter-spacing-25">Roman
                                     Kraft Hotel</span></a>
@@ -2719,7 +2719,7 @@
                     <div class="box" data-animate="fadeInUp">
                         <div class="store card border-0 rounded-0">
                             <div class="position-relative store-image">
-                                <a href="listing-details-full-gallery.html">
+                                <a href="listing-details-full-gallery#">
                                     <img src="./assets/images/shop/shop-4.jpg" alt="store 1"
                                          class="card-img-top rounded-0">
                                 </a>
@@ -2743,7 +2743,7 @@
                                 </div>
                             </div>
                             <div class="card-body px-0 pb-0 pt-3">
-                                <a href="listing-details-full-image.html"
+                                <a href="listing-details-full-image#"
                                    class="card-title h5 text-dark d-inline-block mb-2"><span
                                         class="letter-spacing-25">Red Wings Shoes Store</span></a>
                                 <ul class="list-inline store-meta mb-4 font-size-sm d-flex align-items-center flex-wrap">
@@ -2796,7 +2796,7 @@
                     <div class="box" data-animate="fadeInUp">
                         <div class="store card border-0 rounded-0">
                             <div class="position-relative store-image">
-                                <a href="listing-details-full-gallery.html">
+                                <a href="listing-details-full-gallery#">
                                     <img src="./assets/images/shop/shop-5.jpg" alt="store 1"
                                          class="card-img-top rounded-0">
                                 </a>
@@ -2820,7 +2820,7 @@
                                 </div>
                             </div>
                             <div class="card-body px-0 pb-0 pt-3">
-                                <a href="listing-details-full-image.html"
+                                <a href="listing-details-full-image#"
                                    class="card-title h5 text-dark d-inline-block mb-2"><span
                                         class="letter-spacing-25">Packing & Delivery Service</span>
                                     <span class="check">
@@ -2878,7 +2878,7 @@
                     <div class="box" data-animate="fadeInUp">
                         <div class="store card border-0 rounded-0">
                             <div class="position-relative store-image">
-                                <a href="listing-details-full-gallery.html">
+                                <a href="listing-details-full-gallery#">
                                     <img src="./assets/images/shop/shop-1.jpg" alt="store 1"
                                          class="card-img-top rounded-0">
                                 </a>
@@ -2902,7 +2902,7 @@
                                 </div>
                             </div>
                             <div class="card-body px-0 pb-0 pt-3">
-                                <a href="listing-details-full-gallery.html"
+                                <a href="listing-details-full-gallery#"
                                    class="card-title h5 text-dark d-inline-block mb-2"><span
                                         class="letter-spacing-25">Roman
                                     Kraft Hotel</span></a>

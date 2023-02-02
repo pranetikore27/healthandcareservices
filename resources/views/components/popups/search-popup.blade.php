@@ -130,7 +130,7 @@
         </div>
         <div class="list-inline flex-wrap my-n2">
             <div class="list-inline-item py-2">
-                <a href="explore-sidebar-grid.html"
+                <a href="explore-sidebar-grid#"
                    class="card icon-box-style-01 link-hover-dark-white">
                     <div class="card-body p-0">
                         <svg class="icon icon-pizza">
@@ -143,7 +143,7 @@
                 </a>
             </div>
             <div class="list-inline-item py-2">
-                <a href="explore-sidebar-grid.html"
+                <a href="explore-sidebar-grid#"
                    class="card icon-box-style-01 link-hover-dark-white">
                     <div class="card-body p-0">
                         <svg class="icon icon-bed">
@@ -157,7 +157,7 @@
                 </a>
             </div>
             <div class="list-inline-item py-2">
-                <a href="explore-sidebar-grid.html"
+                <a href="explore-sidebar-grid#"
                    class="card icon-box-style-01 link-hover-dark-white">
                     <div class="card-body p-0">
                         <svg class="icon icon-brush2">
@@ -170,7 +170,7 @@
                 </a>
             </div>
             <div class="list-inline-item py-2">
-                <a href="explore-sidebar-grid.html"
+                <a href="explore-sidebar-grid#"
                    class="card link-hover-dark-white icon-box-style-01">
                     <div class="card-body p-0">
                         <svg class="icon icon-pharmaceutical">
@@ -183,7 +183,7 @@
                 </a>
             </div>
             <div class="list-inline-item py-2">
-                <a href="explore-sidebar-grid.html"
+                <a href="explore-sidebar-grid#"
                    class="card link-hover-dark-white icon-box-style-01">
                     <div class="card-body p-0">
                         <svg class="icon icon-cog">
@@ -197,7 +197,7 @@
                 </a>
             </div>
             <div class="list-inline-item py-2">
-                <a href="explore-sidebar-grid.html"
+                <a href="explore-sidebar-grid#"
                    class="card link-hover-dark-white icon-box-style-01">
                     <div class="card-body p-0">
                         <svg class="icon icon-bag">
@@ -211,7 +211,7 @@
                 </a>
             </div>
             <div class="list-inline-item py-2">
-                <a href="explore-sidebar-grid.html"
+                <a href="explore-sidebar-grid#"
                    class="card link-hover-dark-white icon-box-style-01">
                     <div class="card-body p-0">
                         <svg class="icon icon-car">

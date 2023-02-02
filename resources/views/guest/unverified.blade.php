@@ -68,7 +68,7 @@
 </div>
 
 <div class="card col-md-4">
-    <a href= "{{url('hospital/create')}}">
+    <a href= "{{url('createvendorprofile')}}">
 
             <div class="row">
                 <div class="col-md-4">

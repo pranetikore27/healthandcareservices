@@ -182,7 +182,7 @@
                             </div>
                             <ul class="navbar-nav">
                                 <li class="nav-item">
-                                    <a class="nav-link" href="{{route('logout')}}">Logout
+                                    <a class="nav-link" href="{{route('out')}}">Logout
                                         <!-- <span class="caret"><i
                                             class="fas fa-angle-down"></i></span> -->
                                         </a>
@@ -193,22 +193,22 @@
                                             </a>
                                             <ul class="sub-menu x-animated x-fadeInUp">
                                                 <li class="nav-item"><a class="nav-link"
-                                                                        href="explore-full-map-grid.html"> full
+                                                                        href="explore-full-map-grid#"> full
                                                     map grid</a></li>
                                                 <li class="nav-item"><a class="nav-link"
-                                                                        href="explore-full-map-list.html"> full
+                                                                        href="explore-full-map-list#"> full
                                                     map list</a></li>
                                                 <li class="nav-item"><a class="nav-link"
-                                                                        href="explore-half-map-grid.html"> half
+                                                                        href="explore-half-map-grid#"> half
                                                     map grid</a></li>
                                                 <li class="nav-item"><a class="nav-link"
-                                                                        href="explore-half-map-list.html"> half
+                                                                        href="explore-half-map-list#"> half
                                                     map list</a></li>
                                                 <li class="nav-item"><a class="nav-link"
-                                                                        href="explore-sidebar-grid.html"> sidebar
+                                                                        href="explore-sidebar-grid#"> sidebar
                                                     grid</a></li>
                                                 <li class="nav-item"><a class="nav-link"
-                                                                        href="explore-sidebar-list.html"> sidebar
+                                                                        href="explore-sidebar-list#"> sidebar
                                                     list</a></li>
                                             </ul>
                                         </li>
@@ -218,22 +218,22 @@
                                             </a>
                                             <ul class="sub-menu x-animated x-fadeInUp">
                                                 <li class="nav-item"><a class="nav-link"
-                                                                        href="listing-details-full-gallery.html">
+                                                                        href="listing-details-full-gallery#">
                                                     full gallery</a></li>
                                                 <li class="nav-item"><a class="nav-link"
-                                                                        href="listing-details-full-image.html">
+                                                                        href="listing-details-full-image#">
                                                     full image</a></li>
                                                 <li class="nav-item"><a class="nav-link"
-                                                                        href="listing-details-full-map.html">
+                                                                        href="listing-details-full-map#">
                                                     full map</a></li>
                                                 <li class="nav-item"><a class="nav-link"
-                                                                        href="listing-details-gallery.html">gallery</a>
+                                                                        href="listing-details-gallery#">gallery</a>
                                                 </li>
                                                 <li class="nav-item"><a class="nav-link"
-                                                                        href="listing-details-image.html"> image</a>
+                                                                        href="listing-details-image#"> image</a>
                                                 </li>
                                                 <li class="nav-item"><a class="nav-link"
-                                                                        href="listing-details-no-image.html"> no
+                                                                        href="listing-details-no-image#"> no
                                                     image</a></li>
                                             </ul>
                                         </li>
@@ -247,13 +247,13 @@
                                             <a class="nav-link" href="#">Blog layout<span class="caret"><i
                                                     class="fas fa-angle-down"></i></span></a>
                                             <ul class="sub-menu x-animated x-fadeInUp">
-                                                <li class="nav-item"><a class="nav-link" href="blog-listing-grid.html">
+                                                <li class="nav-item"><a class="nav-link" href="blog-listing-grid#">
                                                     grid</a></li>
                                                 <li class="nav-item"><a class="nav-link"
-                                                                        href="blog-listing-large-image.html">
+                                                                        href="blog-listing-large-image#">
                                                     large image</a></li>
                                                 <li class="nav-item"><a class="nav-link"
-                                                                        href="blog-listing-with-sidebar.html">
+                                                                        href="blog-listing-with-sidebar#">
                                                     with sidebar</a></li>
                                             </ul>
                                         </li>
@@ -262,14 +262,14 @@
                                                 <span class="caret"><i class="fas fa-angle-down"></i></span>
                                             </a>
                                             <ul class="sub-menu x-animated x-fadeInUp">
-                                                <li class="nav-item"><a class="nav-link" href="blog-single-audio.html">
+                                                <li class="nav-item"><a class="nav-link" href="blog-single-audio#">
                                                     audio</a></li>
                                                 <li class="nav-item"><a class="nav-link"
-                                                                        href="blog-single-gallery.html">
+                                                                        href="blog-single-gallery#">
                                                     gallery</a></li>
-                                                <li class="nav-item"><a class="nav-link" href="blog-single-image.html">
+                                                <li class="nav-item"><a class="nav-link" href="blog-single-image#">
                                                     image</a></li>
-                                                <li class="nav-item"><a class="nav-link" href="blog-single-video.html">video</a>
+                                                <li class="nav-item"><a class="nav-link" href="blog-single-video#">video</a>
                                                 </li>
                                             </ul>
                                         </li>
@@ -280,10 +280,10 @@
                                             class="fas fa-angle-down"></i></span></a>
                                     <ul class="sub-menu x-animated x-fadeInUp">
                                         <li class="nav-item">
-                                            <a class="nav-link" href="document/introduction.html">Documentation</a>
+                                            <a class="nav-link" href="document/introduction#">Documentation</a>
                                         </li>
                                         <li class="nav-item">
-                                            <a class="nav-link" href="starter/introduction.html">Get started
+                                            <a class="nav-link" href="starter/introduction#">Get started
                                             </a>
                                         </li>
                                     </ul>
@@ -356,7 +356,7 @@
                                     </li>
 
                                     <li class="list-group-item p-0 mb-2 lh-15">
-                                        <a href="{{route('partners')}}" class="link-hover-dark-primary font-size-md">
+                                        <a href="{{route('home')}}" class="link-hover-dark-primary font-size-md">
                                             Partners
                                         </a>
                                     </li>
@@ -419,9 +419,9 @@
                                 </a>
                                 <ul class="submenu collapse list-group list-group-flush list-group-borderless pt-2 mb-0 sidebar-menu"
                                     id="invoice">
-                                    <li class="list-group-item p-0 mb-2 lh-15"><a href="panel-invoice-listing.html"
+                                    <li class="list-group-item p-0 mb-2 lh-15"><a href="panel-invoice-listing#"
                                                                                   class="link-hover-dark-primary font-size-md">Payments</a></li>
-                                    <li class="list-group-item p-0 mb-2 lh-15"><a href="panel-invoice-details.html"
+                                    <li class="list-group-item p-0 mb-2 lh-15"><a href="panel-invoice-details#"
                                                                                   class="link-hover-dark-primary font-size-md">Invoice
                                         Details</a></li>
                                 </ul>
@@ -445,10 +445,10 @@
                                 <ul class="submenu collapse list-group list-group-flush list-group-borderless pt-2 mb-0 sidebar-menu"
                                     id="adcampaign">
                                     <li class="list-group-item p-0 mb-2 lh-15"><a
-                                            href="panel-ad-campaigns-active.html"
+                                            href="{{url('home')}}"
                                             class="link-hover-dark-primary font-size-md">Send Public Notification</a></li>
                                     <li class="list-group-item p-0 mb-2 lh-15"><a
-                                            href="panel-ad-campaigns-start-new.html"
+                                            href="{{url('home')}}"
                                             class="link-hover-dark-primary font-size-md">Send Notification only to verified people</a></li>
                                 </ul>
                             </li>
@@ -462,10 +462,10 @@
                                 </a>
                                 <ul class="submenu collapse list-group list-group-flush list-group-borderless pt-2 mb-0 sidebar-menu"
                                     id="review">
-                                    <li class="list-group-item p-0 mb-2 lh-15"><a href="panel-review-received.html"
+                                    <li class="list-group-item p-0 mb-2 lh-15"><a href="panel-review-received#"
                                                                                   class="link-hover-dark-primary font-size-md">Review
                                         received</a></li>
-                                    <li class="list-group-item p-0 mb-2 lh-15"><a href="panel-review-submitted.html"
+                                    <li class="list-group-item p-0 mb-2 lh-15"><a href="panel-review-submitted#"
                                                                                   class="link-hover-dark-primary font-size-md">Review
                                         submitted</a></li>
                                 </ul>
@@ -643,7 +643,7 @@
             </div>
             <div class="list-inline flex-wrap my-n2">
                 <div class="list-inline-item py-2">
-                    <a href="explore-sidebar-grid.html"
+                    <a href="explore-sidebar-grid#"
                        class="card icon-box-style-01 link-hover-dark-white">
                         <div class="card-body p-0">
                             <svg class="icon icon-pizza">
@@ -656,7 +656,7 @@
                     </a>
                 </div>
                 <div class="list-inline-item py-2">
-                    <a href="explore-sidebar-grid.html"
+                    <a href="explore-sidebar-grid#"
                        class="card icon-box-style-01 link-hover-dark-white">
                         <div class="card-body p-0">
                             <svg class="icon icon-bed">
@@ -670,7 +670,7 @@
                     </a>
                 </div>
                 <div class="list-inline-item py-2">
-                    <a href="explore-sidebar-grid.html"
+                    <a href="explore-sidebar-grid#"
                        class="card icon-box-style-01 link-hover-dark-white">
                         <div class="card-body p-0">
                             <svg class="icon icon-brush2">
@@ -683,7 +683,7 @@
                     </a>
                 </div>
                 <div class="list-inline-item py-2">
-                    <a href="explore-sidebar-grid.html"
+                    <a href="explore-sidebar-grid#"
                        class="card link-hover-dark-white icon-box-style-01">
                         <div class="card-body p-0">
                             <svg class="icon icon-pharmaceutical">
@@ -696,7 +696,7 @@
                     </a>
                 </div>
                 <div class="list-inline-item py-2">
-                    <a href="explore-sidebar-grid.html"
+                    <a href="explore-sidebar-grid#"
                        class="card link-hover-dark-white icon-box-style-01">
                         <div class="card-body p-0">
                             <svg class="icon icon-cog">
@@ -710,7 +710,7 @@
                     </a>
                 </div>
                 <div class="list-inline-item py-2">
-                    <a href="explore-sidebar-grid.html"
+                    <a href="explore-sidebar-grid#"
                        class="card link-hover-dark-white icon-box-style-01">
                         <div class="card-body p-0">
                             <svg class="icon icon-bag">
@@ -724,7 +724,7 @@
                     </a>
                 </div>
                 <div class="list-inline-item py-2">
-                    <a href="explore-sidebar-grid.html"
+                    <a href="explore-sidebar-grid#"
                        class="card link-hover-dark-white icon-box-style-01">
                         <div class="card-body p-0">
                             <svg class="icon icon-car">

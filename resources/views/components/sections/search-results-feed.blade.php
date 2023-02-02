@@ -77,7 +77,7 @@
                                 </div> -->
                                 <div class="format-listing ml-auto">
                                     <a href="#" class="active"><i class="fas fa-th"></i></a>
-                                    <a href="explore-sidebar-list.html"><i class="fal fa-bars"></i></a>
+                                    <a href="explore-sidebar-list#"><i class="fal fa-bars"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -91,7 +91,7 @@
                             <div class="col-lg-6 mb-6">
                                 <div class="store card border-0 rounded-0">
                                     <div class="position-relative store-image">
-                                        <a href="listing-details-full-image.html">
+                                        <a href="listing-details-full-image#">
                                             <!-- <img src="images/shop/popular-place-2.jpg" alt="store 1"
                                                  class="card-img-top rounded-0"> -->
                                         </a>
@@ -113,7 +113,7 @@
                                         </div>
                                     </div>
                                     <div class="card-body pb-4">
-                                        <a href="listing-details-full-image.html"
+                                        <a href="listing-details-full-image#"
                                            class="card-title h5 text-dark d-inline-block mb-2"><span
                                                 class="letter-spacing-25">{{$data->Vendor_businessname}}</span></a>
                                         <ul class="list-inline store-meta mb-4 font-size-sm d-flex align-items-center flex-wrap">
@@ -163,7 +163,7 @@
                         <div class="col-lg-4 mb-4 mb-lg-0">
                             <div class="store media align-items-stretch bg-white">
                                 <div class="store-image position-relative">
-                                    <a href="listing-details-full-image.html">
+                                    <a href="listing-details-full-image#">
                                         <img src="images/shop/recent-view-1.jpg" alt="Recent view 1">
                                     </a>
                                     <div class="image-content position-absolute d-flex align-items-center">
@@ -184,7 +184,7 @@
                                     </div>
                                 </div>
                                 <div class="media-body pl-0 pl-sm-3 pt-4 pt-sm-0">
-                                    <a href="listing-details-full-image.html"
+                                    <a href="listing-details-full-image#"
                                        class="font-size-md font-weight-semibold text-dark d-inline-block mb-2 lh-11"><span
                                             class="letter-spacing-25">Canabo View Street, Main St</span> </a>
                                     <ul class="list-inline store-meta mb-2 lh-1 font-size-sm d-flex align-items-center flex-wrap">
@@ -212,7 +212,7 @@
                         <div class="col-lg-4 mb-4 mb-lg-0">
                             <div class="store media align-items-stretch bg-white">
                                 <div class="store-image position-relative">
-                                    <a href="listing-details-full-image.html">
+                                    <a href="listing-details-full-image#">
                                         <img src="images/shop/recent-view-2.jpg" alt="Recent view 1">
                                     </a>
                                     <div class="image-content position-absolute d-flex align-items-center">
@@ -233,7 +233,7 @@
                                     </div>
                                 </div>
                                 <div class="media-body pl-0 pl-sm-3 pt-4 pt-sm-0">
-                                    <a href="listing-details-full-image.html"
+                                    <a href="listing-details-full-image#"
                                        class="font-size-md font-weight-semibold text-dark d-inline-block mb-2 lh-11"><span
                                             class="letter-spacing-25">Japan's Sushi - 10th Ave St</span> </a>
                                     <ul class="list-inline store-meta mb-2 lh-1 font-size-sm d-flex align-items-center flex-wrap">
@@ -261,7 +261,7 @@
                         <div class="col-lg-4 mb-4 mb-lg-0">
                             <div class="store media align-items-stretch bg-white">
                                 <div class="store-image position-relative">
-                                    <a href="listing-details-full-image.html">
+                                    <a href="listing-details-full-image#">
                                         <img src="images/shop/recent-view-3.jpg" alt="Recent view 1">
                                     </a>
                                     <div class="image-content position-absolute d-flex align-items-center">
@@ -282,7 +282,7 @@
                                     </div>
                                 </div>
                                 <div class="media-body pl-0 pl-sm-3 pt-4 pt-sm-0">
-                                    <a href="listing-details-full-image.html"
+                                    <a href="listing-details-full-image#"
                                        class="font-size-md font-weight-semibold text-dark d-inline-block mb-2 lh-11"><span
                                             class="letter-spacing-25">Korean Bingsu Shop</span></a>
                                     <ul class="list-inline store-meta mb-2 lh-1 font-size-sm d-flex align-items-center flex-wrap">

@@ -143,7 +143,7 @@
                                     <div class="col-md-6 col-lg-4 mb-5">
                                         <div class="product card border-0 rounded-0 p-0">
                                             <div class="position-relative h-100">
-                                                <a href="shop-single-product.html">
+                                                <a href="shop-single-product#">
                                                     <img src="images/shop/product-1.jpg" alt="Product 1"
                                                          class="card-img-top">
                                                 </a>
@@ -152,7 +152,7 @@
                                                 </div>
                                             </div>
                                             <div class="card-body text-center position-relative">
-                                                <a href="shop-single-product.html"
+                                                <a href="shop-single-product#"
                                                    class="link-hover-secondary-primary font-size-md mb-1">Black Printed
                                                     T-Shirt</a>
                                                 <div class="product-meta-wrapper position-relative">
@@ -199,7 +199,7 @@
                                     <div class="col-md-6 col-lg-4 mb-5">
                                         <div class="product card border-0 rounded-0 p-0">
                                             <div class="position-relative h-100">
-                                                <a href="shop-single-product.html">
+                                                <a href="shop-single-product#">
                                                     <img src="images/shop/product-2.jpg" alt="Product 2"
                                                          class="card-img-top">
                                                 </a>
@@ -208,7 +208,7 @@
                                                 </div>
                                             </div>
                                             <div class="card-body text-center position-relative">
-                                                <a href="shop-single-product.html"
+                                                <a href="shop-single-product#"
                                                    class="link-hover-secondary-primary font-size-md mb-1">White Retro
                                                     Sneaker</a>
                                                 <div class="product-meta-wrapper position-relative">
@@ -254,13 +254,13 @@
                                     <div class="col-md-6 col-lg-4 mb-5">
                                         <div class="product card border-0 rounded-0 p-0">
                                             <div class="position-relative h-100">
-                                                <a href="shop-single-product.html">
+                                                <a href="shop-single-product#">
                                                     <img src="images/shop/product-3.jpg" alt="Product 3"
                                                          class="card-img-top">
                                                 </a>
                                             </div>
                                             <div class="card-body text-center position-relative">
-                                                <a href="shop-single-product.html"
+                                                <a href="shop-single-product#"
                                                    class="link-hover-secondary-primary font-size-md mb-1">Herschuply
                                                     Snapback</a>
                                                 <div class="product-meta-wrapper position-relative">
@@ -306,13 +306,13 @@
                                     <div class="col-md-6 col-lg-4 mb-5">
                                         <div class="product card border-0 rounded-0 p-0">
                                             <div class="position-relative h-100">
-                                                <a href="shop-single-product.html">
+                                                <a href="shop-single-product#">
                                                     <img src="images/shop/product-4.jpg" alt="Product 4"
                                                          class="card-img-top">
                                                 </a>
                                             </div>
                                             <div class="card-body text-center position-relative">
-                                                <a href="shop-single-product.html"
+                                                <a href="shop-single-product#"
                                                    class="link-hover-secondary-primary font-size-md mb-1">Snake & Flower
                                                     T-Shirt</a>
                                                 <div class="product-meta-wrapper position-relative">
@@ -339,7 +339,7 @@
                                                      class="card-img-top">
                                             </div>
                                             <div class="card-body text-center position-relative">
-                                                <a href="shop-single-product.html"
+                                                <a href="shop-single-product#"
                                                    class="link-hover-secondary-primary font-size-md mb-1">Dragonfly
                                                     T-Shirt</a>
                                                 <div class="product-meta-wrapper position-relative">
@@ -363,7 +363,7 @@
                                     <div class="col-md-6 col-lg-4 mb-5">
                                         <div class="product card border-0 rounded-0 p-0">
                                             <div class="position-relative h-100">
-                                                <a href="shop-single-product.html">
+                                                <a href="shop-single-product#">
                                                     <img src="images/shop/product-6.jpg" alt="Product 6"
                                                          class="card-img-top">
                                                 </a>
@@ -372,7 +372,7 @@
                                                 </div>
                                             </div>
                                             <div class="card-body text-center position-relative">
-                                                <a href="shop-single-product.html"
+                                                <a href="shop-single-product#"
                                                    class="link-hover-secondary-primary font-size-md mb-1">Herschuply
                                                     Floral Duffles</a>
                                                 <div class="product-meta-wrapper position-relative">
@@ -395,7 +395,7 @@
                                     <div class="col-md-6 col-lg-4 mb-5">
                                         <div class="product card border-0 rounded-0 p-0">
                                             <div class="position-relative h-100">
-                                                <a href="shop-single-product.html">
+                                                <a href="shop-single-product#">
                                                     <img src="images/shop/product-7.jpg" alt="Product 7"
                                                          class="card-img-top">
                                                 </a>
@@ -404,7 +404,7 @@
                                                 </div>
                                             </div>
                                             <div class="card-body text-center position-relative">
-                                                <a href="shop-single-product.html"
+                                                <a href="shop-single-product#"
                                                    class="link-hover-secondary-primary font-size-md mb-1">Basic Leather
                                                     Shoes</a>
                                                 <div class="product-meta-wrapper position-relative">
@@ -427,13 +427,13 @@
                                     <div class="col-md-6 col-lg-4 mb-5">
                                         <div class="product card border-0 rounded-0 p-0">
                                             <div class="position-relative h-100">
-                                                <a href="shop-single-product.html">
+                                                <a href="shop-single-product#">
                                                     <img src="images/shop/product-8.jpg" alt="Product 8"
                                                          class="card-img-top">
                                                 </a>
                                             </div>
                                             <div class="card-body text-center position-relative">
-                                                <a href="shop-single-product.html"
+                                                <a href="shop-single-product#"
                                                    class="link-hover-secondary-primary font-size-md mb-1">Herschuply
                                                     Floral Backpack</a>
                                                 <div class="product-meta-wrapper position-relative">
@@ -456,12 +456,12 @@
                                     <div class="col-md-6 col-lg-4 mb-5">
                                         <div class="product card border-0 rounded-0 p-0">
                                             <div class="position-relative h-100">
-                                                <a href="shop-single-product.html">
+                                                <a href="shop-single-product#">
                                                     <img src="images/shop/product-9.jpg" alt="Product 9">
                                                 </a>
                                             </div>
                                             <div class="card-body text-center position-relative">
-                                                <a href="shop-single-product.html"
+                                                <a href="shop-single-product#"
                                                    class="link-hover-secondary-primary font-size-md mb-1">Basic Red
                                                     Shoes</a>
                                                 <div class="product-meta-wrapper position-relative">
@@ -534,7 +534,7 @@
                             </div>
                             <ul class="list-group list-group-flush list-group-borderless">
                                 <li class="list-group-item px-0 lh-1625 bg-transparent py-1">
-                                    <a href="page-about.html" class="link-hover-secondary-primary">About Us</a>
+                                    <a href="page-about#" class="link-hover-secondary-primary">About Us</a>
                                 </li>
                                 <li class="list-group-item px-0 lh-1625 bg-transparent py-1">
                                     <a href="#" class="link-hover-secondary-primary">Team</a>
@@ -546,7 +546,7 @@
                                     <a href="#" class="link-hover-secondary-primary">Investors</a>
                                 </li>
                                 <li class="list-group-item px-0 lh-1625 bg-transparent py-1">
-                                    <a href="page-contact.html" class="link-hover-secondary-primary">Contact Us</a>
+                                    <a href="page-contact#" class="link-hover-secondary-primary">Contact Us</a>
                                 </li>
                                 <li class="list-group-item px-0 lh-1625 bg-transparent py-1">
                                     <a href="#" class="link-hover-secondary-primary">Offices</a>
@@ -559,7 +559,7 @@
                             </div>
                             <ul class="list-group list-group-flush list-group-borderless">
                                 <li class="list-group-item px-0 lh-1625 bg-transparent py-1">
-                                    <a href="page-faqs.html" class="link-hover-secondary-primary">FAQS</a>
+                                    <a href="page-faqs#" class="link-hover-secondary-primary">FAQS</a>
                                 </li>
                                 <li class="list-group-item px-0 lh-1625 bg-transparent py-1">
                                     <a href="#" class="link-hover-secondary-primary">Support</a>
@@ -923,7 +923,7 @@
             </div>
             <div class="list-inline flex-wrap my-n2">
                 <div class="list-inline-item py-2">
-                    <a href="explore-sidebar-grid.html"
+                    <a href="explore-sidebar-grid#"
                        class="card icon-box-style-01 link-hover-dark-white">
                         <div class="card-body p-0">
                             <svg class="icon icon-pizza">
@@ -936,7 +936,7 @@
                     </a>
                 </div>
                 <div class="list-inline-item py-2">
-                    <a href="explore-sidebar-grid.html"
+                    <a href="explore-sidebar-grid#"
                        class="card icon-box-style-01 link-hover-dark-white">
                         <div class="card-body p-0">
                             <svg class="icon icon-bed">
@@ -950,7 +950,7 @@
                     </a>
                 </div>
                 <div class="list-inline-item py-2">
-                    <a href="explore-sidebar-grid.html"
+                    <a href="explore-sidebar-grid#"
                        class="card icon-box-style-01 link-hover-dark-white">
                         <div class="card-body p-0">
                             <svg class="icon icon-brush2">
@@ -963,7 +963,7 @@
                     </a>
                 </div>
                 <div class="list-inline-item py-2">
-                    <a href="explore-sidebar-grid.html"
+                    <a href="explore-sidebar-grid#"
                        class="card link-hover-dark-white icon-box-style-01">
                         <div class="card-body p-0">
                             <svg class="icon icon-pharmaceutical">
@@ -976,7 +976,7 @@
                     </a>
                 </div>
                 <div class="list-inline-item py-2">
-                    <a href="explore-sidebar-grid.html"
+                    <a href="explore-sidebar-grid#"
                        class="card link-hover-dark-white icon-box-style-01">
                         <div class="card-body p-0">
                             <svg class="icon icon-cog">
@@ -990,7 +990,7 @@
                     </a>
                 </div>
                 <div class="list-inline-item py-2">
-                    <a href="explore-sidebar-grid.html"
+                    <a href="explore-sidebar-grid#"
                        class="card link-hover-dark-white icon-box-style-01">
                         <div class="card-body p-0">
                             <svg class="icon icon-bag">
@@ -1004,7 +1004,7 @@
                     </a>
                 </div>
                 <div class="list-inline-item py-2">
-                    <a href="explore-sidebar-grid.html"
+                    <a href="explore-sidebar-grid#"
                        class="card link-hover-dark-white icon-box-style-01">
                         <div class="card-body p-0">
                             <svg class="icon icon-car">

@@ -18,11 +18,11 @@
                                     <div class="store-listing-item">
                                         <div class="d-flex align-items-center flex-wrap flex-md-nowrap border-bottom py-4 py-md-0">
                                             <div class="store media align-items-stretch py-4">
-                                                <a href="listing-details-full-image.html" class="store-image">
+                                                <a href="listing-details-full-image#" class="store-image">
                                                     <img src="images/shop/favourite-01.jpg" alt="Favourite 1">
                                                 </a>
                                                 <div class="media-body px-0 pt-4 pt-md-0">
-                                                    <a href="listing-details-image.html"
+                                                    <a href="listing-details-image#"
                                                        class="font-size-lg font-weight-semibold text-dark d-inline-block mb-2 lh-1"><span
                                                             class="letter-spacing-25">Furniture
 											Assembly</span> </a>
@@ -69,11 +69,11 @@
                                     <div class="store-listing-item">
                                         <div class=" d-flex align-items-center flex-wrap flex-md-nowrap border-bottom py-4 py-md-0">
                                             <div class="store media align-items-stretch py-4">
-                                                <a href="listing-details-full-image.html" class="store-image">
+                                                <a href="listing-details-full-image#" class="store-image">
                                                     <img src="images/shop/favourite-02.jpg" alt="Favourite 1">
                                                 </a>
                                                 <div class="media-body px-0 pt-4 pt-md-0">
-                                                    <a href="listing-details-image.html"
+                                                    <a href="listing-details-image#"
                                                        class="font-size-lg font-weight-semibold text-dark d-inline-block mb-2 lh-1"><span
                                                             class="letter-spacing-25">Roman Kraft Hotel</span> </a>
                                                     <ul class="list-inline store-meta mb-3 font-size-sm d-flex align-items-center flex-wrap">
@@ -120,11 +120,11 @@
                                     <div class="store-listing-item">
                                         <div class=" d-flex align-items-center flex-wrap flex-md-nowrap py-4 py-md-0">
                                             <div class="store media align-items-stretch py-4">
-                                                <a href="listing-details-full-image.html" class="store-image">
+                                                <a href="listing-details-full-image#" class="store-image">
                                                     <img src="images/shop/favourite-03.jpg" alt="Favourite 1">
                                                 </a>
                                                 <div class="media-body px-0 pt-4 pt-md-0">
-                                                    <a href="listing-details-image.html"
+                                                    <a href="listing-details-image#"
                                                        class="font-size-lg font-weight-semibold text-dark d-inline-block mb-2 lh-1"><span
                                                             class="letter-spacing-25">Karly Gomez Cake</span> </a>
                                                     <ul class="list-inline store-meta mb-3 font-size-sm d-flex align-items-center flex-wrap">

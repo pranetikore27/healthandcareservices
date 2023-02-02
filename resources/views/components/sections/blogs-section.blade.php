@@ -5,7 +5,7 @@
                 <span class="font-weight-semibold">Some</span>
                 <span class="font-weight-light">Tips & Articles</span>
             </h2>
-            <a href="blog-listing-grid.html"
+            <a href="blog-listing-grid#"
                class="link-hover-dark-primary ml-0 ml-sm-auto w-100 w-sm-auto">
                 <span class="font-size-md d-inline-block mr-1">All articles</span>
                 <i class="fal fa-chevron-right"></i>

@@ -36,7 +36,7 @@
                                  data-target="#navbar-main-menu">
                                 <span></span>
                             </div>
-                            <a class="navbar-brand navbar-brand-mobile" href="index.html">
+                            <a class="navbar-brand navbar-brand-mobile" href="index#">
                                 <img src="images/logo.png" alt="TheDir">
                             </a>
                             <a class="mobile-button-search" href="#search-popup"
@@ -45,7 +45,7 @@
                                     class="far fa-search"></i></a>
                         </div>
                         <div class="collapse navbar-collapse" id="navbar-main-menu">
-                            <a class="navbar-brand d-none d-xl-block mr-auto" href="index.html">
+                            <a class="navbar-brand d-none d-xl-block mr-auto" href="index#">
                                 <img src="images/logo.png" alt="TheDir">
                             </a>
 
@@ -54,26 +54,26 @@
                                     <a class="nav-link" href="#">Demos <span class="caret"><i
                                             class="fas fa-angle-down"></i></span></a>
                                     <ul class="sub-menu x-animated x-fadeInUp">
-                                        <li class="nav-item"><a class="nav-link" href="index.html">main</a>
+                                        <li class="nav-item"><a class="nav-link" href="index#">main</a>
                                         </li>
                                         <li class="nav-item"><a class="nav-link"
-                                                                href="demo/automotive-service/home-automotive-services.html">
+                                                                href="demo/automotive-service/home-automotive-services#">
                                             automotive service</a></li>
                                         <li class="nav-item"><a class="nav-link"
-                                                                href="demo/food-and-restaurant/home-food-and-restaurant.html">
+                                                                href="demo/food-and-restaurant/home-food-and-restaurant#">
                                             food and restaurant</a></li>
                                         <li class="nav-item"><a class="nav-link"
-                                                                href="demo/health-and-medical/home-health-and-medical.html">
+                                                                href="demo/health-and-medical/home-health-and-medical#">
                                             health and medical</a></li>
-                                        <li class="nav-item"><a class="nav-link" href="demo/hotel/home-hotels.html">hotel</a>
+                                        <li class="nav-item"><a class="nav-link" href="demo/hotel/home-hotels#">hotel</a>
                                         </li>
-                                        <li class="nav-item"><a class="nav-link" href="demo/job/home-jobs.html">jobs</a>
+                                        <li class="nav-item"><a class="nav-link" href="demo/job/home-jobs#">jobs</a>
                                         </li>
                                         <li class="nav-item"><a class="nav-link"
-                                                                href="demo/service-finder/home-services-finder.html">
+                                                                href="demo/service-finder/home-services-finder#">
                                             service finder</a></li>
                                         <li class="nav-item"><a class="nav-link"
-                                                                href="demo/shopping/home-shopping.html">
+                                                                href="demo/shopping/home-shopping#">
                                             shopping</a></li>
                                     </ul>
                                 </li>
@@ -87,19 +87,19 @@
                                                     <h5>Group 01</h5>
                                                     <ul class="mega-menu-col">
                                                         <li class="nav-item"><a class="nav-link"
-                                                                                href="elements/button.html">Buttons</a>
+                                                                                href="elements/button#">Buttons</a>
                                                         </li>
                                                         <li class="nav-item"><a class="nav-link"
-                                                                                href="elements/social-icons.html">Socical
+                                                                                href="elements/social-icons#">Socical
                                                             icon</a></li>
                                                         <li class="nav-item"><a class="nav-link"
-                                                                                href="elements/client-logo.html">Client
+                                                                                href="elements/client-logo#">Client
                                                             logo</a></li>
                                                         <li class="nav-item"><a class="nav-link"
-                                                                                href="elements/counter.html">Counter</a>
+                                                                                href="elements/counter#">Counter</a>
                                                         </li>
                                                         <li class="nav-item"><a class="nav-link"
-                                                                                href="elements/cta.html">CTA</a>
+                                                                                href="elements/cta#">CTA</a>
                                                         </li>
                                                     </ul>
                                                 </div>
@@ -107,19 +107,19 @@
                                                     <h5>Group 02</h5>
                                                     <ul class="mega-menu-col">
                                                         <li class="nav-item"><a class="nav-link"
-                                                                                href="elements/heading.html">Heading</a>
+                                                                                href="elements/heading#">Heading</a>
                                                         </li>
                                                         <li class="nav-item"><a class="nav-link"
-                                                                                href="elements/icon-box.html">Icon
+                                                                                href="elements/icon-box#">Icon
                                                             box</a></li>
                                                         <li class="nav-item"><a class="nav-link"
-                                                                                href="elements/image-box.html">Image
+                                                                                href="elements/image-box#">Image
                                                             box</a></li>
                                                         <li class="nav-item"><a class="nav-link"
-                                                                                href="elements/listing.html">Listing</a>
+                                                                                href="elements/listing#">Listing</a>
                                                         </li>
                                                         <li class="nav-item"><a class="nav-link"
-                                                                                href="elements/post.html">Post</a>
+                                                                                href="elements/post#">Post</a>
                                                         </li>
                                                     </ul>
                                                 </div>
@@ -127,19 +127,19 @@
                                                     <h5>Group 03</h5>
                                                     <ul class="mega-menu-col">
                                                         <li class="nav-item"><a class="nav-link"
-                                                                                href="elements/store.html">Store</a>
+                                                                                href="elements/store#">Store</a>
                                                         </li>
                                                         <li class="nav-item"><a class="nav-link"
-                                                                                href="elements/tab.html">Tab</a>
+                                                                                href="elements/tab#">Tab</a>
                                                         </li>
                                                         <li class="nav-item"><a class="nav-link"
-                                                                                href="elements/table-listing.html">Table
+                                                                                href="elements/table-listing#">Table
                                                             listing</a></li>
                                                         <li class="nav-item"><a class="nav-link"
-                                                                                href="elements/testimonial.html">Testimonial</a>
+                                                                                href="elements/testimonial#">Testimonial</a>
                                                         </li>
                                                         <li class="nav-item"><a class="nav-link"
-                                                                                href="elements/widget.html">Widget</a>
+                                                                                href="elements/widget#">Widget</a>
                                                         </li>
                                                     </ul>
                                                 </div>
@@ -157,16 +157,16 @@
                                             <a class="nav-link" href="#">Shop <span class="caret"><i
                                                     class="fas fa-angle-down"></i></span></a>
                                             <ul class="sub-menu x-animated x-fadeInUp">
-                                                <li class="nav-item"><a class="nav-link" href="shop-listing.html">Shop
+                                                <li class="nav-item"><a class="nav-link" href="shop-listing#">Shop
                                                     listing</a></li>
-                                                <li class="nav-item"><a class="nav-link" href="shop-checkout.html">Shop
+                                                <li class="nav-item"><a class="nav-link" href="shop-checkout#">Shop
                                                     checkout</a></li>
-                                                <li class="nav-item"><a class="nav-link" href="shop-my-account.html">Shop
+                                                <li class="nav-item"><a class="nav-link" href="shop-my-account#">Shop
                                                     my account</a></li>
-                                                <li class="nav-item"><a class="nav-link" href="shop-shopping-cart.html">Shop
+                                                <li class="nav-item"><a class="nav-link" href="shop-shopping-cart#">Shop
                                                     shopping cart</a></li>
                                                 <li class="nav-item"><a class="nav-link"
-                                                                        href="shop-single-product.html">Shop single
+                                                                        href="shop-single-product#">Shop single
                                                     product</a></li>
                                             </ul>
                                         </li>
@@ -175,37 +175,37 @@
                                                     class="fas fa-angle-down"></i></span></a>
                                             <ul class="sub-menu x-animated x-fadeInUp">
                                                 <li class="nav-item"><a class="nav-link"
-                                                                        href="panel-dashboard.html">
+                                                                        href="panel-dashboard#">
                                                     dashboard</a></li>
                                                 <li class="nav-item"><a class="nav-link"
-                                                                        href="panel-ad-campaigns-active.html">
+                                                                        href="panel-ad-campaigns-active#">
                                                     ad campaigns active</a></li>
                                                 <li class="nav-item"><a class="nav-link"
-                                                                        href="panel-ad-campaigns-start-new.html">
+                                                                        href="panel-ad-campaigns-start-new#">
                                                     ad campaign start new</a></li>
                                                 <li class="nav-item"><a class="nav-link"
-                                                                        href="panel-invoice-details.html">
+                                                                        href="panel-invoice-details#">
                                                     invoice details</a></li>
                                                 <li class="nav-item"><a class="nav-link"
-                                                                        href="panel-invoice-listing.html">
+                                                                        href="panel-invoice-listing#">
                                                     invoice listing</a></li>
                                                 <li class="nav-item"><a class="nav-link"
-                                                                        href="panel-my-favourite.html"> my
+                                                                        href="panel-my-favourite#"> my
                                                     favourite</a></li>
                                                 <li class="nav-item"><a class="nav-link"
-                                                                        href="panel-my-listing.html"> my
+                                                                        href="panel-my-listing#"> my
                                                     listing</a></li>
                                                 <li class="nav-item"><a class="nav-link"
-                                                                        href="panel-my-profile.html"> my
+                                                                        href="panel-my-profile#"> my
                                                     profile</a></li>
                                                 <li class="nav-item"><a class="nav-link"
-                                                                        href="panel-package.html">
+                                                                        href="panel-package#">
                                                     package</a></li>
                                                 <li class="nav-item"><a class="nav-link"
-                                                                        href="panel-review-received.html">
+                                                                        href="panel-review-received#">
                                                     review received</a></li>
                                                 <li class="nav-item"><a class="nav-link"
-                                                                        href="panel-review-submitted.html">
+                                                                        href="panel-review-submitted#">
                                                     review submitted</a></li>
                                             </ul>
                                         </li>
@@ -218,48 +218,48 @@
                                                         <div class="col-lg-6">
                                                             <ul class="mega-menu-col">
                                                                 <li class="nav-item"><a class="nav-link"
-                                                                                        href="page-404.html">
+                                                                                        href="page-404#">
                                                                     404</a></li>
                                                                 <li class="nav-item"><a class="nav-link"
-                                                                                        href="page-about.html">
+                                                                                        href="page-about#">
                                                                     about</a></li>
                                                                 <li class="nav-item"><a class="nav-link"
-                                                                                        href="page-coming-soon.html">
+                                                                                        href="page-coming-soon#">
                                                                     comming soon</a></li>
                                                                 <li class="nav-item"><a class="nav-link"
-                                                                                        href="page-contact.html">
+                                                                                        href="page-contact#">
                                                                     contact</a></li>
                                                                 <li class="nav-item"><a class="nav-link"
-                                                                                        href="page-faqs.html">
+                                                                                        href="page-faqs#">
                                                                     faqs</a></li>
                                                                 <li class="nav-item"><a class="nav-link"
-                                                                                        href="page-how-it-work.html">
+                                                                                        href="page-how-it-work#">
                                                                     how it work</a></li>
                                                                 <li class="nav-item"><a class="nav-link"
-                                                                                        href="page-pricing-plan.html">
+                                                                                        href="page-pricing-plan#">
                                                                     pricing plan</a></li>
                                                             </ul>
                                                         </div>
                                                         <div class="col-lg-6">
                                                             <ul class="mega-menu-col">
                                                                 <li class="nav-item"><a class="nav-link"
-                                                                                        href="page-privacy-policy.html">
+                                                                                        href="page-privacy-policy#">
                                                                     privacy
                                                                     policy</a></li>
                                                                 <li class="nav-item"><a class="nav-link"
-                                                                                        href="page-submit-listing.html">submit
+                                                                                        href="page-submit-listing#">submit
                                                                     listing</a></li>
                                                                 <li class="nav-item"><a class="nav-link"
-                                                                                        href="page-terms-and-condition.html">Term
+                                                                                        href="page-terms-and-condition#">Term
                                                                     and condition</a></li>
                                                                 <li class="nav-item"><a class="nav-link"
-                                                                                        href="page-typography.html">
+                                                                                        href="page-typography#">
                                                                     typography</a></li>
                                                                 <li class="nav-item"><a class="nav-link"
-                                                                                        href="page-common-elements.html">
+                                                                                        href="page-common-elements#">
                                                                     Common elements</a></li>
                                                                 <li class="nav-item"><a class="nav-link"
-                                                                                        href="page-under-construction.html">
+                                                                                        href="page-under-construction#">
                                                                     under
                                                                     construction</a></li>
                                                             </ul>
@@ -281,22 +281,22 @@
                                             </a>
                                             <ul class="sub-menu x-animated x-fadeInUp">
                                                 <li class="nav-item"><a class="nav-link"
-                                                                        href="explore-full-map-grid.html"> full
+                                                                        href="explore-full-map-grid#"> full
                                                     map grid</a></li>
                                                 <li class="nav-item"><a class="nav-link"
-                                                                        href="explore-full-map-list.html"> full
+                                                                        href="explore-full-map-list#"> full
                                                     map list</a></li>
                                                 <li class="nav-item"><a class="nav-link"
-                                                                        href="explore-half-map-grid.html"> half
+                                                                        href="explore-half-map-grid#"> half
                                                     map grid</a></li>
                                                 <li class="nav-item"><a class="nav-link"
-                                                                        href="explore-half-map-list.html"> half
+                                                                        href="explore-half-map-list#"> half
                                                     map list</a></li>
                                                 <li class="nav-item"><a class="nav-link"
-                                                                        href="explore-sidebar-grid.html"> sidebar
+                                                                        href="explore-sidebar-grid#"> sidebar
                                                     grid</a></li>
                                                 <li class="nav-item"><a class="nav-link"
-                                                                        href="explore-sidebar-list.html"> sidebar
+                                                                        href="explore-sidebar-list#"> sidebar
                                                     list</a></li>
                                             </ul>
                                         </li>
@@ -306,22 +306,22 @@
                                             </a>
                                             <ul class="sub-menu x-animated x-fadeInUp">
                                                 <li class="nav-item"><a class="nav-link"
-                                                                        href="listing-details-full-gallery.html">
+                                                                        href="listing-details-full-gallery#">
                                                     full gallery</a></li>
                                                 <li class="nav-item"><a class="nav-link"
-                                                                        href="listing-details-full-image.html">
+                                                                        href="listing-details-full-image#">
                                                     full image</a></li>
                                                 <li class="nav-item"><a class="nav-link"
-                                                                        href="listing-details-full-map.html">
+                                                                        href="listing-details-full-map#">
                                                     full map</a></li>
                                                 <li class="nav-item"><a class="nav-link"
-                                                                        href="listing-details-gallery.html">gallery</a>
+                                                                        href="listing-details-gallery#">gallery</a>
                                                 </li>
                                                 <li class="nav-item"><a class="nav-link"
-                                                                        href="listing-details-image.html"> image</a>
+                                                                        href="listing-details-image#"> image</a>
                                                 </li>
                                                 <li class="nav-item"><a class="nav-link"
-                                                                        href="listing-details-no-image.html"> no
+                                                                        href="listing-details-no-image#"> no
                                                     image</a></li>
                                             </ul>
                                         </li>
@@ -335,13 +335,13 @@
                                             <a class="nav-link" href="#">Blog layout<span class="caret"><i
                                                     class="fas fa-angle-down"></i></span></a>
                                             <ul class="sub-menu x-animated x-fadeInUp">
-                                                <li class="nav-item"><a class="nav-link" href="blog-listing-grid.html">
+                                                <li class="nav-item"><a class="nav-link" href="blog-listing-grid#">
                                                     grid</a></li>
                                                 <li class="nav-item"><a class="nav-link"
-                                                                        href="blog-listing-large-image.html">
+                                                                        href="blog-listing-large-image#">
                                                     large image</a></li>
                                                 <li class="nav-item"><a class="nav-link"
-                                                                        href="blog-listing-with-sidebar.html">
+                                                                        href="blog-listing-with-sidebar#">
                                                     with sidebar</a></li>
                                             </ul>
                                         </li>
@@ -350,14 +350,14 @@
                                                 <span class="caret"><i class="fas fa-angle-down"></i></span>
                                             </a>
                                             <ul class="sub-menu x-animated x-fadeInUp">
-                                                <li class="nav-item"><a class="nav-link" href="blog-single-audio.html">
+                                                <li class="nav-item"><a class="nav-link" href="blog-single-audio#">
                                                     audio</a></li>
                                                 <li class="nav-item"><a class="nav-link"
-                                                                        href="blog-single-gallery.html">
+                                                                        href="blog-single-gallery#">
                                                     gallery</a></li>
-                                                <li class="nav-item"><a class="nav-link" href="blog-single-image.html">
+                                                <li class="nav-item"><a class="nav-link" href="blog-single-image#">
                                                     image</a></li>
-                                                <li class="nav-item"><a class="nav-link" href="blog-single-video.html">video</a>
+                                                <li class="nav-item"><a class="nav-link" href="blog-single-video#">video</a>
                                                 </li>
                                             </ul>
                                         </li>
@@ -368,10 +368,10 @@
                                             class="fas fa-angle-down"></i></span></a>
                                     <ul class="sub-menu x-animated x-fadeInUp">
                                         <li class="nav-item">
-                                            <a class="nav-link" href="document/introduction.html">Documentation</a>
+                                            <a class="nav-link" href="document/introduction#">Documentation</a>
                                         </li>
                                         <li class="nav-item">
-                                            <a class="nav-link" href="starter/introduction.html">Get started
+                                            <a class="nav-link" href="starter/introduction#">Get started
                                             </a>
                                         </li>
                                     </ul>
@@ -387,7 +387,7 @@
                                         Log in</a>
                                 </div>
                                 <div class="header-customize-item button">
-                                    <a href="page-submit-listing.html" class="btn btn-primary btn-icon-right">Add
+                                    <a href="page-submit-listing#" class="btn btn-primary btn-icon-right">Add
                                         Listing
                                         <i
                                                 class="far fa-angle-right"></i></a>
@@ -1108,7 +1108,7 @@
                                                     <tr>
                                                         <td>
                                                             <div class="media align-items-center">
-                                                                <a href="listing-details-no-image.html"
+                                                                <a href="listing-details-no-image#"
                                                                    class="d-inline-block image mr-3">
                                                                     <img
                                                                             src="images/listing/health-and-medical-provider-1.jpg"
@@ -1117,7 +1117,7 @@
                                                                 <div class="media-body lh-14">
                                                                     <div class="text-dark">Family Physician</div>
                                                                     <a class="font-weight-semibold text-link  d-block font-size-md name"
-                                                                       href="listing-details-no-image.html">Dr. Jhon Lin
+                                                                       href="listing-details-no-image#">Dr. Jhon Lin
                                                                         Md</a>
                                                                 </div>
                                                             </div>
@@ -1152,7 +1152,7 @@
                                                     <tr>
                                                         <td>
                                                             <div class="media align-items-center">
-                                                                <a href="listing-details-no-image.html"
+                                                                <a href="listing-details-no-image#"
                                                                    class="image mr-3">
                                                                     <img
                                                                             src="images/listing/health-and-medical-provider-2.jpg"
@@ -1161,7 +1161,7 @@
                                                                 <div class="media-body lh-14">
                                                                     <div class="text-dark">Dentist</div>
                                                                     <a class="font-weight-semibold text-link  d-block font-size-md name"
-                                                                       href="listing-details-no-image.html">Dr.
+                                                                       href="listing-details-no-image#">Dr.
                                                                         Matthew Huff DDS</a>
                                                                 </div>
                                                             </div>
@@ -1196,7 +1196,7 @@
                                                     <tr>
                                                         <td>
                                                             <div class="media align-items-center">
-                                                                <a href="listing-details-no-image.html"
+                                                                <a href="listing-details-no-image#"
                                                                    class="image mr-3">
                                                                     <img
                                                                             src="images/listing/health-and-medical-provider-3.jpg"
@@ -1205,7 +1205,7 @@
                                                                 <div class="media-body lh-14">
                                                                     <span class="text-dark">Pediatrician</span>
                                                                     <a class="font-weight-semibold text-link  d-block font-size-md name"
-                                                                       href="listing-details-no-image.html">Dr.
+                                                                       href="listing-details-no-image#">Dr.
                                                                         Santosh Gard MD</a>
                                                                 </div>
                                                             </div>
@@ -1246,7 +1246,7 @@
                                                     <tr>
                                                         <td>
                                                             <div class="media align-items-center">
-                                                                <a href="listing-details-no-image.html"
+                                                                <a href="listing-details-no-image#"
                                                                    class="image mr-3">
                                                                     <img
                                                                             src="images/listing/health-and-medical-provider-1.jpg"
@@ -1255,7 +1255,7 @@
                                                                 <div class="media-body lh-14">
                                                                     <div class="text-dark">Family Physician</div>
                                                                     <a class="font-weight-semibold text-link  d-block font-size-md name"
-                                                                       href="listing-details-no-image.html">Dr. Jhon Lin
+                                                                       href="listing-details-no-image#">Dr. Jhon Lin
                                                                         Md</a>
                                                                 </div>
                                                             </div>
@@ -1290,7 +1290,7 @@
                                                     <tr>
                                                         <td>
                                                             <div class="media align-items-center">
-                                                                <a href="listing-details-no-image.html"
+                                                                <a href="listing-details-no-image#"
                                                                    class="image mr-3">
                                                                     <img
                                                                             src="images/listing/health-and-medical-provider-2.jpg"
@@ -1299,7 +1299,7 @@
                                                                 <div class="media-body lh-14">
                                                                     <div class="text-dark">Dentist</div>
                                                                     <a class="font-weight-semibold text-link  d-block font-size-md name"
-                                                                       href="listing-details-no-image.html">Dr.
+                                                                       href="listing-details-no-image#">Dr.
                                                                         Matthew Huff DDS</a>
                                                                 </div>
                                                             </div>
@@ -1334,7 +1334,7 @@
                                                     <tr>
                                                         <td>
                                                             <div class="media align-items-center">
-                                                                <a href="listing-details-no-image.html"
+                                                                <a href="listing-details-no-image#"
                                                                    class="image mr-3">
                                                                     <img
                                                                             src="images/listing/health-and-medical-provider-3.jpg"
@@ -1343,7 +1343,7 @@
                                                                 <div class="media-body lh-14">
                                                                     <span class="text-dark">Pediatrician</span>
                                                                     <a class="font-weight-semibold text-link  d-block font-size-md name"
-                                                                       href="listing-details-no-image.html">Dr.
+                                                                       href="listing-details-no-image#">Dr.
                                                                         Santosh Gard MD</a>
                                                                 </div>
                                                             </div>
@@ -1423,7 +1423,7 @@
                             </div>
                             <ul class="list-group list-group-flush list-group-borderless">
                                 <li class="list-group-item px-0 lh-1625 bg-transparent py-1">
-                                    <a href="page-about.html" class="link-hover-secondary-primary">About Us</a>
+                                    <a href="page-about#" class="link-hover-secondary-primary">About Us</a>
                                 </li>
                                 <li class="list-group-item px-0 lh-1625 bg-transparent py-1">
                                     <a href="#" class="link-hover-secondary-primary">Team</a>
@@ -1435,7 +1435,7 @@
                                     <a href="#" class="link-hover-secondary-primary">Investors</a>
                                 </li>
                                 <li class="list-group-item px-0 lh-1625 bg-transparent py-1">
-                                    <a href="page-contact.html" class="link-hover-secondary-primary">Contact Us</a>
+                                    <a href="page-contact#" class="link-hover-secondary-primary">Contact Us</a>
                                 </li>
                                 <li class="list-group-item px-0 lh-1625 bg-transparent py-1">
                                     <a href="#" class="link-hover-secondary-primary">Offices</a>
@@ -1448,7 +1448,7 @@
                             </div>
                             <ul class="list-group list-group-flush list-group-borderless">
                                 <li class="list-group-item px-0 lh-1625 bg-transparent py-1">
-                                    <a href="page-faqs.html" class="link-hover-secondary-primary">FAQS</a>
+                                    <a href="page-faqs#" class="link-hover-secondary-primary">FAQS</a>
                                 </li>
                                 <li class="list-group-item px-0 lh-1625 bg-transparent py-1">
                                     <a href="#" class="link-hover-secondary-primary">Support</a>
@@ -1533,7 +1533,7 @@
                             </div>
                             <div class="col-lg-5 mb-3 mb-lg-0">
                                 <div>
-                                    &copy; 2020 <a href="index.html"
+                                    &copy; 2020 <a href="index#"
                                                    class="link-hover-dark-primary font-weight-semibold">The Dir.</a> All
                                     Rights Resevered. Design
                                     by <a href="http://g5plus.net/"
@@ -1856,7 +1856,7 @@
             </div>
             <div class="list-inline flex-wrap my-n2">
                 <div class="list-inline-item py-2">
-                    <a href="explore-sidebar-grid.html"
+                    <a href="explore-sidebar-grid#"
                        class="card icon-box-style-01 link-hover-dark-white">
                         <div class="card-body p-0">
                             <svg class="icon icon-pizza">
@@ -1869,7 +1869,7 @@
                     </a>
                 </div>
                 <div class="list-inline-item py-2">
-                    <a href="explore-sidebar-grid.html"
+                    <a href="explore-sidebar-grid#"
                        class="card icon-box-style-01 link-hover-dark-white">
                         <div class="card-body p-0">
                             <svg class="icon icon-bed">
@@ -1883,7 +1883,7 @@
                     </a>
                 </div>
                 <div class="list-inline-item py-2">
-                    <a href="explore-sidebar-grid.html"
+                    <a href="explore-sidebar-grid#"
                        class="card icon-box-style-01 link-hover-dark-white">
                         <div class="card-body p-0">
                             <svg class="icon icon-brush2">
@@ -1896,7 +1896,7 @@
                     </a>
                 </div>
                 <div class="list-inline-item py-2">
-                    <a href="explore-sidebar-grid.html"
+                    <a href="explore-sidebar-grid#"
                        class="card link-hover-dark-white icon-box-style-01">
                         <div class="card-body p-0">
                             <svg class="icon icon-pharmaceutical">
@@ -1909,7 +1909,7 @@
                     </a>
                 </div>
                 <div class="list-inline-item py-2">
-                    <a href="explore-sidebar-grid.html"
+                    <a href="explore-sidebar-grid#"
                        class="card link-hover-dark-white icon-box-style-01">
                         <div class="card-body p-0">
                             <svg class="icon icon-cog">
@@ -1923,7 +1923,7 @@
                     </a>
                 </div>
                 <div class="list-inline-item py-2">
-                    <a href="explore-sidebar-grid.html"
+                    <a href="explore-sidebar-grid#"
                        class="card link-hover-dark-white icon-box-style-01">
                         <div class="card-body p-0">
                             <svg class="icon icon-bag">
@@ -1937,7 +1937,7 @@
                     </a>
                 </div>
                 <div class="list-inline-item py-2">
-                    <a href="explore-sidebar-grid.html"
+                    <a href="explore-sidebar-grid#"
                        class="card link-hover-dark-white icon-box-style-01">
                         <div class="card-body p-0">
                             <svg class="icon icon-car">

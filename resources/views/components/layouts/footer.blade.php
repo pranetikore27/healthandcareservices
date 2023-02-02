@@ -30,7 +30,7 @@
                     </div>
                     <ul class="list-group list-group-flush list-group-borderless">
                         <li class="list-group-item px-0 lh-1625 bg-transparent py-1">
-                            <a href="page-about.html" class="link-hover-secondary-primary">About Us</a>
+                            <a href="page-about#" class="link-hover-secondary-primary">About Us</a>
                         </li>
                         <!-- <li class="list-group-item px-0 lh-1625 bg-transparent py-1">
                             <a href="#" class="link-hover-secondary-primary">Team</a>
@@ -42,7 +42,7 @@
                             <a href="#" class="link-hover-secondary-primary">Investors</a>
                         </li> -->
                         <li class="list-group-item px-0 lh-1625 bg-transparent py-1">
-                            <a href="page-contact.html" class="link-hover-secondary-primary">Contact Us</a>
+                            <a href="page-contact#" class="link-hover-secondary-primary">Contact Us</a>
                         </li>
                         <!-- <li class="list-group-item px-0 lh-1625 bg-transparent py-1">
                             <a href="#" class="link-hover-secondary-primary">Offices</a>
@@ -55,7 +55,7 @@
                     </div>
                     <ul class="list-group list-group-flush list-group-borderless">
                         <li class="list-group-item px-0 lh-1625 bg-transparent py-1">
-                            <a href="page-faqs.html" class="link-hover-secondary-primary">FAQS</a>
+                            <a href="page-faqs#" class="link-hover-secondary-primary">FAQS</a>
                         </li>
                         <li class="list-group-item px-0 lh-1625 bg-transparent py-1">
                             <a href="#" class="link-hover-secondary-primary">Support</a>

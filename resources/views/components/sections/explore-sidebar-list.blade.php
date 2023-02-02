@@ -177,7 +177,7 @@
                                     </div>
                                 </div> -->
                                 <!-- <div class="format-listing ml-auto">
-                                    <a href="explore-sidebar-grid.html"><i class="fas fa-th"></i></a>
+                                    <a href="explore-sidebar-grid#"><i class="fas fa-th"></i></a>
                                     <a href="#" class="active"><i class="fal fa-bars"></i></a>
                                 </div> -->
                             </div>
@@ -227,7 +227,7 @@
                                         <div class="border-top pt-2 px-0 pb-0">
                                             <!-- They specialize in makgeolli at this Korean-style pub in Seorae
                                             Village... -->
-                                            {{$vendor->Vendor_bio}}
+                                            
                                         </div>
                                     </div>
                                 </div>

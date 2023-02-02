@@ -111,14 +111,14 @@
                                             class="fas fa-angle-down"></i></span></a>
                                     <ul class="sub-menu x-animated x-fadeInUp">
                                         <li class="nav-item">
-                                            <a class="nav-link" href="document/introduction.html">Why we</a>
+                                            <a class="nav-link" href="document/introduction#">Why we</a>
                                         </li>
                                         <li class="nav-item">
-                                            <a class="nav-link" href="starter/introduction.html">Who we are
+                                            <a class="nav-link" href="starter/introduction#">Who we are
                                             </a>
                                         </li>
                                         <li class="nav-item">
-                                            <a class="nav-link" href="starter/introduction.html">Connect with us
+                                            <a class="nav-link" href="starter/introduction#">Connect with us
                                             </a>
                                         </li>
                                     </ul>

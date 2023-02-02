@@ -10,13 +10,13 @@
              data-slick-options='{"slidesToShow": 4, "autoplay":false,"dots":false,"responsive":[{"breakpoint": 992,"settings": {"slidesToShow": 3,"arrows":false,"dots":true,"autoplay":true}},{"breakpoint": 768,"settings": {"slidesToShow": 2,"arrows":false,"dots":true,"autoplay":true}},{"breakpoint": 400,"settings": {"slidesToShow": 1,"arrows":false,"dots":true,"autoplay":true}}]}'>
             <div class="box" data-animate="zoomIn">
                 <div class="card border-0">
-                    <a class="hover-scale" href="explore-sidebar-grid.html">
+                    <a class="hover-scale" href="explore-sidebar-grid#">
                         <img src="./assets/images/listing/feature-detination-1.jpg" alt="San Francisco"
                              class="image">
                     </a>
                     <div class="card-body px-0 pt-4">
                         <h5 class="card-title mb-0">
-                            <a href="explore-sidebar-grid.html"
+                            <a href="explore-sidebar-grid#"
                                class="font-size-h5 link-hover-dark-primary">
                                 San Francisco</a>
                         </h5>
@@ -30,12 +30,12 @@
             </div>
             <div class="box" data-animate="zoomIn">
                 <div class="card border-0">
-                    <a class="hover-scale" href="explore-sidebar-grid.html">
+                    <a class="hover-scale" href="explore-sidebar-grid#">
                         <img src="./assets/images/listing/feature-detination-2.jpg" alt="London" class="image">
                     </a>
                     <div class="card-body px-0 pt-4">
                         <h5 class="mb-0 card-title">
-                            <a href="explore-sidebar-grid.html"
+                            <a href="explore-sidebar-grid#"
                                class="font-size-h5 link-hover-dark-primary">
                                 London
                             </a>
@@ -50,12 +50,12 @@
             </div>
             <div class="box" data-animate="zoomIn">
                 <div class="card border-0">
-                    <a class="hover-scale" href="explore-sidebar-grid.html">
+                    <a class="hover-scale" href="explore-sidebar-grid#">
                         <img src="./assets/images/listing/feature-detination-3.jpg" alt="Tokyo" class="image">
                     </a>
                     <div class="card-body px-0 pt-4">
                         <h5 class="mb-0 card-title">
-                            <a href="explore-sidebar-grid.html"
+                            <a href="explore-sidebar-grid#"
                                class="font-size-h5 link-hover-dark-primary">
                                 Tokyo
                             </a>
@@ -68,12 +68,12 @@
             </div>
             <div class="box" data-animate="zoomIn">
                 <div class="card border-0">
-                    <a class="hover-scale" href="explore-sidebar-grid.html">
+                    <a class="hover-scale" href="explore-sidebar-grid#">
                         <img src="./assets/images/listing/feature-detination-4.jpg" alt="Miami" class="image">
                     </a>
                     <div class="card-body px-0 pt-4">
                         <h5 class="mb-0 card-title">
-                            <a href="explore-sidebar-grid.html"
+                            <a href="explore-sidebar-grid#"
                                class="font-size-h5 link-hover-dark-primary">
                                 Miami
                             </a>
@@ -87,13 +87,13 @@
             </div>
             <div class="box" data-animate="zoomIn">
                 <div class="card border-0">
-                    <a class="hover-scale" href="explore-sidebar-grid.html">
+                    <a class="hover-scale" href="explore-sidebar-grid#">
                         <img src="./assets/images/listing/feature-detination-1.jpg" alt="San Francisco"
                              class="image">
                     </a>
                     <div class="card-body px-0 pt-4">
                         <h5 class="card-title mb-0">
-                            <a href="explore-sidebar-grid.html"
+                            <a href="explore-sidebar-grid#"
                                class="font-size-h5 link-hover-dark-primary">
                                 San Francisco</a>
                         </h5>
@@ -107,12 +107,12 @@
             </div>
             <div class="box" data-animate="zoomIn">
                 <div class="card border-0">
-                    <a class="hover-scale" href="explore-sidebar-grid.html">
+                    <a class="hover-scale" href="explore-sidebar-grid#">
                         <img src="./assets/images/listing/feature-detination-2.jpg" alt="London" class="image">
                     </a>
                     <div class="card-body px-0 pt-4">
                         <h5 class="mb-0 card-title">
-                            <a href="explore-sidebar-grid.html"
+                            <a href="explore-sidebar-grid#"
                                class="font-size-h5 link-hover-dark-primary">
                                 London
                             </a>
@@ -127,12 +127,12 @@
             </div>
             <div class="box" data-animate="zoomIn">
                 <div class="card border-0">
-                    <a class="hover-scale" href="explore-sidebar-grid.html">
+                    <a class="hover-scale" href="explore-sidebar-grid#">
                         <img src="./assets/images/listing/feature-detination-3.jpg" alt="Tokyo" class="image">
                     </a>
                     <div class="card-body px-0 pt-4">
                         <h5 class="mb-0 card-title">
-                            <a href="explore-sidebar-grid.html"
+                            <a href="explore-sidebar-grid#"
                                class="font-size-h5 link-hover-dark-primary">
                                 Tokyo
                             </a>
@@ -145,12 +145,12 @@
             </div>
             <div class="box" data-animate="zoomIn">
                 <div class="card border-0">
-                    <a class="hover-scale" href="explore-sidebar-grid.html">
+                    <a class="hover-scale" href="explore-sidebar-grid#">
                         <img src="./assets/images/listing/feature-detination-4.jpg" alt="Miami" class="image">
                     </a>
                     <div class="card-body px-0 pt-4">
                         <h5 class="mb-0 card-title">
-                            <a href="explore-sidebar-grid.html"
+                            <a href="explore-sidebar-grid#"
                                class="font-size-h5 link-hover-dark-primary">
                                 Miami
                             </a>

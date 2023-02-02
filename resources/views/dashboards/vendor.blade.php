@@ -47,7 +47,7 @@
                                     <div class="alert alert-success mb-6 alert-dismissible fade show d-flex align-items-center pr-3">
                                         <div class="font-size-lg py-0 mr-6">
                                             Your notification from <a
-                                                href="listing-details-full-image.html"
+                                                href="listing-details-full-image#"
                                                 class="font-weight-semibold link-hover-dark-primary">Admin</a>
                                             will flash here!
                                         </div>
@@ -118,7 +118,7 @@
                                                                                 xlink:href="#icon-layers"></use></svg>
 																	</span>
                                                                             <div class="content-box">Your listing <a
-                                                                                    href="listing-details-full-image.html"
+                                                                                    href="listing-details-full-image#"
                                                                                     class="font-weight-semibold link-hover-dark-primary">Hotel
                                                                                 Govendor</a>
                                                                                 has
@@ -138,7 +138,7 @@
                                                                                                         class="font-weight-semibold link-hover-dark-primary">David
                                                                                 Eggsy</a>
                                                                                 bookmarked your <a
-                                                                                        href="listing-details-full-image.html"
+                                                                                        href="listing-details-full-image#"
                                                                                         class="font-weight-semibold link-hover-dark-primary">Thai
                                                                                     Taste’s Restaurant</a>
                                                                                 listing!
@@ -157,11 +157,11 @@
                                                                                                         class="font-weight-semibold link-hover-dark-primary">Kathy
                                                                                 Brown</a>
                                                                                 left a review <a
-                                                                                        href="panel-review-submitted.html"
+                                                                                        href="panel-review-submitted#"
                                                                                         class="font-weight-semibold link-hover-dark-primary">5
                                                                                     Star</a>
                                                                                 on
-                                                                                <a href="listing-details-full-image.html"
+                                                                                <a href="listing-details-full-image#"
                                                                                    class="font-weight-semibold link-hover-dark-primary">Roman
                                                                                     Kraft Hotel</a>
                                                                             </div>
@@ -177,7 +177,7 @@
                                                                                 xlink:href="#icon-layers"></use></svg>
 																	</span>
                                                                             <div class="content-box">Your listing <a
-                                                                                    href="listing-details-full-image.html"
+                                                                                    href="listing-details-full-image#"
                                                                                     class="font-weight-semibold link-hover-dark-primary">Hotel
                                                                                 Govendor</a>
                                                                                 has
@@ -197,7 +197,7 @@
                                                                                                         class="font-weight-semibold link-hover-dark-primary">David
                                                                                 Eggsy</a>
                                                                                 bookmarked your <a
-                                                                                        href="listing-details-full-image.html"
+                                                                                        href="listing-details-full-image#"
                                                                                         class="font-weight-semibold link-hover-dark-primary">Thai
                                                                                     Taste’s Restaurant</a>
                                                                                 listing!
@@ -216,11 +216,11 @@
                                                                                                         class="font-weight-semibold link-hover-dark-primary">Kathy
                                                                                 Brown</a>
                                                                                 left a review <a
-                                                                                        href="panel-review-submitted.html"
+                                                                                        href="panel-review-submitted#"
                                                                                         class="font-weight-semibold link-hover-dark-primary">5
                                                                                     Star</a>
                                                                                 on
-                                                                                <a href="listing-details-full-image.html"
+                                                                                <a href="listing-details-full-image#"
                                                                                    class="font-weight-semibold link-hover-dark-primary">
                                                                                     Roman Kraft Hotel</a>
                                                                             </div>
@@ -253,7 +253,7 @@
                                                             <tbody>
                                                                 <tr>
                                                                     <td>
-                                                                        <a href="panel-invoice-details.html"
+                                                                        <a href="panel-invoice-details#"
                                                                            class="link-hover-dark-blue">INV-00001</a>
                                                                     </td>
                                                                     <td>22/10/2017</td>
@@ -263,7 +263,7 @@
                                                                 </tr>
                                                                 <tr>
                                                                     <td>
-                                                                        <a href="panel-invoice-details.html"
+                                                                        <a href="panel-invoice-details#"
                                                                            class="link-hover-dark-blue">INV-00002</a>
 
                                                                     </td>
@@ -274,7 +274,7 @@
                                                                 </tr>
                                                                 <tr>
                                                                     <td>
-                                                                        <a href="panel-invoice-details.html"
+                                                                        <a href="panel-invoice-details#"
                                                                            class="link-hover-dark-blue">INV-00003</a>
                                                                     </td>
                                                                     <td>18/10/2017</td>

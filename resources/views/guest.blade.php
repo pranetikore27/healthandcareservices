@@ -34,7 +34,7 @@
                                  data-target="#navbar-main-menu">
                                 <span></span>
                             </div>
-                            <a class="navbar-brand navbar-brand-mobile" href="home-automotive-services.html">
+                            <a class="navbar-brand navbar-brand-mobile" href="{{url('home')}}">
                                 <img src="../../images/white-logo.png" alt="The dir">
                             </a>
                             <a class="mobile-button-search" href="#search-popup"
@@ -43,7 +43,7 @@
                                     class="far fa-search"></i></a>
                         </div>
                         <div class="collapse navbar-collapse d-xl-flex align-items-center" id="navbar-main-menu">
-                            <a class="navbar-brand d-none d-xl-block" href="home-automotive-services.html">
+                            <a class="navbar-brand d-none d-xl-block" href="{{url('home')}}">
                                 <img src="../../images/white-logo.png" alt="The dir">
                             </a>
                             <ul class="navbar-nav">
@@ -51,27 +51,27 @@
                                     <a class="nav-link" href="#">Demos <span class="caret"><i
                                             class="fas fa-angle-down"></i></span></a>
                                     <ul class="sub-menu x-animated x-fadeInUp">
-                                        <li class="nav-item"><a class="nav-link" href="../../{{route('home')}}">main</a>
+                                        <li class="nav-item"><a class="nav-link" href="{{route('home')}}">main</a>
                                         </li>
                                         <li class="nav-item"><a class="nav-link"
-                                                                href="../../demo/automotive-service/home-automotive-services.html">
+                                                                href="{{url('home')}}">
                                             automotive service</a></li>
                                         <li class="nav-item"><a class="nav-link"
-                                                                href="../../demo/food-and-restaurant/home-food-and-restaurant.html">
+                                                                href="{{url('home')}}">
                                             food and restaurant</a></li>
                                         <li class="nav-item"><a class="nav-link"
-                                                                href="../../demo/health-and-medical/home-health-and-medical.html">
+                                                                href="#">
                                             health and medical</a></li>
                                         <li class="nav-item"><a class="nav-link"
-                                                                href="../../demo/hotel/home-hotels.html">hotel</a>
+                                                                href="#">hotel</a>
                                         </li>
-                                        <li class="nav-item"><a class="nav-link" href="../../demo/job/home-jobs.html">jobs</a>
+                                        <li class="nav-item"><a class="nav-link" href="#">jobs</a>
                                         </li>
                                         <li class="nav-item"><a class="nav-link"
-                                                                href="../../demo/service-finder/home-services-finder.html">
+                                                                href="#">
                                             service finder</a></li>
                                         <li class="nav-item"><a class="nav-link"
-                                                                href="../../demo/shopping/home-shopping.html">
+                                                                href="#">
                                             shopping</a></li>
                                     </ul>
                                 </li>
@@ -86,19 +86,19 @@
                                                 <div class="col-lg-6">
                                                     <ul class="mega-menu-col">
                                                         <li class="nav-item"><a class="nav-link"
-                                                                                href="page-about.html">
+                                                                                href="#">
                                                             about</a></li>
                                                         <li class="nav-item"><a class="nav-link"
-                                                                                href="page-contact.html">
+                                                                                href="#">
                                                             contact</a></li>
                                                         <li class="nav-item"><a class="nav-link"
-                                                                                href="page-faqs.html">
+                                                                                href="#">
                                                             faqs</a></li>
                                                         <li class="nav-item"><a class="nav-link"
-                                                                                href="page-how-it-work.html">
+                                                                                href="#">
                                                             how it work</a></li>
                                                         <li class="nav-item"><a class="nav-link"
-                                                                                href="page-pricing-plan.html">
+                                                                                href="#">
                                                             pricing plan</a></li>
 
                                                     </ul>
@@ -109,16 +109,16 @@
                                                                                 href="{{url('/add-new-listings')}}">submit
                                                             listing</a></li>
                                                         <li class="nav-item"><a class="nav-link"
-                                                                                href="page-terms-and-condition.html">Term
+                                                                                href="#">Term
                                                             and condition</a></li>
                                                         <li class="nav-item"><a class="nav-link"
-                                                                                href="page-typography.html">
+                                                                                href="#">
                                                             typography</a></li>
                                                         <li class="nav-item"><a class="nav-link"
-                                                                                href="page-common-elements.html">
+                                                                                href="#">
                                                             Common elements</a></li>
                                                         <li class="nav-item"><a class="nav-link"
-                                                                                href="page-privacy-policy.html">
+                                                                                href="#">
                                                             privacy
                                                             policy</a></li>
                                                     </ul>
@@ -128,10 +128,10 @@
                                     </div>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="explore-half-map-list.html">Explore</a>
+                                    <a class="nav-link" href="explore-half-map-list#">Explore</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="blog-listing-grid.html">Blog</a>
+                                    <a class="nav-link" href="blog-listing-grid#">Blog</a>
                                 </li>
                                 <li class="nav-item">
                                     <a class="nav-link" href="#">Docs <span class="caret"><i
@@ -139,10 +139,10 @@
                                     <ul class="sub-menu x-animated x-fadeInUp">
                                         <li class="nav-item">
                                             <a class="nav-link"
-                                               href="../../document/introduction.html">Documentation</a>
+                                               href="#">Documentation</a>
                                         </li>
                                         <li class="nav-item">
-                                            <a class="nav-link" href="../../starter/introduction.html">Get started
+                                            <a class="nav-link" href="#">Get started
                                             </a>
                                         </li>
                                     </ul>
@@ -158,7 +158,7 @@
                                         Log in</a>
                                 </div>
                                 <div class="header-customize-item">
-                                    <a href="page-submit-listing.html" class="btn btn-primary text-capitalize">Join as a
+                                    <a href="#" class="btn btn-primary text-capitalize">Join as a
                                         pro </a>
                                 </div>
                                 <div class="header-customize-item toggle">
@@ -577,7 +577,7 @@
                         <h3 class="mb-0">
                             Top Providers That We Recommended
                         </h3>
-                        <a href="explore-half-map-list.html"
+                        <a href="explore-half-map-list#"
                            class="link-hover-dark-primary ml-0 ml-md-auto w-100 w-md-auto mt-4 mt-md-0">
                             <span class="d-inline-block mr-2 font-size-md">See all</span>
                             <i class="fal fa-chevron-right"></i>
@@ -588,7 +588,7 @@
                         <div class="box" data-animate="slideInDown">
                             <div class="store card border-0 rounded-0 h-auto">
                                 <div class="position-relative store-image">
-                                    <a href="listing-details-image.html">
+                                    <a href="listing-details-image#">
                                         <img src="../../images/shop/automotic-service-provider-1.jpg" alt="store 1"
                                              class="card-img-top rounded-0">
                                     </a>
@@ -610,7 +610,7 @@
                                     </div>
                                 </div>
                                 <div class="card-body">
-                                    <a href="listing-details-image.html"
+                                    <a href="listing-details-image#"
                                        class="card-title h5 text-dark d-inline-block mb-2"><span
                                             class="letter-spacing-25">Brooklyn Car Services Center</span></a>
                                     <ul class="list-inline store-meta mb-4 font-size-sm d-flex align-items-center flex-wrap">
@@ -639,7 +639,7 @@
                         <div class="box" data-animate="slideInDown">
                             <div class="store card border-0 rounded-0 h-auto">
                                 <div class="position-relative store-image">
-                                    <a href="listing-details-image.html">
+                                    <a href="listing-details-image#">
                                         <img src="../../images/shop/automotic-service-provider-2.jpg" alt="store 1"
                                              class="card-img-top rounded-0">
                                     </a>
@@ -661,7 +661,7 @@
                                     </div>
                                 </div>
                                 <div class="card-body">
-                                    <a href="listing-details-image.html"
+                                    <a href="listing-details-image#"
                                        class="card-title h5 text-dark d-inline-block mb-2"><span
                                             class="letter-spacing-25">David Car Services Shop</span></a>
                                     <ul class="list-inline store-meta mb-4 font-size-sm d-flex align-items-center flex-wrap">
@@ -689,7 +689,7 @@
                         <div class="box" data-animate="slideInDown">
                             <div class="store card border-0 rounded-0 h-auto">
                                 <div class="position-relative store-image">
-                                    <a href="listing-details-image.html">
+                                    <a href="listing-details-image#">
                                         <img src="../../images/shop/automotic-service-provider-3.jpg" alt="store 1"
                                              class="card-img-top rounded-0">
                                     </a>
@@ -711,7 +711,7 @@
                                     </div>
                                 </div>
                                 <div class="card-body">
-                                    <a href="listing-details-image.html"
+                                    <a href="listing-details-image#"
                                        class="card-title h5 text-dark d-inline-block mb-2"><span
                                             class="letter-spacing-25">CG Automotive Services Center</span></a>
                                     <ul class="list-inline store-meta mb-4 font-size-sm d-flex align-items-center flex-wrap">
@@ -740,7 +740,7 @@
                         <div class="box" data-animate="slideInDown">
                             <div class="store card border-0 rounded-0 h-auto">
                                 <div class="position-relative store-image">
-                                    <a href="listing-details-image.html">
+                                    <a href="listing-details-image#">
                                         <img src="../../images/shop/automotic-service-provider-1.jpg" alt="store 1"
                                              class="card-img-top rounded-0">
                                     </a>
@@ -762,7 +762,7 @@
                                     </div>
                                 </div>
                                 <div class="card-body">
-                                    <a href="listing-details-image.html"
+                                    <a href="listing-details-image#"
                                        class="card-title h5 text-dark d-inline-block mb-2"><span
                                             class="letter-spacing-25">Brooklyn Car Services Center</span>
                                     </a>
@@ -792,7 +792,7 @@
                         <div class="box" data-animate="slideInDown">
                             <div class="store card border-0 rounded-0 h-auto">
                                 <div class="position-relative store-image">
-                                    <a href="listing-details-image.html">
+                                    <a href="listing-details-image#">
                                         <img src="../../images/shop/automotic-service-provider-2.jpg" alt="store 1"
                                              class="card-img-top rounded-0">
                                     </a>
@@ -814,7 +814,7 @@
                                     </div>
                                 </div>
                                 <div class="card-body">
-                                    <a href="listing-details-image.html"
+                                    <a href="listing-details-image#"
                                        class="card-title h5 text-dark d-inline-block mb-2"><span
                                             class="letter-spacing-25">David Car Services Shop</span></a>
                                     <ul class="list-inline store-meta mb-4 font-size-sm d-flex align-items-center flex-wrap">
@@ -843,7 +843,7 @@
                         <div class="box" data-animate="slideInDown">
                             <div class="store card border-0 rounded-0 h-auto">
                                 <div class="position-relative store-image">
-                                    <a href="listing-details-image.html">
+                                    <a href="listing-details-image#">
                                         <img src="../../images/shop/automotic-service-provider-3.jpg" alt="store 1"
                                              class="card-img-top rounded-0">
                                     </a>
@@ -865,7 +865,7 @@
                                     </div>
                                 </div>
                                 <div class="card-body">
-                                    <a href="listing-details-image.html"
+                                    <a href="listing-details-image#"
                                        class="card-title h5 text-dark d-inline-block mb-2"><span
                                             class="letter-spacing-25">CG Automotive Services Center</span>
                                     </a>
@@ -914,70 +914,70 @@
                     <div class="row">
                         <div class="col-sm-6 col-md-4 col-lg-3 mb-4" data-animate="pulse">
                             <a class="btn btn-hero text-capitalize rounded-0" title="Category"
-                               href="explore-half-map-grid.html">
+                               href="#">
                                 Car Painting </a>
                         </div>
                         <div class="col-sm-6 col-md-4 col-lg-3 mb-4" data-animate="pulse">
                             <a class="btn btn-hero text-capitalize rounded-0" title="Category"
-                               href="explore-half-map-grid.html">
+                               href="#">
                                 Car Assemble Carbon</a>
                         </div>
                         <div class="col-sm-6 col-md-4 col-lg-3 mb-4" data-animate="pulse">
                             <a class="btn btn-hero text-capitalize rounded-0" title="Category"
-                               href="explore-half-map-grid.html">pasting
+                               href="#">pasting
                                 leather car's
                                 interior </a>
                         </div>
                         <div class="col-sm-6 col-md-4 col-lg-3 mb-4" data-animate="pulse">
                             <a class="btn btn-hero text-capitalize rounded-0" title="Category"
-                               href="explore-half-map-grid.html">
+                               href="#">
                                 Car Covered Nano </a>
                         </div>
                         <div class="col-sm-6 col-md-4 col-lg-3 mb-4" data-animate="pulse">
                             <a class="btn btn-hero text-capitalize rounded-0" title="Category"
-                               href="explore-half-map-grid.html">
+                               href="#">
                                 Car Paste Insulation
                                 Film </a>
                         </div>
                         <div class="col-sm-6 col-md-4 col-lg-3 mb-4" data-animate="pulse">
                             <a class="btn btn-hero text-capitalize rounded-0" title="Category"
-                               href="explore-half-map-grid.html">
+                               href="#">
                                 Modification Exhaust
                                 Pipe Of Car </a>
                         </div>
                         <div class="col-sm-6 col-md-4 col-lg-3 mb-4" data-animate="pulse">
                             <a class="btn btn-hero text-capitalize rounded-0" title="Category"
-                               href="explore-half-map-grid.html">
+                               href="#">
                                 Cleaning car's
                                 interior </a>
                         </div>
                         <div class="col-sm-6 col-md-4 col-lg-3 mb-4" data-animate="pulse">
                             <a class="btn btn-hero text-capitalize rounded-0" title="Category"
-                               href="explore-half-map-grid.html">
+                               href="#">
                                 Car polishing </a>
                         </div>
                         <div class="col-sm-6 col-md-4 col-lg-3 mb-4" data-animate="pulse">
                             <a class="btn btn-hero text-capitalize rounded-0" title="Category"
-                               href="explore-half-map-grid.html">
+                               href="#">
                                 Cover Anti-Rust At
                                 Bottom Of The
                                 Car </a>
                         </div>
                         <div class="col-sm-6 col-md-4 col-lg-3 mb-4" data-animate="pulse">
                             <a class="btn btn-hero text-capitalize rounded-0" title="Category"
-                               href="explore-half-map-grid.html">
+                               href="#">
                                 Care car's engine </a>
                         </div>
                         <div class="col-sm-6 col-md-4 col-lg-3 mb-4" data-animate="pulse">
                             <a class="btn btn-hero text-capitalize rounded-0" title="Category"
-                               href="explore-half-map-grid.html">
+                               href="#">
                                 Fully Check And
                                 Maintenance
                             </a>
                         </div>
                         <div class="col-sm-6 col-md-4 col-lg-3 mb-4" data-animate="pulse">
                             <a class="btn btn-hero text-capitalize rounded-0" title="Category"
-                               href="explore-half-map-grid.html">
+                               href="#">
                                 Emergency </a>
                         </div>
                     </div>
@@ -995,13 +995,13 @@
                     <div class="row align-items-center justify-content-center">
                         <div class="col-md-8 mb-6">
                             <div class="image-box card border-0 rounded-0 hover-scale" data-animate="zoomIn">
-                                <a href="explore-half-map-grid.html" class="image position-relative card-img">
+                                <a href="#" class="image position-relative card-img">
                                     <img src="../../images/listing/london.jpg" alt="Image box">
                                 </a>
                                 <div class="content-box position-absolute px-4 pb-3 text-white card-img-overlay">
                                     <p class="mb-1">
                                         8 Providers</p>
-                                    <a href="explore-half-map-grid.html"
+                                    <a href="#"
                                        class="h4 font-weight-normal mb-0 text-white  fs-24">
                                         London
                                     </a>
@@ -1011,14 +1011,14 @@
                         </div>
                         <div class="col-md-4 mb-6">
                             <div class="image-box card mb-6 rounded-0 border-0 hover-scale" data-animate="zoomIn">
-                                <a href="explore-half-map-grid.html" class="image position-relative card-img">
+                                <a href="#" class="image position-relative card-img">
                                     <img src="../../images/listing/manchester.jpg" alt="Image box">
                                 </a>
                                 <div class="text-white content-box px-4 pb-3 card-img-overlay">
                                     <p class="mb-1">
                                         15 Providers
                                     </p>
-                                    <a href="explore-half-map-grid.html"
+                                    <a href="#"
                                        class="font-weight-normal  text-white font-size-lg">
                                         Manchester
                                     </a>
@@ -1026,13 +1026,13 @@
 
                             </div>
                             <div class="image-box card border-0 rounded-0 hover-scale" data-animate="zoomIn">
-                                <a href="explore-half-map-grid.html" class="image position-relative card-img">
+                                <a href="#" class="image position-relative card-img">
                                     <img src="../../images/listing/liverpool.jpg" alt="Image box">
                                 </a>
                                 <div class="text-white content-box px-4 pb-3 card-img-overlay">
                                     <p class="mb-1">
                                         6 Providers</p>
-                                    <a href="explore-half-map-grid.html"
+                                    <a href="#"
                                        class="font-weight-normal  text-white font-size-lg">
                                         Liverpool
                                     </a>
@@ -1042,13 +1042,13 @@
                         </div>
                         <div class="col-md-4 mb-md-0 mb-6">
                             <div class="image-box card border-0 rounded-0 hover-scale" data-animate="zoomIn">
-                                <a href="explore-half-map-grid.html" class="image position-relative card-img">
+                                <a href="#" class="image position-relative card-img">
                                     <img src="../../images/listing/birmingham.jpg" alt="Image box">
                                 </a>
                                 <div class="text-white content-box px-4 pb-3 card-img-overlay">
                                     <p class="mb-1">
                                         9 Providers</p>
-                                    <a href="explore-half-map-grid.html"
+                                    <a href="#"
                                        class="font-weight-normal  text-white font-size-lg">
                                         Birmingham
                                     </a>
@@ -1058,13 +1058,13 @@
                         </div>
                         <div class="col-md-8">
                             <div class="image-box card border-0 rounded-0 hover-scale" data-animate="zoomIn">
-                                <a href="explore-half-map-grid.html" class="image position-relative card-img">
+                                <a href="#" class="image position-relative card-img">
                                     <img src="../../images/listing/cambridge.jpg" alt="Image box">
                                 </a>
                                 <div class="text-white content-box px-4 pb-3 card-img-overlay">
                                     <p class="mb-1">
                                         12 Providers</p>
-                                    <a href="explore-half-map-grid.html"
+                                    <a href="#"
                                        class="h4 mb-0 font-weight-normal text-white  fs-24">
                                         Cambridge
                                     </a>
@@ -1419,7 +1419,7 @@
                     <div class="row">
                         <div class="col-md-4 mb-4" data-animate="zoomIn">
                             <div class="card border-0">
-                                <a href="blog-single-image.html" class="hover-scale">
+                                <a href="blog-single-image#" class="hover-scale">
                                     <img src="../../images/blog/automotic-service-blog-1.jpg" alt="product 1"
                                          class="card-img-top image">
                                 </a>
@@ -1434,7 +1434,7 @@
 
                                     </ul>
                                     <h5 class="card-title font-size-lg text-capitalize lh-14 letter-spacing-25">
-                                        <a href="blog-single-image.html" class="link-hover-dark-primary">How
+                                        <a href="blog-single-image#" class="link-hover-dark-primary">How
                                             to resolve
                                             problems of audi's car engine by
                                             yourself</a>
@@ -1444,7 +1444,7 @@
                         </div>
                         <div class="col-md-4 mb-4" data-animate="zoomIn">
                             <div class="card border-0">
-                                <a href="blog-single-image.html" class="hover-scale">
+                                <a href="blog-single-image#" class="hover-scale">
                                     <img src="../../images/blog/automotic-service-blog-2.jpg" alt="product 1"
                                          class="card-img-top image">
                                 </a>
@@ -1459,7 +1459,7 @@
 
                                     </ul>
                                     <h5 class="card-title font-size-lg text-capitalize lh-14 letter-spacing-25">
-                                        <a href="blog-single-image.html" class="link-hover-dark-primary">Car
+                                        <a href="blog-single-image#" class="link-hover-dark-primary">Car
                                             Repair Quickly
                                             With Gens Technology</a>
                                     </h5>
@@ -1469,7 +1469,7 @@
                         </div>
                         <div class="col-md-4 mb-4" data-animate="zoomIn">
                             <div class="card border-0">
-                                <a href="blog-single-image.html" class="hover-scale">
+                                <a href="blog-single-image#" class="hover-scale">
                                     <img src="../../images/blog/automotic-service-blog-3.jpg" alt="product 1"
                                          class="card-img-top image">
                                 </a>
@@ -1483,7 +1483,7 @@
                                         </li>
                                     </ul>
                                     <h5 class="card-title font-size-lg text-capitalize lh-14 letter-spacing-25"><a
-                                            href="blog-single-image.html"
+                                            href="blog-single-image#"
                                             class="link-hover-dark-primary">
                                         Discovery Best
                                         Things That Upgrade In Mercedes Ben
@@ -1554,7 +1554,7 @@
                             </div>
                             <ul class="list-group list-group-flush list-group-borderless">
                                 <li class="list-group-item px-0 lh-1625 bg-transparent py-1">
-                                    <a href="page-about.html" class="link-hover-secondary-primary">About Us</a>
+                                    <a href="page-about#" class="link-hover-secondary-primary">About Us</a>
                                 </li>
                                 <li class="list-group-item px-0 lh-1625 bg-transparent py-1">
                                     <a href="#" class="link-hover-secondary-primary">Team</a>
@@ -1566,7 +1566,7 @@
                                     <a href="#" class="link-hover-secondary-primary">Investors</a>
                                 </li>
                                 <li class="list-group-item px-0 lh-1625 bg-transparent py-1">
-                                    <a href="page-contact.html" class="link-hover-secondary-primary">Contact Us</a>
+                                    <a href="page-contact#" class="link-hover-secondary-primary">Contact Us</a>
                                 </li>
                                 <li class="list-group-item px-0 lh-1625 bg-transparent py-1">
                                     <a href="#" class="link-hover-secondary-primary">Offices</a>
@@ -1579,7 +1579,7 @@
                             </div>
                             <ul class="list-group list-group-flush list-group-borderless">
                                 <li class="list-group-item px-0 lh-1625 bg-transparent py-1">
-                                    <a href="page-faqs.html" class="link-hover-secondary-primary">FAQS</a>
+                                    <a href="page-faqs#" class="link-hover-secondary-primary">FAQS</a>
                                 </li>
                                 <li class="list-group-item px-0 lh-1625 bg-transparent py-1">
                                     <a href="#" class="link-hover-secondary-primary">Support</a>
@@ -1664,7 +1664,7 @@
                             </div>
                             <div class="col-lg-5 mb-3 mb-lg-0">
                                 <div>
-                                    &copy; 2020 <a href="home-automotive-services.html"
+                                    &copy; 2020 <a href="home-automotive-services#"
                                                    class="link-hover-dark-primary font-weight-semibold">The Dir.</a> All
                                     Rights Resevered. Design
                                     by <a href="http://g5plus.net/"
@@ -1945,7 +1945,7 @@
             </div>
             <div class="list-inline flex-wrap my-n2">
                 <div class="list-inline-item py-2">
-                    <a href="explore-half-map-list.html"
+                    <a href="explore-half-map-list#"
                        class="card icon-box-style-01 link-hover-dark-white">
                         <div class="card-body p-0">
                             <svg class="icon icon-pizza">
@@ -1958,7 +1958,7 @@
                     </a>
                 </div>
                 <div class="list-inline-item py-2">
-                    <a href="explore-half-map-list.html"
+                    <a href="explore-half-map-list#"
                        class="card icon-box-style-01 link-hover-dark-white">
                         <div class="card-body p-0">
                             <svg class="icon icon-bed">
@@ -1972,7 +1972,7 @@
                     </a>
                 </div>
                 <div class="list-inline-item py-2">
-                    <a href="explore-half-map-list.html"
+                    <a href="explore-half-map-list#"
                        class="card icon-box-style-01 link-hover-dark-white">
                         <div class="card-body p-0">
                             <svg class="icon icon-brush2">
@@ -1985,7 +1985,7 @@
                     </a>
                 </div>
                 <div class="list-inline-item py-2">
-                    <a href="explore-half-map-list.html"
+                    <a href="explore-half-map-list#"
                        class="card link-hover-dark-white icon-box-style-01">
                         <div class="card-body p-0">
                             <svg class="icon icon-pharmaceutical">
@@ -1998,7 +1998,7 @@
                     </a>
                 </div>
                 <div class="list-inline-item py-2">
-                    <a href="explore-half-map-list.html"
+                    <a href="explore-half-map-list#"
                        class="card link-hover-dark-white icon-box-style-01">
                         <div class="card-body p-0">
                             <svg class="icon icon-cog">
@@ -2012,7 +2012,7 @@
                     </a>
                 </div>
                 <div class="list-inline-item py-2">
-                    <a href="explore-half-map-list.html"
+                    <a href="explore-half-map-list#"
                        class="card link-hover-dark-white icon-box-style-01">
                         <div class="card-body p-0">
                             <svg class="icon icon-bag">
@@ -2026,7 +2026,7 @@
                     </a>
                 </div>
                 <div class="list-inline-item py-2">
-                    <a href="explore-half-map-list.html"
+                    <a href="explore-half-map-list#"
                        class="card link-hover-dark-white icon-box-style-01">
                         <div class="card-body p-0">
                             <svg class="icon icon-car">
@@ -2086,34 +2086,34 @@
                         <li class="list-group-item p-0"><a href="../../{{route('home')}}"
                                                            class="font-size-md link-hover-gray-dark text-capitalize lh-19">main</a>
                         </li>
-                        <li class="list-group-item p-0"><a href="home-automotive-services.html"
+                        <li class="list-group-item p-0"><a href="home-automotive-services#"
                                                            class="font-size-md link-hover-gray-dark text-capitalize lh-19">
                             automotive service</a></li>
                         <li class="list-group-item p-0"><a
-                                href="../../demo/food-and-restaurant/home-food-and-restaurant.html"
+                                href="../../demo/food-and-restaurant/home-food-and-restaurant#"
                                 class="font-size-md link-hover-gray-dark text-capitalize lh-19">
                             food and restaurant</a></li>
                         <li class="list-group-item p-0"><a
-                                href="../../demo/health-and-medical/home-health-and-medical.html"
+                                href="../../demo/health-and-medical/home-health-and-medical#"
                                 class="font-size-md link-hover-gray-dark text-capitalize lh-19">
                             health and medical</a></li>
-                        <li class="list-group-item p-0"><a href="../../demo/hotel/home-hotels.html"
+                        <li class="list-group-item p-0"><a href="../../demo/hotel/home-hotels#"
                                                            class="font-size-md link-hover-gray-dark text-capitalize lh-19">hotel</a>
                         </li>
-                        <li class="list-group-item p-0"><a href="../../demo/job/home-jobs.html"
+                        <li class="list-group-item p-0"><a href="../../demo/job/home-jobs#"
                                                            class="font-size-md link-hover-gray-dark text-capitalize lh-19">jobs</a>
                         </li>
-                        <li class="list-group-item p-0"><a href="../../demo/service-finder/home-services-finder.html"
+                        <li class="list-group-item p-0"><a href="../../demo/service-finder/home-services-finder#"
                                                            class="font-size-md link-hover-gray-dark text-capitalize lh-19">
                             service finder</a></li>
-                        <li class="list-group-item p-0"><a href="../../demo/shopping/home-shopping.html"
+                        <li class="list-group-item p-0"><a href="../../demo/shopping/home-shopping#"
                                                            class="font-size-md link-hover-gray-dark text-capitalize lh-19">
                             shopping</a></li>
                     </ul>
                 </li>
                 <li class="list-group-item p-0">
                     <a class="menu-link collapsed text-decoration-none font-size-h2 font-weight-semibold"
-                       href="blog-listing-grid.html">Blog </a>
+                       href="blog-listing-grid#">Blog </a>
                 </li>
                 <li class="list-group-item p-0">
                     <a class="menu-link collapsed text-decoration-none font-size-h2 font-weight-semibold" href="#"
@@ -2123,46 +2123,46 @@
                         class="sub-menu py-3 x-animated x-fadeInUp collapse list-group list-group-flush list-group-borderless"
                         data-parent="#menu">
                         <li class="list-group-item p-0"><a
-                                href="page-contact.html"
+                                href="page-contact#"
                                 class="font-size-md link-hover-gray-dark text-capitalize lh-19">
                             contact</a></li>
                         <li class="list-group-item p-0"><a
-                                href="page-faqs.html" class="font-size-md link-hover-gray-dark text-capitalize lh-19">
+                                href="page-faqs#" class="font-size-md link-hover-gray-dark text-capitalize lh-19">
                             faqs</a></li>
                         <li class="list-group-item p-0"><a
-                                href="page-how-it-work.html"
+                                href="page-how-it-work#"
                                 class="font-size-md link-hover-gray-dark text-capitalize lh-19">
                             how it work</a></li>
                         <li class="list-group-item p-0"><a
-                                href="page-pricing-plan.html"
+                                href="page-pricing-plan#"
                                 class="font-size-md link-hover-gray-dark text-capitalize lh-19">
                             pricing plan</a></li>
                         <li class="list-group-item p-0"><a
-                                href="page-privacy-policy.html"
+                                href="page-privacy-policy#"
                                 class="font-size-md link-hover-gray-dark text-capitalize lh-19">
                             privacy
                             policy</a></li>
                         <li class="list-group-item p-0"><a
-                                href="page-submit-listing.html"
+                                href="page-submit-listing#"
                                 class="font-size-md link-hover-gray-dark text-capitalize lh-19">submit
                             listing</a></li>
                         <li class="list-group-item p-0"><a
-                                href="page-terms-and-condition.html"
+                                href="page-terms-and-condition#"
                                 class="font-size-md link-hover-gray-dark text-capitalize lh-19">Term
                             and condition</a></li>
                         <li class="list-group-item p-0"><a
-                                href="page-typography.html"
+                                href="page-typography#"
                                 class="font-size-md link-hover-gray-dark text-capitalize lh-19">
                             typography</a></li>
                         <li class="list-group-item p-0"><a
-                                href="page-common-elements.html"
+                                href="page-common-elements#"
                                 class="font-size-md link-hover-gray-dark text-capitalize lh-19">
                             Common elements</a></li>
                     </ul>
                 </li>
                 <li class="list-group-item p-0">
                     <a class="menu-link collapsed text-decoration-none font-size-h2 font-weight-semibold"
-                       href="explore-half-map-list.html">Explore </a>
+                       href="explore-half-map-list#">Explore </a>
                 </li>
             </ul>
         </div>

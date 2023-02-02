@@ -24,7 +24,7 @@
                                             <div class="store-listing-item">
                                                 <div class="d-flex align-items-center flex-wrap flex-lg-nowrap border-bottom py-4 py-lg-0">
                                                     <div class="store media align-items-stretch py-4">
-                                                        <!-- <a href="listing-details-full-image.html" class="store-image">
+                                                        <!-- <a href="listing-details-full-image#" class="store-image">
                                                             <img src="images/shop/favourite-01.jpg" alt="Favourite 1">
                                                         </a> -->
                                                         <div class="media-body px-0 pt-4 pt-md-0">
@@ -72,7 +72,7 @@
                                                         </div>
                                                     </div>
                                                     <!-- <div class="action ml-0 ml-lg-auto mt-3 mt-lg-0 align-items-center flex-wrap flex-sm-nowrap w-100 w-lg-auto">
-                                                        <a href="page-submit-listing.html"
+                                                        <a href="page-submit-listing#"
                                                            class="btn btn-light btn-icon-left mb-2 mb-sm-0 font-size-md">
                                                             <i class="fal fa-edit"></i>
                                                             Edit
@@ -93,7 +93,7 @@
                                             <div class="store-listing-item">
                                                 <div class="d-flex align-items-center flex-wrap flex-lg-nowrap border-bottom py-4 py-lg-0">
                                                     <div class="store media align-items-stretch py-4">
-                                                        <!-- <a href="listing-details-full-image.html" class="store-image">
+                                                        <!-- <a href="listing-details-full-image#" class="store-image">
                                                             <img src="images/shop/favourite-01.jpg" alt="Favourite 1">
                                                         </a> -->
                                                         <div class="media-body px-0 pt-4 pt-md-0">
@@ -141,7 +141,7 @@
                                                         </div>
                                                     </div>
                                                     <!-- <div class="action ml-0 ml-lg-auto mt-3 mt-lg-0 align-items-center flex-wrap flex-sm-nowrap w-100 w-lg-auto">
-                                                        <a href="page-submit-listing.html"
+                                                        <a href="page-submit-listing#"
                                                            class="btn btn-light btn-icon-left mb-2 mb-sm-0 font-size-md">
                                                             <i class="fal fa-edit"></i>
                                                             Edit

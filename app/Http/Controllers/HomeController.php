@@ -60,7 +60,7 @@ class HomeController extends Controller
         }
         if($user->hasRole("User"))
         {
-            return "Hi, You are a new user here?"; 
+            return "This module is under development, Please return after a few days"; 
             $user = Auth::user(); 
             return view("guest/unverified", compact("user")); 
         }

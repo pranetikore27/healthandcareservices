@@ -58,7 +58,7 @@
                                     <div class="alert alert-success mb-6 alert-dismissible fade show d-flex align-items-center pr-3">
                                         <div class="font-size-lg py-0 mr-6">
                                             Your notification from <a
-                                                href="listing-details-full-image.html"
+                                                href="listing-details-full-image#"
                                                 class="font-weight-semibold link-hover-dark-primary">Admin</a>
                                             will flash here!
                                         </div>
@@ -113,13 +113,13 @@
                                     </div>
                                     <div class="row tables">
                                         <div class="col-xl-6 mb-6 mb-xl-0">
-                                            <div class="card rounded-0 border-0 reccent-activities">
-                                                <div class="card-body">
-                                                    <h5 class="card-title text-capitalize border-bottom pb-2 mb-2">
+                                            <!-- <div class="card rounded-0 border-0 reccent-activities">
+                                                <div class="card-body"> -->
+                                                    <!-- <h5 class="card-title text-capitalize border-bottom pb-2 mb-2">
                                                         Recent
-                                                        Activities</h5>
+                                                        Activities</h5> -->
                                                     <div class="table-responsive">
-                                                        <table>
+                                                        <!-- <table>
                                                             <tbody>
                                                                 <tr>
                                                                     <td>
@@ -129,7 +129,7 @@
                                                                                 xlink:href="#icon-layers"></use></svg>
 																	</span>
                                                                             <div class="content-box">Your listing <a
-                                                                                    href="listing-details-full-image.html"
+                                                                                    href="listing-details-full-image#"
                                                                                     class="font-weight-semibold link-hover-dark-primary">Hotel
                                                                                 Govendor</a>
                                                                                 has
@@ -149,7 +149,7 @@
                                                                                                         class="font-weight-semibold link-hover-dark-primary">David
                                                                                 Eggsy</a>
                                                                                 bookmarked your <a
-                                                                                        href="listing-details-full-image.html"
+                                                                                        href="listing-details-full-image#"
                                                                                         class="font-weight-semibold link-hover-dark-primary">Thai
                                                                                     Taste’s Restaurant</a>
                                                                                 listing!
@@ -168,11 +168,11 @@
                                                                                                         class="font-weight-semibold link-hover-dark-primary">Kathy
                                                                                 Brown</a>
                                                                                 left a review <a
-                                                                                        href="panel-review-submitted.html"
+                                                                                        href="panel-review-submitted#"
                                                                                         class="font-weight-semibold link-hover-dark-primary">5
                                                                                     Star</a>
                                                                                 on
-                                                                                <a href="listing-details-full-image.html"
+                                                                                <a href="listing-details-full-image#"
                                                                                    class="font-weight-semibold link-hover-dark-primary">Roman
                                                                                     Kraft Hotel</a>
                                                                             </div>
@@ -188,7 +188,7 @@
                                                                                 xlink:href="#icon-layers"></use></svg>
 																	</span>
                                                                             <div class="content-box">Your listing <a
-                                                                                    href="listing-details-full-image.html"
+                                                                                    href="listing-details-full-image#"
                                                                                     class="font-weight-semibold link-hover-dark-primary">Hotel
                                                                                 Govendor</a>
                                                                                 has
@@ -208,7 +208,7 @@
                                                                                                         class="font-weight-semibold link-hover-dark-primary">David
                                                                                 Eggsy</a>
                                                                                 bookmarked your <a
-                                                                                        href="listing-details-full-image.html"
+                                                                                        href="listing-details-full-image#"
                                                                                         class="font-weight-semibold link-hover-dark-primary">Thai
                                                                                     Taste’s Restaurant</a>
                                                                                 listing!
@@ -227,11 +227,11 @@
                                                                                                         class="font-weight-semibold link-hover-dark-primary">Kathy
                                                                                 Brown</a>
                                                                                 left a review <a
-                                                                                        href="panel-review-submitted.html"
+                                                                                        href="panel-review-submitted#"
                                                                                         class="font-weight-semibold link-hover-dark-primary">5
                                                                                     Star</a>
                                                                                 on
-                                                                                <a href="listing-details-full-image.html"
+                                                                                <a href="listing-details-full-image#"
                                                                                    class="font-weight-semibold link-hover-dark-primary">
                                                                                     Roman Kraft Hotel</a>
                                                                             </div>
@@ -240,12 +240,12 @@
                                                                     <td>1 days ago</td>
                                                                 </tr>
                                                             </tbody>
-                                                        </table>
+                                                        </table> -->
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="col-xl-6">
+                                        <!-- <div class="col-xl-6">
                                             <div class="card rounded-0 border-0 invoices">
                                                 <div class="card-body">
                                                     <h5 class="card-title text-capitalize border-bottom pb-2 mb-2">
@@ -264,7 +264,7 @@
                                                             <tbody>
                                                                 <tr>
                                                                     <td>
-                                                                        <a href="panel-invoice-details.html"
+                                                                        <a href="panel-invoice-details#"
                                                                            class="link-hover-dark-blue">INV-00001</a>
                                                                     </td>
                                                                     <td>22/10/2017</td>
@@ -274,7 +274,7 @@
                                                                 </tr>
                                                                 <tr>
                                                                     <td>
-                                                                        <a href="panel-invoice-details.html"
+                                                                        <a href="panel-invoice-details#"
                                                                            class="link-hover-dark-blue">INV-00002</a>
 
                                                                     </td>
@@ -285,7 +285,7 @@
                                                                 </tr>
                                                                 <tr>
                                                                     <td>
-                                                                        <a href="panel-invoice-details.html"
+                                                                        <a href="panel-invoice-details#"
                                                                            class="link-hover-dark-blue">INV-00003</a>
                                                                     </td>
                                                                     <td>18/10/2017</td>
@@ -301,7 +301,7 @@
 
                                         </div>
                                     </div>
-                                </div>
+                                </div> -->
                                 <div class="page-right px-3">
                                     <div class="card rounded-0 border-0 contact py-6 px-3">
                                         <div class="card-body text-center p-0">
@@ -313,8 +313,7 @@
                                             <div class="text-dark font-size-md mb-5">
                                                 <p class="mb-2">Have any problem and<br> need support? Call Us directly
                                                 </p>
-                                                <p class="font-weight-semibold h5 mb-2">(+34) 967-123-888</p>
-                                                <p>Or chat with us</p>
+                                                <p class="font-weight-semibold h5 mb-2">(+91) 877-989-0755</p>
                                             </div>
                                             <a href="#" class="btn btn-primary font-size-md px-8 lh-15">Contact Us</a>
                                         </div>
@@ -324,7 +323,6 @@
                             </div>
 
                             <div class="copy-right mt-auto">
-                                &copy; 2020 Thedir. All Rights Reserved.
                             </div>
                         </div>
                     </div>

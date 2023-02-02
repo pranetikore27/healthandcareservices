@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\ReviewController;
 use App\Http\Controllers\Auth\LoginController;
 use App\Http\Controllers\RoleController;
 use App\Http\Controllers\UserController;
@@ -37,23 +38,30 @@ Route::get('add-new-listings', function() {
     return view('add-new-listings'); 
 }); 
 
+// Route::get("out", function(){
+//     Auth::logout(); 
+//         return redirect("home"); 
+// }); 
 // Auth::routes(['register' => false]);
-
-
-
-
-
 
 Route::group(['middleware' => ['auth']], function() {
 
+    Route::get("createvendorprofile", function(){
+        return view("create/vendor/profile"); 
+    }); 
+
     Route::resource('/', HomeController::class);
+    
     Route::resource('roles', RoleController::class);
+    
     Route::resource('users', UserController::class);
+    
     Route::resource('products', ProductController::class);
     // Route::resource('complaints', ComplaintController::class);
     // Route::resource('products', ProductController::class);
 
     Route::resource('category', CategoryController::class);
+    Route::resource('reviews', ReviewController::class);
 
     Route::resource('hivendors', VendorController::class);
     Route::resource('partners', PartnerController::class);
@@ -81,7 +89,6 @@ Route::group(['middleware' => ['auth']], function() {
     Route::get('/users', [UserController::class, 'index'])->name('users');
     Route::get('/partners', [PartnerController::class, 'index'])->name('partners');
     Route::get('/hivendors', [VendorController::class, 'index'])->name('hivendors');
-    // Route::get('/logout', [LoginController::class, 'logout'])->name('logout');
     
     // Route::resource('roles', RoleController::class);
     // Route::resource('users', UserController::class);
@@ -123,7 +130,7 @@ Route::get('/page-submit-listing', function () {
 Route::resource('/', GuestController::class);
 
 Route::get('/service-listings', [ServiceController::class, 'listings'])->name('service-listings');
-
+Route::get('/out', [LoginController::class, 'logout'])->name('out');
 Route::post('/search', [GuestController::class, 'store'])->name('search');
 
 Route::resource("trial", TrialController::class); 

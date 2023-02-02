@@ -19,22 +19,22 @@
                         <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
                             <a class="btn btn-hero text-uppercase font-weight-normal rounded-0"
                                title="Category"
-                               href="../explore-full-map-grid.html"> Ambulance </a>
+                               href="../explore-full-map-grid#"> Ambulance </a>
                         </div>
                         <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
                             <a class="btn btn-hero text-uppercase font-weight-normal rounded-0"
                                title="Category"
-                               href="../explore-full-map-grid.html">Blood Bank </a>
+                               href="../explore-full-map-grid#">Blood Bank </a>
                         </div>
                         <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
                             <a class="btn btn-hero text-uppercase font-weight-normal rounded-0"
                                title="Category"
-                               href="../explore-full-map-grid.html"> Insurance </a>
+                               href="../explore-full-map-grid#"> Insurance </a>
                         </div>
                         <div class="col-sm-6 col-md-6 col-lg-3 mb-4">
                             <a class="btn btn-hero text-uppercase font-weight-normal rounded-0"
                                title="Category"
-                               href="../explore-full-map-grid.html">Medicals & Pharmacy </a>
+                               href="../explore-full-map-grid#">Medicals & Pharmacy </a>
                         </div>
                     </div>
                 </div>
