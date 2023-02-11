@@ -5,11 +5,14 @@
                 <div class="col-sm-6 col-lg-4 mb-6 mb-lg-0">
                     <div class="mb-8"><img style="width: 150px;" src="./assets/images/brand-logo/spo2-logo.png" alt="Thedir"></div>
                     <div class="mb-7">
-                        <div class="font-size-md font-weight-semibold text-dark mb-4">Global Headquaters</div>
+                        <div class="font-size-md font-weight-semibold text-dark mb-4">Head Office</div>
                         <p class="mb-0">
-                            90 Fifth Avenue, 3rd Floor<br>
-                            New York NY 10011<br>
-                            212.913.9058</p>
+                        SPO2 Ecommerce Private Limited <br>
+                                    SNO 43/2A/1, Datta Nagar, Lakud Vakhar, Ambegaon<br>
+                                    Pune-411036, Mumbai City, Maharashtra, India
+                                
+                                    <a href="emailto:"> Email us at </a>
+                                </p>
                     </div>
                     <!-- <div class="region pt-1">
                         <div class="font-size-md font-weight-semibold text-dark mb-2">Recent Region</div>
@@ -68,7 +71,7 @@
                         </li>
                     </ul>
                 </div>
-                <div class="col-sm-6 col-lg-4 mb-6 mb-lg-0">
+                <!-- <div class="col-sm-6 col-lg-4 mb-6 mb-lg-0">
                     <div class="pl-0 pl-lg-9">
                         <div class="font-size-md font-weight-semibold text-dark mb-4">Our Newsletter</div>
                         <div class="mb-4">Subscribe to our newsletter and<br>
@@ -88,7 +91,7 @@
                             </form>
                         </div>
                     </div>
-                </div>
+                </div> -->
             </div>
         </div>
     </div>

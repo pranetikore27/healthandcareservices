@@ -110,8 +110,16 @@ class VendorController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function edit($id)
+    public function vendorlistings($Vendorid)
     {
+        //share listings from here 
+        $vendor = DB::table("vendors")
+        ->join("users", "users.id", "vendors.Vendor_userid")
+        ->join("categories","categories.Category_id", "vendors.Vendor_category")
+        ->where("users.id", "=", $id)
+                    ->get()->toArray(); 
+        
+        return view("categories/listings", compact("vendor")); 
         
     }
 

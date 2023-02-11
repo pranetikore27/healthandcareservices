@@ -38,6 +38,14 @@ Route::get('add-new-listings', function() {
     return view('add-new-listings'); 
 }); 
 
+
+Route::get('faqs', function() {
+    return view('faqs'); 
+}); 
+
+// Route::get('/vendor-listings', [VendorController::class, 'show'])->name('vendor-listings');
+
+
 // Route::get("out", function(){
 //     Auth::logout(); 
 //         return redirect("home"); 
@@ -135,3 +143,4 @@ Route::post('/search', [GuestController::class, 'store'])->name('search');
 
 Route::resource("trial", TrialController::class); 
 Route::resource("blog", BlogController::class); 
+

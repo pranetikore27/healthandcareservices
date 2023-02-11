@@ -186,7 +186,7 @@
                             <div class="mb-6">
                                 @foreach($vendorsinlocation as $vendor)
                                 <div class="store media align-items-stretch bg-white job-store">
-                                    <a href="{{route('hivendors.show', $vendor->id)}}" class="store-image"
+                                    <a href="{{route('hivendors.edit', $vendor->id)}}" class="store-image"
                                        style="background-image: url('images/shop/jobs-shop-1.jpg')">
                                     </a>
                                     <div class="media-body px-0 px-md-4 pt-4 pt-lg-0">

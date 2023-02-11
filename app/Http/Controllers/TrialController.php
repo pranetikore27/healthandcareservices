@@ -6,58 +6,9 @@ use Illuminate\Http\Request;
 use DB; 
 class TrialController extends Controller
 {
-    /**
-     * Display a listing of the resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
-    public function index()
-    {
-
-    }
-
-    /**
-     * Show the form for creating a new resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
-    public function create()
-    {
-        //
-    }
-
-    /**
-     * Store a newly created resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @return \Illuminate\Http\Response
-     */
-    public function store(Request $request)
-    {
-        //
-    }
-
-    /**
-     * Display the specified resource.
-     *
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
     public function show($Category_id)
     {
-        // if($Category_id == 1)
-        // {
-        //     $vendorsinlocation = DB::table("hospitals")->get(); 
-            
-        //     $vendorsinlocationcount = DB::table("hospitals")->count(); 
-
-        //     $categories = DB::table("categories")->get(); 
-        
-        //     $locations = DB::table("locations")->get(); 
-
-        //     return view("categories/listings", compact("vendorsinlocation", "vendorsinlocationcount", "categories", "locations"));
-       
-        // }
+        // return "see?"; 
         $vendorsinlocation = DB::table("users")
                                 ->join("vendors", "vendors.Vendor_userid", "users.id")
                             //    ->join("services", "services.Service_providerid", "users.id")
@@ -73,14 +24,11 @@ class TrialController extends Controller
                                     ->where("Vendor_category", '=', $Category_id)
                                     ->count();
 
-        
         $categories = DB::table("categories")->get(); 
         
         $locations = DB::table("locations")->get(); 
-        // return $vendorsinlocation; 
+        
         return view("categories/listings", compact("vendorsinlocation", "vendorsinlocationcount", "categories", "locations"));
-        //check for categories in particular locations 
-        // get all vendors, filter them by locations, services 
     }
 
     /**

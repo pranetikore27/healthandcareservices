@@ -16,16 +16,34 @@ class GuestController extends Controller
         // return "hi"; 
         // return "guest/welcome";
         $category = DB::table("categories")->get()->toArray(); 
+        // return $category; 
         $locations = DB::table("locations")->get()->toArray();
         $reviews = DB::table("reviews")
                         ->join("users", "users.id", "reviews.Review_giveruserid")
                         ->join("services", "services.Service_id", "reviews.Review_serviceid")
                         ->get()->toArray(); 
         // return $reviews;  
-        $blogs = DB::table("blogs")
-                        ->join("users", "users.id", "blogs.Blog_owner_id")
-                        ->get()->toArray(); 
+        // $blogs = DB::table("blogs")
+        //                 ->join("users", "users.id", "blogs.Blog_owner_id")
+        //                 ->get()->toArray(); 
 
+        $blogs = 
+        [
+            [
+                "Blog_category" => "Hospitals", 
+                "Blog_slug" => "#", 
+                "Blog_title" => "How to find the right hospital on Health and Care Services", 
+                "created_at" => "11/02/2023", 
+                "name" => "Admin"
+            ],
+            [
+                "Blog_category" => "Medicine", 
+                "Blog_slug" => "#", 
+                "Blog_title" => "How to find the right hospital on Health and Care Services", 
+                "created_at" => "11/02/2023", 
+                "name" => "Admin"
+            ]
+        ]; 
         // $websiteInfo = DB::table("admin")->get(); 
         
         return view("guest/home", compact("category", "locations", "reviews", "blogs")); 
