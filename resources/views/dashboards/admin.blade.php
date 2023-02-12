@@ -21,11 +21,16 @@
                                         <span class="font-size-md font-weight-semibold text-uppercase text-dark lh-13">Pending Vendor<br> Verifications</span>
                                     </div>
                                 </div>
+                                
                                 <div class="card rounded-0 border-0 bg-transparent mb-6">
                                     <div class="card-body d-flex align-items-center py-6 px-8 bg-white">
-                                        <span class="font-size-h1 font-weight-semibold d-inline-block mr-2 lh-1 published">{{$ComplaintsCount}}</span>
-                                        <span class="font-size-md font-weight-semibold text-uppercase text-dark lh-13">New Complaints<br> 
+                                    <a href="{{url('category')}}">
+
+                                        <span class="font-size-h1 font-weight-semibold d-inline-block mr-2 lh-1 published">{{$CategoriesCount}}</span>
+                                        <span class="font-size-md font-weight-semibold text-uppercase text-dark lh-13">Categories<br> 
                                         <!-- Listings -->
+                                        </a>
+
                                     </span>
                                     </div>
                                 </div>

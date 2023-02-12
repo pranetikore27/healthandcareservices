@@ -16,6 +16,8 @@ return new class extends Migration
         Schema::create('categories', function (Blueprint $table) {
             $table->bigIncrements("Category_id");
             $table->string("Category_name")->nullable(); 
+            $table->string("Category_field_count")->nullable(); 
+            $table->string("Category_field_names")->nullable(); 
             $table->string("Category_status")->default(1); 
             $table->timestamps();
         });

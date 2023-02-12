@@ -202,13 +202,13 @@
                                                     class="fas fa-heart"></i></span>
                                         </div>
 
-                                        <a href="{{route('hivendors.show', $vendor->id)}}"
+                                        <!-- <a href="{{route('hivendors.show', $vendor->id)}}"
                                            class="h5  text-dark d-inline-block store-name"><span
-                                                class="letter-spacing-25">{{$vendor->Vendor_businessname}}</span> </a>
+                                                class="letter-spacing-25">{{$}}</span> </a> -->
                                         <div class="row mb-3">
                                             <div class="col-lg-6">
                                                 <i class="fal fa-map-marker-alt"></i><span
-                                                    class="d-inline-block ml-2">{{$vendor->Vendor_businessaddress}}</span>
+                                                    class="d-inline-block ml-2">{{$}}</span>
                                             </div>
                                             <div class="col-lg-6">
                                                 <i class="fal fa-briefcase"></i><span

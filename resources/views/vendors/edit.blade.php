@@ -21,14 +21,14 @@
     </ul>
   </div>
 @endif
-{!! Form::open(array('route' => 'hivendors.store','method'=>'POST')) !!}
+{!! Form::open(array('route' => 'hivendors.update','method'=>'POST')) !!}
 <div class="row">
 <div class="col-lg-8 margin-tb">
 <div class="pull-left">
 
 <div class="col-xs-8 col-sm-8 col-md-8">
         <div class="form-group">
-        <select id="Vendor_Category_Id" name="Vendor_Category_Id" class="form-control">
+        <select id="Vendor_category" name="Vendor_category" class="form-control">
             @foreach($categories as $c)
             <option value="{{$c->Category_id}}"> {{$c->Category_name}} </option>
             @endforeach

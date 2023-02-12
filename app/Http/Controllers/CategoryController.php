@@ -55,12 +55,16 @@ class CategoryController extends Controller
     {
         $this->validate($request, 
         [
-         'Category_name' => 'required'
+         'Category_name' => 'required', 
+         'Category_field_count' => 'required'
         ]);
-
+        //return $request; 
         $input = $request->all();
         $VarCategory = Category::create($input);
-        return redirect("category")->with('success','category created sucessfully!');
+        // return $VarCategory; 
+        // return $VarCategory; 
+        $user = Auth::user(); 
+        return view("category/edit", compact("VarCategory", "user")); 
     }
 
     /**
@@ -84,7 +88,8 @@ class CategoryController extends Controller
     {
         $id=Crypt::decrypt($id);
         $varCategory = Category::find($id);
-        return view('category/edit', compact('varCategory'));
+        $user = Auth::user(); 
+        return view('category/edit', compact('varCategory', 'user'));
     }
 
     /**
@@ -97,15 +102,13 @@ class CategoryController extends Controller
     public function update(Request $request, $id)
     {
         $id=Crypt::decrypt($id);
-       
-        $this->validate($request, 
-        [
-                'Category_name' => 'required'
-        ]);
         
         $varCategory = Category::find($id);
-        $varCategory->Category_name = $request->get('Category_name');
+        // $varCategory->Category_name = $request->get('Category_name');
+        $varCategory->Category_field_count = $request->get('Category_field_count');
+        $varCategory->Category_field_names = $request->get('Category_field_names');
         $varCategory->save();
+        // return $varCategory;
         return redirect('category')->with('success', "category updated successfully");
 
     }

@@ -54,9 +54,10 @@ class HomeController extends Controller
                             ->join("services", "services.Service_id", "payments.Payment_serviceid")
                             ->sum("Payment_amount"); 
 
-            // pendingservicerequest
+            $CategoriesCount = DB::table("categories")->count(); 
+
             return view("dashboards/vendor", compact("user", "ServicesCount",
-            "pendingservicerequest", "ComplaintsCount", "ReviewCount", "TotalAmount")); 
+            "pendingservicerequest", "ComplaintsCount", "ReviewCount", "TotalAmount", "CategoriesCount")); 
         }
         if($user->hasRole("User"))
         {
@@ -78,11 +79,12 @@ class HomeController extends Controller
             $ReviewCount = DB::table("reviews")->count(); 
 
             $pagename = "You are viewing Admin Dashboard"; 
-            
+            $CategoriesCount = DB::table("categories")->count(); 
+
             return view("dashboards/admin", compact(
                 "user", "title", "pagename", "VendorsCount", 
                 "Verifications", "ComplaintsCount", "ReviewCount", 
-                "TotalAmount", "ComplaintsUnderReviewCount"
+                "TotalAmount", "ComplaintsUnderReviewCount", "CategoriesCount"
             )); 
         }
         return "no roles"; 

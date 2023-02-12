@@ -22,7 +22,7 @@ class VendorController extends Controller
 
         $vendors = DB::table("users")
                     ->join("vendors", "users.id", "vendors.Vendor_userid")
-                    // ->join("payments", "users.id", "payments.Payment_userid")
+                    ->join("categories", "categories.Category_id", "vendors.Vendor_Category_Id")
                     ->get(); 
         // return $vendors; 
 
@@ -54,12 +54,11 @@ class VendorController extends Controller
      */
     public function store(Request $request)
     {
+        // return $request; 
         $validated = $request->validate([
             'name' => 'required', 
             'email' => 'required', 
-            'Vendor_businessname' => 'required',
-            'Vendor_category' => 'required', 
-            'Vendor_businessaddress' => 'required',
+            'Vendor_Category_Id' => 'required', 
             'Vendor_mobilenumber' => 'required',
         ]);
 
@@ -74,11 +73,20 @@ class VendorController extends Controller
         $VendorUser = User::create($VendorUser); 
 
         $inputs["Vendor_userid"] = $VendorUser->id; 
+        $inputs["Vendor_Category_Id"] = $request->Vendor_Category_Id; 
         
         $VendorUser->assignRole("Vendor"); 
-        $vendors = Vendors::create($inputs); 
+        $vendors = Vendors::create($inputs);
+        // return $vendors; 
+        
+        // $vendorInfo = DB::table("vendors")
+        //                 ->where("Vendor_id", '=', $inputs["Vendor_userid"])
+        //                 // ->join("users", "users.id", "vendors.Vendor_userid")
+        //                 // ->join("categories", "categories.Category_id", "vendors.Vendor_Category_Id")
+        //                 ->get()->toArray(); 
 
-        return redirect("home");  
+        // return $vendors; 
+        return view("vendors/profile", compact("vendors", "user"));  
 
     }
 
@@ -93,7 +101,7 @@ class VendorController extends Controller
         $loggedinuser = Auth::user();   
         $vendor = DB::table("vendors")
         ->join("users", "users.id", "vendors.Vendor_userid")
-        ->join("categories","categories.Category_id", "vendors.Vendor_category")
+        ->join("categories","categories.Category_id", "vendors.Vendor_Category_Id")
         ->where("users.id", "=", $id)
                     ->get()->toArray(); 
         // $ratingscount = DB::table("reviews")->where("", =, "")->count(); 
@@ -115,14 +123,38 @@ class VendorController extends Controller
         //share listings from here 
         $vendor = DB::table("vendors")
         ->join("users", "users.id", "vendors.Vendor_userid")
-        ->join("categories","categories.Category_id", "vendors.Vendor_category")
+        ->join("categories","categories.Category_id", "vendors.Vendor_Category_Id")
         ->where("users.id", "=", $id)
                     ->get()->toArray(); 
         
         return view("categories/listings", compact("vendor")); 
         
     }
+    public function edit($Vendorid)
+    {
+        $Vendor = DB::table("vendors")
+                    ->where("Vendor_id",'=',$Vendorid)
+                    ->join("categories", "categories.Category_id", "vendors.Vendor_Category_Id")
+                    ->get()->toArray();   
 
+        $fields = $Vendor[0]->Category_field_names; 
+        
+        // $fields =  explode('","', $fields); 
+        
+        // $fields[0] = str_replace("[", "", $fields[0]); 
+        
+        // $laste = last($fields); 
+        
+        // $laste = str_replace("]", "", last($fields)); 
+
+        return $fields; 
+
+        $user = Auth::user(); 
+        
+        return view("vendors/profile", compact("Vendor", "user")); 
+        
+        return $Vendor; 
+    }
     /**
      * Update the specified resource in storage.
      *

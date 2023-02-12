@@ -25,18 +25,12 @@ class Vendors extends Model
     protected $fillable = [
         // 'Vendor_id', 
         'Vendor_userid', 
-        'Vendor_businessname', 
-        'Vendor_businessaddress',
+        'Vendor_category_id', 
         'Vendor_mobilenumber',
-
-        'Vendor_description',
-        'Vendor_category', //fetching from category table
+        'Vendor_Category_Id', 
+        'Vendor_Category_Fields', 
         'Vendor_online_verification_status', 
         'Vendor_offline_verification_status', 
-
-        'Vendor_website_URL', 
-        'Vendor_Validfrom', 
-        'Vendor_Validto', 
 
         'Vendor_remarks', 
         'Vendor_isactive', 

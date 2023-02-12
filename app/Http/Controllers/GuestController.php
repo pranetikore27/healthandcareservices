@@ -105,7 +105,7 @@ class GuestController extends Controller
                                 ->join("services", "services.Service_providerid", "users.id")
                                 ->join("locations", "locations.Location_owneruserid", "users.id")
                                 ->where("Location_cityName", '=', $inputs["Location_cityName"])
-                                ->where("Vendor_category", '=', $categoryID[0]->Category_id)
+                                // ->where("Vendor_category", '=', $categoryID[0]->Category_id)
                                 ->get()->toArray();
 
                                 
@@ -114,7 +114,7 @@ class GuestController extends Controller
                                 ->join("services", "services.Service_providerid", "users.id")
                                 ->join("locations", "locations.Location_owneruserid", "users.id")
                                 ->where("Location_cityName", '=', $inputs["Location_cityName"])
-                                ->where("Vendor_category", '=', $categoryID[0]->Category_id)
+                                // ->where("Vendor_category", '=', $categoryID[0]->Category_id)
                                 ->count();
                                 
         // $ratings = DB::table("ratings")->get(); 

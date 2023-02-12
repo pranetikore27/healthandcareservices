@@ -115,7 +115,7 @@
                                     <div class="card-body pb-4">
                                         <a href="listing-details-full-image#"
                                            class="card-title h5 text-dark d-inline-block mb-2"><span
-                                                class="letter-spacing-25">{{$data->Vendor_businessname}}</span></a>
+                                                class="letter-spacing-25"> vendor business name </span></a>
                                         <ul class="list-inline store-meta mb-4 font-size-sm d-flex align-items-center flex-wrap">
                                             <li class="list-inline-item"><span
                                                     class="badge badge-success mr-1 d-inline-block">4.8</span><span

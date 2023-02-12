@@ -405,8 +405,6 @@
                 <div class="container">
                     <ul class="breadcrumb breadcrumb-style-03 py-7">
                         <li class="breadcrumb-item"><a href="{{route('home')}}">Home</a></li>
-                        <li class="breadcrumb-item"><a href="{{route('trial.show', $vendor[0]->Category_id)}}">{{$vendor[0]->Category_name}}</a></li>
-                        <li class="breadcrumb-item">{{$vendor[0]->Vendor_businessname}}</li>
                     </ul>
                 </div>
             </div>
@@ -428,7 +426,7 @@
                                     <ul class="list-group list-group-flush">
                                         <li class="list-group-item bg-transparent d-flex text-dark px-0">
                                             <span class="item-icon mr-3"><i class="fal fa-map-marker-alt"></i></span>
-                                            <span class="card-text">{{$vendor[0]->Vendor_businessaddress}}</span>
+                                            <span class="card-text">Vendor_businessaddress</span>
                                         </li>
                                         <li class="list-group-item bg-transparent d-flex text-dark px-0">
                                             <span class="item-icon mr-3">
@@ -436,11 +434,11 @@
                                                     <use xlink:href="#icon-telephone"></use>
                                                 </svg>
                                             </span>
-                                            <span class="card-text">{{$vendor[0]->Vendor_mobilenumber}}</span>
+                                            <span class="card-text">Vendor_mobilenumber</span>
                                         </li>
                                         <li class="list-group-item bg-transparent d-flex text-dark px-0">
                                             <span class="item-icon mr-3"><i class="fal fa-globe"></i></span>
-                                            <span class="card-text"><a href="#">{{$vendor[0]->Vendor_website_URL}}</a></span>
+                                            <span class="card-text"><a href="#">Vendor_website_URL</a></span>
                                         </li>
                                         <li class="list-group-item bg-transparent d-flex text-dark px-0 pt-4">
                                             <div class="social-icon origin-color si-square text-center">
@@ -540,16 +538,16 @@
                                                                                 alt="Provider"></div>
                                 <div class="media-body lh-14">
                                     <div class="d-inline-flex flex-wrap">
-                                        <h2 class="mb-0">{{$vendor[0]->Vendor_businessname}}
+                                        <h2 class="mb-0">Vendor_businessname
                                         </h2>
-                                        @if($vendor[0]->Vendor_online_verification_status == 1)
+                                        @if($vendor->Vendor_online_verification_status == 1)
                                         <span class="check d-inline-block ml-2 font-weight-semibold">
 										    <svg class="icon icon-check-circle"><use xlink:href="#icon-check-circle"></use></svg>
 										    Verified
 									    </span>
                                         @endif
                                     </div>
-                                    <div class="fw-500 font-size-lg border-bottom pb-2 mb-2">{{$vendor[0]->Category_name}}</div>
+                                    <div class="fw-500 font-size-lg border-bottom pb-2 mb-2">Category_name</div>
                                     <ul class="list-inline store-meta d-flex flex-wrap align-items-center">
                                         <li class="list-inline-item"><span
                                                 class="badge badge-success d-inline-block mr-1">5.0</span><span
@@ -563,14 +561,14 @@
 												<use xlink:href="#icon-pharmaceutical"></use>
 											</svg>
 											</span>
-                                                <span>{{$vendor[0]->Category_name}}</span>
+                                                <span>->Category_name</span>
 
                                             </a>
                                         </li>
                                         <li class="list-inline-item separate"></li>
                                         <li class="list-inline-item">
                                             <span class="d-inline-block mr-1"><i class="fal fa-clock"></i></span>
-                                            Profile created on {{$vendor[0]->created_at}}
+                                            Profile created on created_at
                                         </li>
                                     </ul>
                                 </div>
@@ -658,7 +656,7 @@
                                                     <div class="card-body p-sm-0 border-sm-0">
                                                         <div class="mb-7">
                                                             <h6 class="d-block font-size-md mb-5">Introduce</h6>
-                                                            <p class="mb-6">{{$vendor[0]->Vendor_description}}</p>
+                                                            <p class="mb-6">Vendor_description</p>
                                                             
                                                         </div>
                                                         

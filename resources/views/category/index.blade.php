@@ -24,6 +24,8 @@
                 <tr>
                   <th>Sr no</th>
                   <th>Category name</th>
+                  <th>Number of fields</th>
+                  <th>Fields taken</th>
                   <th>Status</th>
                   
                   
@@ -34,6 +36,8 @@
             <tr>
               <th>{{$loop->iteration}}</th>
               <td>{{$row->Category_name}}</td>
+              <td>{{$row->Category_field_count}}</td>
+              <td>{{$row->Category_field_names}}</td>
              
               
               

@@ -35,8 +35,14 @@
     <div class="row pull-center">        
         <div class="col-xs-12 col-sm-12 col-md-12">
             <div class="form-group text-center">
-                <h5> Name of the Category</h5>
+                <h5> Category Name </h5>
                 {!! Form::text('Category_name', null, array('placeholder' => 'Category Name','class' => 'form-control')) !!}
+            </div>
+        </div>
+        <div class="col-xs-12 col-sm-12 col-md-12">
+            <div class="form-group text-center">
+                <h5> Number of fields? </h5>
+                {!! Form::text('Category_field_count', null, array('placeholder' => 'Number of fields','class' => 'form-control')) !!}
             </div>
         </div>
         <div class="col-xs-12 col-sm-12 col-md-12 text-center">

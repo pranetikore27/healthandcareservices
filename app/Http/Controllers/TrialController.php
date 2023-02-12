@@ -13,7 +13,7 @@ class TrialController extends Controller
                                 ->join("vendors", "vendors.Vendor_userid", "users.id")
                             //    ->join("services", "services.Service_providerid", "users.id")
                               //  ->join("locations", "locations.Location_owneruserid", "users.id")
-                                ->where("Vendor_category", '=', $Category_id)
+                                // ->where("Vendor_category", '=', $Category_id)
                                 ->get()->toArray();
         
         
@@ -21,7 +21,7 @@ class TrialController extends Controller
                                     ->join("vendors", "vendors.Vendor_userid", "users.id")
                                     // ->join("services", "services.Service_providerid", "users.id")
                                     // ->join("locations", "locations.Location_owneruserid", "users.id")
-                                    ->where("Vendor_category", '=', $Category_id)
+                                    // ->where("Vendor_category", '=', $Category_id)
                                     ->count();
 
         $categories = DB::table("categories")->get(); 

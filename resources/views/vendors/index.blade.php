@@ -20,8 +20,9 @@
                                     <table id="example">
                                         <thead>
                                             <tr>
-                                                <th style="width: 11%">Firm Name</th>
+                                                <th style="width: 11%">Vendor Name</th>
                                                 <th style="width: 15%">Category</th>
+                                                <th style="width: 15%">Details Status</th>
                                                 <th style="width: 13%">Online Verification Status</th>
                                                 <th style="width: 10%">Offline Verification Status</th>
                                                 <!-- <th style="width:50%">Action</th> -->
@@ -30,10 +31,21 @@
                                         <tbody>
                                             @foreach($vendors as $v)
                                             <tr>
-                                                <td>{{$v->Vendor_businessname}}
+                                                <td> {{$v->name}} 
                                                 </td>
-                                                <?php $category_name = App\Models\Category::find($v->Vendor_category)?>
-                                                <td>{{$category_name->Category_name}}
+                                            
+                                                <td>{{$v->Category_name}}
+                                                </td>
+
+                                                <td> 
+                                                    @if($v->Vendor_Category_Fields == NULL)
+                                                    <a class="btn btn-primary" href="{{ route('hivendors.edit',$v->Vendor_id) }}">
+                                                        Yet to receive </a>
+                                                    @else
+                                            
+                                                    Form is filled 
+                                                    @endif
+
                                                 </td>
                                                 <td>
                                                     @if($v->Vendor_online_verification_status == 0)
