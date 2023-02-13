@@ -26,6 +26,6 @@ class DatabaseSeeder extends Seeder
         $this->call(RolesCreationSeeder::class);
         $this->call(CreateAdminUserSeeder::class);
         $this->call(CreateCategorySeeder::class);
-        $this->call(CreateHospitalInformation::class);
+        //$this->call(CreateHospitalInformation::class);
     }
 }

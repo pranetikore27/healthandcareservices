@@ -17,6 +17,7 @@ use App\Http\Controllers\PartnerController;
 use App\Http\Controllers\ServiceController;
 use App\Http\Controllers\ProfController;
 use App\Http\Controllers\CategoryController;
+use App\Http\Controllers\Category2Controller;
 use App\Http\Controllers\GuestController;
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\PaymentController; 
@@ -48,6 +49,7 @@ Route::group(['middleware' => ['auth']], function() {
     Route::resource('products', ProductController::class);
 
     Route::resource('category', CategoryController::class);
+    Route::resource('categories', Category2Controller::class);
 
     Route::resource('reviews', ReviewController::class);
 

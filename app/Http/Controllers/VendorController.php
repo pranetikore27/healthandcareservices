@@ -7,6 +7,7 @@ use DB;
 use Illuminate\Support\Facades\Auth;
 use App\Models\Vendors; 
 use App\Models\User;
+use App\Models\Category;
 use Hash;  
 class VendorController extends Controller
 {
@@ -77,16 +78,19 @@ class VendorController extends Controller
         
         $VendorUser->assignRole("Vendor"); 
         $vendors = Vendors::create($inputs);
-        // return $vendors; 
+        //return $vendors; 
         
-        // $vendorInfo = DB::table("vendors")
-        //                 ->where("Vendor_id", '=', $inputs["Vendor_userid"])
-        //                 // ->join("users", "users.id", "vendors.Vendor_userid")
-        //                 // ->join("categories", "categories.Category_id", "vendors.Vendor_Category_Id")
-        //                 ->get()->toArray(); 
+        $vendorInfo = DB::table("vendors")
+                        ->where("Vendor_id", '=', $inputs["Vendor_userid"])
+                        ->join("users", "users.id", "vendors.Vendor_userid")
+                        ->join("categories", "categories.Category_id", "vendors.Vendor_Category_Id")
+                        ->get()->toArray(); 
 
-        // return $vendors; 
-        return view("vendors/profile", compact("vendors", "user"));  
+        //return $vendorInfo; 
+        $categoryfield = Category::find($request->Vendor_Category_Id);
+        $categoryfields= $categoryfield['Category_field_names']; 
+        return $categoryfields.split(",");
+        return view("vendors/profile", compact("vendors", "user","categoryfields"));  
 
     }
 

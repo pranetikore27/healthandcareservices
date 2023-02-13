@@ -5,15 +5,13 @@
     <div class="row">
         <div class="col-lg-12 margin-tb">
             <div class="pull-left">
-                <h2>location</h2>
+                <h2>hospital</h2>
             </div>
             <div class="pull-right">
-            <a class="btn btn-success" href="{{ route('location.create') }}"> Create New location</a>
+            <a class="btn btn-success" href="{{ route('hospitals.create') }}"> Create New hospitals</a>
                
-                @can('location-create')
-                <a class="btn btn-success" href="{{ route('location.create') }}"> Create New location</a>
-                @endcan
-            </div>
+                
+            </div> 
         </div>
     </div>
 
@@ -25,31 +23,49 @@
     @endif
 
 
-    <table id="example" class="table table-bordered">
+    <div class="table-responsive">
+                                    
+    <table id="example" id="example">
+<thead>
         <tr>
             <th>No</th>
-            <th>Name</th>
-            <th>Details</th>
-            <th width="280px">Action</th>
+            <th>Email</th>
+            <th>Address</th>
+            <th>City</th>
+            <th>pincode</th>
+            <th>features</th>
+            <th>start time</th>
+            <th>End Time</th>
+            <th>URl</th>
+            <th>Action</th>
         </tr>
-	    @foreach ($locations as $location)
+	    @foreach ($hospitals as $hospital)
 	    <tr>
 	        <td>{{ ++$i }}</td>
-	        <td>{{ $location->name }}</td>
-	        <td>{{ $location->detail }}</td>
+	        <td>{{ $hospital->Hospital_name }}</td>
+	        <td>{{ $hospital->Hospital_email_id }}</td>
+            <td>{{ $hospital->Hospital_address }}</td>
+	        <td>{{ $hospital->Hospital_city }}</td>
+            <td>{{ $hospital->Hospital_pin_Code }}</td>
+	        <td>{{ $hospital->Hospital_features }}</td>
+            <td>{{ $hospital->Hospital_start_time }}</td>
+            <td>{{ $hospital->Hospital_end_time }}</td>
+	        <td>{{ $hospital->Hospital_website_URl }}</td>
 	        <td>
-                <form action="{{ route('location.destroy',$location->id) }}" method="POST">
-                    <a class="btn btn-info" href="{{ route('location.show',$location->id) }}">Show</a>
-                    @can('location-edit')
-                    <a class="btn btn-primary" href="{{ route('location.edit',$location->id) }}">Edit</a>
-                    @endcan
+                
+                <form action="{{ route('hospital.destroy',$hospital->Hospital_id) }}" method="POST">
+                
+                    <a class="btn btn-info" href="{{ route('hospital.show',$hospital->Hospital_id) }}">Show</a>
+                   
+                    <a class="btn btn-primary" href="{{ route('hospital.edit',$hospital->Hospital_id) }}">Edit</a>
+                
 
 
                     @csrf
                     @method('DELETE')
-                    @can('location-delete')
+                    
                     <button type="submit" class="btn btn-danger">Delete</button>
-                    @endcan
+               
                 </form>
 	        </td>
 	    </tr>
@@ -57,7 +73,7 @@
     </table>
 
 
-    {!! $location->links() !!}
+   
 
 
 <p class="text-center text-primary"><small>Health and Care Services</small></p>

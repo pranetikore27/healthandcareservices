@@ -16,7 +16,8 @@ class HospitalController extends Controller
     public function index()
     {
         $hospitals = DB::table("hospitals")->get(); 
-        return view("hospital/listings", compact("hospitals")); 
+        $user = Auth::user(); 
+        return view("hospital/index", compact("hospitals","user")); 
 
     }
 
