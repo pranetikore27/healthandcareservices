@@ -24,6 +24,8 @@ return new class extends Migration
             $table->string("Hospital_start_time")->nullable();
             $table->string("Hospital_end_time")->nullable();
             $table->string("Hospital_website_URl")->nullable();
+            $table->string("Hospital_status")->default(1); 
+            
             $table->timestamps();
         });
     }

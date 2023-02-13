@@ -20,6 +20,7 @@ class Hospital extends Model
         "Hospital_features" , 
         "Hospital_start_time",
         "Hospital_end_time",
-        "Hospital_website_URl"
+        "Hospital_website_URl",
+        "Hospital_status"
     ]; 
 }

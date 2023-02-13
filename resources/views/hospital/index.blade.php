@@ -5,7 +5,7 @@
     <div class="row">
         <div class="col-lg-12 margin-tb">
             <div class="pull-left">
-                <h2>hospital</h2>
+                <h2>Hospitals</h2>
             </div>
             <div class="pull-right">
             <a class="btn btn-success" href="{{ route('hospitals.create') }}"> Create New hospitals</a>
@@ -29,14 +29,16 @@
 <thead>
         <tr>
             <th>No</th>
+            <th>Name</th>
             <th>Email</th>
             <th>Address</th>
             <th>City</th>
-            <th>pincode</th>
+          
             <th>features</th>
             <th>start time</th>
             <th>End Time</th>
             <th>URl</th>
+            <th>Status</th>
             <th>Action</th>
         </tr>
 	    @foreach ($hospitals as $hospital)
@@ -46,25 +48,35 @@
 	        <td>{{ $hospital->Hospital_email_id }}</td>
             <td>{{ $hospital->Hospital_address }}</td>
 	        <td>{{ $hospital->Hospital_city }}</td>
-            <td>{{ $hospital->Hospital_pin_Code }}</td>
+            
 	        <td>{{ $hospital->Hospital_features }}</td>
             <td>{{ $hospital->Hospital_start_time }}</td>
             <td>{{ $hospital->Hospital_end_time }}</td>
 	        <td>{{ $hospital->Hospital_website_URl }}</td>
+             
+            <td>
+    
+    @if($hospital->Hospital_status == 0)
+    <label class="badge badge-danger"> inactive </label>
+    @elseif($hospital->Hospital_status == 1)
+    <label class="badge badge-success"> active </label>
+    @endif
+
+</td>
 	        <td>
                 
-                <form action="{{ route('hospital.destroy',$hospital->Hospital_id) }}" method="POST">
+                <form action="{{ route('hospitals.destroy',$hospital->Hospital_id) }}" method="POST">
                 
-                    <a class="btn btn-info" href="{{ route('hospital.show',$hospital->Hospital_id) }}">Show</a>
+                    
                    
-                    <a class="btn btn-primary" href="{{ route('hospital.edit',$hospital->Hospital_id) }}">Edit</a>
+                    <a class="btn btn-info" href="{{ route('hospitals.edit',$hospital->Hospital_id) }}">Edit</a>
                 
 
 
                     @csrf
                     @method('DELETE')
                     
-                    <button type="submit" class="btn btn-danger">Delete</button>
+                    <button type="submit" class="btn btn-danger">change status</button>
                
                 </form>
 	        </td>
