@@ -23,6 +23,7 @@ use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\PaymentController; 
 use App\Http\Controllers\ComplaintController; 
 use App\Http\Controllers\LocationController; 
+use App\Http\Controllers\MedicalController;
 
 Auth::routes();
 
@@ -66,6 +67,7 @@ Route::group(['middleware' => ['auth']], function() {
     Route::resource('location', LocationController::class);
 
     Route::resource('hospitals', HospitalController::class);
+    Route::resource('medicals', MedicalController::class);
 
     Route::resource('complaints', ComplaintController::class);
 
