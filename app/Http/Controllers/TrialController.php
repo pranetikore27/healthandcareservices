@@ -3,11 +3,24 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Models\Ambulance;
 use DB; 
+use Auth; 
+
 class TrialController extends Controller
 {
     public function show($Category_id)
     {
+
+        if($Category_id==1)
+        {
+            $ambulances = DB::table("ambulances")->get(); 
+            $user = Auth::user(); 
+            $i=0;
+            return view("guest/listing-ambulances", compact("ambulances"));
+        }
+        
+
         // return "see?"; 
         $vendorsinlocation = DB::table("users")
                                 ->join("vendors", "vendors.Vendor_userid", "users.id")
