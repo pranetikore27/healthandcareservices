@@ -12,36 +12,46 @@ class TrialController extends Controller
     public function show($Category_id)
     {
 
-        if($Category_id==1)
-        {
-            $ambulances = DB::table("ambulances")->get(); 
-            $user = Auth::user(); 
-            $i=0;
-            return view("guest/listing-ambulances", compact("ambulances"));
-        }
-        
-
-        // return "see?"; 
-        $vendorsinlocation = DB::table("users")
-                                ->join("vendors", "vendors.Vendor_userid", "users.id")
-                            //    ->join("services", "services.Service_providerid", "users.id")
-                              //  ->join("locations", "locations.Location_owneruserid", "users.id")
-                                // ->where("Vendor_category", '=', $Category_id)
-                                ->get()->toArray();
-        
-        
-        $vendorsinlocationcount = DB::table("users")
-                                    ->join("vendors", "vendors.Vendor_userid", "users.id")
-                                    // ->join("services", "services.Service_providerid", "users.id")
-                                    // ->join("locations", "locations.Location_owneruserid", "users.id")
-                                    // ->where("Vendor_category", '=', $Category_id)
-                                    ->count();
-
         $categories = DB::table("categories")->get(); 
         
         $locations = DB::table("locations")->get(); 
+
+        if($Category_id==1)
+        {
+            $vendorsinlocation = DB::table("hospitals")->get(); 
+            $vendorsinlocationcount = DB::table("ambulances")->count(); 
+            // return $vendorsinlocation; 
+            return view("categories/listings", compact("vendorsinlocation", "vendorsinlocationcount", "categories", "locations"));
+        }
+        if($Category_id==3)
+        {
+            $vendorsinlocation = DB::table("ambulances")->get(); 
+            $vendorsinlocationcount = DB::table("ambulances")->count(); 
+            // return $vendorsinlocation;  
+            return view("categories/listings1", compact("vendorsinlocation", "vendorsinlocationcount", "categories", "locations"));
+        }
+        if($Category_id==2)
+        {
+            $vendorsinlocation = DB::table("medicals")->get(); 
+            $vendorsinlocationcount = DB::table("medicals")->count(); 
+
+            // return $vendorsinlocation;
+
+            return view("categories/listings2", compact("vendorsinlocation", "vendorsinlocationcount", "categories", "locations"));
+        }
+        if($Category_id==4)
+        {
+            return "Page under construction"; 
+        }
+        if($Category_id==5)
+        {
+            return "Page under construction"; 
+        }
+
         
-        return view("categories/listings", compact("vendorsinlocation", "vendorsinlocationcount", "categories", "locations"));
+
+        
+        // return view("categories/listings", compact("vendorsinlocation", "vendorsinlocationcount", "categories", "locations"));
     }
 
     /**

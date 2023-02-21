@@ -186,50 +186,31 @@
                             <div class="mb-6">
                                 @foreach($vendorsinlocation as $vendor)
                                 <div class="store media align-items-stretch bg-white job-store">
-                                    <a href="{{route('hivendors.edit', $vendor->id)}}" class="store-image"
-                                       style="background-image: url('images/shop/jobs-shop-1.jpg')">
-                                    </a>
-                                    <div class="media-body px-0 px-md-4 pt-4 pt-lg-0">
-                                        <div class="d-flex align-items-center lh-1">
-                                            @if($vendor->Vendor_online_verification_status == 0)
-                                            <span class="text-gray">Verified</span>
-                                            @else
-                                            
-                                            <span class="text-gray">Unverified</span>
-                                            @endif
+                                    <strong> 
+                                        <h4>
+                                        {{$vendor->Hospital_name}} in {{$vendor->Hospital_city}}
+                                        </h4>
+                                        <br>
 
-                                            <span class="favourite ml-auto text-danger"><i
-                                                    class="fas fa-heart"></i></span>
-                                        </div>
+                                        {{$vendor->Hospital_address}} - {{$vendor->Hospital_city}} - {{$vendor->Hospital_pin_Code}}
+                                    
+                                        <br>
 
-                                        <!-- <a href="{{route('hivendors.show', $vendor->id)}}"
-                                           class="h5  text-dark d-inline-block store-name"><span
-                                                class="letter-spacing-25">{{$}}</span> </a> -->
-                                        <div class="row mb-3">
-                                            <div class="col-lg-6">
-                                                <i class="fal fa-map-marker-alt"></i><span
-                                                    class="d-inline-block ml-2">{{$}}</span>
-                                            </div>
-                                            <div class="col-lg-6">
-                                                <i class="fal fa-briefcase"></i><span
-                                                    class="d-inline-block ml-2 text-link">, </span>
-                                            </div>
-                                            <div class="col-lg-6"><i
-                                                    class="fal fa-sack-dollar"></i><span
-                                                    class="d-inline-block ml-2 text-danger"></span>
-                                            </div>
-                                            <!-- <div class="col-lg-6"><i class="fal fa-clock"></i><span
-                                                    class="d-inline-block ml-2">Posted 11 hours
-													ago</span>
-                                            </div> -->
+                                      Features:  {{$vendor->Hospital_features}}
 
-                                        </div>
-                                        <div class="border-top pt-2 px-0 pb-0">
-                                            <!-- They specialize in makgeolli at this Korean-style pub in Seorae
-                                            Village... -->
-                                            
-                                        </div>
-                                    </div>
+                                        <br> From : {{$vendor->Hospital_start_time}}
+                                        To: {{$vendor->Hospital_end_time}}
+
+                                        <br>
+                                        @if($vendor->Hospital_status == "1")
+                                        <p style="color:red">New</p>   
+                                        @else
+                                        <p style="color:green">Verified</p>
+                                        @endif 
+                                        <a href="https://www.{{$vendor->Hospital_website_URl}}" class="btn btn-danger">
+                                            Visit their website
+                                        </a>
+                                    </strong>
                                 </div>
                             </div>
                             @endforeach

@@ -136,28 +136,29 @@ class VendorController extends Controller
     }
     public function edit($Vendorid)
     {
-        $Vendor = DB::table("vendors")
-                    ->where("Vendor_id",'=',$Vendorid)
-                    ->join("categories", "categories.Category_id", "vendors.Vendor_Category_Id")
-                    ->get()->toArray();   
+        return redirect("home"); 
+//         $Vendor = DB::table("vendors")
+//                     ->where("Vendor_id",'=',$Vendorid)
+//                     ->join("categories", "categories.Category_id", "vendors.Vendor_Category_Id")
+//                     ->get()->toArray();   
 
-        $fields = $Vendor[0]->Category_field_names; 
+//         // $fields = $Vendor[0]->Category_field_names; 
         
-        // $fields =  explode('","', $fields); 
+//         // $fields =  explode('","', $fields); 
         
-        // $fields[0] = str_replace("[", "", $fields[0]); 
+//         // $fields[0] = str_replace("[", "", $fields[0]); 
         
-        // $laste = last($fields); 
+//         // $laste = last($fields); 
         
-        // $laste = str_replace("]", "", last($fields)); 
+//         // $laste = str_replace("]", "", last($fields)); 
 
-        return $fields; 
-
-        $user = Auth::user(); 
+//         // return $fields; 
+// // 
+//         $user = Auth::user(); 
         
-        return view("vendors/profile", compact("Vendor", "user")); 
+//         return view("vendors/profile", compact("Vendor", "user")); 
         
-        return $Vendor; 
+//         return $Vendor; 
     }
     /**
      * Update the specified resource in storage.

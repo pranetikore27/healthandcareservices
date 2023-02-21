@@ -338,170 +338,28 @@
                                 </a>
                             </li>
                             <li class="list-group-item p-0 mb-2 lh-15">
-                                <a href="#listing"
-                                   class="d-flex align-items-center link-hover-dark-primary font-size-md"
-                                   data-toggle="collapse"
-                                   aria-expanded="false">
-									<span class="d-inline-block mr-3"><svg class="icon icon-layers"><use
-                                            xlink:href="#icon-layers"></use></svg></span>
-                                    <span>Manage</span>
-                                    <span class=" ml-auto"><i class="fal fa-chevron-down"></i></span>
-                                </a>
-                                <ul class="submenu collapse list-group list-group-flush list-group-borderless pt-2 mb-0 sidebar-menu"
-                                    id="listing">
-                                    <li class="list-group-item p-0 mb-2 lh-15">
-                                        <a href="{{route('hivendors')}}" class="link-hover-dark-primary font-size-md">
-                                            Vendors
-                                        </a>
-                                    </li>
-
-                                    <li class="list-group-item p-0 mb-2 lh-15">
-                                        <a href="{{route('home')}}" class="link-hover-dark-primary font-size-md">
-                                            Partners
-                                        </a>
-                                    </li>
-
-                                    <li class="list-group-item p-0 mb-2 lh-15">
-                                        <a href="{{route('home')}}" class="link-hover-dark-primary font-size-md">
-                                            Services
-                                        </a>
-                                    </li>
-
-                                    <li class="list-group-item p-0 mb-2 lh-15">
-                                        <a href="{{route('home')}}" class="link-hover-dark-primary font-size-md">
-                                            Category
-                                        </a>
-                                    </li>
-                                </ul>
-                            </li>
-
-                            <li class="list-group-item p-0 mb-2 lh-15">
-                                <a href="#listing"
-                                   class="d-flex align-items-center link-hover-dark-primary font-size-md"
-                                   data-toggle="collapse"
-                                   aria-expanded="false">
-									<span class="d-inline-block mr-3"><svg class="icon icon-layers"><use
-                                            xlink:href="#icon-layers"></use></svg></span>
-                                    <span>Import/Export</span>
-                                    <span class=" ml-auto"><i class="fal fa-chevron-down"></i></span>
-                                </a>
-                                <ul class="submenu collapse list-group list-group-flush list-group-borderless pt-2 mb-0 sidebar-menu"
-                                    id="listing">
-                                    <li class="list-group-item p-0 mb-2 lh-15">
-                                        <a href="{{route('home')}}" class="link-hover-dark-primary font-size-md">
-                                            Import
-                                        </a>
-                                    </li>
-
-                                    <li class="list-group-item p-0 mb-2 lh-15">
-                                        <a href="{{route('home')}}" class="link-hover-dark-primary font-size-md">
-                                            Export
-                                        </a>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li class="list-group-item p-0 mb-2 lh-15">
-                                <a href="{{url('complaints')}}"
+                                <a href="{{url('hospitals')}}"
                                    class="d-flex align-items-center link-hover-dark-primary font-size-md">
-                                    <span class="d-inline-block mr-3"><i class="fal fa-bookmark"></i></span>
-                                    <span>Complaints</span>
+                                    <span class="d-inline-block mr-3"><i class="fal fa-hospital"></i></span>
+                                    <span>Hospitals</span>
                                 </a>
                             </li>
                             <li class="list-group-item p-0 mb-2 lh-15">
-                                <a href="{{route('home')}}"
-                                   class="d-flex align-items-center link-hover-dark-primary font-size-md"
-                                   data-toggle="collapse"
-                                   aria-expanded="false">
-									<span class="d-inline-block mr-3"><svg class="icon icon-receipt"><use
-                                            xlink:href="#icon-receipt"></use></svg></span>
-                                    <span>Revenue</span>
-                                    <span class=" ml-auto"><i class="fal fa-chevron-down"></i></span>
-                                </a>
-                                <ul class="submenu collapse list-group list-group-flush list-group-borderless pt-2 mb-0 sidebar-menu"
-                                    id="invoice">
-                                    <li class="list-group-item p-0 mb-2 lh-15"><a href="panel-invoice-listing#"
-                                                                                  class="link-hover-dark-primary font-size-md">Payments</a></li>
-                                    <li class="list-group-item p-0 mb-2 lh-15"><a href="panel-invoice-details#"
-                                                                                  class="link-hover-dark-primary font-size-md">Invoice
-                                        Details</a></li>
-                                </ul>
-                            </li>
-                            <li class="list-group-item p-0 mb-2 lh-15">
-                                <a href="{{url('services')}}"
+                                <a href="{{url('medicals')}}"
                                    class="d-flex align-items-center link-hover-dark-primary font-size-md">
-                                    <span class="d-inline-block mr-3"><i class="fal fa-gift"></i></span>
-                                    <span>Services</span>
+                                    <span class="d-inline-block mr-3">
+                                    <i class="fa-solid fa-kit-medical"></i>
+                                    </span>
+                                    <span>Medical</span>
                                 </a>
                             </li>
                             <li class="list-group-item p-0 mb-2 lh-15">
-                                <a href="#adcampaign"
-                                   class="d-flex align-items-center link-hover-dark-primary font-size-md"
-                                   data-toggle="collapse"
-                                   aria-expanded="false">
-                                    <span class="d-inline-block mr-3"><i class="far fa-bullhorn"></i></span>
-                                    <span>Notification</span>
-                                    <span class=" ml-auto"><i class="fal fa-chevron-down"></i></span>
-                                </a>
-                                <ul class="submenu collapse list-group list-group-flush list-group-borderless pt-2 mb-0 sidebar-menu"
-                                    id="adcampaign">
-                                    <li class="list-group-item p-0 mb-2 lh-15"><a
-                                            href="{{url('home')}}"
-                                            class="link-hover-dark-primary font-size-md">Send Public Notification</a></li>
-                                    <li class="list-group-item p-0 mb-2 lh-15"><a
-                                            href="{{url('home')}}"
-                                            class="link-hover-dark-primary font-size-md">Send Notification only to verified people</a></li>
-                                </ul>
-                            </li>
-                            <li class="list-group-item p-0 mb-2 lh-15">
-                                <a href="#review" class="d-flex align-items-center link-hover-dark-primary font-size-md"
-                                   data-toggle="collapse"
-                                   aria-expanded="false">
-                                    <span class="d-inline-block mr-3"><i class="fal fa-star"></i></span>
-                                    <span>Reviews</span>
-                                    <span class=" ml-auto"> <i class="fal fa-chevron-down"></i></span>
-                                </a>
-                                <ul class="submenu collapse list-group list-group-flush list-group-borderless pt-2 mb-0 sidebar-menu"
-                                    id="review">
-                                    <li class="list-group-item p-0 mb-2 lh-15"><a href="panel-review-received#"
-                                                                                  class="link-hover-dark-primary font-size-md">Review
-                                        received</a></li>
-                                    <li class="list-group-item p-0 mb-2 lh-15"><a href="panel-review-submitted#"
-                                                                                  class="link-hover-dark-primary font-size-md">Review
-                                        submitted</a></li>
-                                </ul>
-                            </li>
-                            <!-- <li class="list-group-item p-0 mb-2 lh-15">
-                                <a href="{{route('home')}}"
+                                <a href="{{url('ambulances')}}"
                                    class="d-flex align-items-center link-hover-dark-primary font-size-md">
-									<span class="d-inline-block mr-3"><svg class="icon icon-user"><use
-                                            xlink:href="#icon-user"></use></svg></span>
-                                    <span>My Profile</span>
-                                </a>
-                            </li> -->
-                            <br>
-
-                            <li class="list-group-item p-0 mb-2 lh-15">
-                                <a href="{{route('home')}}"
-                                   class="d-flex align-items-center link-hover-dark-primary font-size-md">
-                                    <span>Logged in as {{$user->name}}</span>
+                                    <span class="d-inline-block mr-3"><i class="fal fa-ambulance"></i></span>
+                                    <span>Ambulance</span>
                                 </a>
                             </li>
-
-                            <li class="list-group-item p-0 mb-2 lh-15">
-                                <a href="{{route('payment')}}"
-                                   class="d-flex align-items-center link-hover-dark-primary font-size-md">
-                                    <span>Make Payment</span>
-                                </a>
-                            </li>
-
-                            
-                            <!-- <li class="list-group-item p-0 mb-2 lh-15">
-                                <a href="#" class="d-flex align-items-center link-hover-dark-primary font-size-md">
-									<span class="d-inline-block mr-3"><svg class="icon icon-exit"><use
-                                            xlink:href="#icon-exit"></use></svg></span>
-                                    <span>Logout</span>
-                                </a>
-                            </li> -->
                         </ul>
                     </div>
                 </div>

@@ -10,14 +10,14 @@
     <!-- Vendors Stylesheets -->
     <link href="https://fonts.googleapis.com/css?family=Work+Sans:200,300,400,500,600,700,800,900&display=swap"
           rel="stylesheet">
-    <link rel="stylesheet" href="./assets/vendors/font-awesome/css/fontawesome.css">
-    <link rel="stylesheet" href="./assets/vendors/magnific-popup/magnific-popup.css">
-    <link rel="stylesheet" href="./assets/vendors/slick/slick.css">
-    <link rel="stylesheet" href="./assets/vendors/animate.css">
+    <link rel="stylesheet" href="{{asset('./assets/vendors/font-awesome/css/fontawesome.css')}}">
+    <link rel="stylesheet" href="{{asset('./assets/vendors/magnific-popup/magnific-popup.css')}}">
+    <link rel="stylesheet" href="{{asset('./assets/vendors/slick/slick.css')}}">
+    <link rel="stylesheet" href="{{asset('./assets/vendors/animate.css')}}">
     <link rel="stylesheet" href="https://unpkg.com/tailwindcss@2.2.19/dist/tailwind.min.css" />
     <!-- Site Stylesheets -->
-    <link rel="stylesheet" href="./assets/style.css">
-    <link rel="stylesheet" href="./assets/custom.css">
+    <link rel="stylesheet" href="{{asset('./assets/style.css')}}">
+    <link rel="stylesheet" href="{{asset('./assets/custom.css')}}">
 
 </head>
 <body>
@@ -59,14 +59,14 @@
     
     <!-- External JavaScripts -->
 
-    <script src="./assets/vendors/jquery.min.js"></script>
-    <script src="./assets/vendors/popper/popper.js"></script>
-    <script src="./assets/vendors/bootstrap/js/bootstrap.js"></script>
-    <script src="./assets/vendors/hc-sticky/hc-sticky.js"></script>
-    <script src="./assets/vendors/isotope/isotope.pkgd.js"></script>
-    <script src="./assets/vendors/magnific-popup/jquery.magnific-popup.js"></script>
-    <script src="./assets/vendors/slick/slick.js"></script>
-    <script src="./assets/vendors/waypoints/jquery.waypoints.js"></script>
+    <script src="{{asset('./assets/vendors/jquery.min.js')}}"></script>
+    <script src="{{asset('./assets/vendors/popper/popper.js')}}"></script>
+    <script src="{{asset('./assets/vendors/bootstrap/js/bootstrap.js')}}"></script>
+    <script src="{{asset('./assets/vendors/hc-sticky/hc-sticky.js')}}"></script>
+    <script src="{{asset('./assets/vendors/isotope/isotope.pkgd.js')}}"></script>
+    <script src="{{asset('./assets/vendors/magnific-popup/jquery.magnific-popup.js')}}"></script>
+    <script src="{{asset('./assets/vendors/slick/slick.js')}}"></script>
+    <script src="{{asset('./assets/vendors/waypoints/jquery.waypoints.js')}}"></script>
 
     <!-- Site Javascript -->
     <script src="./assets/js/app.js"></script>

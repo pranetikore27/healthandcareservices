@@ -76,7 +76,7 @@
                     @csrf
                     @method('DELETE')
                     
-                    <button type="submit" class="btn btn-danger">change status</button>
+                    <button type="submit" class="btn btn-danger">Change status</button>
                
                 </form>
 	        </td>

@@ -6,10 +6,10 @@
                                     <div class="card rounded-0 border-0 bg-transparent mb-6">
                                         <div class="card-body d-flex align-items-center py-6 px-8 bg-white">
                                             
-                                            <span class="font-size-h1 font-weight-semibold d-inline-block mr-2 text-primary lh-1">{{$VendorsCount}}</span>
-                                            <a href="{{route('hivendors')}}">
+                                            <span class="font-size-h1 font-weight-semibold d-inline-block mr-2 text-primary lh-1">{{$hospitalCount}}</span>
+                                            <a href="{{url('hospitals')}}">
 
-                                            <span class="font-size-md font-weight-semibold text-uppercase text-dark lh-13">Vendors <br> 
+                                            <span class="font-size-md font-weight-semibold text-uppercase text-dark lh-13">Hospitals <br> 
 </a>
                                             <!-- Listings -->
                                         </span>
@@ -17,17 +17,20 @@
                                     </div>
                                 <div class="card rounded-0 border-0 bg-transparent mb-6">
                                     <div class="card-body d-flex align-items-center py-6 px-8 bg-white">
-                                        <span class="font-size-h1 font-weight-semibold d-inline-block mr-2 text-darker-light lh-1">{{$Verifications}}</span>
-                                        <span class="font-size-md font-weight-semibold text-uppercase text-dark lh-13">Pending Vendor<br> Verifications</span>
+                                    <a href="{{url('medicals')}}">
+
+                                        <span class="font-size-h1 font-weight-semibold d-inline-block mr-2 text-darker-light lh-1">{{$MEDICALSCount}}</span>
+                                        <span class="font-size-md font-weight-semibold text-uppercase text-dark lh-13">Medicals</span>
+</a>
                                     </div>
                                 </div>
                                 
                                 <div class="card rounded-0 border-0 bg-transparent mb-6">
                                     <div class="card-body d-flex align-items-center py-6 px-8 bg-white">
-                                    <a href="{{url('category')}}">
+                                    <a href="{{url('ambulances')}}">
 
                                         <span class="font-size-h1 font-weight-semibold d-inline-block mr-2 lh-1 published">{{$CategoriesCount}}</span>
-                                        <span class="font-size-md font-weight-semibold text-uppercase text-dark lh-13">Categories<br> 
+                                        <span class="font-size-md font-weight-semibold text-uppercase text-dark lh-13">Ambulance<br> 
                                         <!-- Listings -->
                                         </a>
 

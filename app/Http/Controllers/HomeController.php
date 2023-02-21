@@ -3,6 +3,9 @@
 namespace App\Http\Controllers;
 use Illuminate\Support\Facades\Auth;
 use DB; 
+use App\Models\Hospital; 
+use App\Models\Medical; 
+use App\Models\Ambulance; 
 
 use Illuminate\Http\Request;
 class HomeController extends Controller
@@ -68,13 +71,21 @@ class HomeController extends Controller
         if($user->hasRole("Admin"))
         {
             // return "admin"; 
-            $VendorsCount = DB::table("vendors")->count(); 
+            // $VendorsCount = DB::table("vendors")->count(); 
             $title = "Admin Dashboard"; 
             
-            $Verifications = DB::table("vendors")->where("Vendor_online_verification_status", "0")->count(); 
+            // $Verifications = DB::table("vendors")->where("Vendor_online_verification_status", "0")->count(); 
             $ComplaintsCount = DB::table("complaints")->where("Complaint_status", "0")->count(); 
             $ComplaintsUnderReviewCount = DB::table("complaints")->where("Complaint_status", "1")->count(); 
             
+            $hospitalCount = Hospital::count(); 
+            
+            $MEDICALSCount = Medical::count(); 
+            
+            $ambCount = Ambulance::count(); 
+            
+            $hospitalCount = Hospital::count(); 
+
             $TotalAmount = DB::table("payments")->sum("Payment_amount"); 
             $ReviewCount = DB::table("reviews")->count(); 
 
@@ -82,8 +93,8 @@ class HomeController extends Controller
             $CategoriesCount = DB::table("categories")->count(); 
 
             return view("dashboards/admin", compact(
-                "user", "title", "pagename", "VendorsCount", 
-                "Verifications", "ComplaintsCount", "ReviewCount", 
+                "user", "title", "pagename", "hospitalCount", 
+                "MEDICALSCount", "ComplaintsCount", "ReviewCount", 
                 "TotalAmount", "ComplaintsUnderReviewCount", "CategoriesCount"
             )); 
         }
